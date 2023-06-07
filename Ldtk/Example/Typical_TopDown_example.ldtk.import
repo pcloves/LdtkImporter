@@ -1,0 +1,33 @@
+[remap]
+
+importer="Ldtk Importer"
+type="Node2D"
+uid="uid://dd0wvxq43imrr"
+path="res://.godot/imported/Typical_TopDown_example.ldtk-7288364487e4cd902cc144ebe15dbc2e.tscn"
+
+[deps]
+
+source_file="res://Ldtk/Example/Typical_TopDown_example.ldtk"
+dest_files=["res://.godot/imported/Typical_TopDown_example.ldtk-7288364487e4cd902cc144ebe15dbc2e.tscn"]
+
+[params]
+
+World=true
+world_add_metadata=false
+world_post_import_script=""
+Tilesets=""
+tileset_add_metadata=true
+import_tileset_custom_data=true
+tileset_post_import_script=""
+Levels=""
+level_add_metadata=true
+pack_levels=false
+level_post_import_script=""
+Entities=""
+entity_add_metadata=true
+Entity Scene=""
+Button=""
+Door=""
+Item=""
+Player=""
+SecretWall=""

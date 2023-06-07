@@ -1,0 +1,32 @@
+[remap]
+
+importer="Ldtk Importer"
+type="Node2D"
+uid="uid://dinuts6gte3p7"
+path="res://.godot/imported/World.ldtk-7d307b8ff2158ed040ecc8117d491da5.tscn"
+
+[deps]
+
+source_file="res://Ldtk/World/World.ldtk"
+dest_files=["res://.godot/imported/World.ldtk-7d307b8ff2158ed040ecc8117d491da5.tscn"]
+
+[params]
+
+World=true
+world_add_metadata=false
+world_post_import_script=""
+Tilesets=""
+tileset_add_metadata=true
+import_tileset_custom_data=true
+tileset_post_import_script=""
+Levels=""
+level_add_metadata=true
+pack_levels=false
+level_post_import_script=""
+Entities=""
+entity_add_metadata=true
+Entity Scene=""
+Butterfly=""
+Enter=""
+Exit=""
+Tree=""

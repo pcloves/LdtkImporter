@@ -1,0 +1,8 @@
+animated objects sprite sheet block size:
+
+treeA_v1/v2 - 128x128
+treeB1/B2 - 160x176
+
+butterfly - 16x16 (first 4 frames idle next 4 frames fly)
+frog - 16x16 (first 5 frames idle, next 7 frames jump)
+mouse - 32x16 (first 4 frames idle next 4 frames run)
