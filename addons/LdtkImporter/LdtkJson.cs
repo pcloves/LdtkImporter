@@ -1158,7 +1158,7 @@ namespace Ldtk
         public long? TagsSourceEnumUid { get; set; }
 
         [JsonPropertyName("tileGridSize")]
-        public long TileGridSize { get; set; }
+        public int TileGridSize { get; set; }
 
         /// <summary>
         /// Unique Intidentifier

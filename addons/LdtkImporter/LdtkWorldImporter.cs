@@ -56,12 +56,12 @@ public partial class LdtkWorldImporter : EditorImportPlugin
                 { "default_value", "" },
                 { "usage", (int)PropertyUsageFlags.Group },
             },
-            new()
-            {
-                { "name", "tileset_add_metadata" },
-                { "default_value", true },
-                { "hint_string", "If true, will add the original LDtk data as metadata." }
-            },
+            // new()
+            // {
+            //     { "name", "tileset_add_metadata" },
+            //     { "default_value", true },
+            //     { "hint_string", "If true, will add the original LDtk data as metadata." }
+            // },
             new()
             {
                 { "name", "import_tileset_custom_data" },
@@ -129,8 +129,7 @@ public partial class LdtkWorldImporter : EditorImportPlugin
         };
 
 
-        var fileText = FileAccess.Open(path, FileAccess.ModeFlags.Read).GetAsText();
-        var ldtkJson = LdtkJson.FromJson(fileText);
+        var ldtkJson = LdtkJson.FromPath(path);
         var properties = ldtkJson.Defs.Entities
             .OrderBy(entityDefinition => entityDefinition.Identifier)
             .Select(entityDefinition => new Dictionary
@@ -158,9 +157,7 @@ public partial class LdtkWorldImporter : EditorImportPlugin
     {
         GD.Print($"path:{sourceFile}");
         
-        var fileText = FileAccess.Open(sourceFile, FileAccess.ModeFlags.Read).GetAsText();
-        var ldtkJson = LdtkJson.FromJson(fileText);
-        
+        var ldtkJson = LdtkJson.FromPath(sourceFile);
         
         return Error.Ok;
     }
