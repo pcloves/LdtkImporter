@@ -2,31 +2,35 @@
 
 importer="Ldtk Importer"
 type="Node2D"
-uid="uid://dinuts6gte3p7"
+uid="uid://d2brbf4soh3ai"
 path="res://.godot/imported/World.ldtk-7d307b8ff2158ed040ecc8117d491da5.tscn"
 
 [deps]
 
+files=["res://Ldtk/World/Tileset/FLSET1_water_env.tres", "res://Ldtk/World/Tileset/Tree_A_v1.tres", "res://Ldtk/World/Tileset/FLSET1_hills.tres", "res://Ldtk/World/Tileset/FLSET1_ground.tres", "res://Ldtk/World/Tileset/FLSET1_ground_dec_props.tres", "res://Ldtk/World/Tileset/Butterfly.tres", "res://Ldtk/World/Tileset/Tree_B_v2.tres", "res://Ldtk/World/Entity/Enter.tscn", "res://Ldtk/World/Entity/Exit.tscn", "res://Ldtk/World/Entity/Butterfly.tscn", "res://Ldtk/World/Entity/Tree.tscn", "res://Ldtk/World/Level/Level_0.tscn", "res://Ldtk/World/Level/Level_1.tscn", "res://Ldtk/World/Level/Level_2.tscn"]
+
 source_file="res://Ldtk/World/World.ldtk"
-dest_files=["res://.godot/imported/World.ldtk-7d307b8ff2158ed040ecc8117d491da5.tscn"]
+dest_files=["res://.godot/imported/World.ldtk-7d307b8ff2158ed040ecc8117d491da5.tscn", "res://Ldtk/World/Tileset/FLSET1_water_env.tres", "res://Ldtk/World/Tileset/Tree_A_v1.tres", "res://Ldtk/World/Tileset/FLSET1_hills.tres", "res://Ldtk/World/Tileset/FLSET1_ground.tres", "res://Ldtk/World/Tileset/FLSET1_ground_dec_props.tres", "res://Ldtk/World/Tileset/Butterfly.tres", "res://Ldtk/World/Tileset/Tree_B_v2.tres", "res://Ldtk/World/Entity/Enter.tscn", "res://Ldtk/World/Entity/Exit.tscn", "res://Ldtk/World/Entity/Butterfly.tscn", "res://Ldtk/World/Entity/Tree.tscn", "res://Ldtk/World/Level/Level_0.tscn", "res://Ldtk/World/Level/Level_1.tscn", "res://Ldtk/World/Level/Level_2.tscn"]
 
 [params]
 
-World=true
-world_add_metadata=false
-world_post_import_script=""
-Tilesets=""
-tileset_add_metadata=true
-import_tileset_custom_data=true
-tileset_post_import_script=""
-Levels=""
-level_add_metadata=true
-pack_levels=false
-level_post_import_script=""
-Entities=""
-entity_add_metadata=true
-Entity Scene=""
-Butterfly=""
-Enter=""
-Exit=""
-Tree=""
+World/add_metadata=false
+Tileset/add_metadata=true
+Tileset/import_LDTK_tile_custom_data=true
+Tileset/Mapping/Butterfly="res://Ldtk/World/Tileset/Butterfly.tres"
+Tileset/Mapping/FLSET1_ground="res://Ldtk/World/Tileset/FLSET1_ground.tres"
+Tileset/Mapping/FLSET1_ground_dec_props="res://Ldtk/World/Tileset/FLSET1_ground_dec_props.tres"
+Tileset/Mapping/FLSET1_hills="res://Ldtk/World/Tileset/FLSET1_hills.tres"
+Tileset/Mapping/FLSET1_water_env="res://Ldtk/World/Tileset/FLSET1_water_env.tres"
+Tileset/Mapping/Tree_A_v1="res://Ldtk/World/Tileset/Tree_A_v1.tres"
+Tileset/Mapping/Tree_B_v2="res://Ldtk/World/Tileset/Tree_B_v2.tres"
+Entity/entity_add_metadata=true
+Entity/Mapping/Butterfly="res://Ldtk/World/Entity/Butterfly.tscn"
+Entity/Mapping/Enter="res://Ldtk/World/Entity/Enter.tscn"
+Entity/Mapping/Exit="res://Ldtk/World/Entity/Exit.tscn"
+Entity/Mapping/Tree="res://Ldtk/World/Entity/Tree.tscn"
+Level/level_add_metadata=true
+Level/import_IntGrid=false
+Level/Mapping/Level_0="res://Ldtk/World/Level/Level_0.tscn"
+Level/Mapping/Level_1="res://Ldtk/World/Level/Level_1.tscn"
+Level/Mapping/Level_2="res://Ldtk/World/Level/Level_2.tscn"

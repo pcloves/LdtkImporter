@@ -1,0 +1,431 @@
+[gd_scene load_steps=5 format=3 uid="uid://bp8w52pk7sj8x"]
+
+[ext_resource type="TileSet" uid="uid://bxe2sqxjmxdpa" path="res://Ldtk/World/Tileset/FLSET1_ground.tres" id="1_sk254"]
+[ext_resource type="TileSet" uid="uid://b5egbafw8s6yn" path="res://Ldtk/World/Tileset/FLSET1_ground_dec_props.tres" id="2_dudlw"]
+[ext_resource type="PackedScene" uid="uid://co4sch74bmxvy" path="res://Ldtk/World/Entity/Butterfly.tscn" id="3_tfeqr"]
+[ext_resource type="Texture2D" uid="uid://dgoh6shsp6ttd" path="res://Ldtk/World/fantasylandsset1/_PNG/Anim/Nature/butterfly.png" id="4_s5n3s"]
+
+[node name="Level_2" type="Node2D"]
+position = Vector2(448, 400)
+metadata/level = {
+"__bgColor": "#696A79",
+"__bgPos": null,
+"__neighbours": [{
+"dir": "n",
+"levelIid": "34a5fad0-ed50-11ed-9939-1ba5e4773201",
+"levelUid": null
+}],
+"__smartColor": "#ADADB5",
+"bgColor": null,
+"bgPivotX": 0.5,
+"bgPivotY": 0.5,
+"bgPos": null,
+"bgRelPath": null,
+"externalRelPath": null,
+"fieldInstances": [{
+"__identifier": "Integer",
+"__tile": null,
+"__type": "Int",
+"__value": 999.0,
+"defUid": 320.0,
+"realEditorValues": []
+}, {
+"__identifier": "String",
+"__tile": null,
+"__type": "String",
+"__value": "",
+"defUid": 321.0,
+"realEditorValues": []
+}],
+"identifier": "Level_2",
+"iid": "2bbfe570-ed50-11ed-aaaa-29651c2a5aa8",
+"layerInstances": [{
+"__cHei": 16.0,
+"__cWid": 16.0,
+"__gridSize": 16.0,
+"__identifier": "Entities",
+"__opacity": 1.0,
+"__pxTotalOffsetX": 0.0,
+"__pxTotalOffsetY": 0.0,
+"__tilesetDefUid": null,
+"__tilesetRelPath": null,
+"__type": "Entities",
+"autoLayerTiles": [],
+"entityInstances": [{
+"__grid": [14.0, 9.0],
+"__identifier": "Butterfly",
+"__pivot": [0.5, 0.5],
+"__smartColor": "#D77643",
+"__tags": [],
+"__tile": {
+"h": 16.0,
+"tilesetUid": 309.0,
+"w": 16.0,
+"x": 0.0,
+"y": 64.0
+},
+"defUid": 308.0,
+"fieldInstances": [{
+"__identifier": "Path",
+"__tile": null,
+"__type": "Array<Point>",
+"__value": [],
+"defUid": 310.0,
+"realEditorValues": []
+}],
+"height": 16.0,
+"iid": "fd11f0f0-ed50-11ed-919b-95643ae10637",
+"px": [232.0, 152.0],
+"width": 16.0
+}],
+"gridTiles": [],
+"iid": "2bc00c80-ed50-11ed-aaaa-c3f4aba090ef",
+"intGrid": null,
+"intGridCsv": [],
+"layerDefUid": 6.0,
+"levelId": 314.0,
+"optionalRules": [],
+"overrideTilesetUid": null,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"seed": 6.46598e+06,
+"visible": true
+}, {
+"__cHei": 8.0,
+"__cWid": 8.0,
+"__gridSize": 32.0,
+"__identifier": "Grass",
+"__opacity": 1.0,
+"__pxTotalOffsetX": 0.0,
+"__pxTotalOffsetY": 0.0,
+"__tilesetDefUid": 304.0,
+"__tilesetRelPath": "fantasylandsset1/_PNG/FLSET1_ground_dec_props.png",
+"__type": "AutoLayer",
+"autoLayerTiles": [],
+"entityInstances": [],
+"gridTiles": [],
+"iid": "2bc00c82-ed50-11ed-aaaa-b5f29581ff20",
+"intGrid": null,
+"intGridCsv": [],
+"layerDefUid": 305.0,
+"levelId": 314.0,
+"optionalRules": [],
+"overrideTilesetUid": null,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"seed": 9.06813e+06,
+"visible": true
+}, {
+"__cHei": 8.0,
+"__cWid": 8.0,
+"__gridSize": 32.0,
+"__identifier": "LightDirt",
+"__opacity": 1.0,
+"__pxTotalOffsetX": 0.0,
+"__pxTotalOffsetY": 0.0,
+"__tilesetDefUid": 17.0,
+"__tilesetRelPath": "fantasylandsset1/_PNG/FLSET1_ground.png",
+"__type": "IntGrid",
+"autoLayerTiles": [],
+"entityInstances": [],
+"gridTiles": [],
+"iid": "2bc00c81-ed50-11ed-aaaa-a9535e75828f",
+"intGrid": null,
+"intGridCsv": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+"layerDefUid": 205.0,
+"levelId": 314.0,
+"optionalRules": [],
+"overrideTilesetUid": null,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"seed": 7.75551e+06,
+"visible": true
+}, {
+"__cHei": 8.0,
+"__cWid": 8.0,
+"__gridSize": 32.0,
+"__identifier": "LightGrass",
+"__opacity": 1.0,
+"__pxTotalOffsetX": 0.0,
+"__pxTotalOffsetY": 0.0,
+"__tilesetDefUid": 17.0,
+"__tilesetRelPath": "fantasylandsset1/_PNG/FLSET1_ground.png",
+"__type": "IntGrid",
+"autoLayerTiles": [],
+"entityInstances": [],
+"gridTiles": [],
+"iid": "2bc00c83-ed50-11ed-aaaa-97c24da4c827",
+"intGrid": null,
+"intGridCsv": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+"layerDefUid": 239.0,
+"levelId": 314.0,
+"optionalRules": [],
+"overrideTilesetUid": null,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"seed": 2.12336e+06,
+"visible": true
+}],
+"pxHei": 256.0,
+"pxWid": 256.0,
+"uid": 314.0,
+"useAutoIdentifier": true,
+"worldDepth": 0.0,
+"worldX": 448.0,
+"worldY": 400.0
+}
+metadata/fieldInstances = [{
+"__identifier": "Integer",
+"__tile": null,
+"__type": "Int",
+"__value": 999.0,
+"defUid": 320.0,
+"realEditorValues": []
+}, {
+"__identifier": "String",
+"__tile": null,
+"__type": "String",
+"__value": "",
+"defUid": 321.0,
+"realEditorValues": []
+}]
+
+[node name="LightGrass" type="TileMap" parent="."]
+tile_set = ExtResource("1_sk254")
+cell_quadrant_size = 32
+format = 2
+layer_0/name = "LightGrass"
+metadata/instance = {
+"__cHei": 8.0,
+"__cWid": 8.0,
+"__gridSize": 32.0,
+"__identifier": "LightGrass",
+"__opacity": 1.0,
+"__pxTotalOffsetX": 0.0,
+"__pxTotalOffsetY": 0.0,
+"__tilesetDefUid": 17.0,
+"__tilesetRelPath": "fantasylandsset1/_PNG/FLSET1_ground.png",
+"__type": "IntGrid",
+"autoLayerTiles": [],
+"entityInstances": [],
+"gridTiles": [],
+"iid": "2bc00c83-ed50-11ed-aaaa-97c24da4c827",
+"intGrid": null,
+"intGridCsv": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+"layerDefUid": 239.0,
+"levelId": 314.0,
+"optionalRules": [],
+"overrideTilesetUid": null,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"seed": 2.12336e+06,
+"visible": true
+}
+
+[node name="LightDirt" type="TileMap" parent="."]
+tile_set = ExtResource("1_sk254")
+cell_quadrant_size = 32
+format = 2
+layer_0/name = "LightDirt"
+metadata/instance = {
+"__cHei": 8.0,
+"__cWid": 8.0,
+"__gridSize": 32.0,
+"__identifier": "LightDirt",
+"__opacity": 1.0,
+"__pxTotalOffsetX": 0.0,
+"__pxTotalOffsetY": 0.0,
+"__tilesetDefUid": 17.0,
+"__tilesetRelPath": "fantasylandsset1/_PNG/FLSET1_ground.png",
+"__type": "IntGrid",
+"autoLayerTiles": [],
+"entityInstances": [],
+"gridTiles": [],
+"iid": "2bc00c81-ed50-11ed-aaaa-a9535e75828f",
+"intGrid": null,
+"intGridCsv": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+"layerDefUid": 205.0,
+"levelId": 314.0,
+"optionalRules": [],
+"overrideTilesetUid": null,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"seed": 7.75551e+06,
+"visible": true
+}
+
+[node name="Grass" type="TileMap" parent="."]
+tile_set = ExtResource("2_dudlw")
+cell_quadrant_size = 32
+format = 2
+layer_0/name = "Grass"
+metadata/instance = {
+"__cHei": 8.0,
+"__cWid": 8.0,
+"__gridSize": 32.0,
+"__identifier": "Grass",
+"__opacity": 1.0,
+"__pxTotalOffsetX": 0.0,
+"__pxTotalOffsetY": 0.0,
+"__tilesetDefUid": 304.0,
+"__tilesetRelPath": "fantasylandsset1/_PNG/FLSET1_ground_dec_props.png",
+"__type": "AutoLayer",
+"autoLayerTiles": [],
+"entityInstances": [],
+"gridTiles": [],
+"iid": "2bc00c82-ed50-11ed-aaaa-b5f29581ff20",
+"intGrid": null,
+"intGridCsv": [],
+"layerDefUid": 305.0,
+"levelId": 314.0,
+"optionalRules": [],
+"overrideTilesetUid": null,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"seed": 9.06813e+06,
+"visible": true
+}
+
+[node name="Entities" type="Node2D" parent="."]
+metadata/instance = {
+"__cHei": 16.0,
+"__cWid": 16.0,
+"__gridSize": 16.0,
+"__identifier": "Entities",
+"__opacity": 1.0,
+"__pxTotalOffsetX": 0.0,
+"__pxTotalOffsetY": 0.0,
+"__tilesetDefUid": null,
+"__tilesetRelPath": null,
+"__type": "Entities",
+"autoLayerTiles": [],
+"entityInstances": [{
+"__grid": [14.0, 9.0],
+"__identifier": "Butterfly",
+"__pivot": [0.5, 0.5],
+"__smartColor": "#D77643",
+"__tags": [],
+"__tile": {
+"h": 16.0,
+"tilesetUid": 309.0,
+"w": 16.0,
+"x": 0.0,
+"y": 64.0
+},
+"defUid": 308.0,
+"fieldInstances": [{
+"__identifier": "Path",
+"__tile": null,
+"__type": "Array<Point>",
+"__value": [],
+"defUid": 310.0,
+"realEditorValues": []
+}],
+"height": 16.0,
+"iid": "fd11f0f0-ed50-11ed-919b-95643ae10637",
+"px": [232.0, 152.0],
+"width": 16.0
+}],
+"gridTiles": [],
+"iid": "2bc00c80-ed50-11ed-aaaa-c3f4aba090ef",
+"intGrid": null,
+"intGridCsv": [],
+"layerDefUid": 6.0,
+"levelId": 314.0,
+"optionalRules": [],
+"overrideTilesetUid": null,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"seed": 6.46598e+06,
+"visible": true
+}
+
+[node name="Butterfly-0" type="Node2D" parent="Entities" instance=ExtResource("3_tfeqr")]
+position = Vector2(232, 152)
+metadata/entities = {
+"color": "#D77643",
+"doc": null,
+"exportToToc": false,
+"fieldDefs": [{
+"__type": "Array<Point>",
+"acceptFileTypes": null,
+"allowOutOfLevelRef": true,
+"allowedRefTags": [],
+"allowedRefs": 1.0,
+"allowedRefsEntityUid": null,
+"arrayMaxLength": null,
+"arrayMinLength": null,
+"autoChainRef": true,
+"canBeNull": true,
+"defaultOverride": null,
+"doc": null,
+"editorAlwaysShow": true,
+"editorCutLongValues": true,
+"editorDisplayMode": 7.0,
+"editorDisplayPos": 2.0,
+"editorDisplayScale": 0.0,
+"editorLinkStyle": 1.0,
+"editorShowInWorld": true,
+"editorTextPrefix": null,
+"editorTextSuffix": null,
+"identifier": "Path",
+"isArray": true,
+"max": null,
+"min": null,
+"regex": null,
+"symmetricalRef": false,
+"textLanguageMode": null,
+"tilesetUid": null,
+"type": "F_Point",
+"uid": 310.0,
+"useForSmartColor": false
+}],
+"fillOpacity": 0.08,
+"height": 16.0,
+"hollow": false,
+"identifier": "Butterfly",
+"keepAspectRatio": false,
+"limitBehavior": 1.0,
+"limitScope": 1.0,
+"lineOpacity": 0.0,
+"maxCount": 0.0,
+"maxHeight": null,
+"maxWidth": null,
+"minHeight": null,
+"minWidth": null,
+"nineSliceBorders": [],
+"pivotX": 0.5,
+"pivotY": 0.5,
+"renderMode": 3.0,
+"resizableX": false,
+"resizableY": false,
+"showName": true,
+"tags": [],
+"tileId": null,
+"tileOpacity": 1.0,
+"tileRect": {
+"h": 16.0,
+"tilesetUid": 309.0,
+"w": 16.0,
+"x": 0.0,
+"y": 64.0
+},
+"tileRenderMode": 1.0,
+"tilesetId": 309.0,
+"uid": 308.0,
+"width": 16.0
+}
+metadata/fields = [{
+"__identifier": "Path",
+"__tile": null,
+"__type": "Array<Point>",
+"__value": [],
+"defUid": 310.0,
+"realEditorValues": []
+}]
+
+[node name="Sprite2D" type="Sprite2D" parent="Entities/Butterfly-0"]
+texture = ExtResource("4_s5n3s")
+hframes = 8
+vframes = 8
+region_rect = Rect2(0, 0, 128, 128)

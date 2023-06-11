@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqj3g0oxf55qo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_de1pq"]
+size = Vector2(22, 32)
+
+[node name="Exit" type="Node2D"]
+metadata/entities = {
+"color": "#BE4A2F",
+"doc": null,
+"exportToToc": false,
+"fieldDefs": [],
+"fillOpacity": 1.0,
+"height": 16.0,
+"hollow": false,
+"identifier": "Exit",
+"keepAspectRatio": false,
+"limitBehavior": 1.0,
+"limitScope": 1.0,
+"lineOpacity": 1.0,
+"maxCount": 0.0,
+"maxHeight": null,
+"maxWidth": null,
+"minHeight": null,
+"minWidth": null,
+"nineSliceBorders": [],
+"pivotX": 0.0,
+"pivotY": 0.0,
+"renderMode": 2.0,
+"resizableX": true,
+"resizableY": true,
+"showName": true,
+"tags": ["teleport"],
+"tileId": null,
+"tileOpacity": 1.0,
+"tileRect": null,
+"tileRenderMode": 1.0,
+"tilesetId": null,
+"uid": 266.0,
+"width": 16.0
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(11, 16)
+shape = SubResource("RectangleShape2D_de1pq")

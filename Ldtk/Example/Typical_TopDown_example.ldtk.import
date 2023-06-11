@@ -16,7 +16,6 @@ World=true
 world_add_metadata=false
 world_post_import_script=""
 Tilesets=""
-tileset_add_metadata=true
 import_tileset_custom_data=true
 tileset_post_import_script=""
 Levels=""
