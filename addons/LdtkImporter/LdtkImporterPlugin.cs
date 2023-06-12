@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Godot;
@@ -14,6 +14,7 @@ namespace LdtkImporter;
 public partial class LdtkImporterPlugin : EditorImportPlugin
 {
     public const string OptionWorld = "World";
+    public const string OptionWorldWorldMapping = $"{OptionWorld}/WorldMapping";
 
     public const string OptionTileset = "Tileset";
     public const string OptionTilesetAddMeta = $"{OptionTileset}/add_metadata";
@@ -27,11 +28,13 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
     public const string OptionEntity = "Entity";
     public const string OptionEntityMapping = $"{OptionEntity}/Mapping";
 
+    public const string SaveExtension = "tscn";
+    
     public override string _GetImporterName() => "Ldtk Importer";
     public override string _GetVisibleName() => "LDTK World Scene";
     public override string[] _GetRecognizedExtensions() => new[] { "ldtk" };
     public override string _GetResourceType() => "Node2D";
-    public override string _GetSaveExtension() => "tscn";
+    public override string _GetSaveExtension() => SaveExtension;
     public override float _GetPriority() => 0.1f;
     public override int _GetPresetCount() => 0;
     public override string _GetPresetName(int presetIndex) => "";
@@ -56,13 +59,15 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
     private IEnumerable<Dictionary> WorldOptions(string path, int presetIndex)
     {
+        var file = path.GetBaseName().GetFile();
         return new Array<Dictionary>
         {
             new()
             {
-                { "name", $"{OptionWorld}/add_metadata" },
-                { "default_value", false },
-                { "hint_string", "If true, will add the original LDtk data as metadata." }
+                { "name", OptionWorldWorldMapping },
+                { "default_value", $"{path.GetBaseDir().PathJoin(file)}.{_GetSaveExtension()}" },
+                { "property_hint", (int)PropertyHint.File },
+                { "hint_string", "*.tscn;Godot Scene" }
             },
         };
     }
@@ -89,8 +94,9 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
             },
         };
 
-        var tilesetMapping = _ldtkJson.Defs.Tilesets.OrderBy(definition => definition.Identifier)
-            .Select(definition => new Dictionary()
+        var tilesetMapping = _ldtkJson.Defs.Tilesets
+            .OrderBy(definition => definition.Identifier)
+            .Select(definition => new Dictionary
                 {
                     { "name", $"{OptionTilesetMapping}/{definition.Identifier}" },
                     { "default_value", $"{tilesetBaseDir.PathJoin(definition.Identifier)}.tres" },
@@ -182,13 +188,9 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
         error = _ldtkJson.PostImport(_ldtkJson, savePath, options, genFiles);
         if (error != Error.Ok) return error;
 
-        var packedScene = new PackedScene();
-        var node2D = new Node2D();
-
-        packedScene.Pack(node2D);
-
-        ResourceSaver.Save(packedScene, $"{savePath}.{_GetSaveExtension()}");
-
+        var worldScenePath = options.GetValueOrDefault(OptionWorldWorldMapping).AsString().Trim();
+        DirAccess.CopyAbsolute($"{savePath}.{SaveExtension}", worldScenePath);
+        
         GD.Print($"Import success");
 
         return Error.Ok;

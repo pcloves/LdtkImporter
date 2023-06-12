@@ -6,12 +6,13 @@ namespace LdtkImporter;
 [Tool]
 public partial class Plugin : EditorPlugin
 {
-    private global::LdtkImporter.LdtkImporterPlugin _ldtkImporterPlugin;
+    private LdtkImporterPlugin _ldtkImporterPlugin;
+    
     public override string _GetPluginName() => "sss";
 
     public override void _EnterTree()
     {
-        _ldtkImporterPlugin = new global::LdtkImporter.LdtkImporterPlugin();
+        _ldtkImporterPlugin = new LdtkImporterPlugin();
         AddImportPlugin(_ldtkImporterPlugin);
     }
 

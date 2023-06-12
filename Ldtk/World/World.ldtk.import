@@ -14,7 +14,7 @@ dest_files=["res://.godot/imported/World.ldtk-7d307b8ff2158ed040ecc8117d491da5.t
 
 [params]
 
-World/add_metadata=false
+World/WorldMapping="res://Ldtk/World/World.tscn"
 Tileset/add_metadata=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Mapping/Butterfly="res://Ldtk/World/Tileset/Butterfly.tres"

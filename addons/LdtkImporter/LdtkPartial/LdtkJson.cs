@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Godot;
 using Godot.Collections;
 
@@ -39,6 +40,7 @@ public partial class LdtkJson : IImporter
             var error = level.PreImport(ldtkJson, savePath, options, genFiles);
             if (error != Error.Ok) return error;
         }
+
 
         return Error.Ok;
     }
@@ -92,6 +94,38 @@ public partial class LdtkJson : IImporter
             if (error != Error.Ok) return error;
         }
 
+        return SaveLdkJson(savePath, options);
+    }
+
+    private Error SaveLdkJson(string savePath, Dictionary options)
+    {
+        Node2D node2D;
+        var worldScenePath = options.GetValueOrDefault(LdtkImporterPlugin.OptionWorldWorldMapping).AsString().Trim();
+        if (!ResourceLoader.Exists(worldScenePath))
+        {
+            GD.Print($" world scene:{worldScenePath} is not exist, create it!");
+            node2D = new Node2D
+            {
+                Name = Path.GetBaseName().GetFile(),
+            };
+        }
+        else
+        {
+            node2D = ResourceLoader.Load<PackedScene>(worldScenePath).Instantiate<Node2D>();
+        }
+        
+        foreach (var level in Levels)
+        {
+            node2D.RemoveChild(level.Root.Name);
+            node2D.AddChild(level.Root);
+            level.Root.Owner = node2D;
+        }
+
+        var packedScene = new PackedScene();
+        packedScene.Pack(node2D);
+
+        ResourceSaver.Save(packedScene, $"{savePath}.{LdtkImporterPlugin.SaveExtension}");
+        
         return Error.Ok;
     }
 }
