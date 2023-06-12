@@ -1,12 +1,12 @@
 [gd_scene load_steps=4 format=3]
 
-[ext_resource type="PackedScene" uid="uid://chhkmra7k7ijq" path="res://Ldtk/World/Level/Level_0.tscn" id="1_yhcg1"]
-[ext_resource type="PackedScene" uid="uid://kmleoqyccj6s" path="res://Ldtk/World/Level/Level_1.tscn" id="2_8a4ph"]
-[ext_resource type="PackedScene" uid="uid://bp8w52pk7sj8x" path="res://Ldtk/World/Level/Level_2.tscn" id="3_a1xhm"]
+[ext_resource type="PackedScene" uid="uid://chhkmra7k7ijq" path="res://Ldtk/World/Level/Level_0.tscn" id="1_3clyr"]
+[ext_resource type="PackedScene" uid="uid://kmleoqyccj6s" path="res://Ldtk/World/Level/Level_1.tscn" id="2_e1s7j"]
+[ext_resource type="PackedScene" uid="uid://bp8w52pk7sj8x" path="res://Ldtk/World/Level/Level_2.tscn" id="3_os81l"]
 
 [node name="World" type="Node2D"]
 
-[node name="Level_0" type="Node2D" parent="." instance=ExtResource("1_yhcg1")]
+[node name="Level_0" type="Node2D" parent="." instance=ExtResource("1_3clyr")]
 metadata/level = {
 "__bgColor": "#696A79",
 "__bgPos": null,
@@ -665,7 +665,7 @@ metadata/fieldInstances = [{
 }]
 }]
 
-[node name="Level_1" type="Node2D" parent="." instance=ExtResource("2_8a4ph")]
+[node name="Level_1" type="Node2D" parent="." instance=ExtResource("2_e1s7j")]
 position = Vector2(256, 144)
 metadata/level = {
 "__bgColor": "#696A79",
@@ -1062,7 +1062,7 @@ metadata/fieldInstances = [{
 "realEditorValues": []
 }]
 
-[node name="Level_2" type="Node2D" parent="." instance=ExtResource("3_a1xhm")]
+[node name="Level_2" type="Node2D" parent="." instance=ExtResource("3_os81l")]
 position = Vector2(448, 400)
 metadata/level = {
 "__bgColor": "#696A79",

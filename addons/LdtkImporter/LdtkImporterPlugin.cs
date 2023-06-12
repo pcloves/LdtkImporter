@@ -29,7 +29,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
     public const string OptionEntityMapping = $"{OptionEntity}/Mapping";
 
     public const string SaveExtension = "tscn";
-    
+
     public override string _GetImporterName() => "Ldtk Importer";
     public override string _GetVisibleName() => "LDTK World Scene";
     public override string[] _GetRecognizedExtensions() => new[] { "ldtk" };
@@ -190,7 +190,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
         var worldScenePath = options.GetValueOrDefault(OptionWorldWorldMapping).AsString().Trim();
         DirAccess.CopyAbsolute($"{savePath}.{SaveExtension}", worldScenePath);
-        
+
         GD.Print($"Import success");
 
         return Error.Ok;

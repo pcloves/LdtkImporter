@@ -13,7 +13,7 @@ namespace LdtkImporter;
 public partial class EntityDefinition : IImporter, IJsonOnDeserialized
 {
     [JsonIgnore] public Node Root { get; set; }
-    [JsonIgnore] public string ScenePath { get; set; }
+    [JsonIgnore] public string EntityScenePath { get; set; }
     [JsonIgnore] public string JsonString { get; set; }
 
     public Error PreImport(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
@@ -51,7 +51,7 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
             return Error.Failed;
         }
 
-        ScenePath = scenePath;
+        EntityScenePath = scenePath;
         GD.Print($"   load entity scene success:{scenePath}");
 
         return Error.Ok;
@@ -59,7 +59,7 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
 
     public Error Import(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
-        GD.Print($"  {Identifier}:{ScenePath}");
+        GD.Print($"  {Identifier}:{EntityScenePath}");
 
         var meta = Json.ParseString(JsonString);
 
@@ -70,14 +70,14 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
 
     public Error PostImport(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
-        GD.Print($"  save entity scene:{ScenePath}");
+        GD.Print($"  save entity scene:{EntityScenePath}");
 
         var packedScene = new PackedScene();
         packedScene.Pack(Root);
 
-        ResourceSaver.Save(packedScene, ScenePath);
+        ResourceSaver.Save(packedScene, EntityScenePath);
 
-        genFiles.Add(ScenePath);
+        genFiles.Add(EntityScenePath);
 
         return Error.Ok;
     }

@@ -87,14 +87,14 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         for (var i = 0; i < EntityInstances.Length; i++)
         {
             var instance = EntityInstances[i];
-            var scenePath = ldtkJson.Defs
+            var entityScenePath = ldtkJson.Defs
                 .Entities
                 .FirstOrDefault(definition => definition.Uid == instance.DefUid)!
-                .ScenePath;
+                .EntityScenePath;
 
-            var node2D = ResourceLoader.Load<PackedScene>(scenePath).Instantiate<Node2D>();
+            var node2D = ResourceLoader.Load<PackedScene>(entityScenePath).Instantiate<Node2D>();
 
-            node2D.Name = $"{instance.Identifier}-{entityCountMap.GetValueOrDefault(instance.Identifier)}";
+            node2D.Name = $"{instance.Identifier}-{entityCountMap.GetValueOrDefault(instance.Identifier).ToString()}";
             node2D.Position = new Vector2(instance.Px[0], instance.Px[1]);
             node2D.SetMeta("fields", Json.ParseString(JsonSerializer.Serialize(instance.FieldInstances)));
 
@@ -160,9 +160,9 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         var image = Image.Create(gridSize * intGridValues.Length, gridSize, false, Image.Format.Rgb8);
         for (var index = 0; index < intGridValues.Length; index++)
         {
-            var instance = intGridValues[index];
+            var definition = intGridValues[index];
             var rect = new Rect2I(index * gridSize, 0, gridSize, gridSize);
-            var color = Color.FromString(instance.Color, Colors.Magenta);
+            var color = Color.FromString(definition.Color, Colors.Magenta);
 
             image.FillRect(rect, color);
         }
