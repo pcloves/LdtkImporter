@@ -1,4 +1,5 @@
-﻿using Godot;
+﻿using System.Linq;
+using Godot;
 
 namespace LdtkImporter;
 
@@ -20,5 +21,12 @@ public static class Extensions
     {
         var (x, _) = tileSetAtlasSource.GetAtlasGridSize();
         return atlasCoords.Y * x + atlasCoords.X;
+    }
+
+    public static bool IsValidPrefix(this string prefix)
+    {
+        //https://github.com/godotengine/godot/blob/2d6b880987bc600cda586b281fcbe26791e92e09/core/string/ustring.cpp#LL3954C1-L3954C1
+        return prefix.Length == 0 ||
+               (prefix[0] < '0' || prefix[0] > '9' && prefix.All(c => char.IsLetterOrDigit(c) || c == '_'));
     }
 }

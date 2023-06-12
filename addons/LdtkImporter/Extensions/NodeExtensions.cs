@@ -7,13 +7,14 @@ namespace LdtkImporter;
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 public static class NodeExtensions
 {
-    public static void RemoveChild(this Node node, string childName)
+    public static void RemoveChildPrefix(this Node node, string childNamePrefix)
     {
-        var childNode = node.GetChild<Node>(childName);
-        if (childNode == null) return;
-
-        node.RemoveChild(childNode);
-        childNode.QueueFree();
+        var children = node.GetChildren().Where(child => child.Name.ToString().StartsWith(childNamePrefix));
+        foreach (var child in children)
+        {
+            node.RemoveChild(child);
+            child.QueueFree();
+        }
     }
 
     public static T GetChild<T>(this Node node, string childName) where T : Node

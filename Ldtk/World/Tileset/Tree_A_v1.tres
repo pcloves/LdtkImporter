@@ -48,7 +48,7 @@ tile_size = Vector2i(128, 128)
 custom_data_layer_0/name = "Tree_A_v1"
 custom_data_layer_0/type = 27
 sources/4 = SubResource("TileSetAtlasSource_7bq4v")
-metadata/tilesets = {
+metadata/LDTK_tilesets = {
 "__cHei": 9.0,
 "__cWid": 4.0,
 "cachedPixelData": {

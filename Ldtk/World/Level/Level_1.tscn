@@ -1,15 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://kmleoqyccj6s"]
+[gd_scene load_steps=5 format=3 uid="uid://7v6kebqrkp2m"]
 
-[ext_resource type="TileSet" uid="uid://bxe2sqxjmxdpa" path="res://Ldtk/World/Tileset/FLSET1_ground.tres" id="1_i0ili"]
-[ext_resource type="TileSet" uid="uid://b5egbafw8s6yn" path="res://Ldtk/World/Tileset/FLSET1_ground_dec_props.tres" id="2_7yrnu"]
-[ext_resource type="PackedScene" uid="uid://cfduxsweqvqn1" path="res://Ldtk/World/Entity/Enter.tscn" id="3_gvmqh"]
-[ext_resource type="PackedScene" uid="uid://di7o3sb0s6b8j" path="res://Ldtk/World/Entity/Tree.tscn" id="4_ftbnk"]
+[ext_resource type="TileSet" uid="uid://bxe2sqxjmxdpa" path="res://Ldtk/World/Tileset/FLSET1_ground.tres" id="1_hupu6"]
+[ext_resource type="TileSet" uid="uid://b5egbafw8s6yn" path="res://Ldtk/World/Tileset/FLSET1_ground_dec_props.tres" id="2_cfvo6"]
+[ext_resource type="PackedScene" uid="uid://w7hju3srvsei" path="res://Ldtk/World/Entity/Enter.tscn" id="3_negxl"]
+[ext_resource type="PackedScene" uid="uid://crh1c82lq165" path="res://Ldtk/World/Entity/Tree.tscn" id="4_27iyp"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fxoyg"]
-
-[node name="Level_1" type="Node2D"]
+[node name="LDTK_Level_1" type="Node2D"]
 position = Vector2(256, 144)
-metadata/level = {
+metadata/LDTK_level = {
 "__bgColor": "#696A79",
 "__bgPos": null,
 "__neighbours": [{
@@ -388,7 +386,7 @@ metadata/level = {
 "worldX": 256.0,
 "worldY": 144.0
 }
-metadata/fieldInstances = [{
+metadata/LDTK_fieldInstances = [{
 "__identifier": "Integer",
 "__tile": null,
 "__type": "Int",
@@ -404,14 +402,14 @@ metadata/fieldInstances = [{
 "realEditorValues": []
 }]
 
-[node name="LightGrass" type="TileMap" parent="."]
+[node name="LDTK_LightGrass" type="TileMap" parent="."]
 position = Vector2(0, -16)
-tile_set = ExtResource("1_i0ili")
+tile_set = ExtResource("1_hupu6")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LightGrass"
 layer_0/tile_data = PackedInt32Array(393219, 589841, 15, 393220, 589841, 15, 327682, 524305, 15, 393218, 524305, 15, 524294, 524305, 15, 65536, 589841, 16, 458755, 589841, 16, 458756, 589841, 16, 458757, 589841, 16, 0, 655377, 15, 393221, 655377, 15, 327683, 589841, 14, 327684, 589841, 14, 524295, 589841, 14, 458754, 524305, 16, 327685, 655377, 14, 131073, 524305, 18, 196609, 524305, 18, 262145, 589841, 19, 65537, 720913, 17, 262146, 720913, 17, 458758, 720913, 17)
-metadata/instance = {
+metadata/LDTK_instance = {
 "__cHei": 9.0,
 "__cWid": 8.0,
 "__gridSize": 32.0,
@@ -592,12 +590,12 @@ metadata/instance = {
 "visible": true
 }
 
-[node name="LightDirt" type="TileMap" parent="."]
-tile_set = ExtResource("1_i0ili")
+[node name="LDTK_LightDirt" type="TileMap" parent="."]
+tile_set = ExtResource("1_hupu6")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LightDirt"
-metadata/instance = {
+metadata/LDTK_instance = {
 "__cHei": 8.0,
 "__cWid": 8.0,
 "__gridSize": 32.0,
@@ -624,14 +622,14 @@ metadata/instance = {
 "visible": true
 }
 
-[node name="Grass" type="TileMap" parent="."]
+[node name="LDTK_Grass" type="TileMap" parent="."]
 position = Vector2(0, -16)
-tile_set = ExtResource("2_7yrnu")
+tile_set = ExtResource("2_cfvo6")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "Grass"
 layer_0/tile_data = PackedInt32Array(262145, 459056, 22, 262146, 262448, 22, 327682, 655664, 14, 327684, 524592, 22, 393220, 655664, 18)
-metadata/instance = {
+metadata/LDTK_instance = {
 "__cHei": 9.0,
 "__cWid": 8.0,
 "__gridSize": 32.0,
@@ -693,8 +691,8 @@ metadata/instance = {
 "visible": true
 }
 
-[node name="Entities" type="Node2D" parent="."]
-metadata/instance = {
+[node name="LDTK_Entities" type="Node2D" parent="."]
+metadata/LDTK_instance = {
 "__cHei": 16.0,
 "__cWid": 16.0,
 "__gridSize": 16.0,
@@ -766,8 +764,8 @@ metadata/instance = {
 "visible": true
 }
 
-[node name="Enter-0" type="Node2D" parent="Entities" instance=ExtResource("3_gvmqh")]
-metadata/entities = {
+[node name="LDTK_Enter-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_negxl")]
+metadata/LDTK_entities = {
 "color": "#0099DB",
 "doc": null,
 "exportToToc": false,
@@ -801,16 +799,11 @@ metadata/entities = {
 "uid": 13.0,
 "width": 16.0
 }
-metadata/fields = []
+metadata/LDTK_fields = []
 
-[node name="Area2D" type="Area2D" parent="Entities/Enter-0"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Entities/Enter-0/Area2D"]
-shape = SubResource("RectangleShape2D_fxoyg")
-
-[node name="Enter-1" type="Node2D" parent="Entities" instance=ExtResource("3_gvmqh")]
+[node name="LDTK_Enter-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_negxl")]
 position = Vector2(192, 240)
-metadata/entities = {
+metadata/LDTK_entities = {
 "color": "#0099DB",
 "doc": null,
 "exportToToc": false,
@@ -844,16 +837,11 @@ metadata/entities = {
 "uid": 13.0,
 "width": 16.0
 }
-metadata/fields = []
+metadata/LDTK_fields = []
 
-[node name="Area2D" type="Area2D" parent="Entities/Enter-1"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Entities/Enter-1/Area2D"]
-shape = SubResource("RectangleShape2D_fxoyg")
-
-[node name="Tree-0" type="Node2D" parent="Entities" instance=ExtResource("4_ftbnk")]
+[node name="LDTK_Tree-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_27iyp")]
 position = Vector2(120, 208)
-metadata/entities = {
+metadata/LDTK_entities = {
 "color": "#3E8948",
 "doc": null,
 "exportToToc": false,
@@ -893,4 +881,4 @@ metadata/entities = {
 "uid": 312.0,
 "width": 16.0
 }
-metadata/fields = []
+metadata/LDTK_fields = []

@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Godot;
 using Godot.Collections;
 
@@ -20,27 +19,50 @@ public partial class LdtkJson : IImporter
 
     public Error PreImport(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
+        var error = CheckOptionValid(options);
+        if (error != Error.Ok) return error;
+
         GD.Print(" PreImport Tileset");
         foreach (var definition in Defs.Tilesets)
         {
-            var error = definition.PreImport(ldtkJson, savePath, options, genFiles);
+            error = definition.PreImport(ldtkJson, savePath, options, genFiles);
             if (error != Error.Ok) return error;
         }
 
         GD.Print(" PreImport Entity");
         foreach (var definition in Defs.Entities)
         {
-            var error = definition.PreImport(ldtkJson, savePath, options, genFiles);
+            error = definition.PreImport(ldtkJson, savePath, options, genFiles);
             if (error != Error.Ok) return error;
         }
 
         GD.Print(" PreImport Level");
         foreach (var level in Levels)
         {
-            var error = level.PreImport(ldtkJson, savePath, options, genFiles);
+            error = level.PreImport(ldtkJson, savePath, options, genFiles);
             if (error != Error.Ok) return error;
         }
 
+
+        return Error.Ok;
+    }
+
+    private Error CheckOptionValid(Dictionary options)
+    {
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+        var prefix2Remove = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+
+        if (!prefix2Add.IsValidPrefix())
+        {
+            GD.Print($"invalid prefix:{prefix2Add}, must be empty or valid godot identifier.");
+            return Error.Failed;
+        }
+
+        if (!prefix2Remove.IsValidPrefix())
+        {
+            GD.Print($"invalid prefix:{prefix2Remove}, must be empty or valid godot identifier.");
+            return Error.Failed;
+        }
 
         return Error.Ok;
     }
@@ -94,38 +116,41 @@ public partial class LdtkJson : IImporter
             if (error != Error.Ok) return error;
         }
 
-        return SaveLdkJson(savePath, options);
+        return SaveLdkJson(savePath, options, genFiles);
     }
 
-    private Error SaveLdkJson(string savePath, Dictionary options)
+    private Error SaveLdkJson(string savePath, Dictionary options, Array<string> genFiles)
     {
-        Node2D node2D;
-        var worldScenePath = options.GetValueOrDefault(LdtkImporterPlugin.OptionWorldWorldMapping).AsString().Trim();
+        Node2D root;
+        var worldScenePath = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionWorldWorldMapping);
         if (!ResourceLoader.Exists(worldScenePath))
         {
             GD.Print($" world scene:{worldScenePath} is not exist, create it!");
-            node2D = new Node2D
+            root = new Node2D
             {
                 Name = Path.GetBaseName().GetFile(),
             };
         }
         else
         {
-            node2D = ResourceLoader.Load<PackedScene>(worldScenePath).Instantiate<Node2D>();
+            root = ResourceLoader.Load<PackedScene>(worldScenePath).Instantiate<Node2D>();
         }
-        
+
+        var prefix2Remove = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Remove);
+        root.RemoveChildPrefix(prefix2Remove);
+
         foreach (var level in Levels)
         {
-            node2D.RemoveChild(level.Root.Name);
-            node2D.AddChild(level.Root);
-            level.Root.Owner = node2D;
+            root.AddChild(level.Root);
+            level.Root.Owner = root;
         }
 
         var packedScene = new PackedScene();
-        packedScene.Pack(node2D);
+        packedScene.Pack(root);
 
-        ResourceSaver.Save(packedScene, $"{savePath}.{LdtkImporterPlugin.SaveExtension}");
-        
+        var path = $"{savePath}.{LdtkImporterPlugin.SaveExtension}";
+        ResourceSaver.Save(packedScene, path);
+
         return Error.Ok;
     }
 }

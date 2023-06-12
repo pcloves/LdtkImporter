@@ -33,10 +33,12 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
             return Error.Failed;
         }
 
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+
         Root = func.Invoke();
-        Root.Name = Identifier;
+        Root.Name = $"{prefix2Add}{Identifier}";
         Root.Position = new Vector2(PxTotalOffsetX, PxTotalOffsetY);
-        Root.SetMeta("instance", Json.ParseString(JsonString));
+        Root.SetMeta($"{prefix2Add}instance", Json.ParseString(JsonString));
 
         var tileMap = Root as TileMap;
 
@@ -61,7 +63,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
                 error = ImportTile(ldtkJson, options);
                 break;
             case nameof(TypeEnum.Entities):
-                error = ImportEntity(ldtkJson);
+                error = ImportEntity(ldtkJson, options);
                 break;
             default:
                 error = Error.Bug;
@@ -81,8 +83,10 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         JsonString = JsonSerializer.Serialize(this);
     }
 
-    private Error ImportEntity(LdtkJson ldtkJson)
+    private Error ImportEntity(LdtkJson ldtkJson, Dictionary options)
     {
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+
         var entityCountMap = new System.Collections.Generic.Dictionary<string, int>();
         for (var i = 0; i < EntityInstances.Length; i++)
         {
@@ -94,9 +98,9 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
             var node2D = ResourceLoader.Load<PackedScene>(entityScenePath).Instantiate<Node2D>();
 
-            node2D.Name = $"{instance.Identifier}-{entityCountMap.GetValueOrDefault(instance.Identifier).ToString()}";
             node2D.Position = new Vector2(instance.Px[0], instance.Px[1]);
-            node2D.SetMeta("fields", Json.ParseString(JsonSerializer.Serialize(instance.FieldInstances)));
+            node2D.Name = $"{node2D.Name}-{entityCountMap.GetValueOrDefault(instance.Identifier).ToString()}";
+            node2D.SetMeta($"{prefix2Add}fields", Json.ParseString(JsonSerializer.Serialize(instance.FieldInstances)));
 
             Root.AddChild(node2D);
 
@@ -135,15 +139,16 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
     private Error ImportIntGrid(LdtkJson ldtkJson, Dictionary options)
     {
-        if (!options.GetValueOrDefault(LdtkImporterPlugin.OptionLevelImportIntGrid).AsBool())
+        if (!options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionLevelImportIntGrid))
         {
             GD.Print(
                 $"   {LdtkImporterPlugin.OptionLevelImportIntGrid} is false, skip import IntGrid as child TileMap.");
             return Error.Ok;
         }
 
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
         var tileMap = new TileMap();
-        tileMap.Name = Type;
+        tileMap.Name = $"{prefix2Add}{Type}";
 
         Root.AddChild(tileMap);
 

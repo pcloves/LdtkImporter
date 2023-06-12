@@ -1,9 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://co4sch74bmxvy"]
+[gd_scene format=3 uid="uid://c5u2k6w0munt5"]
 
-[ext_resource type="Texture2D" uid="uid://dgoh6shsp6ttd" path="res://Ldtk/World/fantasylandsset1/_PNG/Anim/Nature/butterfly.png" id="1_kmrnq"]
-
-[node name="Butterfly" type="Node2D"]
-metadata/entities = {
+[node name="LDTK_Butterfly" type="Node2D"]
+metadata/LDTK_entities = {
 "color": "#D77643",
 "doc": null,
 "exportToToc": false,
@@ -76,9 +74,3 @@ metadata/entities = {
 "uid": 308.0,
 "width": 16.0
 }
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_kmrnq")
-hframes = 8
-vframes = 8
-region_rect = Rect2(0, 0, 128, 128)

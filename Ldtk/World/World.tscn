@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3]
 
-[ext_resource type="PackedScene" uid="uid://chhkmra7k7ijq" path="res://Ldtk/World/Level/Level_0.tscn" id="1_3clyr"]
-[ext_resource type="PackedScene" uid="uid://kmleoqyccj6s" path="res://Ldtk/World/Level/Level_1.tscn" id="2_e1s7j"]
-[ext_resource type="PackedScene" uid="uid://bp8w52pk7sj8x" path="res://Ldtk/World/Level/Level_2.tscn" id="3_os81l"]
+[ext_resource type="PackedScene" uid="uid://bud4712xywbup" path="res://Ldtk/World/Level/Level_0.tscn" id="1_4otvp"]
+[ext_resource type="PackedScene" uid="uid://7v6kebqrkp2m" path="res://Ldtk/World/Level/Level_1.tscn" id="2_ipd25"]
+[ext_resource type="PackedScene" uid="uid://dyra23lchvrps" path="res://Ldtk/World/Level/Level_2.tscn" id="3_0f087"]
 
 [node name="World" type="Node2D"]
 
-[node name="Level_0" type="Node2D" parent="." instance=ExtResource("1_3clyr")]
-metadata/level = {
+[node name="LDTK_Level_0" type="Node2D" parent="." instance=ExtResource("1_4otvp")]
+metadata/LDTK_level = {
 "__bgColor": "#696A79",
 "__bgPos": null,
 "__neighbours": [{
@@ -643,7 +643,7 @@ metadata/level = {
 "worldX": 0.0,
 "worldY": 0.0
 }
-metadata/fieldInstances = [{
+metadata/LDTK_fieldInstances = [{
 "__identifier": "Integer",
 "__tile": null,
 "__type": "Int",
@@ -665,9 +665,9 @@ metadata/fieldInstances = [{
 }]
 }]
 
-[node name="Level_1" type="Node2D" parent="." instance=ExtResource("2_e1s7j")]
+[node name="LDTK_Level_1" type="Node2D" parent="." instance=ExtResource("2_ipd25")]
 position = Vector2(256, 144)
-metadata/level = {
+metadata/LDTK_level = {
 "__bgColor": "#696A79",
 "__bgPos": null,
 "__neighbours": [{
@@ -1046,7 +1046,7 @@ metadata/level = {
 "worldX": 256.0,
 "worldY": 144.0
 }
-metadata/fieldInstances = [{
+metadata/LDTK_fieldInstances = [{
 "__identifier": "Integer",
 "__tile": null,
 "__type": "Int",
@@ -1062,9 +1062,9 @@ metadata/fieldInstances = [{
 "realEditorValues": []
 }]
 
-[node name="Level_2" type="Node2D" parent="." instance=ExtResource("3_os81l")]
+[node name="LDTK_Level_2" type="Node2D" parent="." instance=ExtResource("3_0f087")]
 position = Vector2(448, 400)
-metadata/level = {
+metadata/LDTK_level = {
 "__bgColor": "#696A79",
 "__bgPos": null,
 "__neighbours": [{
@@ -1231,7 +1231,7 @@ metadata/level = {
 "worldX": 448.0,
 "worldY": 400.0
 }
-metadata/fieldInstances = [{
+metadata/LDTK_fieldInstances = [{
 "__identifier": "Integer",
 "__tile": null,
 "__type": "Int",

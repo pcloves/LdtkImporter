@@ -1,9 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cfduxsweqvqn1"]
+[gd_scene format=3 uid="uid://w7hju3srvsei"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fxoyg"]
-
-[node name="Enter" type="Node2D"]
-metadata/entities = {
+[node name="LDTK_Enter" type="Node2D"]
+metadata/LDTK_entities = {
 "color": "#0099DB",
 "doc": null,
 "exportToToc": false,
@@ -37,8 +35,3 @@ metadata/entities = {
 "uid": 13.0,
 "width": 16.0
 }
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("RectangleShape2D_fxoyg")

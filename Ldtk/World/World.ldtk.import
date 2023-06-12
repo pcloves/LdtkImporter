@@ -7,13 +7,15 @@ path="res://.godot/imported/World.ldtk-7d307b8ff2158ed040ecc8117d491da5.tscn"
 
 [deps]
 
-files=["res://Ldtk/World/Tileset/FLSET1_water_env.tres", "res://Ldtk/World/Tileset/Tree_A_v1.tres", "res://Ldtk/World/Tileset/FLSET1_hills.tres", "res://Ldtk/World/Tileset/FLSET1_ground.tres", "res://Ldtk/World/Tileset/FLSET1_ground_dec_props.tres", "res://Ldtk/World/Tileset/Butterfly.tres", "res://Ldtk/World/Tileset/Tree_B_v2.tres", "res://Ldtk/World/Entity/Enter.tscn", "res://Ldtk/World/Entity/Exit.tscn", "res://Ldtk/World/Entity/Butterfly.tscn", "res://Ldtk/World/Entity/Tree.tscn", "res://Ldtk/World/Level/Level_0.tscn", "res://Ldtk/World/Level/Level_1.tscn", "res://Ldtk/World/Level/Level_2.tscn"]
+files=["res://Ldtk/World/Tileset/FLSET1_water_env.tres", "res://Ldtk/World/Tileset/Tree_A_v1.tres", "res://Ldtk/World/Tileset/FLSET1_hills.tres", "res://Ldtk/World/Tileset/FLSET1_ground.tres", "res://Ldtk/World/Tileset/FLSET1_ground_dec_props.tres", "res://Ldtk/World/Tileset/Butterfly.tres", "res://Ldtk/World/Tileset/Tree_B_v2.tres", "res://Ldtk/World/Entity/Enter.tscn", "res://Ldtk/World/Entity/Exit.tscn", "res://Ldtk/World/Entity/Butterfly.tscn", "res://Ldtk/World/Entity/Tree.tscn", "res://Ldtk/World/Level/Level_0.tscn", "res://Ldtk/World/Level/Level_1.tscn", "res://Ldtk/World/Level/Level_2.tscn", "res://.godot/imported/World.ldtk-7d307b8ff2158ed040ecc8117d491da5.tscn", "res://Ldtk/World/World.tscn"]
 
 source_file="res://Ldtk/World/World.ldtk"
-dest_files=["res://.godot/imported/World.ldtk-7d307b8ff2158ed040ecc8117d491da5.tscn", "res://Ldtk/World/Tileset/FLSET1_water_env.tres", "res://Ldtk/World/Tileset/Tree_A_v1.tres", "res://Ldtk/World/Tileset/FLSET1_hills.tres", "res://Ldtk/World/Tileset/FLSET1_ground.tres", "res://Ldtk/World/Tileset/FLSET1_ground_dec_props.tres", "res://Ldtk/World/Tileset/Butterfly.tres", "res://Ldtk/World/Tileset/Tree_B_v2.tres", "res://Ldtk/World/Entity/Enter.tscn", "res://Ldtk/World/Entity/Exit.tscn", "res://Ldtk/World/Entity/Butterfly.tscn", "res://Ldtk/World/Entity/Tree.tscn", "res://Ldtk/World/Level/Level_0.tscn", "res://Ldtk/World/Level/Level_1.tscn", "res://Ldtk/World/Level/Level_2.tscn"]
+dest_files=["res://.godot/imported/World.ldtk-7d307b8ff2158ed040ecc8117d491da5.tscn", "res://Ldtk/World/Tileset/FLSET1_water_env.tres", "res://Ldtk/World/Tileset/Tree_A_v1.tres", "res://Ldtk/World/Tileset/FLSET1_hills.tres", "res://Ldtk/World/Tileset/FLSET1_ground.tres", "res://Ldtk/World/Tileset/FLSET1_ground_dec_props.tres", "res://Ldtk/World/Tileset/Butterfly.tres", "res://Ldtk/World/Tileset/Tree_B_v2.tres", "res://Ldtk/World/Entity/Enter.tscn", "res://Ldtk/World/Entity/Exit.tscn", "res://Ldtk/World/Entity/Butterfly.tscn", "res://Ldtk/World/Entity/Tree.tscn", "res://Ldtk/World/Level/Level_0.tscn", "res://Ldtk/World/Level/Level_1.tscn", "res://Ldtk/World/Level/Level_2.tscn", "res://.godot/imported/World.ldtk-7d307b8ff2158ed040ecc8117d491da5.tscn", "res://Ldtk/World/World.tscn"]
 
 [params]
 
+General/prefix_remove="LDTK_"
+General/prefix_add="LDTK_"
 World/WorldMapping="res://Ldtk/World/World.tscn"
 Tileset/add_metadata=true
 Tileset/import_LDTK_tile_custom_data=true

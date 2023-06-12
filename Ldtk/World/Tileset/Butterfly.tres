@@ -74,7 +74,7 @@ resource_name = "butterfly"
 custom_data_layer_0/name = "Butterfly"
 custom_data_layer_0/type = 27
 sources/309 = SubResource("TileSetAtlasSource_5ctqw")
-metadata/tilesets = {
+metadata/LDTK_tilesets = {
 "__cHei": 8.0,
 "__cWid": 8.0,
 "cachedPixelData": {

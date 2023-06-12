@@ -13,6 +13,10 @@ namespace LdtkImporter;
 [SuppressMessage("Performance", "CA1822:将成员标记为 static")]
 public partial class LdtkImporterPlugin : EditorImportPlugin
 {
+    public const string OptionGeneral = "General";
+    public const string OptionGeneralPrefix2Remove = $"{OptionGeneral}/prefix_remove";
+    public const string OptionGeneralPrefix2Add = $"{OptionGeneral}/prefix_add";
+
     public const string OptionWorld = "World";
     public const string OptionWorldWorldMapping = $"{OptionWorld}/WorldMapping";
 
@@ -49,12 +53,32 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
         var options = new Array<Dictionary>();
 
+        options.AddRange(GeneralOptions(path, presetIndex));
         options.AddRange(WorldOptions(path, presetIndex));
         options.AddRange(TilesetOptions(path, presetIndex));
         options.AddRange(EntityOptions(path, presetIndex));
         options.AddRange(LevelOptions(path, presetIndex));
 
         return options;
+    }
+
+    private IEnumerable<Dictionary> GeneralOptions(string path, int presetIndex)
+    {
+        return new Array<Dictionary>
+        {
+            new()
+            {
+                { "name", OptionGeneralPrefix2Remove },
+                { "default_value", "LDTK_" },
+                { "hint_string", "when importing, all scene node and meta key with this prefix will be remove." }
+            },
+            new()
+            {
+                { "name", OptionGeneralPrefix2Add },
+                { "default_value", "LDTK_" },
+                { "hint_string", "the importing scene node name and meta name will be prefixed." }
+            },
+        };
     }
 
     private IEnumerable<Dictionary> WorldOptions(string path, int presetIndex)
@@ -188,9 +212,11 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
         error = _ldtkJson.PostImport(_ldtkJson, savePath, options, genFiles);
         if (error != Error.Ok) return error;
 
-        var worldScenePath = options.GetValueOrDefault(OptionWorldWorldMapping).AsString().Trim();
+        var worldScenePath = options.GetValueOrDefault<string>(OptionWorldWorldMapping);
         DirAccess.CopyAbsolute($"{savePath}.{SaveExtension}", worldScenePath);
 
+        genFiles.Add(worldScenePath);
+        
         GD.Print($"Import success");
 
         return Error.Ok;

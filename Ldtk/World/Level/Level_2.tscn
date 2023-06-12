@@ -1,13 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://bp8w52pk7sj8x"]
+[gd_scene load_steps=4 format=3 uid="uid://dyra23lchvrps"]
 
-[ext_resource type="TileSet" uid="uid://bxe2sqxjmxdpa" path="res://Ldtk/World/Tileset/FLSET1_ground.tres" id="1_sk254"]
-[ext_resource type="TileSet" uid="uid://b5egbafw8s6yn" path="res://Ldtk/World/Tileset/FLSET1_ground_dec_props.tres" id="2_dudlw"]
-[ext_resource type="PackedScene" uid="uid://co4sch74bmxvy" path="res://Ldtk/World/Entity/Butterfly.tscn" id="3_tfeqr"]
-[ext_resource type="Texture2D" uid="uid://dgoh6shsp6ttd" path="res://Ldtk/World/fantasylandsset1/_PNG/Anim/Nature/butterfly.png" id="4_s5n3s"]
+[ext_resource type="TileSet" uid="uid://bxe2sqxjmxdpa" path="res://Ldtk/World/Tileset/FLSET1_ground.tres" id="1_8aqsi"]
+[ext_resource type="TileSet" uid="uid://b5egbafw8s6yn" path="res://Ldtk/World/Tileset/FLSET1_ground_dec_props.tres" id="2_aae5l"]
+[ext_resource type="PackedScene" uid="uid://c5u2k6w0munt5" path="res://Ldtk/World/Entity/Butterfly.tscn" id="3_4pjmm"]
 
-[node name="Level_2" type="Node2D"]
+[node name="LDTK_Level_2" type="Node2D"]
 position = Vector2(448, 400)
-metadata/level = {
+metadata/LDTK_level = {
 "__bgColor": "#696A79",
 "__bgPos": null,
 "__neighbours": [{
@@ -174,7 +173,7 @@ metadata/level = {
 "worldX": 448.0,
 "worldY": 400.0
 }
-metadata/fieldInstances = [{
+metadata/LDTK_fieldInstances = [{
 "__identifier": "Integer",
 "__tile": null,
 "__type": "Int",
@@ -190,12 +189,12 @@ metadata/fieldInstances = [{
 "realEditorValues": []
 }]
 
-[node name="LightGrass" type="TileMap" parent="."]
-tile_set = ExtResource("1_sk254")
+[node name="LDTK_LightGrass" type="TileMap" parent="."]
+tile_set = ExtResource("1_8aqsi")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LightGrass"
-metadata/instance = {
+metadata/LDTK_instance = {
 "__cHei": 8.0,
 "__cWid": 8.0,
 "__gridSize": 32.0,
@@ -222,12 +221,12 @@ metadata/instance = {
 "visible": true
 }
 
-[node name="LightDirt" type="TileMap" parent="."]
-tile_set = ExtResource("1_sk254")
+[node name="LDTK_LightDirt" type="TileMap" parent="."]
+tile_set = ExtResource("1_8aqsi")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LightDirt"
-metadata/instance = {
+metadata/LDTK_instance = {
 "__cHei": 8.0,
 "__cWid": 8.0,
 "__gridSize": 32.0,
@@ -254,12 +253,12 @@ metadata/instance = {
 "visible": true
 }
 
-[node name="Grass" type="TileMap" parent="."]
-tile_set = ExtResource("2_dudlw")
+[node name="LDTK_Grass" type="TileMap" parent="."]
+tile_set = ExtResource("2_aae5l")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "Grass"
-metadata/instance = {
+metadata/LDTK_instance = {
 "__cHei": 8.0,
 "__cWid": 8.0,
 "__gridSize": 32.0,
@@ -286,8 +285,8 @@ metadata/instance = {
 "visible": true
 }
 
-[node name="Entities" type="Node2D" parent="."]
-metadata/instance = {
+[node name="LDTK_Entities" type="Node2D" parent="."]
+metadata/LDTK_instance = {
 "__cHei": 16.0,
 "__cWid": 16.0,
 "__gridSize": 16.0,
@@ -340,9 +339,9 @@ metadata/instance = {
 "visible": true
 }
 
-[node name="Butterfly-0" type="Node2D" parent="Entities" instance=ExtResource("3_tfeqr")]
+[node name="LDTK_Butterfly-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_4pjmm")]
 position = Vector2(232, 152)
-metadata/entities = {
+metadata/LDTK_entities = {
 "color": "#D77643",
 "doc": null,
 "exportToToc": false,
@@ -415,7 +414,7 @@ metadata/entities = {
 "uid": 308.0,
 "width": 16.0
 }
-metadata/fields = [{
+metadata/LDTK_fields = [{
 "__identifier": "Path",
 "__tile": null,
 "__type": "Array<Point>",
@@ -423,9 +422,3 @@ metadata/fields = [{
 "defUid": 310.0,
 "realEditorValues": []
 }]
-
-[node name="Sprite2D" type="Sprite2D" parent="Entities/Butterfly-0"]
-texture = ExtResource("4_s5n3s")
-hframes = 8
-vframes = 8
-region_rect = Rect2(0, 0, 128, 128)

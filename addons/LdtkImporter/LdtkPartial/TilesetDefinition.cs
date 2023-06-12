@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Godot;
@@ -25,7 +24,8 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         }
 
         var key = $"{LdtkImporterPlugin.OptionTilesetMapping}/{Identifier}";
-        var tileSetPath = options.GetValueOrDefault(key).AsString().Trim();
+        var tileSetPath = options.GetValueOrDefault<string>(key);
+        var prefix2Remove = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Remove);
 
         if (string.IsNullOrWhiteSpace(tileSetPath))
         {
@@ -47,6 +47,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         }
 
         TileSet = tileSetGodot;
+        TileSet.RemoveMetaPrefix(prefix2Remove);
 
         GD.Print($"   load godot tileset success:{tileSetPath}");
 
@@ -69,12 +70,14 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
             TileSet.AddCustomDataLayer();
         }
 
-        if (options.GetValueOrDefault(LdtkImporterPlugin.OptionTilesetImportTileCustomData).AsBool())
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+
+        if (options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionTilesetImportTileCustomData))
         {
             var meta = Json.ParseString(JsonString);
             TileSet.SetCustomDataLayerName(0, Identifier);
             TileSet.SetCustomDataLayerType(0, Variant.Type.Dictionary);
-            TileSet.SetMeta("tilesets", meta);
+            TileSet.SetMeta($"{prefix2Add}tilesets", meta);
         }
 
         var sourceId = TileSet.GetSourceId(0);
@@ -85,7 +88,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
 
         var source = (TileSetAtlasSource)TileSet.GetSource(sourceIdNew);
         const string key = LdtkImporterPlugin.OptionTilesetImportTileCustomData;
-        var importTileCustomData = options.GetValueOrDefault(key).AsBool();
+        var importTileCustomData = options.GetValueOrDefault<bool>(key);
         if (importTileCustomData)
         {
             foreach (var customMetadata in CustomData)

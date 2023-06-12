@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://di7o3sb0s6b8j"]
+[gd_scene format=3 uid="uid://crh1c82lq165"]
 
-[node name="Tree" type="Node2D"]
-metadata/entities = {
+[node name="LDTK_Tree" type="Node2D"]
+metadata/LDTK_entities = {
 "color": "#3E8948",
 "doc": null,
 "exportToToc": false,

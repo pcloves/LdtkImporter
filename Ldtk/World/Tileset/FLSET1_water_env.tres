@@ -885,7 +885,7 @@ physics_layer_0/collision_layer = 1
 custom_data_layer_0/name = "FLSET1_water_env"
 custom_data_layer_0/type = 27
 sources/1 = SubResource("TileSetAtlasSource_1lb2x")
-metadata/tilesets = {
+metadata/LDTK_tilesets = {
 "__cHei": 14.0,
 "__cWid": 17.0,
 "cachedPixelData": {

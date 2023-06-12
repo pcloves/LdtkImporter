@@ -3970,7 +3970,7 @@ resource_name = "Tree_B_v2"
 custom_data_layer_0/name = "Tree_B_v2"
 custom_data_layer_0/type = 27
 sources/313 = SubResource("TileSetAtlasSource_svw87")
-metadata/tilesets = {
+metadata/LDTK_tilesets = {
 "__cHei": 66.0,
 "__cWid": 60.0,
 "cachedPixelData": {

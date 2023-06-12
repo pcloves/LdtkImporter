@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -22,7 +21,7 @@ public partial class Level : IImporter, IJsonOnDeserialized
         GD.Print($"  {Identifier}");
 
         var key = $"{LdtkImporterPlugin.OptionLevelMapping}/{Identifier}";
-        var scenePath = options.GetValueOrDefault(key).AsString().Trim();
+        var scenePath = options.GetValueOrDefault<string>(key);
 
         if (string.IsNullOrWhiteSpace(scenePath))
         {
@@ -30,12 +29,14 @@ public partial class Level : IImporter, IJsonOnDeserialized
             return Error.FileNotFound;
         }
 
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+
         if (!ResourceLoader.Exists(scenePath))
         {
-            GD.Print($"   entity scene:{scenePath} is not exist, create it!");
+            GD.Print($"   level scene:{scenePath} is not exist, create it!");
             Root = new Node2D()
             {
-                Name = Identifier,
+                Name = $"{prefix2Add}{Identifier}",
             };
         }
         else
@@ -52,6 +53,9 @@ public partial class Level : IImporter, IJsonOnDeserialized
         ScenePath = scenePath;
         GD.Print($"   load level scene success:{scenePath}");
 
+        var prefix2Remove = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Remove);
+        Root.RemoveMetaPrefix(prefix2Remove);
+        Root.RemoveChildPrefix(prefix2Remove);
 
         GD.Print("   PreImport Layer");
         foreach (var layerInstance in LayerInstances)
@@ -70,11 +74,12 @@ public partial class Level : IImporter, IJsonOnDeserialized
         var level = Json.ParseString(JsonString);
         var fieldInstance = Json.ParseString(JsonSerializer.Serialize(FieldInstances));
 
-        Root.SetMeta("level", level);
-        Root.SetMeta("fieldInstances", fieldInstance);
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+
+        Root.SetMeta($"{prefix2Add}level", level);
+        Root.SetMeta($"{prefix2Add}fieldInstances", fieldInstance);
 
         Root.Position = new Vector2(WorldX, WorldY);
-        // GD.Print($"   set meta:ldtk -> {meta}");
 
         foreach (var layerInstance in LayerInstances)
         {
@@ -88,11 +93,10 @@ public partial class Level : IImporter, IJsonOnDeserialized
 
     public Error PostImport(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
-        GD.Print($"  save entity scene:{ScenePath}");
+        GD.Print($"  save level scene:{ScenePath}");
 
         foreach (var layerInstance in LayerInstances.Reverse())
         {
-            Root.RemoveChild(layerInstance.Root.Name);
             Root.AddChild(layerInstance.Root);
             layerInstance.Root.SetOwnerRecursively(Root);
         }

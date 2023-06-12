@@ -412,7 +412,7 @@ tile_size = Vector2i(32, 32)
 custom_data_layer_0/name = "FLSET1_hills"
 custom_data_layer_0/type = 27
 sources/16 = SubResource("TileSetAtlasSource_4tqmf")
-metadata/tilesets = {
+metadata/LDTK_tilesets = {
 "__cHei": 16.0,
 "__cWid": 25.0,
 "cachedPixelData": {

@@ -372,7 +372,7 @@ tile_size = Vector2i(32, 32)
 custom_data_layer_0/name = "FLSET1_ground_dec_props"
 custom_data_layer_0/type = 27
 sources/304 = SubResource("TileSetAtlasSource_hshjp")
-metadata/tilesets = {
+metadata/LDTK_tilesets = {
 "__cHei": 30.0,
 "__cWid": 12.0,
 "cachedPixelData": {

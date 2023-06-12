@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Godot;
@@ -21,7 +20,9 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
         GD.Print($"  {Identifier}");
 
         var key = $"{LdtkImporterPlugin.OptionEntityMapping}/{Identifier}";
-        var scenePath = options.GetValueOrDefault(key).AsString().Trim();
+        var scenePath = options.GetValueOrDefault<string>(key);
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+        var prefix2Remove = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Remove);
 
         if (string.IsNullOrWhiteSpace(scenePath))
         {
@@ -34,7 +35,7 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
             GD.Print($"   entity scene:{scenePath} is not exist, create it!");
             Root = new Node2D()
             {
-                Name = Identifier,
+                Name = $"{prefix2Add}{Identifier}",
             };
 
             var packedScene = new PackedScene();
@@ -51,6 +52,9 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
             return Error.Failed;
         }
 
+        Root.RemoveChildPrefix(prefix2Remove);
+        Root.RemoveMetaPrefix(prefix2Remove);
+
         EntityScenePath = scenePath;
         GD.Print($"   load entity scene success:{scenePath}");
 
@@ -61,9 +65,11 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
     {
         GD.Print($"  {Identifier}:{EntityScenePath}");
 
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+
         var meta = Json.ParseString(JsonString);
 
-        Root.SetMeta("entities", meta);
+        Root.SetMeta($"{prefix2Add}entities", meta);
 
         return Error.Ok;
     }
