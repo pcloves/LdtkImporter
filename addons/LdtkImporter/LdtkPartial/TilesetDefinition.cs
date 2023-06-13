@@ -26,6 +26,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         var key = $"{LdtkImporterPlugin.OptionTilesetMapping}/{Identifier}";
         var tileSetPath = options.GetValueOrDefault<string>(key);
         var prefix2Remove = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Remove);
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
 
         if (string.IsNullOrWhiteSpace(tileSetPath))
         {
@@ -33,10 +34,18 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
             return Error.FileNotFound;
         }
 
+        var createTileSet = options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionTilesetCreate);
         if (!ResourceLoader.Exists(tileSetPath))
         {
-            GD.Print($"  tileset:{tileSetPath} is not exist.");
-            return Error.FileNotFound;
+            if (!createTileSet)
+            {
+                GD.Print($"  tileset:{tileSetPath} is not exist.");
+                return Error.FileNotFound;
+            }
+
+            TileSet = new TileSet();
+            TileSet.TileSize = new Vector2I((int)TileGridSize, (int)TileGridSize);
+            //TODO:增加图集
         }
 
         var tileSetGodot = ResourceLoader.Load<TileSet>(tileSetPath);
@@ -47,6 +56,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         }
 
         TileSet = tileSetGodot;
+        TileSet.AddCustomDataLayerIfNotExist($"{prefix2Add}{Identifier}", Variant.Type.Dictionary);
         TileSet.RemoveMetaPrefix(prefix2Remove);
 
         GD.Print($"   load godot tileset success:{tileSetPath}");
@@ -64,25 +74,21 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
             return Error.Failed;
         }
 
-        if (TileSet.GetCustomDataLayersCount() == 0)
-        {
-            GD.Print($"   none custom data layer exist, add one.");
-            TileSet.AddCustomDataLayer();
-        }
-
         var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+        var customLayerName = $"{prefix2Add}{Identifier}";
+        var customDataLayerIndex = TileSet.GetCustomDataLayerByName(customLayerName);
 
         if (options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionTilesetImportTileCustomData))
         {
             var meta = Json.ParseString(JsonString);
-            TileSet.SetCustomDataLayerName(0, Identifier);
-            TileSet.SetCustomDataLayerType(0, Variant.Type.Dictionary);
             TileSet.SetMeta($"{prefix2Add}tilesets", meta);
         }
 
+        //TODO:这里用0有些武断了
         var sourceId = TileSet.GetSourceId(0);
         var sourceIdNew = (int)Uid;
 
+        //TODO:而且这里强行更改sourceId也有些武断了
         TileSet.SetSourceId(sourceId, sourceIdNew);
         GD.Print($"   update the first source id:{sourceId} -> {Uid}");
 
@@ -96,7 +102,8 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
                 var atlasCoords = customMetadata.TileId.AtlasCoords(source);
                 var tileData = source.GetTileData(atlasCoords, 0);
                 var data = Json.ParseString(customMetadata.Data);
-                tileData.SetCustomDataByLayerId(0, data);
+
+                tileData.SetCustomDataByLayerId(customDataLayerIndex, data);
 
                 GD.Print($"   tileId:{customMetadata.TileId}/{atlasCoords}, data:{data}");
             }

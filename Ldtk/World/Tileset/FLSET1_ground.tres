@@ -1065,7 +1065,7 @@ texture_region_size = Vector2i(32, 32)
 [resource]
 resource_name = "FLSET1_ground"
 tile_size = Vector2i(32, 32)
-custom_data_layer_0/name = "FLSET1_ground"
+custom_data_layer_0/name = "LDTK_FLSET1_ground"
 custom_data_layer_0/type = 27
 sources/17 = SubResource("TileSetAtlasSource_eqbbt")
 metadata/LDTK_tilesets = {

@@ -369,7 +369,7 @@ texture_region_size = Vector2i(32, 32)
 [resource]
 resource_name = "FLSET1_ground_dec_props"
 tile_size = Vector2i(32, 32)
-custom_data_layer_0/name = "FLSET1_ground_dec_props"
+custom_data_layer_0/name = "LDTK_FLSET1_ground_dec_props"
 custom_data_layer_0/type = 27
 sources/304 = SubResource("TileSetAtlasSource_hshjp")
 metadata/LDTK_tilesets = {

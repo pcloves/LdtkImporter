@@ -22,6 +22,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
     public const string OptionTileset = "Tileset";
     public const string OptionTilesetAddMeta = $"{OptionTileset}/add_metadata";
+    public const string OptionTilesetCreate = $"{OptionTileset}/create_if_not_exists";
     public const string OptionTilesetMapping = $"{OptionTileset}/Mapping";
     public const string OptionTilesetImportTileCustomData = $"{OptionTileset}/import_LDTK_tile_custom_data";
 
@@ -101,6 +102,12 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
         var tilesetBaseDir = path.GetBaseDir().PathJoin("Tileset");
         var options = new Array<Dictionary>
         {
+            new()
+            {
+                { "name", OptionTilesetCreate },
+                { "default_value", true },
+                { "hint_string", "If true, will create tileset automatically if not exist." }
+            },
             new()
             {
                 { "name", OptionTilesetAddMeta },

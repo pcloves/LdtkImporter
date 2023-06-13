@@ -3967,7 +3967,7 @@ texture = ExtResource("1_fpvfw")
 
 [resource]
 resource_name = "Tree_B_v2"
-custom_data_layer_0/name = "Tree_B_v2"
+custom_data_layer_0/name = "LDTK_Tree_B_v2"
 custom_data_layer_0/type = 27
 sources/313 = SubResource("TileSetAtlasSource_svw87")
 metadata/LDTK_tilesets = {

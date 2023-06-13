@@ -158,9 +158,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
         var tileSet = new TileSet();
         tileSet.TileSize = new Vector2I(gridSize, gridSize);
-        tileSet.AddCustomDataLayer();
-        tileSet.SetCustomDataLayerName(0, layerDefinition.Identifier);
-        tileSet.SetCustomDataLayerType(0, Variant.Type.Dictionary);
+        tileSet.AddCustomDataLayerIfNotExist($"{prefix2Add}{layerDefinition.Identifier}", Variant.Type.Dictionary);
 
         var image = Image.Create(gridSize * intGridValues.Length, gridSize, false, Image.Format.Rgb8);
         for (var index = 0; index < intGridValues.Length; index++)

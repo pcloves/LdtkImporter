@@ -45,7 +45,7 @@ texture_region_size = Vector2i(128, 128)
 [resource]
 resource_name = "Tree_A_v1"
 tile_size = Vector2i(128, 128)
-custom_data_layer_0/name = "Tree_A_v1"
+custom_data_layer_0/name = "LDTK_Tree_A_v1"
 custom_data_layer_0/type = 27
 sources/4 = SubResource("TileSetAtlasSource_7bq4v")
 metadata/LDTK_tilesets = {
