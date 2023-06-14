@@ -104,6 +104,7 @@ public partial class Level : IImporter, IJsonOnDeserialized
         var packedScene = new PackedScene();
         packedScene.Pack(Root);
 
+        DirAccess.MakeDirRecursiveAbsolute(ScenePath.GetBaseDir());
         ResourceSaver.Save(packedScene, ScenePath);
 
         genFiles.Add(ScenePath);

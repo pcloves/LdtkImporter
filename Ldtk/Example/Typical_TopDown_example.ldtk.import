@@ -7,26 +7,29 @@ path="res://.godot/imported/Typical_TopDown_example.ldtk-7288364487e4cd902cc144e
 
 [deps]
 
+files=["res://Ldtk/Example/Tileset/TopDown_by_deepnight.tres", "res://Ldtk/Example/Entity/Player.tscn", "res://Ldtk/Example/Entity/Item.tscn", "res://Ldtk/Example/Entity/Door.tscn", "res://Ldtk/Example/Entity/Button.tscn", "res://Ldtk/Example/Entity/SecretWall.tscn", "res://Ldtk/Example/Level/World_Level_0.tscn", "res://Ldtk/Example/Level/World_Level_1.tscn", "res://Ldtk/Example/Level/World_Level_2.tscn", "res://Ldtk/Example/Typical_TopDown_example.tscn"]
+
 source_file="res://Ldtk/Example/Typical_TopDown_example.ldtk"
-dest_files=["res://.godot/imported/Typical_TopDown_example.ldtk-7288364487e4cd902cc144ebe15dbc2e.tscn"]
+dest_files=["res://.godot/imported/Typical_TopDown_example.ldtk-7288364487e4cd902cc144ebe15dbc2e.tscn", "res://Ldtk/Example/Tileset/TopDown_by_deepnight.tres", "res://Ldtk/Example/Entity/Player.tscn", "res://Ldtk/Example/Entity/Item.tscn", "res://Ldtk/Example/Entity/Door.tscn", "res://Ldtk/Example/Entity/Button.tscn", "res://Ldtk/Example/Entity/SecretWall.tscn", "res://Ldtk/Example/Level/World_Level_0.tscn", "res://Ldtk/Example/Level/World_Level_1.tscn", "res://Ldtk/Example/Level/World_Level_2.tscn", "res://Ldtk/Example/Typical_TopDown_example.tscn"]
 
 [params]
 
-World=true
-world_add_metadata=false
-world_post_import_script=""
-Tilesets=""
-import_tileset_custom_data=true
-tileset_post_import_script=""
-Levels=""
-level_add_metadata=true
-pack_levels=false
-level_post_import_script=""
-Entities=""
-entity_add_metadata=true
-Entity Scene=""
-Button=""
-Door=""
-Item=""
-Player=""
-SecretWall=""
+General/prefix_remove="LDTK_"
+General/prefix_add="LDTK_"
+World/WorldMapping="res://Ldtk/Example/Typical_TopDown_example.tscn"
+Tileset/create_if_not_exists=true
+Tileset/add_metadata=true
+Tileset/import_LDTK_tile_custom_data=true
+Tileset/Mapping/Internal_Icons="res://Ldtk/Example/Tileset/Internal_Icons.tres"
+Tileset/Mapping/TopDown_by_deepnight="res://Ldtk/Example/Tileset/TopDown_by_deepnight.tres"
+Entity/entity_add_metadata=true
+Entity/Mapping/Button="res://Ldtk/Example/Entity/Button.tscn"
+Entity/Mapping/Door="res://Ldtk/Example/Entity/Door.tscn"
+Entity/Mapping/Item="res://Ldtk/Example/Entity/Item.tscn"
+Entity/Mapping/Player="res://Ldtk/Example/Entity/Player.tscn"
+Entity/Mapping/SecretWall="res://Ldtk/Example/Entity/SecretWall.tscn"
+Level/level_add_metadata=true
+Level/import_IntGrid=false
+Level/Mapping/World_Level_0="res://Ldtk/Example/Level/World_Level_0.tscn"
+Level/Mapping/World_Level_1="res://Ldtk/Example/Level/World_Level_1.tscn"
+Level/Mapping/World_Level_2="res://Ldtk/Example/Level/World_Level_2.tscn"

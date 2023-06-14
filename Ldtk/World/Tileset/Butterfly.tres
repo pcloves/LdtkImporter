@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dgoh6shsp6ttd" path="res://Ldtk/World/fantasylandsset1/_PNG/Anim/Nature/butterfly.png" id="1_brn2r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ctqw"]
+resource_name = "LDTK_Butterfly"
 texture = ExtResource("1_brn2r")
 0:0/0 = 0
 1:0/0 = 0

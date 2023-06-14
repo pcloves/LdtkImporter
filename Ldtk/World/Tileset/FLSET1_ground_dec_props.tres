@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://de5j66v7koydw" path="res://Ldtk/World/fantasylandsset1/_PNG/FLSET1_ground_dec_props.png" id="1_rpnma"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hshjp"]
+resource_name = "LDTK_FLSET1_ground_dec_props"
 texture = ExtResource("1_rpnma")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0

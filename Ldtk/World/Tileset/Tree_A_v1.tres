@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cooyrrq65hqax" path="res://Ldtk/World/fantasylandsset1/_PNG/Anim/Trees/Tree_A_v1.png" id="1_kb3kf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7bq4v"]
+resource_name = "LDTK_Tree_A_v1"
 texture = ExtResource("1_kb3kf")
 texture_region_size = Vector2i(128, 128)
 0:0/0 = 0

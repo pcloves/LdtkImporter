@@ -41,6 +41,7 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
             var packedScene = new PackedScene();
             packedScene.Pack(Root);
 
+            DirAccess.MakeDirRecursiveAbsolute(scenePath.GetBaseDir());
             ResourceSaver.Save(packedScene, scenePath);
         }
 

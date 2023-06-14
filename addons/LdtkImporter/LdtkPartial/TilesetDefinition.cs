@@ -16,12 +16,12 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
 
     public Error PreImport(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
-        GD.Print($"  {Identifier}");
         if (EmbedAtlas != null)
         {
             GD.Print($"   is embedAtlas:{Identifier}, ignore.");
             return Error.Ok;
         }
+        GD.Print($"  {Identifier}");
 
         var key = $"{LdtkImporterPlugin.OptionTilesetMapping}/{Identifier}";
         var tileSetPath = options.GetValueOrDefault<string>(key);
@@ -43,19 +43,17 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
                 return Error.FileNotFound;
             }
 
-            TileSet = new TileSet();
-            TileSet.TileSize = new Vector2I((int)TileGridSize, (int)TileGridSize);
-            //TODO:增加图集
+            GenerateTileSet(ldtkJson, options);
         }
 
-        var tileSetGodot = ResourceLoader.Load<TileSet>(tileSetPath);
-        if (tileSetGodot == null)
+        var tileSetLoad = ResourceLoader.Load<TileSet>(tileSetPath);
+        if (tileSetLoad == null)
         {
             GD.Print($"  {tileSetPath} is not a godot tileset resource.");
             return Error.Failed;
         }
 
-        TileSet = tileSetGodot;
+        TileSet = tileSetLoad;
         TileSet.AddCustomDataLayerIfNotExist($"{prefix2Add}{Identifier}", Variant.Type.Dictionary);
         TileSet.RemoveMetaPrefix(prefix2Remove);
 
@@ -66,16 +64,24 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
 
     public Error Import(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
+        if (EmbedAtlas != null)
+        {
+            GD.Print($"   is embedAtlas:{Identifier}, ignore.");
+            return Error.Ok;
+        }
         GD.Print($"  {Identifier}:{TileSet.ResourcePath}");
 
-        if (TileSet.GetSourceCount() == 0)
+        var key = $"{LdtkImporterPlugin.OptionTilesetMapping}/{Identifier}";
+        var tileSetPath = options.GetValueOrDefault<string>(key);
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+        var customLayerName = $"{prefix2Add}{Identifier}";
+        var sourceId = TileSet.GetSourceIdByName(customLayerName);
+        if (sourceId == -1)
         {
-            GD.Print($"   none source exist.");
+            GD.Print($"   none TileSetAtlasSource named:{customLayerName} in {tileSetPath}, named it, and try again.");
             return Error.Failed;
         }
 
-        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
-        var customLayerName = $"{prefix2Add}{Identifier}";
         var customDataLayerIndex = TileSet.GetCustomDataLayerByName(customLayerName);
 
         if (options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionTilesetImportTileCustomData))
@@ -84,16 +90,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
             TileSet.SetMeta($"{prefix2Add}tilesets", meta);
         }
 
-        //TODO:这里用0有些武断了
-        var sourceId = TileSet.GetSourceId(0);
-        var sourceIdNew = (int)Uid;
-
-        //TODO:而且这里强行更改sourceId也有些武断了
-        TileSet.SetSourceId(sourceId, sourceIdNew);
-        GD.Print($"   update the first source id:{sourceId} -> {Uid}");
-
-        var source = (TileSetAtlasSource)TileSet.GetSource(sourceIdNew);
-        const string key = LdtkImporterPlugin.OptionTilesetImportTileCustomData;
+        var source = (TileSetAtlasSource)TileSet.GetSource(sourceId);
         var importTileCustomData = options.GetValueOrDefault<bool>(key);
         if (importTileCustomData)
         {
@@ -118,7 +115,13 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
 
     public Error PostImport(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
+        if (EmbedAtlas != null)
+        {
+            GD.Print($"   is embedAtlas:{Identifier}, ignore.");
+            return Error.Ok;
+        }
         GD.Print($"  save tileset:{TileSet.ResourcePath}");
+
         ResourceSaver.Save(TileSet, TileSet.ResourcePath);
 
         genFiles.Add(TileSet.ResourcePath);
@@ -128,5 +131,42 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
     public void OnDeserialized()
     {
         JsonString = JsonSerializer.Serialize(this);
+    }
+
+    public void GenerateTileSet(LdtkJson ldtkJson, Dictionary options)
+    {
+        var key = $"{LdtkImporterPlugin.OptionTilesetMapping}/{Identifier}";
+        var tileSetPath = options.GetValueOrDefault<string>(key);
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+        var imagePath = ldtkJson.Path.GetBaseDir().PathJoin(RelPath);
+        var tileSet = new TileSet();
+        var texture2D = ResourceLoader.Load<Texture2D>(imagePath);
+        var source = new TileSetAtlasSource();
+
+        tileSet.TileSize = new Vector2I((int)TileGridSize, (int)TileGridSize);
+        tileSet.ResourcePath = tileSetPath;
+        tileSet.AddSource(source, (int)Uid);
+
+        source.ResourceName = $"{prefix2Add}{Identifier}";
+        source.Margins = new Vector2I((int)Padding, (int)Padding);
+        source.Separation = new Vector2I((int)Spacing, (int)Spacing);
+        source.Texture = texture2D;
+        source.TextureRegionSize = new Vector2I((int)TileGridSize, (int)TileGridSize);
+
+        var gridWidth = (PxWid - 2 * Padding + Spacing) / (TileGridSize + Spacing);
+        var gridHeight = (PxHei - 2 * Padding + Spacing) / (TileGridSize + Spacing);
+
+        for (var y = 0; y < gridHeight; y++)
+        {
+            for (var x = 0; x < gridWidth; x++)
+            {
+                var gridCoords = new Vector2I(x, y);
+                source.CreateTile(gridCoords);
+            }
+        }
+
+        DirAccess.MakeDirRecursiveAbsolute(tileSetPath.GetBaseDir());
+
+        ResourceSaver.Save(tileSet, tileSetPath);
     }
 }
