@@ -1,24 +1,42 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://biburt0i5uuct"]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://ddd3q5wa0jxa3"]
 
-[ext_resource type="Texture2D" uid="uid://bloh1cycl477p" path="res://Ldtk/Example/atlas/TopDown_by_deepnight.png" id="1_pwfdv"]
+[ext_resource type="Texture2D" uid="uid://bloh1cycl477p" path="res://Ldtk/Example/atlas/TopDown_by_deepnight.png" id="1_7fiik"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q7qqm"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2ab80"]
 resource_name = "LDTK_TopDown_by_deepnight"
-texture = ExtResource("1_pwfdv")
+texture = ExtResource("1_7fiik")
+0:0/next_alternative_id = 2
 0:0/0 = 0
+0:0/1 = 1
+0:0/1/flip_h = true
 1:0/0 = 0
+2:0/next_alternative_id = 2
 2:0/0 = 0
+2:0/1 = 1
+2:0/1/flip_h = true
 3:0/0 = 0
 4:0/0 = 0
 5:0/0 = 0
 6:0/0 = 0
+7:0/next_alternative_id = 2
 7:0/0 = 0
+7:0/1 = 1
+7:0/1/flip_h = true
 8:0/0 = 0
 9:0/0 = 0
 10:0/0 = 0
+0:1/next_alternative_id = 2
 0:1/0 = 0
+0:1/1 = 1
+0:1/1/flip_h = true
+1:1/next_alternative_id = 2
 1:1/0 = 0
+1:1/1 = 1
+1:1/1/flip_h = true
+2:1/next_alternative_id = 2
 2:1/0 = 0
+2:1/1 = 1
+2:1/1/flip_h = true
 3:1/0 = 0
 4:1/0 = 0
 5:1/0 = 0
@@ -29,7 +47,10 @@ texture = ExtResource("1_pwfdv")
 10:1/0 = 0
 0:2/0 = 0
 1:2/0 = 0
+2:2/next_alternative_id = 2
 2:2/0 = 0
+2:2/1 = 1
+2:2/1/flip_h = true
 3:2/0 = 0
 4:2/0 = 0
 5:2/0 = 0
@@ -72,17 +93,42 @@ texture = ExtResource("1_pwfdv")
 9:5/0 = 0
 10:5/0 = 0
 0:6/0 = 0
+0:6/2 = 2
+0:6/2/flip_v = true
+1:6/next_alternative_id = 2
 1:6/0 = 0
+1:6/1 = 1
+1:6/1/flip_h = true
+2:6/next_alternative_id = 4
 2:6/0 = 0
+2:6/1 = 1
+2:6/1/flip_h = true
+2:6/2 = 2
+2:6/2/flip_v = true
+2:6/3 = 3
+2:6/3/flip_h = true
+2:6/3/flip_v = true
 3:6/0 = 0
 4:6/0 = 0
 4:6/0/modulate = Color(1, 1, 1, 0.7)
+5:6/next_alternative_id = 2
 5:6/0 = 0
 5:6/0/modulate = Color(1, 1, 1, 0.75)
+5:6/1 = 1
+5:6/1/flip_h = true
+5:6/1/modulate = Color(1, 1, 1, 0.3)
+6:6/next_alternative_id = 2
 6:6/0 = 0
 6:6/0/modulate = Color(1, 1, 1, 0.75)
+6:6/1 = 1
+6:6/1/flip_h = true
+6:6/1/modulate = Color(1, 1, 1, 0.3)
+7:6/next_alternative_id = 2
 7:6/0 = 0
 7:6/0/modulate = Color(1, 1, 1, 0.75)
+7:6/1 = 1
+7:6/1/flip_h = true
+7:6/1/modulate = Color(1, 1, 1, 0.3)
 8:6/0 = 0
 9:6/0 = 0
 10:6/0 = 0
@@ -134,7 +180,7 @@ texture = ExtResource("1_pwfdv")
 [resource]
 custom_data_layer_0/name = "LDTK_TopDown_by_deepnight"
 custom_data_layer_0/type = 27
-sources/1 = SubResource("TileSetAtlasSource_q7qqm")
+sources/1 = SubResource("TileSetAtlasSource_2ab80")
 metadata/LDTK_tilesets = {
 "__cHei": 11.0,
 "__cWid": 11.0,

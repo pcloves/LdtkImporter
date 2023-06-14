@@ -1,4 +1,7 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Godot;
@@ -11,6 +14,16 @@ namespace LdtkImporter;
 [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
 public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
 {
+    /// <summary>
+    /// https://ldtk.io/json/#ldtk-Tile;f
+    /// </summary>
+    [Flags]
+    public enum FlipBits
+    {
+        FlipH = 1, //X flip only
+        FlipV = 2, //Y flip only
+    }
+
     [JsonIgnore] public TileSet TileSet { get; set; }
     [JsonIgnore] public string JsonString { get; set; }
 
@@ -21,6 +34,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
             GD.Print($"   is embedAtlas:{Identifier}, ignore.");
             return Error.Ok;
         }
+
         GD.Print($"  {Identifier}");
 
         var key = $"{LdtkImporterPlugin.OptionTilesetMapping}/{Identifier}";
@@ -69,6 +83,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
             GD.Print($"   is embedAtlas:{Identifier}, ignore.");
             return Error.Ok;
         }
+
         GD.Print($"  {Identifier}:{TileSet.ResourcePath}");
 
         var key = $"{LdtkImporterPlugin.OptionTilesetMapping}/{Identifier}";
@@ -120,6 +135,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
             GD.Print($"   is embedAtlas:{Identifier}, ignore.");
             return Error.Ok;
         }
+
         GD.Print($"  save tileset:{TileSet.ResourcePath}");
 
         ResourceSaver.Save(TileSet, TileSet.ResourcePath);
@@ -162,6 +178,33 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
             {
                 var gridCoords = new Vector2I(x, y);
                 source.CreateTile(gridCoords);
+            }
+        }
+
+        var dictionary = ldtkJson.Levels
+            .AsParallel()
+            .SelectMany(level => level.LayerInstances)
+            .SelectMany(instance => instance.GridTiles.Concat(instance.AutoLayerTiles))
+            .Where(instance => instance.F != 0)
+            .Select(instance => new KeyValuePair<long, long>(instance.T, instance.F))
+            .GroupBy(pair => pair.Key)
+            .ToDictionary(pairs => pairs.Key,
+                pairs => pairs.Select(pair => (int)pair.Value).ToHashSet());
+
+        foreach (var tileId in dictionary.Keys)
+        {
+            var atlasCoords = tileId.AtlasCoords(source);
+            foreach (var flipBitsInt in dictionary[tileId])
+            {
+                source.CreateAlternativeTile(atlasCoords, flipBitsInt);
+                var tileData = source.GetTileData(atlasCoords, flipBitsInt);
+
+                var flipBits = (FlipBits)flipBitsInt;
+
+                tileData.FlipH = flipBits.HasFlag(FlipBits.FlipH);
+                tileData.FlipV = flipBits.HasFlag(FlipBits.FlipV);
+                GD.Print(
+                    $"   CreateAlternativeTile, tileId:{tileId}, atlasCoords:{atlasCoords}, FlipH:{tileData.FlipH}, FlipV:{tileData.FlipV}");
             }
         }
 

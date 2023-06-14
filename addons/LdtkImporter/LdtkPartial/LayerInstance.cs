@@ -130,8 +130,13 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
             var tileInstance = tileInstances[index];
             var coords = new Vector2I((int)tileInstance.Px[0], (int)tileInstance.Px[1]) / (int)GridSize;
             var atlasCoords = tileInstance.T.AtlasCoords(source);
-            tileMap.SetCell(0, coords, sourceId, atlasCoords);
+            tileMap.SetCell(0, coords, sourceId, atlasCoords, (int)tileInstance.F);
             tileMap.GetCellTileData(0, coords).Modulate = new Color(1, 1, 1, (float)tileInstance.A);
+            if (tileInstance.F != 0)
+            {
+                GD.Print(
+                    $"   SetCell, coords:{coords}, atlasCoords:{atlasCoords}, FlipBits:{tileInstance.F}");
+            }
         }
 
         return Type == nameof(TypeEnum.IntGrid) ? ImportIntGrid(ldtkJson, options) : Error.Ok;
