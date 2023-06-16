@@ -16,6 +16,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 {
     [JsonIgnore] public string JsonString { get; set; }
     [JsonIgnore] public Node2D Root { get; set; }
+    [JsonIgnore] public int MaxTileStackCount { get; set; } = 1;
 
     private static readonly System.Collections.Generic.Dictionary<string, Func<Node2D>> TypeMap = new()
     {
@@ -36,21 +37,25 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
 
         Root = func.Invoke();
-        Root.Name = $"{prefix2Add}{Identifier}";
+        Root.Name = $"{prefix2Add}_{Identifier}";
         Root.Position = new Vector2(PxTotalOffsetX, PxTotalOffsetY);
-        Root.SetMeta($"{prefix2Add}instance", Json.ParseString(JsonString));
+        Root.SetMeta($"{prefix2Add}_instance", Json.ParseString(JsonString));
 
         var tileMap = Root as TileMap;
 
         var tilesetDefinition = ldtkJson.Defs.Tilesets.FirstOrDefault(definition => definition.Uid == TilesetDefUid);
         if (tileMap != null)
         {
+            tileMap.RemoveLayer(tileMap.GetLayersCount() - 1);
             tileMap.TileSet = tilesetDefinition?.TileSet;
             tileMap.CellQuadrantSize = (int)GridSize;
         }
 
+        CalculateTileStack();
+
         return Error.Ok;
     }
+
 
     public Error Import(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
@@ -83,29 +88,39 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         JsonString = JsonSerializer.Serialize(this);
     }
 
+    private void CalculateTileStack()
+    {
+        var tileInstances = Type == nameof(TypeEnum.Tiles) ? GridTiles : AutoLayerTiles;
+        MaxTileStackCount = tileInstances
+            .GroupBy(instance => instance.Px, new LongArrayEqualityComparer())
+            .Select(grouping => grouping.Select((instance, i) => instance.Layer = i).Count())
+            .DefaultIfEmpty(1)
+            .Max();
+    }
+
     private Error ImportEntity(LdtkJson ldtkJson, Dictionary options)
     {
         var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
 
         var entityCountMap = new System.Collections.Generic.Dictionary<string, int>();
-        for (var i = 0; i < EntityInstances.Length; i++)
+        foreach (var entityInstance in EntityInstances)
         {
-            var instance = EntityInstances[i];
             var entityScenePath = ldtkJson.Defs
                 .Entities
-                .FirstOrDefault(definition => definition.Uid == instance.DefUid)!
+                .FirstOrDefault(definition => definition.Uid == entityInstance.DefUid)!
                 .EntityScenePath;
 
             var node2D = ResourceLoader.Load<PackedScene>(entityScenePath).Instantiate<Node2D>();
 
-            node2D.Position = new Vector2(instance.Px[0], instance.Px[1]);
-            node2D.Name = $"{node2D.Name}-{entityCountMap.GetValueOrDefault(instance.Identifier).ToString()}";
-            node2D.SetMeta($"{prefix2Add}fields", Json.ParseString(JsonSerializer.Serialize(instance.FieldInstances)));
+            node2D.Position = new Vector2(entityInstance.Px[0], entityInstance.Px[1]);
+            node2D.Name = $"{node2D.Name}-{entityCountMap.GetValueOrDefault(entityInstance.Identifier).ToString()}";
+            node2D.SetMeta($"{prefix2Add}_fields",
+                Json.ParseString(JsonSerializer.Serialize(entityInstance.FieldInstances)));
 
             Root.AddChild(node2D);
 
-            var newCount = entityCountMap.TryGetValue(instance.Identifier, out var count) ? count + 1 : 1;
-            entityCountMap[instance.Identifier] = newCount;
+            var newCount = entityCountMap.TryGetValue(entityInstance.Identifier, out var count) ? count + 1 : 1;
+            entityCountMap[entityInstance.Identifier] = newCount;
         }
 
         return Error.Ok;
@@ -114,29 +129,30 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
     private Error ImportTile(LdtkJson ldtkJson, Dictionary options)
     {
         var tileMap = (TileMap)Root;
+        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
         var layerDefinition = ldtkJson.Defs.Layers.FirstOrDefault(definition => definition.Uid == LayerDefUid);
         var tilesetDefinition = ldtkJson.Defs.Tilesets.FirstOrDefault(definition => definition.Uid == TilesetDefUid);
 
+        var layerNamePrefix = $"{prefix2Add}_{layerDefinition!.Identifier}";
+        for (var i = 0; i < MaxTileStackCount; i++)
+        {
+            tileMap.EnsureLayerExist($"{layerNamePrefix}_{i}");
+        }
+
         tileMap.TileSet = tilesetDefinition!.TileSet;
-        tileMap.SetLayerName(0, layerDefinition!.Identifier);
-        tileMap.SetLayerModulate(0, new Color(1, 1, 1, (float)Opacity));
-        tileMap.SetLayerEnabled(0, Visible);
+        tileMap.ActionByLayerNamePrefix(layerNamePrefix,
+            i => tileMap.SetLayerModulate(i, new Color(1, 1, 1, (float)Opacity)));
+        tileMap.ActionByLayerNamePrefix(layerNamePrefix, i => tileMap.SetLayerEnabled(i, Visible));
 
         var tileInstances = Type == nameof(TypeEnum.Tiles) ? GridTiles : AutoLayerTiles;
         var sourceId = (int)tilesetDefinition.Uid;
         var source = (TileSetAtlasSource)tileMap.TileSet.GetSource(sourceId);
-        for (var index = 0; index < tileInstances.Length; index++)
+        foreach (var tileInstance in tileInstances)
         {
-            var tileInstance = tileInstances[index];
             var coords = new Vector2I((int)tileInstance.Px[0], (int)tileInstance.Px[1]) / (int)GridSize;
             var atlasCoords = tileInstance.T.AtlasCoords(source);
-            tileMap.SetCell(0, coords, sourceId, atlasCoords, (int)tileInstance.F);
-            tileMap.GetCellTileData(0, coords).Modulate = new Color(1, 1, 1, (float)tileInstance.A);
-            if (tileInstance.F != 0)
-            {
-                GD.Print(
-                    $"   SetCell, coords:{coords}, atlasCoords:{atlasCoords}, FlipBits:{tileInstance.F}");
-            }
+            tileMap.SetCell(tileInstance.Layer, coords, sourceId, atlasCoords, (int)tileInstance.F);
+            tileMap.GetCellTileData(tileInstance.Layer, coords).Modulate = new Color(1, 1, 1, (float)tileInstance.A);
         }
 
         return Type == nameof(TypeEnum.IntGrid) ? ImportIntGrid(ldtkJson, options) : Error.Ok;
@@ -153,7 +169,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
         var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
         var tileMap = new TileMap();
-        tileMap.Name = $"{prefix2Add}{Type}";
+        tileMap.Name = $"{prefix2Add}_{Type}";
 
         Root.AddChild(tileMap);
 
@@ -163,7 +179,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
         var tileSet = new TileSet();
         tileSet.TileSize = new Vector2I(gridSize, gridSize);
-        tileSet.AddCustomDataLayerIfNotExist($"{prefix2Add}{layerDefinition.Identifier}", Variant.Type.Dictionary);
+        tileSet.AddCustomDataLayerIfNotExist($"{prefix2Add}_{layerDefinition.Identifier}", Variant.Type.Dictionary);
 
         var image = Image.Create(gridSize * intGridValues.Length, gridSize, false, Image.Format.Rgb8);
         for (var index = 0; index < intGridValues.Length; index++)
@@ -193,10 +209,10 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
             tileData.SetCustomDataByLayerId(0, Json.ParseString(JsonSerializer.Serialize(instance)));
         }
 
+        var layer = tileMap.EnsureLayerExist($"{prefix2Add}_{layerDefinition!.Identifier}");
         tileMap.TileSet = tileSet;
-        tileMap.SetLayerName(0, layerDefinition.Identifier);
-        tileMap.SetLayerModulate(0, new Color(1, 1, 1, (float)Opacity));
-        tileMap.SetLayerEnabled(0, Visible);
+        tileMap.SetLayerModulate(layer, new Color(1, 1, 1, (float)Opacity));
+        tileMap.SetLayerEnabled(layer, Visible);
 
         for (var index = 0; index < IntGridCsv.Length; index++)
         {
@@ -205,9 +221,22 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
             var coords = new Vector2I(Mathf.FloorToInt(index % CWid), Mathf.FloorToInt(index / (float)CWid));
             var atlasCoords = (IntGridCsv[index] - 1).AtlasCoords(source);
-            tileMap.SetCell(0, coords, (int)layerDefinition.Uid, atlasCoords);
+            tileMap.SetCell(layer, coords, (int)layerDefinition.Uid, atlasCoords);
         }
 
         return Error.Ok;
+    }
+}
+
+public class LongArrayEqualityComparer : IEqualityComparer<long[]>
+{
+    public bool Equals(long[] x, long[] y)
+    {
+        return y != null && x != null && x.SequenceEqual(y);
+    }
+
+    public int GetHashCode(long[] obj)
+    {
+        return obj.Select((t, i) => t.GetHashCode() ^ i).Sum();
     }
 }

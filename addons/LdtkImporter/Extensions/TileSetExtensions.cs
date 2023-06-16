@@ -18,15 +18,14 @@ public static class TileSetExtensions
         tileSet.SetCustomDataLayerType(customDataLayerIndex, type);
     }
 
-    public static int GetSourceIdByName(this TileSet tileSet, string metaName)
+    public static int GetSourceIdByName(this TileSet tileSet, string sourceName)
     {
         var sourceId = Enumerable
             .Range(0, tileSet.GetSourceCount())
             .Select(tileSet.GetSourceId)
-            .Where(sourceId => tileSet.GetSource(sourceId).ResourceName.Equals(metaName))
-            .Cast<int?>()
-            .FirstOrDefault();
+            .Where(sourceId => tileSet.GetSource(sourceId).ResourceName.Equals(sourceName))
+            .FirstOrDefault(-1);
 
-        return sourceId ?? -1;
+        return sourceId;
     }
 }

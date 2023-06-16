@@ -70,13 +70,13 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
             new()
             {
                 { "name", OptionGeneralPrefix2Remove },
-                { "default_value", "LDTK_" },
+                { "default_value", "LDTK" },
                 { "hint_string", "when importing, all scene node and meta key with this prefix will be remove." }
             },
             new()
             {
                 { "name", OptionGeneralPrefix2Add },
-                { "default_value", "LDTK_" },
+                { "default_value", "LDTK" },
                 { "hint_string", "the importing scene node name and meta name will be prefixed." }
             },
         };
@@ -90,7 +90,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
             new()
             {
                 { "name", OptionWorldWorldMapping },
-                { "default_value", $"{path.GetBaseDir().PathJoin(file)}.{_GetSaveExtension()}" },
+                { "default_value", $"{path.GetBaseDir().PathJoin("LDTK").PathJoin(file)}.{_GetSaveExtension()}" },
                 { "property_hint", (int)PropertyHint.File },
                 { "hint_string", "*.tscn;Godot Scene" }
             },
@@ -99,7 +99,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
     private IEnumerable<Dictionary> TilesetOptions(string path, int presetIndex)
     {
-        var tilesetBaseDir = path.GetBaseDir().PathJoin("Tileset");
+        var tilesetBaseDir = path.GetBaseDir().PathJoin("LDTK/Tileset");
         var options = new Array<Dictionary>
         {
             new()
@@ -143,7 +143,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
     private IEnumerable<Dictionary> LevelOptions(string path, int presetIndex)
     {
-        var levelBaseDir = path.GetBaseDir().PathJoin("Level");
+        var levelBaseDir = path.GetBaseDir().PathJoin("LDTK/Level");
         var options = new Array<Dictionary>
         {
             new()
@@ -178,7 +178,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
     private IEnumerable<Dictionary> EntityOptions(string path, int presetIndex)
     {
-        var entityBaseDir = path.GetBaseDir().PathJoin("Entity");
+        var entityBaseDir = path.GetBaseDir().PathJoin("LDTK/Entity");
         var options = new Array<Dictionary>
         {
             new()

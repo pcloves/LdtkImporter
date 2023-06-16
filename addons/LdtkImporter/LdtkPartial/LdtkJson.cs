@@ -137,7 +137,7 @@ public partial class LdtkJson : IImporter
         }
 
         var prefix2Remove = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Remove);
-        root.RemoveChildPrefix(prefix2Remove);
+        root.RemoveChildByNamePrefix(prefix2Remove);
 
         foreach (var level in Levels)
         {

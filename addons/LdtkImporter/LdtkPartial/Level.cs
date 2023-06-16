@@ -36,7 +36,7 @@ public partial class Level : IImporter, IJsonOnDeserialized
             GD.Print($"   level scene:{scenePath} is not exist, create it!");
             Root = new Node2D()
             {
-                Name = $"{prefix2Add}{Identifier}",
+                Name = $"{prefix2Add}_{Identifier}",
             };
         }
         else
@@ -55,7 +55,7 @@ public partial class Level : IImporter, IJsonOnDeserialized
 
         var prefix2Remove = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Remove);
         Root.RemoveMetaPrefix(prefix2Remove);
-        Root.RemoveChildPrefix(prefix2Remove);
+        Root.RemoveChildByNamePrefix(prefix2Remove);
 
         GD.Print("   PreImport Layer");
         foreach (var layerInstance in LayerInstances)
@@ -76,8 +76,8 @@ public partial class Level : IImporter, IJsonOnDeserialized
 
         var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
 
-        Root.SetMeta($"{prefix2Add}level", level);
-        Root.SetMeta($"{prefix2Add}fieldInstances", fieldInstance);
+        Root.SetMeta($"{prefix2Add}_level", level);
+        Root.SetMeta($"{prefix2Add}_fieldInstances", fieldInstance);
 
         Root.Position = new Vector2(WorldX, WorldY);
 

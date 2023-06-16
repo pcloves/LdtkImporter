@@ -68,7 +68,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         }
 
         TileSet = tileSetLoad;
-        TileSet.AddCustomDataLayerIfNotExist($"{prefix2Add}{Identifier}", Variant.Type.Dictionary);
+        TileSet.AddCustomDataLayerIfNotExist($"{prefix2Add}_{Identifier}", Variant.Type.Dictionary);
         TileSet.RemoveMetaPrefix(prefix2Remove);
 
         GD.Print($"   load godot tileset success:{tileSetPath}");
@@ -89,7 +89,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         var key = $"{LdtkImporterPlugin.OptionTilesetMapping}/{Identifier}";
         var tileSetPath = options.GetValueOrDefault<string>(key);
         var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
-        var customLayerName = $"{prefix2Add}{Identifier}";
+        var customLayerName = $"{prefix2Add}_{Identifier}";
         var sourceId = TileSet.GetSourceIdByName(customLayerName);
         if (sourceId == -1)
         {
@@ -102,7 +102,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         if (options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionTilesetImportTileCustomData))
         {
             var meta = Json.ParseString(JsonString);
-            TileSet.SetMeta($"{prefix2Add}tilesets", meta);
+            TileSet.SetMeta($"{prefix2Add}_tilesets", meta);
         }
 
         var source = (TileSetAtlasSource)TileSet.GetSource(sourceId);
@@ -163,7 +163,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         tileSet.ResourcePath = tileSetPath;
         tileSet.AddSource(source, (int)Uid);
 
-        source.ResourceName = $"{prefix2Add}{Identifier}";
+        source.ResourceName = $"{prefix2Add}_{Identifier}";
         source.Margins = new Vector2I((int)Padding, (int)Padding);
         source.Separation = new Vector2I((int)Spacing, (int)Spacing);
         source.Texture = texture2D;

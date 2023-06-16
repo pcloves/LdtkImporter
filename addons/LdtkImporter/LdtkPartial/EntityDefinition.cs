@@ -35,7 +35,7 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
             GD.Print($"   entity scene:{scenePath} is not exist, create it!");
             Root = new Node2D()
             {
-                Name = $"{prefix2Add}{Identifier}",
+                Name = $"{prefix2Add}_{Identifier}",
             };
 
             var packedScene = new PackedScene();
@@ -53,7 +53,7 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
             return Error.Failed;
         }
 
-        Root.RemoveChildPrefix(prefix2Remove);
+        Root.RemoveChildByNamePrefix(prefix2Remove);
         Root.RemoveMetaPrefix(prefix2Remove);
 
         EntityScenePath = scenePath;
@@ -70,7 +70,7 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
 
         var meta = Json.ParseString(JsonString);
 
-        Root.SetMeta($"{prefix2Add}entities", meta);
+        Root.SetMeta($"{prefix2Add}_entities", meta);
 
         return Error.Ok;
     }
