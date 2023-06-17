@@ -170,22 +170,6 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         source.Texture = texture2D;
         source.TextureRegionSize = new Vector2I((int)TileGridSize, (int)TileGridSize);
 
-        //create range tile
-         var entityInstances = ldtkJson.Levels
-             .SelectMany(level => level.LayerInstances)
-             .SelectMany(instance => instance.EntityInstances)
-             // ReSharper disable once ConstantConditionalAccessQualifier
-             .Where(instance => instance.Tile?.TilesetUid == Uid);
-        
-         foreach (var instance in entityInstances)
-         {
-             var px = new Vector2I((int)instance.Tile.X, (int)instance.Tile.Y);
-             var atlasCoords = px.AtlasCoords(source);
-             var size = new Vector2I((int)instance.Tile.W, (int)instance.Tile.H) / tileSet.TileSize;
-             source.CreateTile(atlasCoords, size);
-             GD.Print($"   CreateTile, atlasCoords:{atlasCoords}, size:{size}");
-         }
-
         //create single tile
         var tileId2FlipBitsMap = ldtkJson.Levels
             .AsParallel()
