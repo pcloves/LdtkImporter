@@ -1,15 +1,15 @@
-[gd_scene format=3 uid="uid://5pr5rxrjgl7"]
+[gd_scene format=3 uid="uid://mta6m1t5pkcv"]
 
-[node name="LDTK_Tree" type="Node2D"]
+[node name="LDTK_Stump" type="Node2D"]
 metadata/LDTK_entities = {
-"color": "#3E8948",
+"color": "#EAD4AA",
 "doc": null,
 "exportToToc": false,
 "fieldDefs": [],
 "fillOpacity": 0.08,
-"height": 16.0,
+"height": 64.0,
 "hollow": false,
-"identifier": "Tree",
+"identifier": "Stump",
 "keepAspectRatio": false,
 "limitBehavior": 1.0,
 "limitScope": 1.0,
@@ -21,7 +21,7 @@ metadata/LDTK_entities = {
 "minWidth": null,
 "nineSliceBorders": [],
 "pivotX": 0.5,
-"pivotY": 1.0,
+"pivotY": 0.5,
 "renderMode": 3.0,
 "resizableX": false,
 "resizableY": false,
@@ -30,14 +30,14 @@ metadata/LDTK_entities = {
 "tileId": null,
 "tileOpacity": 1.0,
 "tileRect": {
-"h": 128.0,
-"tilesetUid": 4.0,
-"w": 128.0,
-"x": 0.0,
-"y": 0.0
+"h": 64.0,
+"tilesetUid": 304.0,
+"w": 64.0,
+"x": 256.0,
+"y": 768.0
 },
 "tileRenderMode": 3.0,
-"tilesetId": 4.0,
-"uid": 312.0,
-"width": 16.0
+"tilesetId": 304.0,
+"uid": 322.0,
+"width": 64.0
 }

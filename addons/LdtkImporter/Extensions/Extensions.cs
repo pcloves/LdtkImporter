@@ -23,6 +23,12 @@ public static class Extensions
         return atlasCoords.Y * x + atlasCoords.X;
     }
 
+    public static Vector2I AtlasCoords(this Vector2I px, TileSetAtlasSource source)
+    {
+        var atlasCoords = (px - source.Margins) / (source.TextureRegionSize + source.Separation);
+        return atlasCoords;
+    }
+
     public static bool IsValidPrefix(this string prefix)
     {
         //https://github.com/godotengine/godot/blob/2d6b880987bc600cda586b281fcbe26791e92e09/core/string/ustring.cpp#LL3954C1-L3954C1

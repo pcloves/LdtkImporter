@@ -99,14 +99,15 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
 
         var customDataLayerIndex = TileSet.GetCustomDataLayerByName(customLayerName);
 
-        if (options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionTilesetImportTileCustomData))
+        if (options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionTilesetAddMeta))
         {
             var meta = Json.ParseString(JsonString);
             TileSet.SetMeta($"{prefix2Add}_tilesets", meta);
         }
 
         var source = (TileSetAtlasSource)TileSet.GetSource(sourceId);
-        var importTileCustomData = options.GetValueOrDefault<bool>(key);
+        var importTileCustomData =
+            options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionTilesetImportTileCustomData);
         if (importTileCustomData)
         {
             foreach (var customMetadata in CustomData)
@@ -169,33 +170,44 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         source.Texture = texture2D;
         source.TextureRegionSize = new Vector2I((int)TileGridSize, (int)TileGridSize);
 
-        var gridWidth = (PxWid - 2 * Padding + Spacing) / (TileGridSize + Spacing);
-        var gridHeight = (PxHei - 2 * Padding + Spacing) / (TileGridSize + Spacing);
+        //create range tile
+         var entityInstances = ldtkJson.Levels
+             .SelectMany(level => level.LayerInstances)
+             .SelectMany(instance => instance.EntityInstances)
+             // ReSharper disable once ConstantConditionalAccessQualifier
+             .Where(instance => instance.Tile?.TilesetUid == Uid);
+        
+         foreach (var instance in entityInstances)
+         {
+             var px = new Vector2I((int)instance.Tile.X, (int)instance.Tile.Y);
+             var atlasCoords = px.AtlasCoords(source);
+             var size = new Vector2I((int)instance.Tile.W, (int)instance.Tile.H) / tileSet.TileSize;
+             source.CreateTile(atlasCoords, size);
+             GD.Print($"   CreateTile, atlasCoords:{atlasCoords}, size:{size}");
+         }
 
-        for (var y = 0; y < gridHeight; y++)
-        {
-            for (var x = 0; x < gridWidth; x++)
-            {
-                var gridCoords = new Vector2I(x, y);
-                source.CreateTile(gridCoords);
-            }
-        }
-
-        var dictionary = ldtkJson.Levels
+        //create single tile
+        var tileId2FlipBitsMap = ldtkJson.Levels
             .AsParallel()
             .SelectMany(level => level.LayerInstances)
+            .Where(instance => instance.TilesetDefUid == Uid)
             .SelectMany(instance => instance.GridTiles.Concat(instance.AutoLayerTiles))
-            .Where(instance => instance.F != 0)
             .Select(instance => new KeyValuePair<long, long>(instance.T, instance.F))
             .GroupBy(pair => pair.Key)
             .ToDictionary(pairs => pairs.Key,
                 pairs => pairs.Select(pair => (int)pair.Value).ToHashSet());
 
-        foreach (var tileId in dictionary.Keys)
+        foreach (var tileId in tileId2FlipBitsMap.Keys)
         {
             var atlasCoords = tileId.AtlasCoords(source);
-            foreach (var flipBitsInt in dictionary[tileId])
+
+            source.CreateTile(atlasCoords);
+            GD.Print($"   CreateTile, atlasCoords:{atlasCoords}, size:{Vector2I.One}");
+
+            foreach (var flipBitsInt in tileId2FlipBitsMap[tileId])
             {
+                if (flipBitsInt == 0) continue;
+
                 source.CreateAlternativeTile(atlasCoords, flipBitsInt);
                 var tileData = source.GetTileData(atlasCoords, flipBitsInt);
 

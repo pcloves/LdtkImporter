@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://2pngv32ybe75"]
+[gd_scene load_steps=4 format=3 uid="uid://brqfuq3eq2uax"]
 
-[ext_resource type="TileSet" uid="uid://dawc65slsmndc" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground.tres" id="1_i6ibs"]
-[ext_resource type="TileSet" uid="uid://b0a1fnesd6fau" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground_dec_props.tres" id="2_jvb6k"]
-[ext_resource type="PackedScene" uid="uid://537kepwr6w0v" path="res://Ldtk/World/LDTK/Entity/Butterfly.tscn" id="3_1ytw3"]
+[ext_resource type="TileSet" uid="uid://cwq8hoxj6prvi" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground.tres" id="1_t62eq"]
+[ext_resource type="TileSet" uid="uid://bcnagqlseqomm" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground_dec_props.tres" id="2_b0fbx"]
+[ext_resource type="PackedScene" uid="uid://cp1rq2xum81cs" path="res://Ldtk/World/LDTK/Entity/Butterfly.tscn" id="3_2ockv"]
 
 [node name="LDTK_Level_2" type="Node2D"]
 position = Vector2(448, 400)
@@ -190,7 +190,7 @@ metadata/LDTK_fieldInstances = [{
 }]
 
 [node name="LDTK_LightGrass" type="TileMap" parent="."]
-tile_set = ExtResource("1_i6ibs")
+tile_set = ExtResource("1_t62eq")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LDTK_LightGrass_0"
@@ -222,7 +222,7 @@ metadata/LDTK_instance = {
 }
 
 [node name="LDTK_LightDirt" type="TileMap" parent="."]
-tile_set = ExtResource("1_i6ibs")
+tile_set = ExtResource("1_t62eq")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LDTK_LightDirt_0"
@@ -254,7 +254,7 @@ metadata/LDTK_instance = {
 }
 
 [node name="LDTK_Grass" type="TileMap" parent="."]
-tile_set = ExtResource("2_jvb6k")
+tile_set = ExtResource("2_b0fbx")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LDTK_Grass_0"
@@ -339,7 +339,7 @@ metadata/LDTK_instance = {
 "visible": true
 }
 
-[node name="LDTK_Butterfly-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_1ytw3")]
+[node name="LDTK_Butterfly-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_2ockv")]
 position = Vector2(232, 152)
 metadata/LDTK_entities = {
 "color": "#D77643",

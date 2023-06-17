@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://d0okjaoe6n7j8"]
+[gd_scene load_steps=5 format=3 uid="uid://cfxlrlhterd0w"]
 
-[ext_resource type="TileSet" uid="uid://d4cwqeds1haqw" path="res://Ldtk/Example/LDTK/Tileset/TopDown_by_deepnight.tres" id="1_fc3hc"]
-[ext_resource type="PackedScene" uid="uid://dup0kvfp7j47j" path="res://Ldtk/Example/LDTK/Entity/Door.tscn" id="2_1pi8p"]
-[ext_resource type="PackedScene" uid="uid://dao205xfuexvj" path="res://Ldtk/Example/LDTK/Entity/Item.tscn" id="3_a826w"]
-[ext_resource type="PackedScene" uid="uid://v7u2ytsmdb24" path="res://Ldtk/Example/LDTK/Entity/Button.tscn" id="4_1pbwb"]
+[ext_resource type="TileSet" uid="uid://dmwn4fbjc206" path="res://Ldtk/Example/LDTK/Tileset/TopDown_by_deepnight.tres" id="1_jasig"]
+[ext_resource type="PackedScene" uid="uid://bc57243hb3g6p" path="res://Ldtk/Example/LDTK/Entity/Door.tscn" id="2_n3rmi"]
+[ext_resource type="PackedScene" uid="uid://ckmvhnrd4wahr" path="res://Ldtk/Example/LDTK/Entity/Item.tscn" id="3_nlt4s"]
+[ext_resource type="PackedScene" uid="uid://w7una1gac3cw" path="res://Ldtk/Example/LDTK/Entity/Button.tscn" id="4_ovasm"]
 
 [node name="LDTK_World_Level_2" type="Node2D"]
 position = Vector2(768, 0)
@@ -5535,7 +5535,7 @@ metadata/LDTK_level = {
 metadata/LDTK_fieldInstances = []
 
 [node name="LDTK_Default_floor" type="TileMap" parent="."]
-tile_set = ExtResource("1_fc3hc")
+tile_set = ExtResource("1_jasig")
 format = 2
 layer_0/name = "LDTK_Default_floor_0"
 layer_0/tile_data = PackedInt32Array(2, 262145, 4, 3, 131073, 4, 4, 458753, 4, 5, 393217, 4, 6, 262145, 4, 7, 196609, 4, 8, 327681, 4, 9, 327681, 4, 10, 458753, 4, 11, 458753, 4, 12, 65537, 4, 13, 196609, 4, 14, 262145, 4, 15, 327681, 4, 65538, 65537, 4, 65539, 65537, 4, 65540, 196609, 4, 65541, 65537, 4, 65542, 131073, 4, 65543, 131073, 4, 65544, 327681, 4, 65545, 1, 4, 65546, 196609, 4, 65547, 458753, 4, 65548, 196609, 4, 65549, 65537, 4, 65550, 65537, 4, 65551, 65537, 4, 131074, 327681, 4, 131075, 131073, 4, 131076, 393217, 4, 131077, 458753, 4, 131078, 327681, 4, 131079, 458753, 4, 131080, 262145, 4, 131081, 393217, 4, 131082, 196609, 4, 131083, 262145, 4, 131084, 458753, 4, 131085, 196609, 4, 131086, 196609, 4, 131087, 65537, 4, 196621, 1, 4, 196622, 131073, 4, 196623, 262145, 4, 262148, 262145, 4, 262149, 1, 4, 262150, 131073, 4, 262152, 327681, 4, 262153, 393217, 4, 262154, 393217, 4, 262155, 262145, 4, 262157, 1, 4, 262158, 262145, 4, 262159, 262145, 4, 327684, 196609, 4, 327685, 131073, 4, 327686, 65537, 4, 327687, 458753, 4, 327688, 196609, 4, 327689, 1, 4, 327690, 196609, 4, 327691, 1, 4, 327693, 327681, 4, 327694, 262145, 4, 327695, 196609, 4, 393220, 131073, 4, 393221, 393217, 4, 393222, 327681, 4, 393223, 458753, 4, 393224, 262145, 4, 393225, 131073, 4, 393226, 65537, 4, 393227, 196609, 4, 393229, 458753, 4, 393230, 1, 4, 393231, 196609, 4, 458756, 1, 4, 458757, 131073, 4, 458758, 196609, 4, 458760, 393217, 4, 458761, 458753, 4, 458762, 196609, 4, 458763, 262145, 4, 458765, 131073, 4, 458766, 131073, 4, 458767, 1, 4, 524288, 393217, 4, 524289, 1, 4, 524290, 65537, 4, 524291, 1, 4, 524292, 393217, 4, 524293, 327681, 4, 524297, 196609, 4, 524298, 327681, 4, 524301, 131073, 4, 524302, 393217, 4, 524303, 262145, 4, 589824, 393217, 4, 589825, 393217, 4, 589826, 131073, 4, 589827, 131073, 4, 589828, 196609, 4, 589829, 1, 4, 589830, 196609, 4, 589832, 262145, 4, 589833, 262145, 4, 589834, 1, 4, 589835, 458753, 4, 589837, 458753, 4, 589838, 262145, 4, 589839, 327681, 4, 655364, 393217, 4, 655365, 393217, 4, 655366, 65537, 4, 655367, 458753, 4, 655368, 262145, 4, 655369, 327681, 4, 655370, 131073, 4, 655371, 393217, 4, 655373, 196609, 4, 655374, 393217, 4, 655375, 262145, 4, 720900, 393217, 4, 720901, 262145, 4, 720902, 262145, 4, 720903, 1, 4, 720904, 196609, 4, 720905, 65537, 4, 720906, 393217, 4, 720907, 1, 4, 720909, 327681, 4, 720910, 262145, 4, 720911, 458753, 4, 786445, 196609, 4, 786446, 458753, 4, 786447, 65537, 4, 851980, 1, 4, 851981, 458753, 4, 851982, 262145, 4, 851983, 1, 4, 917516, 393217, 4, 917517, 262145, 4, 917518, 131073, 4, 917519, 393217, 4)
@@ -6582,7 +6582,7 @@ metadata/LDTK_instance = {
 }
 
 [node name="LDTK_Custom_floor" type="TileMap" parent="."]
-tile_set = ExtResource("1_fc3hc")
+tile_set = ExtResource("1_jasig")
 format = 2
 layer_0/name = "LDTK_Custom_floor_0"
 layer_0/tile_data = PackedInt32Array(2, 196609, 3, 3, 1, 3, 4, 262145, 3, 5, 131073, 3, 6, 1, 3, 7, 1, 3, 8, 262145, 3, 9, 327681, 3, 10, 131073, 3, 11, 327681, 3, 12, 1, 3, 13, 196609, 3, 14, 262145, 3, 15, 131073, 3, 65538, 65537, 3, 65539, 131073, 3, 65540, 1, 3, 65541, 327681, 3, 65542, 131073, 3, 65543, 1, 3, 65544, 327681, 3, 65545, 327681, 3, 65546, 262145, 3, 65547, 262145, 3, 65548, 196609, 3, 65549, 65537, 3, 65550, 196609, 3, 65551, 131073, 3, 131074, 131073, 3, 131075, 262145, 3, 131076, 131073, 3, 131077, 65537, 3, 131078, 1, 3, 131079, 1, 3, 131080, 196609, 3, 131081, 262145, 3, 131082, 65537, 3, 131083, 1, 3, 131084, 196609, 3, 131085, 327681, 3, 131086, 131073, 3, 131087, 327681, 3, 196612, 65537, 3, 196613, 196609, 3, 196614, 1, 3, 196615, 65537, 3, 196616, 327681, 3, 196617, 1, 3, 196618, 65537, 3, 196619, 196609, 3, 196620, 196609, 3, 196621, 1, 3, 196622, 262145, 3, 196623, 1, 3, 262148, 1, 5, 262149, 1, 5, 262150, 1, 5, 262151, 1, 5, 262152, 1, 5, 262153, 1, 5, 262154, 1, 5, 262155, 131073, 5, 262156, 1, 3, 262157, 131073, 3, 262158, 327681, 3, 262159, 262145, 3, 327684, 65537, 5, 327685, 1, 5, 327686, 1, 5, 327687, 1, 5, 327688, 1, 5, 327689, 1, 5, 327690, 196609, 5, 327691, 131073, 5, 327692, 65537, 3, 327693, 65537, 3, 327694, 196609, 3, 327695, 196609, 3, 393220, 196609, 5, 393221, 1, 5, 393222, 131073, 5, 393223, 1, 5, 393224, 196609, 5, 393225, 65537, 5, 393226, 131073, 5, 393227, 131073, 5, 393228, 327681, 3, 393229, 65537, 3, 393230, 65537, 3, 393231, 262145, 3, 458756, 131073, 5, 458757, 196609, 5, 458758, 65537, 5, 458759, 1, 5, 458760, 196609, 5, 458761, 196609, 5, 458762, 196609, 5, 458763, 131073, 5, 458764, 131073, 3, 458765, 327681, 3, 458766, 196609, 3, 458767, 196609, 3, 524292, 1, 5, 524293, 65537, 5, 524294, 131073, 5, 524295, 196609, 5, 524296, 65537, 5, 524297, 1, 5, 524298, 65537, 5, 524299, 131073, 5, 524300, 327681, 3, 524301, 262145, 3, 524302, 196609, 3, 524303, 262145, 3, 589828, 131073, 5, 589829, 131073, 5, 589830, 131073, 5, 589831, 65537, 5, 589832, 1, 5, 589833, 196609, 5, 589834, 1, 5, 589835, 131073, 5, 589836, 327681, 3, 589837, 196609, 3, 589838, 131073, 3, 589839, 1, 3, 655364, 131073, 5, 655365, 65537, 5, 655366, 131073, 5, 655367, 131073, 5, 655368, 131073, 5, 655369, 196609, 5, 655370, 196609, 5, 655371, 131073, 5, 655372, 196609, 3, 655373, 131073, 3, 655374, 327681, 3, 655375, 262145, 3, 720900, 65537, 5, 720901, 131073, 5, 720902, 131073, 5, 720903, 65537, 5, 720904, 1, 5, 720905, 131073, 5, 720906, 65537, 5, 720907, 131073, 5, 720908, 327681, 3, 720909, 131073, 3, 720910, 1, 3, 720911, 65537, 3, 786444, 131073, 3, 786445, 131073, 3, 786446, 131073, 3, 786447, 131073, 3, 851980, 131073, 3, 851981, 131073, 3, 851982, 131073, 3, 851983, 131073, 3, 917516, 131073, 3, 917517, 131073, 3, 917518, 131073, 3, 917519, 131073, 3)
@@ -7748,7 +7748,7 @@ metadata/LDTK_instance = {
 }
 
 [node name="LDTK_Collisions" type="TileMap" parent="."]
-tile_set = ExtResource("1_fc3hc")
+tile_set = ExtResource("1_jasig")
 format = 2
 layer_0/name = "LDTK_Collisions_0"
 layer_0/tile_data = PackedInt32Array(2, 65537, 65542, 65538, 65537, 65542, 131074, 65537, 65542, 196621, 65537, 65542, 262148, 65537, 65542, 262150, 327681, 65542, 262152, 65537, 65542, 262155, 327681, 65542, 262157, 65537, 65542, 327684, 65537, 65542, 327691, 393217, 65542, 327693, 65537, 65542, 393220, 65537, 65542, 393227, 393217, 65542, 393229, 65537, 65542, 458756, 65537, 65542, 458758, 458753, 65542, 458760, 65537, 65542, 458763, 458753, 65542, 458765, 65537, 65542, 524293, 393217, 65542, 524297, 65537, 65542, 524298, 458753, 65542, 524301, 65537, 65542, 589830, 458753, 65542, 589832, 65537, 65542, 589835, 327681, 65542, 589837, 65537, 65542, 655364, 65537, 65542, 655371, 327681, 65542, 655373, 65537, 65542, 720900, 65537, 65542, 720907, 393217, 65542, 720909, 65537, 65542, 786445, 65537, 65542, 851980, 65537, 65542, 917516, 65537, 65542, 131075, 1, 131078, 131076, 1, 131078, 131077, 1, 131078, 131078, 1, 131078, 131079, 1, 131078, 131080, 1, 131078, 131081, 1, 131078, 131082, 1, 131078, 131083, 1, 131078, 131084, 1, 131078, 262149, 1, 6, 262153, 1, 6, 262154, 1, 6, 327687, 1, 6, 393223, 1, 131078, 524288, 1, 6, 524289, 1, 6, 524290, 1, 6, 524291, 1, 6, 589824, 1, 131078, 589825, 1, 131078, 589826, 1, 131078, 589827, 1, 131078, 655367, 1, 6, 720901, 1, 131078, 720902, 1, 131078, 720903, 1, 131078, 720904, 1, 131078, 720905, 1, 131078, 720906, 1, 131078, 917517, 1, 131078, 917518, 1, 131078, 917519, 1, 131078, 131085, 131073, 196614, 327686, 131073, 6, 327688, 131073, 65542, 393222, 131073, 131078, 393224, 131073, 196614, 458757, 131073, 131078, 458761, 131073, 196614, 458762, 131073, 131078, 524292, 131073, 65542, 589828, 131073, 196614, 589829, 131073, 6, 589833, 131073, 65542, 589834, 131073, 6, 655366, 131073, 6, 655368, 131073, 65542, 851981, 131073, 65542, 1, 524289, 1, 65537, 524289, 1, 131073, 524289, 1, 196620, 524289, 1, 262147, 524289, 1, 262151, 327681, 0, 262156, 524289, 1, 327683, 524289, 1, 327692, 524289, 1, 393219, 524289, 1, 393228, 524289, 1, 458755, 196609, 0, 458759, 524289, 1, 458764, 524289, 1, 524296, 196609, 0, 524300, 524289, 1, 589831, 327681, 0, 589836, 524289, 1, 655363, 524289, 1, 655372, 524289, 1, 720899, 524289, 1, 720908, 524289, 1, 786444, 196609, 0, 851979, 524289, 1, 917515, 524289, 1, 0, 524289, 1, 65536, 524289, 1, 131072, 524289, 1, 196608, 524289, 1, 196609, 524289, 1, 196610, 524289, 1, 196611, 524289, 1, 196615, 524289, 1, 262144, 524289, 1, 262145, 524289, 1, 262146, 524289, 1, 327680, 524289, 1, 327681, 524289, 1, 327682, 524289, 1, 393216, 524289, 1, 393217, 524289, 1, 393218, 524289, 1, 524295, 524289, 1, 655360, 524289, 1, 655361, 524289, 1, 655362, 524289, 1, 720896, 524289, 1, 720897, 524289, 1, 720898, 524289, 1, 786432, 524289, 1, 786433, 524289, 1, 786434, 524289, 1, 786435, 524289, 1, 786436, 524289, 1, 786437, 524289, 1, 786438, 524289, 1, 786439, 524289, 1, 786440, 524289, 1, 786441, 524289, 1, 786442, 524289, 1, 786443, 524289, 1, 851968, 524289, 1, 851969, 524289, 1, 851970, 524289, 1, 851971, 524289, 1, 851972, 524289, 1, 851973, 524289, 1, 851974, 524289, 1, 851975, 524289, 1, 851976, 524289, 1, 851977, 524289, 1, 851978, 524289, 1, 917504, 524289, 1, 917505, 524289, 1, 917506, 524289, 1, 917507, 524289, 1, 917508, 524289, 1, 917509, 524289, 1, 917510, 524289, 1, 917511, 524289, 1, 917512, 524289, 1, 917513, 524289, 1, 917514, 524289, 1, 983040, 524289, 1, 983041, 524289, 1, 983042, 524289, 1, 983043, 524289, 1, 983044, 524289, 1, 983045, 524289, 1, 983046, 524289, 1, 983047, 524289, 1, 983048, 524289, 1, 983049, 524289, 1, 983050, 524289, 1, 983051, 524289, 1, 983052, 524289, 1, 983053, 524289, 1, 983054, 524289, 1, 983055, 524289, 1, 196612, 196609, 0, 196613, 196609, 0, 196614, 262145, 0, 196616, 262145, 0, 196617, 327681, 0, 196618, 196609, 0, 196619, 327681, 0, 458752, 262145, 0, 458753, 262145, 0, 458754, 196609, 0, 524294, 327681, 0, 524299, 262145, 0)
@@ -9804,7 +9804,7 @@ metadata/LDTK_instance = {
 
 [node name="LDTK_Wall_tops" type="TileMap" parent="."]
 position = Vector2(0, -16)
-tile_set = ExtResource("1_fc3hc")
+tile_set = ExtResource("1_jasig")
 format = 2
 layer_0/name = "LDTK_Wall_tops_0"
 layer_0/tile_data = PackedInt32Array(262144, 393217, 2, 393216, 262145, 1, 393228, 393217, 2, 458752, 327681, 2, 589831, 196609, 2, 589836, 262145, 1, 655372, 262145, 2, 720896, 393217, 1, 720897, 262145, 2, 786432, 393217, 2, 851972, 262145, 2, 851973, 196609, 2, 851974, 262145, 1, 917508, 327681, 1, 917509, 393217, 1, 917510, 327681, 2, 917511, 196609, 1, 983045, 196609, 1, 983046, 262145, 1, 983049, 196609, 1, 983050, 393217, 2, 196610, 589825, 1, 196611, 589825, 1, 196612, 589825, 1, 196613, 589825, 1, 196614, 589825, 1, 196615, 589825, 1, 196616, 589825, 1, 196617, 589825, 1, 196618, 589825, 1, 196619, 589825, 1, 196620, 589825, 1, 458759, 589825, 1, 524294, 589825, 1, 524296, 589825, 1, 524299, 589825, 1, 655360, 589825, 1, 655361, 589825, 1, 655362, 589825, 1, 655363, 589825, 1, 786436, 589825, 1, 786437, 589825, 1, 786438, 589825, 1, 786439, 589825, 1, 786440, 589825, 1, 786441, 589825, 1, 786442, 589825, 1, 786443, 589825, 1, 983052, 589825, 1, 983053, 589825, 1, 983054, 589825, 1, 983055, 589825, 1, 262151, 65537, 2, 458753, 65537, 2, 458754, 65537, 2, 458755, 65537, 2, 786444, 65537, 2, 65537, 1, 65537, 131073, 1, 65537, 262147, 1, 65537, 262156, 1, 1, 327683, 65537, 65537, 327692, 1, 1, 393219, 65537, 65537, 458764, 1, 1, 524300, 65537, 65537, 720899, 1, 65537, 720908, 65537, 1, 851979, 131073, 65537, 917515, 131073, 65537, 524295, 131073, 2, 196609, 131073, 65536, 786435, 131073, 65536, 983051, 131073, 65536)
@@ -11099,81 +11099,8 @@ metadata/LDTK_instance = {
 "visible": true
 }
 
-[node name="LDTK_Door-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_1pi8p")]
+[node name="LDTK_Door-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_n3rmi")]
 position = Vector2(48, 128)
-metadata/LDTK_entities = {
-"color": "#B86F50",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "lockedWith",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 69.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.27,
-"height": 16.0,
-"hollow": false,
-"identifier": "Door",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": true,
-"resizableY": true,
-"showName": true,
-"tags": ["environment"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 384.0,
-"y": 64.0
-},
-"tileRenderMode": 4.0,
-"tilesetId": 104.0,
-"uid": 62.0,
-"width": 16.0
-}
 metadata/LDTK_fields = [{
 "__identifier": "lockedWith",
 "__tile": null,
@@ -11186,81 +11113,8 @@ metadata/LDTK_fields = [{
 }]
 }]
 
-[node name="LDTK_Item-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_a826w")]
+[node name="LDTK_Item-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_nlt4s")]
 position = Vector2(152, 88)
-metadata/LDTK_entities = {
-"color": "#FF0044",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayMode": 2.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 0.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "type",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 146.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.0,
-"height": 20.0,
-"hollow": false,
-"identifier": "Item",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": false,
-"tags": ["actor"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 64.0,
-"y": 64.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 104.0,
-"uid": 63.0,
-"width": 20.0
-}
 metadata/LDTK_fields = [{
 "__identifier": "type",
 "__tile": {
@@ -11279,81 +11133,8 @@ metadata/LDTK_fields = [{
 }]
 }]
 
-[node name="LDTK_Door-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_1pi8p")]
+[node name="LDTK_Door-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_n3rmi")]
 position = Vector2(112, 80)
-metadata/LDTK_entities = {
-"color": "#B86F50",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "lockedWith",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 69.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.27,
-"height": 16.0,
-"hollow": false,
-"identifier": "Door",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": true,
-"resizableY": true,
-"showName": true,
-"tags": ["environment"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 384.0,
-"y": 64.0
-},
-"tileRenderMode": 4.0,
-"tilesetId": 104.0,
-"uid": 62.0,
-"width": 16.0
-}
 metadata/LDTK_fields = [{
 "__identifier": "lockedWith",
 "__tile": null,
@@ -11363,81 +11144,8 @@ metadata/LDTK_fields = [{
 "realEditorValues": []
 }]
 
-[node name="LDTK_Door-2" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_1pi8p")]
+[node name="LDTK_Door-2" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_n3rmi")]
 position = Vector2(144, 128)
-metadata/LDTK_entities = {
-"color": "#B86F50",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "lockedWith",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 69.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.27,
-"height": 16.0,
-"hollow": false,
-"identifier": "Door",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": true,
-"resizableY": true,
-"showName": true,
-"tags": ["environment"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 384.0,
-"y": 64.0
-},
-"tileRenderMode": 4.0,
-"tilesetId": 104.0,
-"uid": 62.0,
-"width": 16.0
-}
 metadata/LDTK_fields = [{
 "__identifier": "lockedWith",
 "__tile": null,
@@ -11447,81 +11155,8 @@ metadata/LDTK_fields = [{
 "realEditorValues": []
 }]
 
-[node name="LDTK_Button-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_1pbwb")]
+[node name="LDTK_Button-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_ovasm")]
 position = Vector2(120, 152)
-metadata/LDTK_entities = {
-"color": "#FF0000",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "Array<EntityRef>",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": false,
-"allowedRefTags": [],
-"allowedRefs": 0.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayMode": 12.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "targets",
-"isArray": true,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_EntityRef",
-"uid": 106.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.08,
-"height": 10.0,
-"hollow": false,
-"identifier": "Button",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": true,
-"tags": ["environment"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 272.0,
-"y": 32.0
-},
-"tileRenderMode": 4.0,
-"tilesetId": 104.0,
-"uid": 105.0,
-"width": 10.0
-}
 metadata/LDTK_fields = [{
 "__identifier": "targets",
 "__tile": null,

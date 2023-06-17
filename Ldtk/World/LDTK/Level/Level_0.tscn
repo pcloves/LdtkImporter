@@ -1,11 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://b2028edi3em4c"]
+[gd_scene load_steps=7 format=3 uid="uid://bnyvcswj20t73"]
 
-[ext_resource type="TileSet" uid="uid://dawc65slsmndc" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground.tres" id="1_swppt"]
-[ext_resource type="TileSet" uid="uid://b0a1fnesd6fau" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground_dec_props.tres" id="2_jlw4l"]
-[ext_resource type="PackedScene" uid="uid://b3fdcsfxgstv6" path="res://Ldtk/World/LDTK/Entity/Exit.tscn" id="3_ucr8s"]
-[ext_resource type="PackedScene" uid="uid://cdne0nlthti4r" path="res://Ldtk/World/LDTK/Entity/Enter.tscn" id="4_wxeg2"]
-[ext_resource type="PackedScene" uid="uid://537kepwr6w0v" path="res://Ldtk/World/LDTK/Entity/Butterfly.tscn" id="5_o701p"]
-[ext_resource type="PackedScene" uid="uid://y77d7rvjnpfe" path="res://Ldtk/World/LDTK/Entity/Tree.tscn" id="6_k8hym"]
+[ext_resource type="TileSet" uid="uid://cwq8hoxj6prvi" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground.tres" id="1_b45sr"]
+[ext_resource type="TileSet" uid="uid://bcnagqlseqomm" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground_dec_props.tres" id="2_bnc72"]
+[ext_resource type="PackedScene" uid="uid://clcu441pafpqy" path="res://Ldtk/World/LDTK/Entity/Exit.tscn" id="3_pxbf2"]
+[ext_resource type="PackedScene" uid="uid://bsb3gcvu4c6mh" path="res://Ldtk/World/LDTK/Entity/Enter.tscn" id="4_1eqhu"]
+[ext_resource type="PackedScene" uid="uid://cp1rq2xum81cs" path="res://Ldtk/World/LDTK/Entity/Butterfly.tscn" id="5_j5ui1"]
+[ext_resource type="PackedScene" uid="uid://5pr5rxrjgl7" path="res://Ldtk/World/LDTK/Entity/Tree.tscn" id="6_e1a5y"]
 
 [node name="LDTK_Level_0" type="Node2D"]
 metadata/LDTK_level = {
@@ -667,7 +667,7 @@ metadata/LDTK_fieldInstances = [{
 }]
 
 [node name="LDTK_LightGrass" type="TileMap" parent="."]
-tile_set = ExtResource("1_swppt")
+tile_set = ExtResource("1_b45sr")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LDTK_LightGrass_0"
@@ -910,7 +910,7 @@ metadata/LDTK_instance = {
 }
 
 [node name="LDTK_LightDirt" type="TileMap" parent="."]
-tile_set = ExtResource("1_swppt")
+tile_set = ExtResource("1_b45sr")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LDTK_LightDirt_0"
@@ -1020,7 +1020,7 @@ metadata/LDTK_instance = {
 }
 
 [node name="LDTK_Grass" type="TileMap" parent="."]
-tile_set = ExtResource("2_jlw4l")
+tile_set = ExtResource("2_bnc72")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LDTK_Grass_0"
@@ -1282,7 +1282,7 @@ metadata/LDTK_instance = {
 "visible": true
 }
 
-[node name="LDTK_Exit-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_ucr8s")]
+[node name="LDTK_Exit-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_pxbf2")]
 position = Vector2(240, 160)
 metadata/LDTK_entities = {
 "color": "#BE4A2F",
@@ -1320,7 +1320,7 @@ metadata/LDTK_entities = {
 }
 metadata/LDTK_fields = []
 
-[node name="LDTK_Enter-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_wxeg2")]
+[node name="LDTK_Enter-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_1eqhu")]
 position = Vector2(0, 64)
 metadata/LDTK_entities = {
 "color": "#0099DB",
@@ -1358,7 +1358,7 @@ metadata/LDTK_entities = {
 }
 metadata/LDTK_fields = []
 
-[node name="LDTK_Butterfly-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_o701p")]
+[node name="LDTK_Butterfly-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_j5ui1")]
 position = Vector2(40, 40)
 metadata/LDTK_entities = {
 "color": "#D77643",
@@ -1484,7 +1484,7 @@ metadata/LDTK_fields = [{
 }]
 }]
 
-[node name="LDTK_Butterfly-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_o701p")]
+[node name="LDTK_Butterfly-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_j5ui1")]
 position = Vector2(184, 168)
 metadata/LDTK_entities = {
 "color": "#D77643",
@@ -1568,7 +1568,7 @@ metadata/LDTK_fields = [{
 "realEditorValues": []
 }]
 
-[node name="LDTK_Tree-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("6_k8hym")]
+[node name="LDTK_Tree-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("6_e1a5y")]
 position = Vector2(184, 112)
 metadata/LDTK_entities = {
 "color": "#3E8948",

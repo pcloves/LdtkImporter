@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://c85t74ioce2h7"]
+[gd_scene load_steps=5 format=3 uid="uid://cgkqhxs1l310s"]
 
-[ext_resource type="TileSet" uid="uid://dawc65slsmndc" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground.tres" id="1_vrmcf"]
-[ext_resource type="TileSet" uid="uid://b0a1fnesd6fau" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground_dec_props.tres" id="2_luj14"]
-[ext_resource type="PackedScene" uid="uid://cdne0nlthti4r" path="res://Ldtk/World/LDTK/Entity/Enter.tscn" id="3_xpe7g"]
-[ext_resource type="PackedScene" uid="uid://y77d7rvjnpfe" path="res://Ldtk/World/LDTK/Entity/Tree.tscn" id="4_2u5rk"]
+[ext_resource type="TileSet" uid="uid://cwq8hoxj6prvi" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground.tres" id="1_ilxkw"]
+[ext_resource type="TileSet" uid="uid://bcnagqlseqomm" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground_dec_props.tres" id="2_wjv63"]
+[ext_resource type="PackedScene" uid="uid://bsb3gcvu4c6mh" path="res://Ldtk/World/LDTK/Entity/Enter.tscn" id="3_qyk4o"]
+[ext_resource type="PackedScene" uid="uid://5pr5rxrjgl7" path="res://Ldtk/World/LDTK/Entity/Tree.tscn" id="4_fem7e"]
 
 [node name="LDTK_Level_1" type="Node2D"]
 position = Vector2(256, 144)
@@ -404,7 +404,7 @@ metadata/LDTK_fieldInstances = [{
 
 [node name="LDTK_LightGrass" type="TileMap" parent="."]
 position = Vector2(0, -16)
-tile_set = ExtResource("1_vrmcf")
+tile_set = ExtResource("1_ilxkw")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LDTK_LightGrass_0"
@@ -591,7 +591,7 @@ metadata/LDTK_instance = {
 }
 
 [node name="LDTK_LightDirt" type="TileMap" parent="."]
-tile_set = ExtResource("1_vrmcf")
+tile_set = ExtResource("1_ilxkw")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LDTK_LightDirt_0"
@@ -624,7 +624,7 @@ metadata/LDTK_instance = {
 
 [node name="LDTK_Grass" type="TileMap" parent="."]
 position = Vector2(0, -16)
-tile_set = ExtResource("2_luj14")
+tile_set = ExtResource("2_wjv63")
 cell_quadrant_size = 32
 format = 2
 layer_0/name = "LDTK_Grass_0"
@@ -764,7 +764,7 @@ metadata/LDTK_instance = {
 "visible": true
 }
 
-[node name="LDTK_Enter-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_xpe7g")]
+[node name="LDTK_Enter-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_qyk4o")]
 metadata/LDTK_entities = {
 "color": "#0099DB",
 "doc": null,
@@ -801,7 +801,7 @@ metadata/LDTK_entities = {
 }
 metadata/LDTK_fields = []
 
-[node name="LDTK_Enter-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_xpe7g")]
+[node name="LDTK_Enter-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_qyk4o")]
 position = Vector2(192, 240)
 metadata/LDTK_entities = {
 "color": "#0099DB",
@@ -839,7 +839,7 @@ metadata/LDTK_entities = {
 }
 metadata/LDTK_fields = []
 
-[node name="LDTK_Tree-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_2u5rk")]
+[node name="LDTK_Tree-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_fem7e")]
 position = Vector2(120, 208)
 metadata/LDTK_entities = {
 "color": "#3E8948",
