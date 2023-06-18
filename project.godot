@@ -22,6 +22,10 @@ project/assembly_name="Ldtk Importer"
 
 enabled=PackedStringArray("res://addons/LdtkImporter/plugin.cfg")
 
+[memory]
+
+limits/message_queue/max_size_kb=8192
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
