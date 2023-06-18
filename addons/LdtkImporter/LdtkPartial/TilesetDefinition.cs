@@ -181,37 +181,29 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
 
     private void UpdateTile(LdtkJson ldtkJson, TileSetAtlasSource source)
     {
-        var gridWidth = (PxWid - 2 * Padding + Spacing) / (TileGridSize + Spacing);
-        var gridHeight = (PxHei - 2 * Padding + Spacing) / (TileGridSize + Spacing);
-
-        for (var y = 0; y < gridHeight; y++)
-        {
-            for (var x = 0; x < gridWidth; x++)
-            {
-                var gridCoords = new Vector2I(x, y);
-
-                if (source.HasTile(gridCoords)) continue;
-
-                source.CreateTile(gridCoords);
-            }
-        }
-
-        var dictionary = ldtkJson.Levels
+        //create single tile
+        var tileId2FlipBitsMap = ldtkJson.Levels
             .AsParallel()
             .SelectMany(level => level.LayerInstances)
             .Where(instance => instance.TilesetDefUid == Uid)
             .SelectMany(instance => instance.GridTiles.Concat(instance.AutoLayerTiles))
-            .Where(instance => instance.F != 0)
             .Select(instance => new KeyValuePair<long, long>(instance.T, instance.F))
             .GroupBy(pair => pair.Key)
             .ToDictionary(pairs => pairs.Key,
                 pairs => pairs.Select(pair => (int)pair.Value).ToHashSet());
 
-        foreach (var tileId in dictionary.Keys)
+        foreach (var tileId in tileId2FlipBitsMap.Keys)
         {
             var atlasCoords = tileId.AtlasCoords(source);
-            foreach (var flipBitsInt in dictionary[tileId])
+
+            if (source.HasTile(atlasCoords)) continue;
+
+            source.CreateTile(atlasCoords);
+            GD.Print($"   CreateTile, atlasCoords:{atlasCoords}, size:{Vector2I.One}");
+
+            foreach (var flipBitsInt in tileId2FlipBitsMap[tileId])
             {
+                if (flipBitsInt == 0) continue;
                 if (source.HasAlternativeTile(atlasCoords, flipBitsInt)) continue;
 
                 source.CreateAlternativeTile(atlasCoords, flipBitsInt);

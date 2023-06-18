@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://cjb6a7ks4apbr"]
 
-[ext_resource type="TileSet" uid="uid://dj5ju2imquimi" path="res://Ldtk/World/LDTK/Tileset/FLSET1_water_env.tres" id="1_x60oh"]
-[ext_resource type="TileSet" uid="uid://ck37xw21wg8cw" path="res://Ldtk/World/LDTK/Tileset/FLSET1_hills.tres" id="2_y4xaa"]
-[ext_resource type="TileSet" uid="uid://d6hwtvgmmrhn" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground.tres" id="3_2cfp1"]
-[ext_resource type="TileSet" uid="uid://jvvogl4a14ai" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground_dec_props.tres" id="4_ufy8g"]
+[ext_resource type="TileSet" uid="uid://bav2we38ro1wq" path="res://Ldtk/World/LDTK/Tileset/FLSET1_water_env.tres" id="1_x60oh"]
+[ext_resource type="TileSet" uid="uid://6ux0v30li3nd" path="res://Ldtk/World/LDTK/Tileset/FLSET1_hills.tres" id="2_y4xaa"]
+[ext_resource type="TileSet" uid="uid://mxhtncqrsq3l" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground.tres" id="3_2cfp1"]
+[ext_resource type="TileSet" uid="uid://ctcba660rnown" path="res://Ldtk/World/LDTK/Tileset/FLSET1_ground_dec_props.tres" id="4_ufy8g"]
 [ext_resource type="PackedScene" uid="uid://c8drfco42kkmt" path="res://Ldtk/World/LDTK/Entity/Butterfly.tscn" id="5_wty1r"]
 
 [node name="LDTK_Level_2" type="Node2D"]

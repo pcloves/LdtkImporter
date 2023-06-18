@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3]
 
-[ext_resource type="PackedScene" uid="uid://dxvunpc3ddwcb" path="res://Ldtk/World/LDTK/Level/Level_0.tscn" id="1_77yx1"]
-[ext_resource type="PackedScene" uid="uid://dtk50iksx26mq" path="res://Ldtk/World/LDTK/Level/Level_1.tscn" id="2_ya4fn"]
-[ext_resource type="PackedScene" uid="uid://cjb6a7ks4apbr" path="res://Ldtk/World/LDTK/Level/Level_2.tscn" id="3_hq2p4"]
-[ext_resource type="PackedScene" uid="uid://dwiyjkc56phvh" path="res://Ldtk/World/LDTK/Level/Level_3.tscn" id="4_em4ai"]
+[ext_resource type="PackedScene" uid="uid://dxvunpc3ddwcb" path="res://Ldtk/World/LDTK/Level/Level_0.tscn" id="1_sj7wg"]
+[ext_resource type="PackedScene" uid="uid://dtk50iksx26mq" path="res://Ldtk/World/LDTK/Level/Level_1.tscn" id="2_uogj3"]
+[ext_resource type="PackedScene" uid="uid://cjb6a7ks4apbr" path="res://Ldtk/World/LDTK/Level/Level_2.tscn" id="3_eqlta"]
+[ext_resource type="PackedScene" uid="uid://dwiyjkc56phvh" path="res://Ldtk/World/LDTK/Level/Level_3.tscn" id="4_hkxxv"]
 
 [node name="World" type="Node2D"]
 
-[node name="LDTK_Level_0" type="Node2D" parent="." instance=ExtResource("1_77yx1")]
+[node name="LDTK_Level_0" type="Node2D" parent="." instance=ExtResource("1_sj7wg")]
 metadata/LDTK_level = {
 "__bgColor": "#696A79",
 "__bgPos": null,
@@ -841,7 +841,7 @@ metadata/LDTK_fieldInstances = [{
 }]
 }]
 
-[node name="LDTK_Level_1" type="Node2D" parent="." instance=ExtResource("2_ya4fn")]
+[node name="LDTK_Level_1" type="Node2D" parent="." instance=ExtResource("2_uogj3")]
 position = Vector2(256, 144)
 metadata/LDTK_level = {
 "__bgColor": "#696A79",
@@ -1413,7 +1413,7 @@ metadata/LDTK_fieldInstances = [{
 "realEditorValues": []
 }]
 
-[node name="LDTK_Level_2" type="Node2D" parent="." instance=ExtResource("3_hq2p4")]
+[node name="LDTK_Level_2" type="Node2D" parent="." instance=ExtResource("3_eqlta")]
 position = Vector2(448, 400)
 metadata/LDTK_level = {
 "__bgColor": "#696A79",
@@ -1777,7 +1777,7 @@ metadata/LDTK_fieldInstances = [{
 "realEditorValues": []
 }]
 
-[node name="LDTK_Level_3" type="Node2D" parent="." instance=ExtResource("4_em4ai")]
+[node name="LDTK_Level_3" type="Node2D" parent="." instance=ExtResource("4_hkxxv")]
 position = Vector2(32, 656)
 metadata/LDTK_level = {
 "__bgColor": "#696A79",
