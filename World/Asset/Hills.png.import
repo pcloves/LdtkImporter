@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cs47tssbmvkdf"
-path="res://.godot/imported/Mouse.png-5ffbc1207e84f9b6767e0f0a62b45448.ctex"
+uid="uid://dje13epnmidte"
+path="res://.godot/imported/Hills.png-176ec80ea07c100e69f53015ed09ca3c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ldtk/World/Asset/Nature/Mouse.png"
-dest_files=["res://.godot/imported/Mouse.png-5ffbc1207e84f9b6767e0f0a62b45448.ctex"]
+source_file="res://World/Asset/Hills.png"
+dest_files=["res://.godot/imported/Hills.png-176ec80ea07c100e69f53015ed09ca3c.ctex"]
 
 [params]
 

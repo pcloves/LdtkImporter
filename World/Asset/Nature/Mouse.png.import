@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blo0dv664jkd5"
-path="res://.godot/imported/TreeB_v2.png-beed59d923b8e23bf47b5ae480c9d37e.ctex"
+uid="uid://c81lgmu0u567f"
+path="res://.godot/imported/Mouse.png-a7821baba8eb8084934e68d16aab15fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ldtk/World/Asset/Trees/TreeB_v2.png"
-dest_files=["res://.godot/imported/TreeB_v2.png-beed59d923b8e23bf47b5ae480c9d37e.ctex"]
+source_file="res://World/Asset/Nature/Mouse.png"
+dest_files=["res://.godot/imported/Mouse.png-a7821baba8eb8084934e68d16aab15fb.ctex"]
 
 [params]
 

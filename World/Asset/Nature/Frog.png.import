@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf4hyo4l78coc"
-path="res://.godot/imported/BridgesFences.png-1df8654bb77dcb456ea16c55852d8e2a.ctex"
+uid="uid://cm25xmawv7h8x"
+path="res://.godot/imported/Frog.png-dd137ce6ccd13bc36d50ab856df11ab0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ldtk/World/Asset/BridgesFences.png"
-dest_files=["res://.godot/imported/BridgesFences.png-1df8654bb77dcb456ea16c55852d8e2a.ctex"]
+source_file="res://World/Asset/Nature/Frog.png"
+dest_files=["res://.godot/imported/Frog.png-dd137ce6ccd13bc36d50ab856df11ab0.ctex"]
 
 [params]
 

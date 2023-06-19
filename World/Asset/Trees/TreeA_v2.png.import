@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcsyg3206d05d"
-path="res://.godot/imported/WaterEnv.png-31faf7dc27783577b59bcff37183bf38.ctex"
+uid="uid://dl1x52wefle3b"
+path="res://.godot/imported/TreeA_v2.png-18b459c91675fdba6b5041b384ea93a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ldtk/World/Asset/WaterEnv.png"
-dest_files=["res://.godot/imported/WaterEnv.png-31faf7dc27783577b59bcff37183bf38.ctex"]
+source_file="res://World/Asset/Trees/TreeA_v2.png"
+dest_files=["res://.godot/imported/TreeA_v2.png-18b459c91675fdba6b5041b384ea93a6.ctex"]
 
 [params]
 
