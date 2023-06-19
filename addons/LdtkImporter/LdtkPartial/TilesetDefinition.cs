@@ -196,10 +196,11 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         {
             var atlasCoords = tileId.AtlasCoords(source);
 
-            if (source.HasTile(atlasCoords)) continue;
-
-            source.CreateTile(atlasCoords);
-            GD.Print($"   CreateTile, atlasCoords:{atlasCoords}, size:{Vector2I.One}");
+            if (!source.HasTile(atlasCoords))
+            {
+                source.CreateTile(atlasCoords);
+                GD.Print($"   CreateTile, atlasCoords:{atlasCoords}, size:{Vector2I.One}");
+            }
 
             foreach (var flipBitsInt in tileId2FlipBitsMap[tileId])
             {
