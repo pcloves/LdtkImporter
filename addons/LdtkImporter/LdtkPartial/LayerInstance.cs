@@ -139,19 +139,19 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
             tileMap.EnsureLayerExist($"{layerNamePrefix}_{i}");
         }
 
-        tileMap.TileSet = tilesetDefinition!.TileSet;
+        tileMap.TileSet = tilesetDefinition?.TileSet;
         tileMap.ActionByLayerNamePrefix(layerNamePrefix,
             i => tileMap.SetLayerModulate(i, new Color(1, 1, 1, (float)Opacity)));
         tileMap.ActionByLayerNamePrefix(layerNamePrefix, i => tileMap.SetLayerEnabled(i, Visible));
 
         var tileInstances = Type == nameof(TypeEnum.Tiles) ? GridTiles : AutoLayerTiles;
-        var sourceId = (int)tilesetDefinition.Uid;
-        var source = (TileSetAtlasSource)tileMap.TileSet.GetSource(sourceId);
+        var sourceId = tilesetDefinition?.Uid ?? 0;
+        var source = (TileSetAtlasSource)tileMap.TileSet?.GetSource((int)sourceId);
         foreach (var tileInstance in tileInstances)
         {
             var coords = new Vector2I((int)tileInstance.Px[0], (int)tileInstance.Px[1]) / (int)GridSize;
             var atlasCoords = tileInstance.T.AtlasCoords(source);
-            tileMap.SetCell(tileInstance.Layer, coords, sourceId, atlasCoords, (int)tileInstance.F);
+            tileMap.SetCell(tileInstance.Layer, coords, (int)sourceId, atlasCoords, (int)tileInstance.F);
             tileMap.GetCellTileData(tileInstance.Layer, coords).Modulate = new Color(1, 1, 1, (float)tileInstance.A);
         }
 
