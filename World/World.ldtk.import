@@ -7,10 +7,10 @@ path="res://.godot/imported/World.ldtk-67a84f32fe4fdbc38fb957cc5c8de9fd.tscn"
 
 [deps]
 
-files=["res://World/LDTK/Tileset/WaterEnv.tres", "res://World/LDTK/Tileset/BridgesFences2.tres", "res://World/LDTK/Level/Level_0.tscn", "res://World/LDTK/World.tscn"]
+files=["res://World/LDTK/Tileset/WaterEnv.tres", "res://World/LDTK/Tileset/BridgesFences2.tres", "res://World/LDTK/Tileset/Ground.tres", "res://World/LDTK/Level/Level_0.tscn", "res://World/LDTK/World.tscn"]
 
 source_file="res://World/World.ldtk"
-dest_files=["res://.godot/imported/World.ldtk-67a84f32fe4fdbc38fb957cc5c8de9fd.tscn", "res://World/LDTK/Tileset/WaterEnv.tres", "res://World/LDTK/Tileset/BridgesFences2.tres", "res://World/LDTK/Level/Level_0.tscn", "res://World/LDTK/World.tscn"]
+dest_files=["res://.godot/imported/World.ldtk-67a84f32fe4fdbc38fb957cc5c8de9fd.tscn", "res://World/LDTK/Tileset/WaterEnv.tres", "res://World/LDTK/Tileset/BridgesFences2.tres", "res://World/LDTK/Tileset/Ground.tres", "res://World/LDTK/Level/Level_0.tscn", "res://World/LDTK/World.tscn"]
 
 [params]
 
@@ -21,6 +21,7 @@ Tileset/create_if_not_exists=true
 Tileset/add_metadata=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Mapping/BridgesFences2="res://World/LDTK/Tileset/BridgesFences2.tres"
+Tileset/Mapping/Ground="res://World/LDTK/Tileset/Ground.tres"
 Tileset/Mapping/WaterEnv="res://World/LDTK/Tileset/WaterEnv.tres"
 Entity/entity_add_metadata=true
 Level/level_add_metadata=true
