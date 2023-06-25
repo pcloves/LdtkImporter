@@ -40,6 +40,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         Root.Name = $"{prefix2Add}_{Identifier}";
         Root.Position = new Vector2(PxTotalOffsetX, PxTotalOffsetY);
         Root.Visible = Visible;
+        Root.Modulate = new Color(1, 1, 1, (float)Opacity);
         Root.SetMeta($"{prefix2Add}_instance", Json.ParseString(JsonString));
 
         var tileMap = Root as TileMap;
@@ -141,8 +142,6 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         }
 
         tileMap.TileSet = tilesetDefinition?.TileSet;
-        tileMap.ActionByLayerNamePrefix(layerNamePrefix,
-            i => tileMap.SetLayerModulate(i, new Color(1, 1, 1, (float)Opacity)));
 
         var tileInstances = Type == nameof(TypeEnum.Tiles) ? GridTiles : AutoLayerTiles;
         var sourceId = tilesetDefinition?.Uid ?? 0;
