@@ -14,16 +14,6 @@ namespace LdtkImporter;
 [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
 public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
 {
-    /// <summary>
-    /// https://ldtk.io/json/#ldtk-Tile;f
-    /// </summary>
-    [Flags]
-    public enum FlipBits
-    {
-        FlipH = 1, //X flip only
-        FlipV = 2, //Y flip only
-    }
-
     [JsonIgnore] public TileSet TileSet { get; set; }
     [JsonIgnore] public string JsonString { get; set; }
 
@@ -187,10 +177,10 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
             .SelectMany(level => level.LayerInstances)
             .Where(instance => instance.TilesetDefUid == Uid)
             .SelectMany(instance => instance.GridTiles.Concat(instance.AutoLayerTiles))
-            .Select(instance => new KeyValuePair<long, long>(instance.T, instance.F))
+            .Select(instance => new KeyValuePair<long, TileInstance>(instance.T, instance))
             .GroupBy(pair => pair.Key)
             .ToDictionary(pairs => pairs.Key,
-                pairs => pairs.Select(pair => (int)pair.Value).ToHashSet());
+                pairs => pairs.Select(pair => pair.Value).ToHashSet());
 
         foreach (var tileId in tileId2FlipBitsMap.Keys)
         {
@@ -202,21 +192,47 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
                 GD.Print($"   CreateTile, atlasCoords:{atlasCoords}, size:{Vector2I.One}");
             }
 
-            foreach (var flipBitsInt in tileId2FlipBitsMap[tileId])
+            foreach (var tileInstance in tileId2FlipBitsMap[tileId])
             {
-                if (flipBitsInt == 0) continue;
-                if (source.HasAlternativeTile(atlasCoords, flipBitsInt)) continue;
+                tileInstance.AlternativeIdFlags = (AlternativeIdFlags)tileInstance.F;
 
-                source.CreateAlternativeTile(atlasCoords, flipBitsInt);
-                var tileData = source.GetTileData(atlasCoords, flipBitsInt);
+                var textureOriginX = -(int)(tileInstance.Px[0] % TileGridSize);
+                if (Math.Abs(Math.Abs(textureOriginX / (float)TileGridSize) - 0.5f) < 0.01f)
+                    tileInstance.AlternativeIdFlags |= AlternativeIdFlags.PivotXHalf;
 
-                var flipBits = (FlipBits)flipBitsInt;
+                var textureOriginY = -(int)(tileInstance.Px[1] % TileGridSize);
+                if (Math.Abs(Math.Abs(textureOriginY / (float)TileGridSize ) - 0.5f) < 0.01f)
+                    tileInstance.AlternativeIdFlags |= AlternativeIdFlags.PivotYHalf;
 
-                tileData.FlipH = flipBits.HasFlag(FlipBits.FlipH);
-                tileData.FlipV = flipBits.HasFlag(FlipBits.FlipV);
+                var alternativeId = (int)tileInstance.AlternativeIdFlags;
+                if (alternativeId == 0) continue;
+
+                tileInstance.TextureOrigin = new Vector2I(textureOriginX, textureOriginY);
+
+                if (source.HasAlternativeTile(atlasCoords, alternativeId)) continue;
+
+                source.CreateAlternativeTile(atlasCoords, alternativeId);
+                var tileData = source.GetTileData(atlasCoords, alternativeId);
+
+                var alternativeIdFlags = (AlternativeIdFlags)alternativeId;
+
+                tileData.FlipH = alternativeIdFlags.HasFlag(AlternativeIdFlags.FlipH);
+                tileData.FlipV = alternativeIdFlags.HasFlag(AlternativeIdFlags.FlipV);
+                tileData.TextureOrigin = tileInstance.TextureOrigin;
                 GD.Print(
-                    $"   CreateAlternativeTile, tileId:{tileId}, atlasCoords:{atlasCoords}, FlipH:{tileData.FlipH}, FlipV:{tileData.FlipV}");
+                    $"   CreateAlternativeTile alternativeId:{alternativeId}({alternativeIdFlags}), LDTK tileId:{tileId}, atlasCoords:{atlasCoords}, TextureOrigin:{tileInstance.TextureOrigin}");
             }
         }
     }
+}
+
+[Flags]
+public enum AlternativeIdFlags
+{
+    None = 0,
+    FlipH = 1, //X flip only
+    FlipV = 2, //Y flip only
+
+    PivotXHalf = 4, //pivotX: 0.5
+    PivotYHalf = 8, //pivotY: 0.5
 }

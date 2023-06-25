@@ -151,7 +151,8 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         {
             var coords = new Vector2I((int)tileInstance.Px[0], (int)tileInstance.Px[1]) / (int)GridSize;
             var atlasCoords = tileInstance.T.AtlasCoords(source);
-            tileMap.SetCell(tileInstance.Layer, coords, (int)sourceId, atlasCoords, (int)tileInstance.F);
+            
+            tileMap.SetCell(tileInstance.Layer, coords, (int)sourceId, atlasCoords, (int)tileInstance.AlternativeIdFlags);
             tileMap.GetCellTileData(tileInstance.Layer, coords).Modulate = new Color(1, 1, 1, (float)tileInstance.A);
         }
 
