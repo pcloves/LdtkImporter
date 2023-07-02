@@ -8630,7 +8630,7 @@
 		},
 		{
 			"__type": "AutoLayer",
-			"identifier": "Ground_0",
+			"identifier": "Water",
 			"type": "AutoLayer",
 			"uid": 39,
 			"doc": null,
@@ -23525,7 +23525,7 @@
 					"entityInstances": []
 				},
 				{
-					"__identifier": "Ground_0",
+					"__identifier": "Water",
 					"__type": "AutoLayer",
 					"__cWid": 72,
 					"__cHei": 56,
