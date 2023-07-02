@@ -194,20 +194,18 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
 
             foreach (var tileInstance in tileId2FlipBitsMap[tileId])
             {
+                var tileGridSize = (float)TileGridSize;
+                var textureOrigin = new Vector2(tileInstance.Px[0] % tileGridSize, tileInstance.Px[1] % tileGridSize);
+                var textureOriginPivot = textureOrigin / TileGridSize;
+
                 tileInstance.AlternativeIdFlags = (AlternativeIdFlags)tileInstance.F;
-
-                var textureOriginX = -(int)(tileInstance.Px[0] % TileGridSize);
-                if (Math.Abs(Math.Abs(textureOriginX / (float)TileGridSize) - 0.5f) < 0.01f)
-                    tileInstance.AlternativeIdFlags |= AlternativeIdFlags.PivotXHalf;
-
-                var textureOriginY = -(int)(tileInstance.Px[1] % TileGridSize);
-                if (Math.Abs(Math.Abs(textureOriginY / (float)TileGridSize ) - 0.5f) < 0.01f)
-                    tileInstance.AlternativeIdFlags |= AlternativeIdFlags.PivotYHalf;
+                tileInstance.AlternativeIdFlags |= textureOriginPivot.X.PivotXFlags();
+                tileInstance.AlternativeIdFlags |= textureOriginPivot.Y.PivotYFlags();
 
                 var alternativeId = (int)tileInstance.AlternativeIdFlags;
                 if (alternativeId == 0) continue;
 
-                tileInstance.TextureOrigin = new Vector2I(textureOriginX, textureOriginY);
+                tileInstance.TextureOrigin = new Vector2I(-(int)textureOrigin.X, -(int)textureOrigin.Y);
 
                 if (source.HasAlternativeTile(atlasCoords, alternativeId)) continue;
 
@@ -230,9 +228,28 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
 public enum AlternativeIdFlags
 {
     None = 0,
-    FlipH = 1, //X flip only
-    FlipV = 2, //Y flip only
 
-    PivotXHalf = 4, //pivotX: 0.5
-    PivotYHalf = 8, //pivotY: 0.5
+    //X flip only
+    FlipH = 1 << 0,
+
+    //Y flip only
+    FlipV = 1 << 1,
+
+    //pivotX: 0.25
+    PivotXOneQuarter = 1 << 2,
+
+    //pivotX: 0.5
+    PivotXHalf = 1 << 3,
+
+    //pivotX: 0.75
+    PivotXThreeQuarter = 1 << 4,
+
+    //pivotY: 0.25
+    PivotYOneQuarter = 1 << 5,
+
+    //pivotY: 0.5
+    PivotYHalf = 1 << 6,
+
+    //pivotY: 0.75
+    PivotYThreeQuarter = 1 << 7,
 }

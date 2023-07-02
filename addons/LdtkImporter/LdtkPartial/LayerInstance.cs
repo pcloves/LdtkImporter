@@ -148,7 +148,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         var source = (TileSetAtlasSource)tileMap.TileSet?.GetSource((int)sourceId);
         foreach (var tileInstance in tileInstances)
         {
-            var coords = new Vector2I((int)tileInstance.Px[0], (int)tileInstance.Px[1]) / (int)GridSize;
+            var coords = new Vector2I((int)tileInstance.Px[0], (int)tileInstance.Px[1]) / (int)(tilesetDefinition?.TileGridSize ?? GridSize);
             var atlasCoords = tileInstance.T.AtlasCoords(source);
             
             tileMap.SetCell(tileInstance.Layer, coords, (int)sourceId, atlasCoords, (int)tileInstance.AlternativeIdFlags);
