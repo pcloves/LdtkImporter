@@ -1,10 +1,51 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Godot;
 
 namespace LdtkImporter;
 
 public static class Extensions
 {
+    public static AlternativeIdFlags PivotXFlags(this float pivotX)
+    {
+        if (Math.Abs(pivotX - 0.25) < 0.01f)
+        {
+            return AlternativeIdFlags.PivotXOneQuarter;
+        }
+
+        if (Math.Abs(pivotX - 0.5) < 0.01f)
+        {
+            return AlternativeIdFlags.PivotXHalf;
+        }
+
+        if (Math.Abs(pivotX - 0.75) < 0.01f)
+        {
+            return AlternativeIdFlags.PivotXThreeQuarter;
+        }
+
+        return AlternativeIdFlags.None;
+    }
+
+    public static AlternativeIdFlags PivotYFlags(this float pivotY)
+    {
+        if (Math.Abs(pivotY - 0.25) < 0.01f)
+        {
+            return AlternativeIdFlags.PivotYOneQuarter;
+        }
+
+        if (Math.Abs(pivotY - 0.5) < 0.01f)
+        {
+            return AlternativeIdFlags.PivotYHalf;
+        }
+
+        if (Math.Abs(pivotY - 0.75) < 0.01f)
+        {
+            return AlternativeIdFlags.PivotYThreeQuarter;
+        }
+
+        return AlternativeIdFlags.None;
+    }
+
     public static Vector2I AtlasCoords(this int tileId, TileSetAtlasSource tileSetAtlasSource)
     {
         var tileIdLong = (long)tileId;
