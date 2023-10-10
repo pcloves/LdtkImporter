@@ -1,10 +1,8 @@
-[gd_scene load_steps=2 format=3]
-
-[ext_resource type="PackedScene" uid="uid://b01nkiexdwowe" path="res://World/LDTK/Level/Level_0.tscn" id="1_v0pkg"]
+[gd_scene format=3]
 
 [node name="World" type="Node2D"]
 
-[node name="LDTK_Level_0" type="Node2D" parent="." instance=ExtResource("1_v0pkg")]
+[node name="LDTK_Level_0" type="Node2D" parent="."]
 metadata/LDTK_level = {
 "__bgColor": "#696A79",
 "__bgPos": null,

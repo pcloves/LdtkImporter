@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Godot;
 
 namespace LdtkImporter;
@@ -8,19 +7,54 @@ public static class Extensions
 {
     public static AlternativeIdFlags PivotXFlags(this float pivotX)
     {
-        if (Math.Abs(pivotX - 0.25) < 0.01f)
+        if (pivotX < 0.05)
         {
-            return AlternativeIdFlags.PivotXOneQuarter;
+            return AlternativeIdFlags.None;
         }
 
-        if (Math.Abs(pivotX - 0.5) < 0.01f)
+        if (pivotX >= 0.05 && pivotX < 0.15)
         {
-            return AlternativeIdFlags.PivotXHalf;
+            return AlternativeIdFlags.PivotXOneTenth;
         }
 
-        if (Math.Abs(pivotX - 0.75) < 0.01f)
+        if (pivotX >= 0.15 && pivotX < 0.25)
         {
-            return AlternativeIdFlags.PivotXThreeQuarter;
+            return AlternativeIdFlags.PivotXTwoTenths;
+        }
+
+        if (pivotX >= 0.25 && pivotX < 0.35)
+        {
+            return AlternativeIdFlags.PivotXThreeTenths;
+        }
+
+        if (pivotX >= 0.35 && pivotX < 0.45)
+        {
+            return AlternativeIdFlags.PivotXFourTenths;
+        }
+
+        if (pivotX >= 0.45 && pivotX < 0.55)
+        {
+            return AlternativeIdFlags.PivotXFiveTenths;
+        }
+
+        if (pivotX >= 0.55 && pivotX < 0.65)
+        {
+            return AlternativeIdFlags.PivotXSixTenths;
+        }
+
+        if (pivotX >= 0.65 && pivotX < 0.75)
+        {
+            return AlternativeIdFlags.PivotXSevenTenths;
+        }
+
+        if (pivotX >= 0.75 && pivotX < 0.85)
+        {
+            return AlternativeIdFlags.PivotXEightTenths;
+        }
+
+        if (pivotX >= 0.85 && pivotX < 0.95)
+        {
+            return AlternativeIdFlags.PivotXNightTenths;
         }
 
         return AlternativeIdFlags.None;
@@ -28,19 +62,54 @@ public static class Extensions
 
     public static AlternativeIdFlags PivotYFlags(this float pivotY)
     {
-        if (Math.Abs(pivotY - 0.25) < 0.01f)
+        if (pivotY < 0.05)
         {
-            return AlternativeIdFlags.PivotYOneQuarter;
+            return AlternativeIdFlags.None;
         }
 
-        if (Math.Abs(pivotY - 0.5) < 0.01f)
+        if (pivotY >= 0.05 && pivotY < 0.15)
         {
-            return AlternativeIdFlags.PivotYHalf;
+            return AlternativeIdFlags.PivotYOneTenth;
         }
 
-        if (Math.Abs(pivotY - 0.75) < 0.01f)
+        if (pivotY >= 0.15 && pivotY < 0.25)
         {
-            return AlternativeIdFlags.PivotYThreeQuarter;
+            return AlternativeIdFlags.PivotYTwoTenths;
+        }
+
+        if (pivotY >= 0.25 && pivotY < 0.35)
+        {
+            return AlternativeIdFlags.PivotYThreeTenths;
+        }
+
+        if (pivotY >= 0.35 && pivotY < 0.45)
+        {
+            return AlternativeIdFlags.PivotYFourTenths;
+        }
+
+        if (pivotY >= 0.45 && pivotY < 0.55)
+        {
+            return AlternativeIdFlags.PivotYFiveTenths;
+        }
+
+        if (pivotY >= 0.55 && pivotY < 0.65)
+        {
+            return AlternativeIdFlags.PivotYSixTenths;
+        }
+
+        if (pivotY >= 0.65 && pivotY < 0.75)
+        {
+            return AlternativeIdFlags.PivotYSevenTenths;
+        }
+
+        if (pivotY >= 0.75 && pivotY < 0.85)
+        {
+            return AlternativeIdFlags.PivotYEightTenths;
+        }
+
+        if (pivotY >= 0.85 && pivotY < 0.95)
+        {
+            return AlternativeIdFlags.PivotYNightTenths;
         }
 
         return AlternativeIdFlags.None;

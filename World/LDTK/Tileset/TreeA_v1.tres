@@ -1,8 +1,8 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cxl8xlev4uo8y"]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cvtgynhvskf6a"]
 
 [ext_resource type="Texture2D" uid="uid://fshbs2bupfbm" path="res://World/Asset/Trees/TreeA_v1.png" id="1_lw6wx"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qyd2j"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gxyhy"]
 resource_name = "LDTK_TreeA_v1"
 texture = ExtResource("1_lw6wx")
 texture_region_size = Vector2i(32, 32)
@@ -61,7 +61,7 @@ texture_region_size = Vector2i(32, 32)
 tile_size = Vector2i(32, 32)
 custom_data_layer_0/name = "LDTK_TreeA_v1"
 custom_data_layer_0/type = 27
-sources/1075 = SubResource("TileSetAtlasSource_qyd2j")
+sources/1075 = SubResource("TileSetAtlasSource_gxyhy")
 metadata/LDTK_tilesets = {
 "__cHei": 36.0,
 "__cWid": 16.0,

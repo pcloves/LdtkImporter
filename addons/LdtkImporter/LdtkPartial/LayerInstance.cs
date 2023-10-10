@@ -50,7 +50,6 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         {
             tileMap.RemoveLayer(tileMap.GetLayersCount() - 1);
             tileMap.TileSet = tilesetDefinition?.TileSet;
-            tileMap.CellQuadrantSize = (int)GridSize;
         }
 
         CalculateTileStack();
