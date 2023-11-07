@@ -1,10 +1,16 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Godot;
 
 namespace LdtkImporter;
 
 public static class Extensions
 {
+    public static T ToEnum<T>(this string value)
+    {
+        return (T) Enum.Parse(typeof(T), value, true);
+    }
+    
     public static AlternativeIdFlags PivotXFlags(this float pivotX)
     {
         if (pivotX < 0.05)

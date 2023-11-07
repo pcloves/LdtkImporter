@@ -147,10 +147,12 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         var source = (TileSetAtlasSource)tileMap.TileSet?.GetSource((int)sourceId);
         foreach (var tileInstance in tileInstances)
         {
-            var coords = new Vector2I((int)tileInstance.Px[0], (int)tileInstance.Px[1]) / (int)(tilesetDefinition?.TileGridSize ?? GridSize);
+            var coords = new Vector2I((int)tileInstance.Px[0], (int)tileInstance.Px[1]) /
+                         (int)(tilesetDefinition?.TileGridSize ?? GridSize);
             var atlasCoords = tileInstance.T.AtlasCoords(source);
-            
-            tileMap.SetCell(tileInstance.Layer, coords, (int)sourceId, atlasCoords, (int)tileInstance.AlternativeIdFlags);
+
+            tileMap.SetCell(tileInstance.Layer, coords, (int)sourceId, atlasCoords,
+                (int)tileInstance.AlternativeIdFlags);
             tileMap.GetCellTileData(tileInstance.Layer, coords).Modulate = new Color(1, 1, 1, (float)tileInstance.A);
         }
 
@@ -224,6 +226,31 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         }
 
         return Error.Ok;
+    }
+
+    public bool IsValid(long cx, long cy)
+    {
+        return cx >= 0 && cx < CWid && cy >= 0 && cy < CHei;
+    }
+
+    public int GetIntGrid(long cx, long cy)
+    {
+        RequireType(TypeEnum.IntGrid);
+        return !IsValid(cx, cy) || IntGridCsv[CoordId(cx, cy)] == 0 ? 0 : (int)IntGridCsv[CoordId(cx, cy)];
+    }
+
+
+    private long CoordId(long cx, long cy)
+    {
+        return cx + cy * CWid;
+    }
+
+    private void RequireType(TypeEnum t)
+    {
+        if (Type.ToEnum<TypeEnum>() != t)
+        {
+            throw new Exception($"Only works on ${t} layer!");
+        }
     }
 }
 
