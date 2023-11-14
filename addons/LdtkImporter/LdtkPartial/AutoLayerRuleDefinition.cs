@@ -70,4 +70,27 @@ public partial class AutoLayerRuleDefinition
 
         return true;
     }
+
+    public long GetRandomTileForCoord(long seed, int cx, int cy, int flips)
+    {
+        return TileIds[M.RandSeedCoords(Uid + seed + flips, cx, cy, TileIds.Length)];
+    }
+
+    public long GetXOffsetForCoord(long seed, int cx, int cy, int flips)
+    {
+        return (M.HasBit(flips, 0) ? -1 : 1) * (TileXOffset + (
+            TileRandomXMin == 0 && TileRandomXMax == 0
+                ? 0
+                : M.RandSeedCoords(Uid + seed + flips, cx, cy, TileRandomXMax - TileRandomXMin + 1) +
+                  TileRandomXMin));
+    }
+
+    public long GetYOffsetForCoord(long seed, int cx, int cy, int flips)
+    {
+        return (M.HasBit(flips, 1) ? -1 : 1) * (TileYOffset + (
+            TileRandomYMin == 0 && TileRandomYMax == 0
+                ? 0
+                : M.RandSeedCoords(Uid + seed + 1, cx, cy, TileRandomYMax - TileRandomYMin + 1) +
+                  TileRandomYMin));
+    }
 }

@@ -11,10 +11,15 @@ public static class M
     /// <param name="y">y seed</param>
     /// <param name="max">max</param>
     /// <returns></returns>
-    public static double RandSeedCoords(long seed, int x, int y, int max)
+    public static long RandSeedCoords(long seed, int x, int y, long max)
     {
         var h = seed + x * 374761393 + y * 668265263; // all constants are prime
         h = (h ^ (h >> 13)) * 1274126177;
         return (h ^ (h >> 16)) % max;
+    }
+
+    public static bool HasBit(int v, int bitIdx)
+    {
+        return (v & (1 << bitIdx)) != 0;
     }
 }

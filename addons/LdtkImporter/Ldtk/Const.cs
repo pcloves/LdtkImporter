@@ -2,5 +2,5 @@
 
 public static class Const
 {
-    public static readonly int AutoLayerAnything = 1000001;
+    public const int AutoLayerAnything = 1000001;
 }

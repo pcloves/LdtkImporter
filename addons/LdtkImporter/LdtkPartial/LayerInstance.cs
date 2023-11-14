@@ -6,6 +6,11 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using Godot;
 using Godot.Collections;
+using TileInstanceDictionary =
+    System.Collections.Generic.Dictionary<long, System.Collections.Generic.List<LdtkImporter.TileInstance>>;
+using AutoTilesCache =
+    System.Collections.Generic.Dictionary<long, System.Collections.Generic.Dictionary<long,
+        System.Collections.Generic.List<LdtkImporter.TileInstance>>>;
 
 namespace LdtkImporter;
 
@@ -14,6 +19,9 @@ namespace LdtkImporter;
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 public partial class LayerInstance : IImporter, IJsonOnDeserialized
 {
+    [JsonIgnore] public readonly AutoTilesCache AutoTilesCache = new();
+    [JsonIgnore] public LayerDefinition Def;
+    [JsonIgnore] public TypeEnum TypeEnum { get; private set; }
     [JsonIgnore] public string JsonString { get; set; }
     [JsonIgnore] public Node2D Root { get; set; }
     [JsonIgnore] public int MaxTileStackCount { get; set; } = 1;
@@ -87,6 +95,134 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
     public void OnDeserialized()
     {
         JsonString = JsonSerializer.Serialize(this);
+        TypeEnum = Type.ToEnum<TypeEnum>();
+    }
+
+    public bool ApplyAutoLayerRuleAt(LayerInstance source, AutoLayerRuleDefinition r, int cx, int cy)
+    {
+        if (!Def.AutoLayerRulesCanBeUsed())
+            return false;
+
+        AutoTilesCache.GetOrCreate(r.Uid).Remove(CoordId(cx, cy));
+
+        if (r.Checker != Checker.Vertical && (cy - r.YOffset) % r.YModulo != 0)
+            return false;
+
+        if (r.Checker == Checker.Vertical && (cy + (Convert.ToInt32(cx / r.XModulo) % 2)) % r.YModulo != 0)
+            return false;
+
+        if (r.Checker != Checker.Horizontal && (cx - r.XOffset) % r.XModulo != 0)
+            return false;
+
+        if (r.Checker == Checker.Horizontal && (cx + (Convert.ToInt32(cy / r.YModulo) % 2)) % r.XModulo != 0)
+            return false;
+
+        var matched = false;
+        if (r.Matches(this, source, cx, cy))
+        {
+            AddRuleTilesAt(r, cx, cy, 0);
+            matched = true;
+        }
+
+        if ((!matched || !r.BreakOnMatch) && r.FlipX && r.Matches(this, source, cx, cy, -1))
+        {
+            AddRuleTilesAt(r, cx, cy, 1);
+            matched = true;
+        }
+
+        if ((!matched || !r.BreakOnMatch) && r.FlipY && r.Matches(this, source, cx, cy, 1, -1))
+        {
+            AddRuleTilesAt(r, cx, cy, 2);
+            matched = true;
+        }
+
+        if ((!matched || !r.BreakOnMatch) && r.FlipX && r.FlipY && r.Matches(this, source, cx, cy, -1, -1))
+        {
+            AddRuleTilesAt(r, cx, cy, 3);
+            matched = true;
+        }
+
+        return matched;
+    }
+
+    private void AddRuleTilesAt(AutoLayerRuleDefinition r, int cx, int cy, int flips)
+    {
+        var tileIds = r.TileMode == TileMode.Single
+            ? new[] { r.GetRandomTileForCoord(Seed, cx, cy, flips) }
+            : r.TileIds;
+        var td = GetTilesetDef();
+        var stampInfos = r.TileMode == TileMode.Single ? null : GetRulesStampRenderInfos(r, td, tileIds, flips);
+
+        var coordId = CoordId(cx, cy);
+        var dictionary = AutoTilesCache.GetOrCreate(r.Uid);
+        var tileInstanceList = dictionary.GetOrCreate(coordId);
+
+        tileInstanceList.AddRange(tileIds.Select((tid, _) => new TileInstance()
+        {
+            Px = new[]
+            {
+                cx * Def.GridSize + (stampInfos == null ? 0 : stampInfos.GetValueOrDefault(tid).xOff) +
+                r.GetXOffsetForCoord(Seed, cx, cy, flips),
+                cy * Def.GridSize + (stampInfos == null ? 0 : stampInfos.GetValueOrDefault(tid).yOff) +
+                r.GetYOffsetForCoord(Seed, cx, cy, flips)
+            },
+            Src = new[]
+            {
+                td.GetTileCx(tid),
+                td.GetTileCy(tid)
+            },
+            T = tid,
+            F = flips,
+            A = r.Alpha,
+        }));
+    }
+
+    public TilesetDefinition GetTilesetDef()
+    {
+        var tilesetUid = GetTilesetUid();
+        return tilesetUid == null
+            ? null
+            : LdtkJson.Project.Defs.Tilesets.FirstOrDefault(definition => definition.Uid == tilesetUid);
+    }
+
+    public long? GetTilesetUid()
+    {
+        return OverrideTilesetUid ?? Def.TilesetDefUid;
+    }
+
+    public System.Collections.Generic.Dictionary<long, (int xOff, int yOff)> GetRulesStampRenderInfos(
+        AutoLayerRuleDefinition rule, TilesetDefinition td, long[] tileIds, int flipBits)
+    {
+        if (td == null)
+            return null;
+
+        var top = 99999L;
+        var left = 99999L;
+        var right = 0L;
+        var bottom = 0L;
+
+        foreach (var tid in tileIds)
+        {
+            top = Math.Min(top, td.GetTileCy(tid));
+            bottom = Math.Max(bottom, td.GetTileCy(tid));
+            left = Math.Min(left, td.GetTileCx(tid));
+            right = Math.Max(right, td.GetTileCx(tid));
+        }
+
+        System.Collections.Generic.Dictionary<long, (int xOff, int yOff)> dictionary = new();
+
+        foreach (var tid in tileIds)
+        {
+            dictionary[tid] = (
+                xOff: Convert.ToInt32((td.GetTileCx(tid) - left - rule.PivotX * (right - left) + Def.TilePivotX) *
+                                      Def.GridSize) * (M.HasBit(flipBits, 0) ? -1 : 1),
+                yOff: Convert.ToInt32((td.GetTileCy(tid) - top - rule.PivotY * (bottom - top) + Def.TilePivotY) *
+                                      Def.GridSize) * (M.HasBit(flipBits, 1) ? -1 : 1)
+            );
+        }
+
+
+        return dictionary;
     }
 
     private void CalculateTileStack()
@@ -247,7 +383,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
     private void RequireType(TypeEnum t)
     {
-        if (Type.ToEnum<TypeEnum>() != t)
+        if (TypeEnum != t)
         {
             throw new Exception($"Only works on ${t} layer!");
         }

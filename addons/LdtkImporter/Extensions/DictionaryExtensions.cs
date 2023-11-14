@@ -10,4 +10,15 @@ public static class DictionaryExtensions
     {
         return dictionary.GetValueOrDefault(key, default!).As<T>();
     }
+
+    public static TValue GetOrCreate<TKey, TValue>(this IDictionary<TKey, TValue> dict, TKey key) where TValue : new()
+    {
+        if (dict.TryGetValue(key, out var val))
+            return val;
+
+        val = new TValue();
+        dict.Add(key, val);
+
+        return val;
+    }
 }
