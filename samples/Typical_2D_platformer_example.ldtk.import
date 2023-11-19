@@ -1,0 +1,34 @@
+[remap]
+
+importer="Ldtk Importer"
+type="Node2D"
+uid="uid://dcye7ct2ddmmf"
+path="res://.godot/imported/Typical_2D_platformer_example.ldtk-ba66d4db0bc7c45720f0c894823b10c6.tscn"
+
+[deps]
+
+files=["res://samples/Typical_2D_platformer_example/Tileset/SunnyLand_by_Ansimuz.tres", "res://samples/Typical_2D_platformer_example/Entity/Player.tscn", "res://samples/Typical_2D_platformer_example/Entity/Chest.tscn", "res://samples/Typical_2D_platformer_example/Entity/Mob.tscn", "res://samples/Typical_2D_platformer_example/Entity/Door.tscn", "res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn", "res://samples/Typical_2D_platformer_example/Level/Top.tscn", "res://samples/Typical_2D_platformer_example/Level/Bottom.tscn", "res://samples/Typical_2D_platformer_example/Typical_2D_platformer_example.tscn"]
+
+source_file="res://samples/Typical_2D_platformer_example.ldtk"
+dest_files=["res://.godot/imported/Typical_2D_platformer_example.ldtk-ba66d4db0bc7c45720f0c894823b10c6.tscn", "res://samples/Typical_2D_platformer_example/Tileset/SunnyLand_by_Ansimuz.tres", "res://samples/Typical_2D_platformer_example/Entity/Player.tscn", "res://samples/Typical_2D_platformer_example/Entity/Chest.tscn", "res://samples/Typical_2D_platformer_example/Entity/Mob.tscn", "res://samples/Typical_2D_platformer_example/Entity/Door.tscn", "res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn", "res://samples/Typical_2D_platformer_example/Level/Top.tscn", "res://samples/Typical_2D_platformer_example/Level/Bottom.tscn", "res://samples/Typical_2D_platformer_example/Typical_2D_platformer_example.tscn"]
+
+[params]
+
+General/prefix_remove="LDTK"
+General/prefix_add="LDTK"
+World/WorldMapping="res://samples/Typical_2D_platformer_example/Typical_2D_platformer_example.tscn"
+Tileset/create_if_not_exists=true
+Tileset/add_metadata=true
+Tileset/import_LDTK_tile_custom_data=true
+Tileset/Mapping/Internal_Icons="res://samples/Typical_2D_platformer_example/Tileset/Internal_Icons.tres"
+Tileset/Mapping/SunnyLand_by_Ansimuz="res://samples/Typical_2D_platformer_example/Tileset/SunnyLand_by_Ansimuz.tres"
+Entity/entity_add_metadata=true
+Entity/Mapping/Chest="res://samples/Typical_2D_platformer_example/Entity/Chest.tscn"
+Entity/Mapping/Door="res://samples/Typical_2D_platformer_example/Entity/Door.tscn"
+Entity/Mapping/Mob="res://samples/Typical_2D_platformer_example/Entity/Mob.tscn"
+Entity/Mapping/Player="res://samples/Typical_2D_platformer_example/Entity/Player.tscn"
+Level/level_add_metadata=true
+Level/import_IntGrid=false
+Level/Mapping/Bottom="res://samples/Typical_2D_platformer_example/Level/Bottom.tscn"
+Level/Mapping/Top="res://samples/Typical_2D_platformer_example/Level/Top.tscn"
+Level/Mapping/Your_typical_2D_platformer="res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn"

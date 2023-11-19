@@ -1,0 +1,27 @@
+[remap]
+
+importer="Ldtk Importer"
+type="Node2D"
+uid="uid://d14famro5wf2l"
+path="res://.godot/imported/AutoLayers_2_stamps.ldtk-d91ea11e818c2cbabcae42015ba65139.tscn"
+
+[deps]
+
+files=["res://samples/AutoLayers_2_stamps/Tileset/Inca_front_by_Kronbits.tres", "res://samples/AutoLayers_2_stamps/Level/Stamps.tscn", "res://samples/AutoLayers_2_stamps/AutoLayers_2_stamps.tscn"]
+
+source_file="res://samples/AutoLayers_2_stamps.ldtk"
+dest_files=["res://.godot/imported/AutoLayers_2_stamps.ldtk-d91ea11e818c2cbabcae42015ba65139.tscn", "res://samples/AutoLayers_2_stamps/Tileset/Inca_front_by_Kronbits.tres", "res://samples/AutoLayers_2_stamps/Level/Stamps.tscn", "res://samples/AutoLayers_2_stamps/AutoLayers_2_stamps.tscn"]
+
+[params]
+
+General/prefix_remove="LDTK"
+General/prefix_add="LDTK"
+World/WorldMapping="res://samples/AutoLayers_2_stamps/AutoLayers_2_stamps.tscn"
+Tileset/create_if_not_exists=true
+Tileset/add_metadata=true
+Tileset/import_LDTK_tile_custom_data=true
+Tileset/Mapping/Inca_front_by_Kronbits="res://samples/AutoLayers_2_stamps/Tileset/Inca_front_by_Kronbits.tres"
+Entity/entity_add_metadata=true
+Level/level_add_metadata=true
+Level/import_IntGrid=false
+Level/Mapping/Stamps="res://samples/AutoLayers_2_stamps/Level/Stamps.tscn"

@@ -1,0 +1,27 @@
+[remap]
+
+importer="Ldtk Importer"
+type="Node2D"
+uid="uid://dsubb5tul6sre"
+path="res://.godot/imported/AutoLayers_4_Assistant.ldtk-a9598736b5c928bbe8967845d22aab6b.tscn"
+
+[deps]
+
+files=["res://samples/AutoLayers_4_Assistant/Tileset/Inca_extended_front_by_Kronbits.tres", "res://samples/AutoLayers_4_Assistant/Level/Mosaic_demo.tscn", "res://samples/AutoLayers_4_Assistant/AutoLayers_4_Assistant.tscn"]
+
+source_file="res://samples/AutoLayers_4_Assistant.ldtk"
+dest_files=["res://.godot/imported/AutoLayers_4_Assistant.ldtk-a9598736b5c928bbe8967845d22aab6b.tscn", "res://samples/AutoLayers_4_Assistant/Tileset/Inca_extended_front_by_Kronbits.tres", "res://samples/AutoLayers_4_Assistant/Level/Mosaic_demo.tscn", "res://samples/AutoLayers_4_Assistant/AutoLayers_4_Assistant.tscn"]
+
+[params]
+
+General/prefix_remove="LDTK"
+General/prefix_add="LDTK"
+World/WorldMapping="res://samples/AutoLayers_4_Assistant/AutoLayers_4_Assistant.tscn"
+Tileset/create_if_not_exists=true
+Tileset/add_metadata=true
+Tileset/import_LDTK_tile_custom_data=true
+Tileset/Mapping/Inca_extended_front_by_Kronbits="res://samples/AutoLayers_4_Assistant/Tileset/Inca_extended_front_by_Kronbits.tres"
+Entity/entity_add_metadata=true
+Level/level_add_metadata=true
+Level/import_IntGrid=false
+Level/Mapping/Mosaic_demo="res://samples/AutoLayers_4_Assistant/Level/Mosaic_demo.tscn"

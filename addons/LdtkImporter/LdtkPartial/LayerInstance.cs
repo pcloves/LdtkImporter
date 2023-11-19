@@ -289,7 +289,15 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
             tileMap.SetCell(tileInstance.Layer, coords, (int)sourceId, atlasCoords,
                 (int)tileInstance.AlternativeIdFlags);
-            tileMap.GetCellTileData(tileInstance.Layer, coords).Modulate = new Color(1, 1, 1, (float)tileInstance.A);
+            var cellTileData = tileMap.GetCellTileData(tileInstance.Layer, coords);
+            if (cellTileData == null)
+            {
+                //TODO:
+                GD.PrintErr($"   GetCellTileData failed, layer:{tileInstance.Layer}, coords:{coords}");
+                continue;
+            }
+
+            cellTileData.Modulate = new Color(1, 1, 1, (float)tileInstance.A);
         }
 
         return Type == nameof(TypeEnum.IntGrid) ? ImportIntGrid(ldtkJson, options) : Error.Ok;

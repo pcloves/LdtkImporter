@@ -78,6 +78,18 @@ namespace LdtkImporter
         public LdtkCustomCommand[] CustomCommands { get; set; }
 
         /// <summary>
+        /// Default height for new entities
+        /// </summary>
+        [JsonPropertyName("defaultEntityHeight")]
+        public long DefaultEntityHeight { get; set; }
+
+        /// <summary>
+        /// Default width for new entities
+        /// </summary>
+        [JsonPropertyName("defaultEntityWidth")]
+        public long DefaultEntityWidth { get; set; }
+
+        /// <summary>
         /// Default grid size for new layers
         /// </summary>
         [JsonPropertyName("defaultGridSize")]
@@ -532,6 +544,12 @@ namespace LdtkImporter
         public long Uid { get; set; }
 
         /// <summary>
+        /// This tile overrides the one defined in `tileRect` in the UI
+        /// </summary>
+        [JsonPropertyName("uiTileRect")]
+        public TilesetRectangle UiTileRect { get; set; }
+
+        /// <summary>
         /// Pixel width
         /// </summary>
         [JsonPropertyName("width")]
@@ -616,6 +634,9 @@ namespace LdtkImporter
 
         [JsonPropertyName("editorCutLongValues")]
         public bool EditorCutLongValues { get; set; }
+
+        [JsonPropertyName("editorDisplayColor")]
+        public string EditorDisplayColor { get; set; }
 
         /// <summary>
         /// Possible values: `Hidden`, `ValueOnly`, `NameAndValue`, `EntityTile`, `LevelTile`,
@@ -800,8 +821,8 @@ namespace LdtkImporter
     public partial class EnumValueDefinition
     {
         /// <summary>
-        /// **WARNING**: this deprecated value will be *removed* completely on version 1.4.0+
-        /// Replaced by: `tileRect`
+        /// **WARNING**: this deprecated value is no longer exported since version 1.4.0  Replaced
+        /// by: `tileRect`
         /// </summary>
         [JsonPropertyName("__tileSrcRect")]
         public long[] TileSrcRect { get; set; }
@@ -819,8 +840,8 @@ namespace LdtkImporter
         public string Id { get; set; }
 
         /// <summary>
-        /// **WARNING**: this deprecated value will be *removed* completely on version 1.4.0+
-        /// Replaced by: `tileRect`
+        /// **WARNING**: this deprecated value is no longer exported since version 1.4.0  Replaced
+        /// by: `tileRect`
         /// </summary>
         [JsonPropertyName("tileId")]
         public long? TileId { get; set; }
@@ -928,6 +949,12 @@ namespace LdtkImporter
         public IntGridValueDefinition[] IntGridValues { get; set; }
 
         /// <summary>
+        /// Group informations for IntGrid values
+        /// </summary>
+        [JsonPropertyName("intGridValuesGroups")]
+        public IntGridValueGroupDefinition[] IntGridValuesGroups { get; set; }
+
+        /// <summary>
         /// Parallax horizontal factor (from -1 to 1, defaults to 0) which affects the scrolling
         /// speed of this layer, creating a fake 3D (parallax) effect.
         /// </summary>
@@ -1027,6 +1054,12 @@ namespace LdtkImporter
         /// </summary>
         [JsonPropertyName("collapsed")]
         public bool? Collapsed { get; set; }
+
+        [JsonPropertyName("color")]
+        public string Color { get; set; }
+
+        [JsonPropertyName("icon")]
+        public TilesetRectangle Icon { get; set; }
 
         [JsonPropertyName("isOptional")]
         public bool IsOptional { get; set; }
@@ -1224,6 +1257,12 @@ namespace LdtkImporter
         public string Color { get; set; }
 
         /// <summary>
+        /// Parent group identifier (0 if none)
+        /// </summary>
+        [JsonPropertyName("groupUid")]
+        public long GroupUid { get; set; }
+
+        /// <summary>
         /// User defined unique identifier
         /// </summary>
         [JsonPropertyName("identifier")]
@@ -1237,6 +1276,30 @@ namespace LdtkImporter
         /// </summary>
         [JsonPropertyName("value")]
         public long Value { get; set; }
+    }
+
+    /// <summary>
+    /// IntGrid value group definition
+    /// </summary>
+    public partial class IntGridValueGroupDefinition
+    {
+        /// <summary>
+        /// User defined color
+        /// </summary>
+        [JsonPropertyName("color")]
+        public string Color { get; set; }
+
+        /// <summary>
+        /// User defined string identifier
+        /// </summary>
+        [JsonPropertyName("identifier")]
+        public string Identifier { get; set; }
+
+        /// <summary>
+        /// Group unique ID
+        /// </summary>
+        [JsonPropertyName("uid")]
+        public long Uid { get; set; }
     }
 
     /// <summary>
@@ -1438,6 +1501,10 @@ namespace LdtkImporter
         public IntGridValueDefinition IntGridValueDef { get; set; }
 
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        [JsonPropertyName("IntGridValueGroupDef")]
+        public IntGridValueGroupDefinition IntGridValueGroupDef { get; set; }
+
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         [JsonPropertyName("IntGridValueInstance")]
         public IntGridValueInstance IntGridValueInstance { get; set; }
 
@@ -1525,6 +1592,18 @@ namespace LdtkImporter
         /// </summary>
         [JsonPropertyName("__tile")]
         public TilesetRectangle Tile { get; set; }
+
+        /// <summary>
+        /// X world coordinate in pixels
+        /// </summary>
+        [JsonPropertyName("__worldX")]
+        public long WorldX { get; set; }
+
+        /// <summary>
+        /// Y world coordinate in pixels
+        /// </summary>
+        [JsonPropertyName("__worldY")]
+        public long WorldY { get; set; }
 
         /// <summary>
         /// Reference of the **Entity definition** UID
@@ -1907,9 +1986,10 @@ namespace LdtkImporter
         public LevelBackgroundPosition BgPos { get; set; }
 
         /// <summary>
-        /// An array listing all other levels touching this one on the world map.<br/>  Only relevant
-        /// for world layouts where level spatial positioning is manual (ie. GridVania, Free). For
-        /// Horizontal and Vertical layouts, this array is always empty.
+        /// An array listing all other levels touching this one on the world map. Since 1.4.0, this
+        /// includes levels that overlap in the same world layer, or in nearby world layers.<br/>
+        /// Only relevant for world layouts where level spatial positioning is manual (ie. GridVania,
+        /// Free). For Horizontal and Vertical layouts, this array is always empty.
         /// </summary>
         [JsonPropertyName("__neighbours")]
         public NeighbourLevel[] Neighbours { get; set; }
@@ -2073,7 +2153,9 @@ namespace LdtkImporter
     {
         /// <summary>
         /// A single lowercase character tipping on the level location (`n`orth, `s`outh, `w`est,
-        /// `e`ast).
+        /// `e`ast).<br/>  Since 1.4.0, this character value can also be `<` (neighbour depth is
+        /// lower), `>` (neighbour depth is greater) or `o` (levels overlap and share the same world
+        /// depth).
         /// </summary>
         [JsonPropertyName("dir")]
         public string Dir { get; set; }

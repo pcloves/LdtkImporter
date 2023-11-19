@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://b35tw62p6030p"]
+
+[node name="LDTK_GameSaver" type="Node2D"]
+metadata/LDTK_entities = {
+"color": "#FFEB5A",
+"doc": null,
+"exportToToc": false,
+"fieldDefs": [],
+"fillOpacity": 0.08,
+"height": 16.0,
+"hollow": false,
+"identifier": "GameSaver",
+"keepAspectRatio": false,
+"limitBehavior": 1.0,
+"limitScope": 1.0,
+"lineOpacity": 0.79,
+"maxCount": 0.0,
+"maxHeight": null,
+"maxWidth": null,
+"minHeight": null,
+"minWidth": null,
+"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
+"pivotX": 0.0,
+"pivotY": 0.0,
+"renderMode": 3.0,
+"resizableX": true,
+"resizableY": true,
+"showName": true,
+"tags": ["region"],
+"tileId": null,
+"tileOpacity": 1.0,
+"tileRect": {
+"h": 16.0,
+"tilesetUid": 133.0,
+"w": 16.0,
+"x": 336.0,
+"y": 272.0
+},
+"tileRenderMode": 4.0,
+"tilesetId": 133.0,
+"uiTileRect": {
+"h": 16.0,
+"tilesetUid": 133.0,
+"w": 16.0,
+"x": 48.0,
+"y": 32.0
+},
+"uid": 141.0,
+"width": 16.0
+}

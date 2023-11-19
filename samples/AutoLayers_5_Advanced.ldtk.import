@@ -1,0 +1,28 @@
+[remap]
+
+importer="Ldtk Importer"
+type="Node2D"
+uid="uid://b3ntp52c1wwkv"
+path="res://.godot/imported/AutoLayers_5_Advanced.ldtk-7bac346b4c0a7aedfbcc54f1018fa097.tscn"
+
+[deps]
+
+files=["res://samples/AutoLayers_5_Advanced/Tileset/Cavernas_by_Adam_Saltsman.tres", "res://samples/AutoLayers_5_Advanced/Level/AutoLayers_advanced_demo.tscn", "res://samples/AutoLayers_5_Advanced/AutoLayers_5_Advanced.tscn"]
+
+source_file="res://samples/AutoLayers_5_Advanced.ldtk"
+dest_files=["res://.godot/imported/AutoLayers_5_Advanced.ldtk-7bac346b4c0a7aedfbcc54f1018fa097.tscn", "res://samples/AutoLayers_5_Advanced/Tileset/Cavernas_by_Adam_Saltsman.tres", "res://samples/AutoLayers_5_Advanced/Level/AutoLayers_advanced_demo.tscn", "res://samples/AutoLayers_5_Advanced/AutoLayers_5_Advanced.tscn"]
+
+[params]
+
+General/prefix_remove="LDTK"
+General/prefix_add="LDTK"
+World/WorldMapping="res://samples/AutoLayers_5_Advanced/AutoLayers_5_Advanced.tscn"
+Tileset/create_if_not_exists=true
+Tileset/add_metadata=true
+Tileset/import_LDTK_tile_custom_data=true
+Tileset/Mapping/Cavernas_by_Adam_Saltsman="res://samples/AutoLayers_5_Advanced/Tileset/Cavernas_by_Adam_Saltsman.tres"
+Tileset/Mapping/Internal_Icons="res://samples/AutoLayers_5_Advanced/Tileset/Internal_Icons.tres"
+Entity/entity_add_metadata=true
+Level/level_add_metadata=true
+Level/import_IntGrid=false
+Level/Mapping/AutoLayers_advanced_demo="res://samples/AutoLayers_5_Advanced/Level/AutoLayers_advanced_demo.tscn"

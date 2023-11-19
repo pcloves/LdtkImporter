@@ -47,9 +47,11 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
     public override bool _GetOptionVisibility(string path, StringName optionName, Dictionary options) => true;
 
     private LdtkJson _ldtkJson;
+    private string _ldtkFileName;
 
     public override Array<Dictionary> _GetImportOptions(string path, int presetIndex)
     {
+        _ldtkFileName = path.GetBaseName().GetFile();
         _ldtkJson = LdtkJson.FromPath(path);
 
         var options = new Array<Dictionary>();
@@ -84,13 +86,12 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
     private IEnumerable<Dictionary> WorldOptions(string path, int presetIndex)
     {
-        var file = path.GetBaseName().GetFile();
         return new Array<Dictionary>
         {
             new()
             {
                 { "name", OptionWorldWorldMapping },
-                { "default_value", $"{path.GetBaseDir().PathJoin("LDTK").PathJoin(file)}.{_GetSaveExtension()}" },
+                { "default_value", $"{path.GetBaseDir().PathJoin(_ldtkFileName).PathJoin(_ldtkFileName)}.{_GetSaveExtension()}" },
                 { "property_hint", (int)PropertyHint.File },
                 { "hint_string", "*.tscn;Godot Scene" }
             },
@@ -99,7 +100,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
     private IEnumerable<Dictionary> TilesetOptions(string path, int presetIndex)
     {
-        var tilesetBaseDir = path.GetBaseDir().PathJoin("LDTK/Tileset");
+        var tilesetBaseDir = path.GetBaseDir().PathJoin($"{_ldtkFileName}/Tileset");
         var options = new Array<Dictionary>
         {
             new()
@@ -143,7 +144,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
     private IEnumerable<Dictionary> LevelOptions(string path, int presetIndex)
     {
-        var levelBaseDir = path.GetBaseDir().PathJoin("LDTK/Level");
+        var levelBaseDir = path.GetBaseDir().PathJoin($"{_ldtkFileName}/Level");
         var options = new Array<Dictionary>
         {
             new()
@@ -178,7 +179,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
     private IEnumerable<Dictionary> EntityOptions(string path, int presetIndex)
     {
-        var entityBaseDir = path.GetBaseDir().PathJoin("LDTK/Entity");
+        var entityBaseDir = path.GetBaseDir().PathJoin($"{_ldtkFileName}/Entity");
         var options = new Array<Dictionary>
         {
             new()

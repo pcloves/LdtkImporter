@@ -1,0 +1,30 @@
+[remap]
+
+importer="Ldtk Importer"
+type="Node2D"
+uid="uid://dp0sn3iy0uxan"
+path="res://.godot/imported/AutoLayers_6_OptionalRules.ldtk-7fb25802018ce47d3f3dfcc0cea92761.tscn"
+
+[deps]
+
+files=["res://samples/AutoLayers_6_OptionalRules/Tileset/Cavernas_by_Adam_Saltsman.tres", "res://samples/AutoLayers_6_OptionalRules/Level/Green_hills.tscn", "res://samples/AutoLayers_6_OptionalRules/Level/Frozen_caves.tscn", "res://samples/AutoLayers_6_OptionalRules/Level/Antique_manor.tscn", "res://samples/AutoLayers_6_OptionalRules/Level/Only_base_rules.tscn", "res://samples/AutoLayers_6_OptionalRules/AutoLayers_6_OptionalRules.tscn"]
+
+source_file="res://samples/AutoLayers_6_OptionalRules.ldtk"
+dest_files=["res://.godot/imported/AutoLayers_6_OptionalRules.ldtk-7fb25802018ce47d3f3dfcc0cea92761.tscn", "res://samples/AutoLayers_6_OptionalRules/Tileset/Cavernas_by_Adam_Saltsman.tres", "res://samples/AutoLayers_6_OptionalRules/Level/Green_hills.tscn", "res://samples/AutoLayers_6_OptionalRules/Level/Frozen_caves.tscn", "res://samples/AutoLayers_6_OptionalRules/Level/Antique_manor.tscn", "res://samples/AutoLayers_6_OptionalRules/Level/Only_base_rules.tscn", "res://samples/AutoLayers_6_OptionalRules/AutoLayers_6_OptionalRules.tscn"]
+
+[params]
+
+General/prefix_remove="LDTK"
+General/prefix_add="LDTK"
+World/WorldMapping="res://samples/AutoLayers_6_OptionalRules/AutoLayers_6_OptionalRules.tscn"
+Tileset/create_if_not_exists=true
+Tileset/add_metadata=true
+Tileset/import_LDTK_tile_custom_data=true
+Tileset/Mapping/Cavernas_by_Adam_Saltsman="res://samples/AutoLayers_6_OptionalRules/Tileset/Cavernas_by_Adam_Saltsman.tres"
+Entity/entity_add_metadata=true
+Level/level_add_metadata=true
+Level/import_IntGrid=false
+Level/Mapping/Antique_manor="res://samples/AutoLayers_6_OptionalRules/Level/Antique_manor.tscn"
+Level/Mapping/Frozen_caves="res://samples/AutoLayers_6_OptionalRules/Level/Frozen_caves.tscn"
+Level/Mapping/Green_hills="res://samples/AutoLayers_6_OptionalRules/Level/Green_hills.tscn"
+Level/Mapping/Only_base_rules="res://samples/AutoLayers_6_OptionalRules/Level/Only_base_rules.tscn"

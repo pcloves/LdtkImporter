@@ -1,0 +1,47 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cg2xds6ioapos"]
+
+[ext_resource type="Texture2D" uid="uid://deiku56m08djo" path="res://samples/atlas/Inca_back2_by_Kronbits.png" id="1_qcwtc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5te4h"]
+resource_name = "LDTK_Inca_back2_by_Kronbits"
+texture = ExtResource("1_qcwtc")
+0:13/0 = 0
+6:11/0 = 0
+7:11/next_alternative_id = 2
+7:11/0 = 0
+7:11/1 = 1
+7:11/1/flip_h = true
+0:7/0 = 0
+0:12/0 = 0
+5:10/0 = 0
+7:10/next_alternative_id = 2
+7:10/0 = 0
+7:10/1 = 1
+7:10/1/flip_h = true
+
+[resource]
+custom_data_layer_0/name = "LDTK_Inca_back2_by_Kronbits"
+custom_data_layer_0/type = 27
+sources/38 = SubResource("TileSetAtlasSource_5te4h")
+metadata/LDTK_tilesets = {
+"__cHei": 14.0,
+"__cWid": 10.0,
+"cachedPixelData": {
+"averageColors": "f234f233f234f234f234f234f344f344f234f234f233f233f233f233f234f234f244f244f233f223f244f244f244f244f244f244f244f244f344f344f234f233f234f234f234f234f223f223f233f233f344f344f234f244f244f244f234f244f244f244f234f234f244f244f244f244f244f244f234f234f234f234f234f234f244f244f234f234f234f244f233f233f233f244f244f244f234f234f234f234f233f234f234f234f244f244f244f234f234f234f233f234f234f234f234f234f234f234f234f244f233f234f233f234f233f12271224122f234f234f233f233f223f234f234f23431221122f234f234f234f244f244f233f234f234f234f234f234f234f233f244f244f233f234f234f234f234f234f234",
+"opaqueTiles": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110011111111001111111111111111111111"
+},
+"customData": [],
+"embedAtlas": null,
+"enumTags": [],
+"identifier": "Inca_back2_by_Kronbits",
+"padding": 0.0,
+"pxHei": 224.0,
+"pxWid": 160.0,
+"relPath": "atlas/Inca_back2_by_Kronbits.png",
+"savedSelections": [],
+"spacing": 0.0,
+"tags": [],
+"tagsSourceEnumUid": null,
+"tileGridSize": 16.0,
+"uid": 38.0
+}

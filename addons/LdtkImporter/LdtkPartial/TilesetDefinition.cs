@@ -17,6 +17,9 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
     [JsonIgnore] public TileSet TileSet { get; set; }
     [JsonIgnore] public string JsonString { get; set; }
 
+    [JsonIgnore]
+    public System.Collections.Generic.Dictionary<long, HashSet<int>> LdtkTileInstanceId2GodotAlternativeId = new();
+
     public Error PreImport(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
         if (EmbedAtlas != null)
@@ -106,12 +109,24 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
             foreach (var customMetadata in CustomData)
             {
                 var atlasCoords = customMetadata.TileId.AtlasCoords(source);
-                var tileData = source.GetTileData(atlasCoords, 0);
-                var data = Json.ParseString(customMetadata.Data);
 
-                tileData.SetCustomDataByLayerId(customDataLayerIndex, data);
+                if (!LdtkTileInstanceId2GodotAlternativeId.ContainsKey(customMetadata.TileId)) continue;
 
-                GD.Print($"   tileId:{customMetadata.TileId}/{atlasCoords}, data:{data}");
+                foreach (var alternativeId in LdtkTileInstanceId2GodotAlternativeId[customMetadata.TileId])
+                {
+                    var tileData = source.GetTileData(atlasCoords, alternativeId);
+                    if (tileData == null)
+                    {
+                        // TODO:
+                        GD.PrintErr($"GetTileData failed, ldtk tileId:{customMetadata.TileId} atlasCoords:{atlasCoords}, alternativeId:{alternativeId}");
+                        continue;
+                    }
+                    
+                    var data = Json.ParseString(customMetadata.Data);
+                    tileData.SetCustomDataByLayerId(customDataLayerIndex, data);
+
+                    GD.Print($"   tileId:{customMetadata.TileId}/{atlasCoords}, data:{data}");
+                }
             }
         }
         else
@@ -213,23 +228,40 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
                 tileInstance.AlternativeIdFlags |= textureOriginPivot.Y.PivotYFlags();
 
                 var alternativeId = (int)tileInstance.AlternativeIdFlags;
+
+                LdtkTileInstanceId2GodotAlternativeId.GetOrCreate(tileId).Add(alternativeId);
+
                 if (alternativeId == 0) continue;
 
                 tileInstance.TextureOrigin = new Vector2I(-(int)textureOrigin.X, -(int)textureOrigin.Y);
 
                 if (source.HasAlternativeTile(atlasCoords, alternativeId)) continue;
 
-                source.CreateAlternativeTile(atlasCoords, alternativeId);
+                GD.Print(
+                    $"   CreateAlternativeTile alternativeId:{alternativeId}/({tileInstance.AlternativeIdFlags}), LDTK tileId:{tileId}, atlasCoords:{atlasCoords}, TextureOrigin:{tileInstance.TextureOrigin}");
+                var alternativeTile = source.CreateAlternativeTile(atlasCoords, alternativeId);
+                if (alternativeTile == -1)
+                {
+                    //TODO: why?
+                    GD.PrintErr("   CreateAlternativeTile failed");
+                    continue;
+                }
+
                 var tileData = source.GetTileData(atlasCoords, alternativeId);
+                if (tileData == null)
+                {
+                    GD.PrintErr($"   GetTileData failed, tileInstance:{tileInstance}");
+                    continue;
+                }
 
                 var alternativeIdFlags = (AlternativeIdFlags)alternativeId;
 
                 tileData.FlipH = alternativeIdFlags.HasFlag(AlternativeIdFlags.FlipH);
                 tileData.FlipV = alternativeIdFlags.HasFlag(AlternativeIdFlags.FlipV);
                 tileData.TextureOrigin = tileInstance.TextureOrigin;
-                GD.Print(
-                    $"   CreateAlternativeTile alternativeId:{alternativeId}({alternativeIdFlags}), LDTK tileId:{tileId}, atlasCoords:{atlasCoords}, TextureOrigin:{tileInstance.TextureOrigin}");
             }
         }
+
+        ResourceSaver.Save(TileSet, TileSet.ResourcePath);
     }
 }

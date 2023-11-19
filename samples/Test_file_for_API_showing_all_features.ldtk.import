@@ -1,0 +1,36 @@
+[remap]
+
+importer="Ldtk Importer"
+type="Node2D"
+uid="uid://bd8xvcdt0og4e"
+path="res://.godot/imported/Test_file_for_API_showing_all_features.ldtk-980b46ebaa49997958b7a3dc2208aafe.tscn"
+
+[deps]
+
+files=["res://samples/Test_file_for_API_showing_all_features/Tileset/Inca_front_by_Kronbits_extended.tres", "res://samples/Test_file_for_API_showing_all_features/Entity/EntityFieldsTest.tscn", "res://samples/Test_file_for_API_showing_all_features/Entity/Labels.tscn", "res://samples/Test_file_for_API_showing_all_features/Entity/RectRegion.tscn", "res://samples/Test_file_for_API_showing_all_features/Entity/CircleRegion.tscn", "res://samples/Test_file_for_API_showing_all_features/Entity/EntityRefTest.tscn", "res://samples/Test_file_for_API_showing_all_features/Level/Everything.tscn", "res://samples/Test_file_for_API_showing_all_features/Level/Autolayer.tscn", "res://samples/Test_file_for_API_showing_all_features/Level/Tiles_and_intgrid.tscn", "res://samples/Test_file_for_API_showing_all_features/Level/Background_image.tscn", "res://samples/Test_file_for_API_showing_all_features/Test_file_for_API_showing_all_features.tscn"]
+
+source_file="res://samples/Test_file_for_API_showing_all_features.ldtk"
+dest_files=["res://.godot/imported/Test_file_for_API_showing_all_features.ldtk-980b46ebaa49997958b7a3dc2208aafe.tscn", "res://samples/Test_file_for_API_showing_all_features/Tileset/Inca_front_by_Kronbits_extended.tres", "res://samples/Test_file_for_API_showing_all_features/Entity/EntityFieldsTest.tscn", "res://samples/Test_file_for_API_showing_all_features/Entity/Labels.tscn", "res://samples/Test_file_for_API_showing_all_features/Entity/RectRegion.tscn", "res://samples/Test_file_for_API_showing_all_features/Entity/CircleRegion.tscn", "res://samples/Test_file_for_API_showing_all_features/Entity/EntityRefTest.tscn", "res://samples/Test_file_for_API_showing_all_features/Level/Everything.tscn", "res://samples/Test_file_for_API_showing_all_features/Level/Autolayer.tscn", "res://samples/Test_file_for_API_showing_all_features/Level/Tiles_and_intgrid.tscn", "res://samples/Test_file_for_API_showing_all_features/Level/Background_image.tscn", "res://samples/Test_file_for_API_showing_all_features/Test_file_for_API_showing_all_features.tscn"]
+
+[params]
+
+General/prefix_remove="LDTK"
+General/prefix_add="LDTK"
+World/WorldMapping="res://samples/Test_file_for_API_showing_all_features/Test_file_for_API_showing_all_features.tscn"
+Tileset/create_if_not_exists=true
+Tileset/add_metadata=true
+Tileset/import_LDTK_tile_custom_data=true
+Tileset/Mapping/Inca_front_by_Kronbits_extended="res://samples/Test_file_for_API_showing_all_features/Tileset/Inca_front_by_Kronbits_extended.tres"
+Tileset/Mapping/Internal_Icons="res://samples/Test_file_for_API_showing_all_features/Tileset/Internal_Icons.tres"
+Entity/entity_add_metadata=true
+Entity/Mapping/CircleRegion="res://samples/Test_file_for_API_showing_all_features/Entity/CircleRegion.tscn"
+Entity/Mapping/EntityFieldsTest="res://samples/Test_file_for_API_showing_all_features/Entity/EntityFieldsTest.tscn"
+Entity/Mapping/EntityRefTest="res://samples/Test_file_for_API_showing_all_features/Entity/EntityRefTest.tscn"
+Entity/Mapping/Labels="res://samples/Test_file_for_API_showing_all_features/Entity/Labels.tscn"
+Entity/Mapping/RectRegion="res://samples/Test_file_for_API_showing_all_features/Entity/RectRegion.tscn"
+Level/level_add_metadata=true
+Level/import_IntGrid=false
+Level/Mapping/Autolayer="res://samples/Test_file_for_API_showing_all_features/Level/Autolayer.tscn"
+Level/Mapping/Background_image="res://samples/Test_file_for_API_showing_all_features/Level/Background_image.tscn"
+Level/Mapping/Everything="res://samples/Test_file_for_API_showing_all_features/Level/Everything.tscn"
+Level/Mapping/Tiles_and_intgrid="res://samples/Test_file_for_API_showing_all_features/Level/Tiles_and_intgrid.tscn"

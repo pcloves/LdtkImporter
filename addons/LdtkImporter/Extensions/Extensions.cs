@@ -129,7 +129,7 @@ public static class Extensions
 
     public static Vector2I AtlasCoords(this long tileId, TileSetAtlasSource tileSetAtlasSource)
     {
-        var (x, _) = tileSetAtlasSource.GetAtlasGridSize();
+        var (x, y) = tileSetAtlasSource.GetAtlasGridSize();
         return new Vector2I((int)(tileId % x), (int)(tileId / x));
     }
 

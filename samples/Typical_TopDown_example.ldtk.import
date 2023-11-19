@@ -1,0 +1,35 @@
+[remap]
+
+importer="Ldtk Importer"
+type="Node2D"
+uid="uid://dgbd5avhb5xqw"
+path="res://.godot/imported/Typical_TopDown_example.ldtk-50c3a6134533be2c98f4d14c1d3b0908.tscn"
+
+[deps]
+
+files=["res://samples/Typical_TopDown_example/Tileset/TopDown_by_deepnight.tres", "res://samples/Typical_TopDown_example/Entity/Player.tscn", "res://samples/Typical_TopDown_example/Entity/Item.tscn", "res://samples/Typical_TopDown_example/Entity/Door.tscn", "res://samples/Typical_TopDown_example/Entity/Button.tscn", "res://samples/Typical_TopDown_example/Entity/SecretWall.tscn", "res://samples/Typical_TopDown_example/Level/World_Level_0.tscn", "res://samples/Typical_TopDown_example/Level/World_Level_1.tscn", "res://samples/Typical_TopDown_example/Level/World_Level_2.tscn", "res://samples/Typical_TopDown_example/Typical_TopDown_example.tscn"]
+
+source_file="res://samples/Typical_TopDown_example.ldtk"
+dest_files=["res://.godot/imported/Typical_TopDown_example.ldtk-50c3a6134533be2c98f4d14c1d3b0908.tscn", "res://samples/Typical_TopDown_example/Tileset/TopDown_by_deepnight.tres", "res://samples/Typical_TopDown_example/Entity/Player.tscn", "res://samples/Typical_TopDown_example/Entity/Item.tscn", "res://samples/Typical_TopDown_example/Entity/Door.tscn", "res://samples/Typical_TopDown_example/Entity/Button.tscn", "res://samples/Typical_TopDown_example/Entity/SecretWall.tscn", "res://samples/Typical_TopDown_example/Level/World_Level_0.tscn", "res://samples/Typical_TopDown_example/Level/World_Level_1.tscn", "res://samples/Typical_TopDown_example/Level/World_Level_2.tscn", "res://samples/Typical_TopDown_example/Typical_TopDown_example.tscn"]
+
+[params]
+
+General/prefix_remove="LDTK"
+General/prefix_add="LDTK"
+World/WorldMapping="res://samples/Typical_TopDown_example/Typical_TopDown_example.tscn"
+Tileset/create_if_not_exists=true
+Tileset/add_metadata=true
+Tileset/import_LDTK_tile_custom_data=true
+Tileset/Mapping/Internal_Icons="res://samples/Typical_TopDown_example/Tileset/Internal_Icons.tres"
+Tileset/Mapping/TopDown_by_deepnight="res://samples/Typical_TopDown_example/Tileset/TopDown_by_deepnight.tres"
+Entity/entity_add_metadata=true
+Entity/Mapping/Button="res://samples/Typical_TopDown_example/Entity/Button.tscn"
+Entity/Mapping/Door="res://samples/Typical_TopDown_example/Entity/Door.tscn"
+Entity/Mapping/Item="res://samples/Typical_TopDown_example/Entity/Item.tscn"
+Entity/Mapping/Player="res://samples/Typical_TopDown_example/Entity/Player.tscn"
+Entity/Mapping/SecretWall="res://samples/Typical_TopDown_example/Entity/SecretWall.tscn"
+Level/level_add_metadata=true
+Level/import_IntGrid=false
+Level/Mapping/World_Level_0="res://samples/Typical_TopDown_example/Level/World_Level_0.tscn"
+Level/Mapping/World_Level_1="res://samples/Typical_TopDown_example/Level/World_Level_1.tscn"
+Level/Mapping/World_Level_2="res://samples/Typical_TopDown_example/Level/World_Level_2.tscn"

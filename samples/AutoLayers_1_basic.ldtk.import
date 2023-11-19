@@ -1,0 +1,27 @@
+[remap]
+
+importer="Ldtk Importer"
+type="Node2D"
+uid="uid://dyxjownuvllev"
+path="res://.godot/imported/AutoLayers_1_basic.ldtk-79d56c8f3c200fa6a6f8c6e33efd8c69.tscn"
+
+[deps]
+
+files=["res://samples/AutoLayers_1_basic/Tileset/Cavernas_by_Adam_Saltsman.tres", "res://samples/AutoLayers_1_basic/Level/AutoLayer.tscn", "res://samples/AutoLayers_1_basic/AutoLayers_1_basic.tscn"]
+
+source_file="res://samples/AutoLayers_1_basic.ldtk"
+dest_files=["res://.godot/imported/AutoLayers_1_basic.ldtk-79d56c8f3c200fa6a6f8c6e33efd8c69.tscn", "res://samples/AutoLayers_1_basic/Tileset/Cavernas_by_Adam_Saltsman.tres", "res://samples/AutoLayers_1_basic/Level/AutoLayer.tscn", "res://samples/AutoLayers_1_basic/AutoLayers_1_basic.tscn"]
+
+[params]
+
+General/prefix_remove="LDTK"
+General/prefix_add="LDTK"
+World/WorldMapping="res://samples/AutoLayers_1_basic/AutoLayers_1_basic.tscn"
+Tileset/create_if_not_exists=true
+Tileset/add_metadata=true
+Tileset/import_LDTK_tile_custom_data=true
+Tileset/Mapping/Cavernas_by_Adam_Saltsman="res://samples/AutoLayers_1_basic/Tileset/Cavernas_by_Adam_Saltsman.tres"
+Entity/entity_add_metadata=true
+Level/level_add_metadata=true
+Level/import_IntGrid=false
+Level/Mapping/AutoLayer="res://samples/AutoLayers_1_basic/Level/AutoLayer.tscn"
