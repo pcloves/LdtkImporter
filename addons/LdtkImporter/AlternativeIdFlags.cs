@@ -11,61 +11,32 @@ public enum AlternativeIdFlags
 
     //X flip only
     FlipH = 1 << 0,
-
     //Y flip only
     FlipV = 1 << 1,
-
-    //Pivot X 0.1
-    PivotXOneTenth = 1 << 2,
-
+    
     //Pivot X 0.2
-    PivotXTwoTenths = 1 << 3,
-
-    //Pivot X 0.3
-    PivotXThreeTenths = 1 << 4,
-
+    PivotXTwoTenths = 1 << 2,
     //Pivot X 0.4
-    PivotXFourTenths = 1 << 5,
-
-    //Pivot X 0.5
-    PivotXFiveTenths = 1 << 6,
-
+    PivotXFourTenths = 1 << 3,
     //Pivot X 0.6
-    PivotXSixTenths = 1 << 7,
-
-    //Pivot X 0.7
-    PivotXSevenTenths = 1 << 8,
-
+    PivotXSixTenths = 1 << 4,
     //Pivot X 0.8
-    PivotXEightTenths = 1 << 9,
-
-    //Pivot X 0.9
-    PivotXNightTenths = 1 << 10,
-
-    //Pivot Y 0.1
-    PivotYOneTenth = 1 << 11,
-
+    PivotXEightTenths = 1 << 5,
+    
     //Pivot Y 0.2
-    PivotYTwoTenths = 1 << 12,
-
-    //Pivot Y 0.3
-    PivotYThreeTenths = 1 << 13,
-
+    PivotYTwoTenths = 1 << 6,
     //Pivot Y 0.4
-    PivotYFourTenths = 1 << 14,
-
-    //Pivot Y 0.5
-    PivotYFiveTenths = 1 << 15,
-
+    PivotYFourTenths = 1 << 7,
     //Pivot Y 0.6
-    PivotYSixTenths = 1 << 16,
-
-    //Pivot Y 0.7
-    PivotYSevenTenths = 1 << 17,
-
+    PivotYSixTenths = 1 << 8,
     //Pivot Y 0.8
-    PivotYEightTenths = 1 << 18,
-
-    //Pivot Y 0.9
-    PivotYNightTenths = 1 << 19,
+    PivotYEightTenths = 1 << 9,
+    
+    //12, 13, 14已经被godot系统占用
+    //https://github.com/godotengine/godot/blob/fa1fb2a53e20a3aec1ed1ffcc516f880f74db1a6/scene/resources/tile_set.h#L602
+    TRANSFORM_FLIP_H = 1 << 12,
+    TRANSFORM_FLIP_V = 1 << 13,
+    TRANSFORM_TRANSPOSE = 1 << 14,
+    
+    //godot中使用int_16存储alternative id，所以这里不能超过16位
 }

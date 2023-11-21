@@ -100,7 +100,12 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
 
         var source = (TileSetAtlasSource)TileSet.GetSource(sourceId);
 
-        UpdateTile(ldtkJson, source);
+        var error = UpdateTile(ldtkJson, source);
+        if (error != Error.Ok)
+        {
+            ResourceSaver.Save(TileSet, TileSet.ResourcePath);
+            return error;
+        }
 
         var importTileCustomData =
             options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionTilesetImportTileCustomData);
@@ -194,7 +199,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         return Convert.ToInt64(tileId / CWid);
     }
 
-    private void UpdateTile(LdtkJson ldtkJson, TileSetAtlasSource source)
+    private Error UpdateTile(LdtkJson ldtkJson, TileSetAtlasSource source)
     {
         //create single tile
         var tileId2FlipBitsMap = ldtkJson.Levels
@@ -223,7 +228,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
                 var textureOrigin = new Vector2(tileInstance.Px[0] % tileGridSize, tileInstance.Px[1] % tileGridSize);
                 var textureOriginPivot = textureOrigin / TileGridSize;
 
-                tileInstance.AlternativeIdFlags = (AlternativeIdFlags)tileInstance.F;
+                tileInstance.AlternativeIdFlags = (AlternativeIdFlags)(tileInstance.F * (int)AlternativeIdFlags.TRANSFORM_FLIP_H);
                 tileInstance.AlternativeIdFlags |= textureOriginPivot.X.PivotXFlags();
                 tileInstance.AlternativeIdFlags |= textureOriginPivot.Y.PivotYFlags();
 
@@ -242,15 +247,14 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
                 var alternativeTile = source.CreateAlternativeTile(atlasCoords, alternativeId);
                 if (alternativeTile == -1)
                 {
-                    //TODO: why?
-                    GD.PrintErr("   CreateAlternativeTile failed");
+                    GD.PrintErr($"   CreateAlternativeTile failed, atlasCoords:{atlasCoords}, alternativeId:{alternativeId}");
                     continue;
                 }
 
                 var tileData = source.GetTileData(atlasCoords, alternativeId);
                 if (tileData == null)
                 {
-                    GD.PrintErr($"   GetTileData failed, tileInstance:{tileInstance}");
+                    GD.PrintErr($"   GetTileData failed, atlasCoords:{atlasCoords}, alternativeId:{alternativeId}");
                     continue;
                 }
 
@@ -263,5 +267,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         }
 
         ResourceSaver.Save(TileSet, TileSet.ResourcePath);
+
+        return Error.Ok;
     }
 }

@@ -19,8 +19,12 @@ namespace LdtkImporter;
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 public partial class LayerInstance : IImporter, IJsonOnDeserialized
 {
-    [JsonIgnore] public readonly AutoTilesCache AutoTilesCache = new();
-    [JsonIgnore] public LayerDefinition Def;
+    [JsonIgnore]
+    public readonly AutoTilesCache AutoTilesCache = new();
+
+    [JsonIgnore]
+    public LayerDefinition Def;
+
     [JsonIgnore] public TypeEnum TypeEnum { get; private set; }
     [JsonIgnore] public string JsonString { get; set; }
     [JsonIgnore] public Node2D Root { get; set; }
@@ -286,14 +290,13 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
             var coords = new Vector2I((int)tileInstance.Px[0], (int)tileInstance.Px[1]) /
                          (int)(tilesetDefinition?.TileGridSize ?? GridSize);
             var atlasCoords = tileInstance.T.AtlasCoords(source);
-
-            tileMap.SetCell(tileInstance.Layer, coords, (int)sourceId, atlasCoords,
-                (int)tileInstance.AlternativeIdFlags);
-            var cellTileData = tileMap.GetCellTileData(tileInstance.Layer, coords);
+            var alternativeId = (int)tileInstance.AlternativeIdFlags;
+            
+            tileMap.SetCell(tileInstance.Layer, coords, (int)sourceId, atlasCoords, alternativeId);
+            var cellTileData = tileMap.GetCellTileData(tileInstance.Layer, coords, alternativeId != 0);
             if (cellTileData == null)
             {
-                //TODO:
-                GD.PrintErr($"   GetCellTileData failed, layer:{tileInstance.Layer}, coords:{coords}");
+                GD.PrintErr($"   GetCellTileData failed, layer:{tileInstance.Layer}, coords:{coords}, atlasCoords:{atlasCoords}, alternativeId:{alternativeId}/({tileInstance.AlternativeIdFlags})");
                 continue;
             }
 

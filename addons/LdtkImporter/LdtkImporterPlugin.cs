@@ -3,6 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Godot;
 using Godot.Collections;
+using Environment = System.Environment;
 
 namespace LdtkImporter;
 
@@ -11,6 +12,7 @@ namespace LdtkImporter;
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 [SuppressMessage("ReSharper", "MemberCanBeMadeStatic.Local")]
 [SuppressMessage("Performance", "CA1822:将成员标记为 static")]
+[SuppressMessage("ReSharper", "InconsistentNaming")]
 public partial class LdtkImporterPlugin : EditorImportPlugin
 {
     public const string OptionGeneral = "General";
@@ -46,6 +48,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
     public override int _GetImportOrder() => 99;
     public override bool _GetOptionVisibility(string path, StringName optionName, Dictionary options) => true;
 
+    private static readonly object _importLock = new();
     private LdtkJson _ldtkJson;
     private string _ldtkFileName;
 
@@ -91,7 +94,10 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
             new()
             {
                 { "name", OptionWorldWorldMapping },
-                { "default_value", $"{path.GetBaseDir().PathJoin(_ldtkFileName).PathJoin(_ldtkFileName)}.{_GetSaveExtension()}" },
+                {
+                    "default_value",
+                    $"{path.GetBaseDir().PathJoin(_ldtkFileName).PathJoin(_ldtkFileName)}.{_GetSaveExtension()}"
+                },
                 { "property_hint", (int)PropertyHint.File },
                 { "hint_string", "*.tscn;Godot Scene" }
             },
@@ -209,24 +215,39 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
     public override Error _Import(string sourceFile, string savePath, Dictionary options,
         Array<string> platformVariants, Array<string> genFiles)
     {
-        GD.Print($"Import begin, LDTK file path:{sourceFile}");
+        lock (_importLock)
+        {
+            GD.Print($"Import begin, LDTK file path:{sourceFile}, object:{_importLock.GetHashCode()}  thread:{Environment.CurrentManagedThreadId}, godot main id:{OS.GetMainThreadId()}");
 
-        var error = _ldtkJson.PreImport(_ldtkJson, savePath, options, genFiles);
-        if (error != Error.Ok) return error;
+            var error = _ldtkJson.PreImport(_ldtkJson, savePath, options, genFiles);
+            if (error != Error.Ok)
+            {
+                GD.PrintErr($" PreImport failed, error:{error}");
+                return error;
+            }
 
-        error = _ldtkJson.Import(_ldtkJson, savePath, options, genFiles);
-        if (error != Error.Ok) return error;
+            error = _ldtkJson.Import(_ldtkJson, savePath, options, genFiles);
+            if (error != Error.Ok)
+            {
+                GD.PrintErr($" PreImport failed, error:{error}");
+                return error;
+            }
 
-        error = _ldtkJson.PostImport(_ldtkJson, savePath, options, genFiles);
-        if (error != Error.Ok) return error;
+            error = _ldtkJson.PostImport(_ldtkJson, savePath, options, genFiles);
+            if (error != Error.Ok)
+            {
+                GD.PrintErr($" PreImport failed, error:{error}");
+                return error;
+            }
 
-        var worldScenePath = options.GetValueOrDefault<string>(OptionWorldWorldMapping);
-        DirAccess.CopyAbsolute($"{savePath}.{SaveExtension}", worldScenePath);
+            var worldScenePath = options.GetValueOrDefault<string>(OptionWorldWorldMapping);
+            DirAccess.CopyAbsolute($"{savePath}.{SaveExtension}", worldScenePath);
 
-        genFiles.Add(worldScenePath);
-        
-        GD.Print($"Import success");
+            genFiles.Add(worldScenePath);
 
-        return Error.Ok;
+            GD.Print($"Import success thread:{Environment.CurrentManagedThreadId}");
+
+            return Error.Ok;
+        }
     }
 }
