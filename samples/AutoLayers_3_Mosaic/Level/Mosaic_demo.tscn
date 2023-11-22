@@ -12,7 +12,8 @@ visibility_layer = 0
 z_as_relative = false
 texture_filter = 1
 texture_repeat = 1
-scale = Vector2(0, 0)
+position = Vector2(-1, -1)
+scale = Vector2(1e-05, 1e-05)
 metadata/LDTK_level = {
 "__bgColor": "#222225",
 "__bgPos": null,
@@ -6389,15 +6390,6 @@ metadata/LDTK_level = {
 metadata/LDTK_fieldInstances = []
 
 [node name="LDTK_Background" type="TileMap" parent="."]
-visible = false
-modulate = Color(0, 0, 0, 1)
-self_modulate = Color(0, 0, 0, 1)
-light_mask = 0
-visibility_layer = 0
-z_as_relative = false
-texture_filter = 1
-texture_repeat = 1
-scale = Vector2(0, 0)
 tile_set = ExtResource("1_86jeo")
 format = 2
 layer_0/name = "LDTK_Background_0"
@@ -7449,15 +7441,6 @@ metadata/LDTK_instance = {
 }
 
 [node name="LDTK_Walls" type="TileMap" parent="."]
-visible = false
-modulate = Color(0, 0, 0, 1)
-self_modulate = Color(0, 0, 0, 1)
-light_mask = 0
-visibility_layer = 0
-z_as_relative = false
-texture_filter = 1
-texture_repeat = 1
-scale = Vector2(0, 0)
 tile_set = ExtResource("2_8mcwi")
 format = 2
 layer_0/name = "LDTK_Walls_0"

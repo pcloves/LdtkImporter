@@ -1,12 +1,12 @@
 [gd_scene load_steps=4 format=3]
 
-[ext_resource type="PackedScene" uid="uid://47xja7m1i7gm" path="res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn" id="1_pbcy4"]
-[ext_resource type="PackedScene" uid="uid://svlgmnrc7ria" path="res://samples/Typical_2D_platformer_example/Level/Top.tscn" id="2_l6f7p"]
-[ext_resource type="PackedScene" uid="uid://jm2ia733d3ls" path="res://samples/Typical_2D_platformer_example/Level/Bottom.tscn" id="3_f365i"]
+[ext_resource type="PackedScene" uid="uid://47xja7m1i7gm" path="res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn" id="1_40uiq"]
+[ext_resource type="PackedScene" uid="uid://svlgmnrc7ria" path="res://samples/Typical_2D_platformer_example/Level/Top.tscn" id="2_bwedg"]
+[ext_resource type="PackedScene" uid="uid://jm2ia733d3ls" path="res://samples/Typical_2D_platformer_example/Level/Bottom.tscn" id="3_lsp81"]
 
 [node name="Typical_2D_platformer_example" type="Node2D"]
 
-[node name="LDTK_Your_typical_2D_platformer" type="Node2D" parent="." instance=ExtResource("1_pbcy4")]
+[node name="LDTK_Your_typical_2D_platformer" type="Node2D" parent="." instance=ExtResource("1_40uiq")]
 metadata/LDTK_level = {
 "__bgColor": "#50506A",
 "__bgPos": null,
@@ -10053,7 +10053,7 @@ metadata/LDTK_level = {
 }
 metadata/LDTK_fieldInstances = []
 
-[node name="LDTK_Top" type="Node2D" parent="." instance=ExtResource("2_l6f7p")]
+[node name="LDTK_Top" type="Node2D" parent="." instance=ExtResource("2_bwedg")]
 position = Vector2(352, -352)
 metadata/LDTK_level = {
 "__bgColor": "#50506A",
@@ -17995,7 +17995,7 @@ metadata/LDTK_level = {
 }
 metadata/LDTK_fieldInstances = []
 
-[node name="LDTK_Bottom" type="Node2D" parent="." instance=ExtResource("3_f365i")]
+[node name="LDTK_Bottom" type="Node2D" parent="." instance=ExtResource("3_lsp81")]
 position = Vector2(80, 336)
 metadata/LDTK_level = {
 "__bgColor": "#50506A",

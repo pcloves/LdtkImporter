@@ -1,11 +1,20 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="PackedScene" uid="uid://d6lhy6kvrs15" path="res://samples/AutoLayers_3_Mosaic/Level/Mosaic_demo.tscn" id="1_ffnsj"]
+[ext_resource type="PackedScene" uid="uid://d6lhy6kvrs15" path="res://samples/AutoLayers_3_Mosaic/Level/Mosaic_demo.tscn" id="1_t8v38"]
 
 [node name="AutoLayers_3_Mosaic" type="Node2D"]
 
-[node name="LDTK_Mosaic_demo" type="Node2D" parent="." instance=ExtResource("1_ffnsj")]
+[node name="LDTK_Mosaic_demo" type="Node2D" parent="." instance=ExtResource("1_t8v38")]
+visible = false
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+light_mask = 0
+visibility_layer = 0
+z_as_relative = false
+texture_filter = 1
+texture_repeat = 1
 position = Vector2(-1, -1)
+scale = Vector2(1e-05, 1e-05)
 metadata/LDTK_level = {
 "__bgColor": "#222225",
 "__bgPos": null,

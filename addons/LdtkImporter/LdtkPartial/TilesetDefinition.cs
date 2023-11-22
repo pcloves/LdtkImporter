@@ -228,7 +228,7 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
                 var textureOrigin = new Vector2(tileInstance.Px[0] % tileGridSize, tileInstance.Px[1] % tileGridSize);
                 var textureOriginPivot = textureOrigin / TileGridSize;
 
-                tileInstance.AlternativeIdFlags = (AlternativeIdFlags)(tileInstance.F * (int)AlternativeIdFlags.TRANSFORM_FLIP_H);
+                tileInstance.AlternativeIdFlags = (AlternativeIdFlags)tileInstance.F;
                 tileInstance.AlternativeIdFlags |= textureOriginPivot.X.PivotXFlags();
                 tileInstance.AlternativeIdFlags |= textureOriginPivot.Y.PivotYFlags();
 

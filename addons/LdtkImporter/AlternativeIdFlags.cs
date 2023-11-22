@@ -32,7 +32,7 @@ public enum AlternativeIdFlags
     //Pivot Y 0.8
     PivotYEightTenths = 1 << 9,
     
-    //12, 13, 14已经被godot系统占用
+    //12, 13, 14已经被godot系统占用，这里占位用
     //https://github.com/godotengine/godot/blob/fa1fb2a53e20a3aec1ed1ffcc516f880f74db1a6/scene/resources/tile_set.h#L602
     TRANSFORM_FLIP_H = 1 << 12,
     TRANSFORM_FLIP_V = 1 << 13,

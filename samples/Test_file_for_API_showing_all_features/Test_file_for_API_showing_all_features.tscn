@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3]
 
-[ext_resource type="PackedScene" uid="uid://b2rowsy86h83r" path="res://samples/Test_file_for_API_showing_all_features/Level/Everything.tscn" id="1_5uk38"]
-[ext_resource type="PackedScene" uid="uid://ckvmqrmrkttjr" path="res://samples/Test_file_for_API_showing_all_features/Level/Autolayer.tscn" id="2_8vdm5"]
-[ext_resource type="PackedScene" uid="uid://dkgxlhmlcs7rt" path="res://samples/Test_file_for_API_showing_all_features/Level/Tiles_and_intgrid.tscn" id="3_6gxhb"]
-[ext_resource type="PackedScene" uid="uid://cp4ssu1pessad" path="res://samples/Test_file_for_API_showing_all_features/Level/Background_image.tscn" id="4_d0aaw"]
+[ext_resource type="PackedScene" uid="uid://b2rowsy86h83r" path="res://samples/Test_file_for_API_showing_all_features/Level/Everything.tscn" id="1_1nevb"]
+[ext_resource type="PackedScene" uid="uid://ckvmqrmrkttjr" path="res://samples/Test_file_for_API_showing_all_features/Level/Autolayer.tscn" id="2_4y045"]
+[ext_resource type="PackedScene" uid="uid://dkgxlhmlcs7rt" path="res://samples/Test_file_for_API_showing_all_features/Level/Tiles_and_intgrid.tscn" id="3_83mn2"]
+[ext_resource type="PackedScene" uid="uid://cp4ssu1pessad" path="res://samples/Test_file_for_API_showing_all_features/Level/Background_image.tscn" id="4_6jqu4"]
 
 [node name="Test_file_for_API_showing_all_features" type="Node2D"]
 
-[node name="LDTK_Everything" type="Node2D" parent="." instance=ExtResource("1_5uk38")]
+[node name="LDTK_Everything" type="Node2D" parent="." instance=ExtResource("1_1nevb")]
 position = Vector2(-1, -1)
 metadata/LDTK_level = {
 "__bgColor": "#6E6F8B",
@@ -1553,7 +1553,7 @@ metadata/LDTK_level = {
 }
 metadata/LDTK_fieldInstances = []
 
-[node name="LDTK_Autolayer" type="Node2D" parent="." instance=ExtResource("2_8vdm5")]
+[node name="LDTK_Autolayer" type="Node2D" parent="." instance=ExtResource("2_4y045")]
 position = Vector2(-1, -1)
 metadata/LDTK_level = {
 "__bgColor": "#6E6F8B",
@@ -3192,7 +3192,7 @@ metadata/LDTK_level = {
 }
 metadata/LDTK_fieldInstances = []
 
-[node name="LDTK_Tiles_and_intgrid" type="Node2D" parent="." instance=ExtResource("3_6gxhb")]
+[node name="LDTK_Tiles_and_intgrid" type="Node2D" parent="." instance=ExtResource("3_83mn2")]
 position = Vector2(-1, -1)
 metadata/LDTK_level = {
 "__bgColor": "#6E6F8B",
@@ -3845,7 +3845,7 @@ metadata/LDTK_level = {
 }
 metadata/LDTK_fieldInstances = []
 
-[node name="LDTK_Background_image" type="Node2D" parent="." instance=ExtResource("4_d0aaw")]
+[node name="LDTK_Background_image" type="Node2D" parent="." instance=ExtResource("4_6jqu4")]
 position = Vector2(-1, -1)
 metadata/LDTK_level = {
 "__bgColor": "#6E6F8B",
