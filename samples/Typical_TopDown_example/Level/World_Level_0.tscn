@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bua7d3wio5tql" path="res://samples/Typical_TopDown_example/Entity/Item.tscn" id="4_e3e8m"]
 [ext_resource type="PackedScene" uid="uid://dd4av8ydlvpp2" path="res://samples/Typical_TopDown_example/Entity/Button.tscn" id="5_ibi0s"]
 
-[sub_resource type="Image" id="Image_vcxgm"]
+[sub_resource type="Image" id="Image_oa7uv"]
 data = {
 "data": PackedByteArray(228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114),
 "format": "RGB8",
@@ -15,11 +15,11 @@ data = {
 "width": 16
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_jn1tl"]
-image = SubResource("Image_vcxgm")
+[sub_resource type="ImageTexture" id="ImageTexture_bbjhs"]
+image = SubResource("Image_oa7uv")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_22vab"]
-texture = SubResource("ImageTexture_jn1tl")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s0hpx"]
+texture = SubResource("ImageTexture_bbjhs")
 0:0/0 = 0
 0:0/0/custom_data_0 = {
 "color": "#E4A672",
@@ -35,10 +35,10 @@ texture = SubResource("ImageTexture_jn1tl")
 "value": 1.0
 }
 
-[sub_resource type="TileSet" id="TileSet_4bp5u"]
+[sub_resource type="TileSet" id="TileSet_t17yq"]
 custom_data_layer_0/name = "LDTK_Collisions"
 custom_data_layer_0/type = 27
-sources/110 = SubResource("TileSetAtlasSource_22vab")
+sources/110 = SubResource("TileSetAtlasSource_s0hpx")
 
 [node name="LDTK_World_Level_0" type="Node2D"]
 position = Vector2(256, 0)
@@ -17621,7 +17621,7 @@ metadata/LDTK_layerInstance = {
 }
 
 [node name="LDTK_IntGrid" type="TileMap" parent="LDTK_Collisions"]
-tile_set = SubResource("TileSet_4bp5u")
+tile_set = SubResource("TileSet_t17yq")
 format = 2
 layer_1/name = "LDTK_Collisions"
 layer_1/tile_data = PackedInt32Array(65551, 110, 0, 65552, 110, 0, 65553, 110, 0, 65554, 110, 0, 65555, 110, 0, 65556, 110, 0, 65557, 110, 0, 65558, 110, 0, 65559, 110, 0, 65560, 110, 0, 65561, 110, 0, 65562, 110, 0, 65563, 110, 0, 65564, 110, 0, 65565, 110, 0, 65566, 110, 0, 65567, 110, 0, 131072, 110, 0, 131073, 110, 0, 131074, 110, 0, 131075, 110, 0, 131076, 110, 0, 131077, 110, 0, 131078, 110, 0, 131079, 110, 0, 131080, 110, 0, 131081, 110, 0, 131082, 110, 0, 131083, 110, 0, 131084, 110, 0, 131085, 110, 0, 131086, 110, 0, 131087, 110, 0, 131091, 110, 0, 131093, 110, 0, 131094, 110, 0, 131095, 110, 0, 131096, 110, 0, 131097, 110, 0, 131098, 110, 0, 131099, 110, 0, 131100, 110, 0, 131101, 110, 0, 131102, 110, 0, 131103, 110, 0, 196608, 110, 0, 196609, 110, 0, 196616, 110, 0, 196623, 110, 0, 196629, 110, 0, 196630, 110, 0, 196631, 110, 0, 196637, 110, 0, 196638, 110, 0, 196639, 110, 0, 262144, 110, 0, 262145, 110, 0, 262159, 110, 0, 262165, 110, 0, 262166, 110, 0, 262167, 110, 0, 262169, 110, 0, 262170, 110, 0, 262171, 110, 0, 262173, 110, 0, 262174, 110, 0, 262175, 110, 0, 327680, 110, 0, 327681, 110, 0, 327695, 110, 0, 327696, 110, 0, 327697, 110, 0, 327701, 110, 0, 327702, 110, 0, 327703, 110, 0, 327705, 110, 0, 327706, 110, 0, 327707, 110, 0, 327709, 110, 0, 327710, 110, 0, 327711, 110, 0, 393216, 110, 0, 393217, 110, 0, 393224, 110, 0, 393231, 110, 0, 393232, 110, 0, 393233, 110, 0, 393237, 110, 0, 393238, 110, 0, 393239, 110, 0, 393241, 110, 0, 393242, 110, 0, 393243, 110, 0, 393245, 110, 0, 393246, 110, 0, 393247, 110, 0, 458752, 110, 0, 458753, 110, 0, 458754, 110, 0, 458755, 110, 0, 458756, 110, 0, 458757, 110, 0, 458758, 110, 0, 458759, 110, 0, 458760, 110, 0, 458761, 110, 0, 458764, 110, 0, 458765, 110, 0, 458766, 110, 0, 458767, 110, 0, 458768, 110, 0, 458769, 110, 0, 458772, 110, 0, 458773, 110, 0, 458774, 110, 0, 458775, 110, 0, 458777, 110, 0, 458778, 110, 0, 458779, 110, 0, 458781, 110, 0, 458782, 110, 0, 458783, 110, 0, 524288, 110, 0, 524289, 110, 0, 524290, 110, 0, 524291, 110, 0, 524292, 110, 0, 524293, 110, 0, 524294, 110, 0, 524295, 110, 0, 524296, 110, 0, 524301, 110, 0, 524302, 110, 0, 524303, 110, 0, 524304, 110, 0, 524305, 110, 0, 524313, 110, 0, 524314, 110, 0, 524315, 110, 0, 589838, 110, 0, 589849, 110, 0, 589850, 110, 0, 589851, 110, 0, 655380, 110, 0, 655381, 110, 0, 655382, 110, 0, 655383, 110, 0, 655384, 110, 0, 655385, 110, 0, 655386, 110, 0, 655387, 110, 0, 655388, 110, 0, 655389, 110, 0, 655390, 110, 0, 655391, 110, 0, 720910, 110, 0, 720916, 110, 0, 720917, 110, 0, 720918, 110, 0, 720919, 110, 0, 720920, 110, 0, 720921, 110, 0, 720922, 110, 0, 720923, 110, 0, 720924, 110, 0, 720925, 110, 0, 720926, 110, 0, 720927, 110, 0, 786432, 110, 0, 786433, 110, 0, 786434, 110, 0, 786435, 110, 0, 786436, 110, 0, 786437, 110, 0, 786438, 110, 0, 786439, 110, 0, 786440, 110, 0, 786441, 110, 0, 786442, 110, 0, 786443, 110, 0, 786444, 110, 0, 786445, 110, 0, 786446, 110, 0, 786447, 110, 0, 786448, 110, 0, 786449, 110, 0, 786450, 110, 0, 786451, 110, 0, 786452, 110, 0, 786453, 110, 0, 786454, 110, 0, 786455, 110, 0, 786456, 110, 0, 786457, 110, 0, 786458, 110, 0, 786459, 110, 0, 786460, 110, 0, 786461, 110, 0, 786462, 110, 0, 786463, 110, 0)
@@ -19901,7 +19901,7 @@ metadata/LDTK_layerInstance = {
 
 [node name="LDTK_Door-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_1mpkt")]
 position = Vector2(160, 112)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#B86F50",
 "doc": null,
 "exportToToc": false,
@@ -19984,81 +19984,6 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 69.0,
 "realEditorValues": []
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#B86F50",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "lockedWith",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 69.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.27,
-"height": 16.0,
-"hollow": false,
-"identifier": "Door",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": true,
-"resizableY": true,
-"showName": true,
-"tags": ["environment"],
-"tileId": null,
-"tileOpacity": 0.62,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 256.0,
-"y": 272.0
-},
-"tileRenderMode": 4.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 62.0,
-"width": 16.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [10.0, 7.0],
 "__identifier": "Door",
@@ -20091,7 +20016,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Door-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_1mpkt")]
 position = Vector2(288, 112)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#B86F50",
 "doc": null,
 "exportToToc": false,
@@ -20174,81 +20099,6 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 69.0,
 "realEditorValues": []
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#B86F50",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "lockedWith",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 69.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.27,
-"height": 16.0,
-"hollow": false,
-"identifier": "Door",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": true,
-"resizableY": true,
-"showName": true,
-"tags": ["environment"],
-"tileId": null,
-"tileOpacity": 0.62,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 256.0,
-"y": 272.0
-},
-"tileRenderMode": 4.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 62.0,
-"width": 16.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [18.0, 7.0],
 "__identifier": "Door",
@@ -20281,7 +20131,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Player-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_d5d7c")]
 position = Vector2(168, 168)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#03CB7C",
 "doc": null,
 "exportToToc": true,
@@ -20411,121 +20261,6 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 60.0,
 "realEditorValues": []
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#03CB7C",
-"doc": null,
-"exportToToc": true,
-"fieldDefs": [{
-"__type": "Int",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": {
-"id": "V_Int",
-"params": [100.0]
-},
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "life",
-"isArray": false,
-"max": 100.0,
-"min": 1.0,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Int",
-"uid": 61.0,
-"useForSmartColor": false
-}, {
-"__type": "Int",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": {
-"id": "V_Int",
-"params": [10.0]
-},
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "ammo",
-"isArray": false,
-"max": 50.0,
-"min": 0.0,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Int",
-"uid": 60.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "Player",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 2.0,
-"lineOpacity": 0.0,
-"maxCount": 1.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": true,
-"tags": ["actor"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 0.0,
-"y": 240.0
-},
-"tileRenderMode": 6.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 59.0,
-"width": 16.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [10.0, 10.0],
 "__identifier": "Player",
@@ -20565,7 +20300,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Door-2" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_1mpkt")]
 position = Vector2(112, 144)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#B86F50",
 "doc": null,
 "exportToToc": false,
@@ -20651,81 +20386,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["KeyA"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#B86F50",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "lockedWith",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 69.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.27,
-"height": 16.0,
-"hollow": false,
-"identifier": "Door",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": true,
-"resizableY": true,
-"showName": true,
-"tags": ["environment"],
-"tileId": null,
-"tileOpacity": 0.62,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 256.0,
-"y": 272.0
-},
-"tileRenderMode": 4.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 62.0,
-"width": 16.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [7.0, 9.0],
 "__identifier": "Door",
@@ -20761,7 +20421,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Item-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_e3e8m")]
 position = Vector2(296, 56)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#FF0044",
 "doc": null,
 "exportToToc": false,
@@ -20853,81 +20513,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["KeyA"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#FF0044",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 2.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "type",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 146.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.0,
-"height": 20.0,
-"hollow": false,
-"identifier": "Item",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": false,
-"tags": ["actor"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 64.0,
-"y": 64.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 63.0,
-"width": 20.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [18.0, 3.0],
 "__identifier": "Item",
@@ -20969,7 +20554,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Item-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_e3e8m")]
 position = Vector2(56, 72)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#FF0044",
 "doc": null,
 "exportToToc": false,
@@ -21061,81 +20646,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["Health"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#FF0044",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 2.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "type",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 146.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.0,
-"height": 20.0,
-"hollow": false,
-"identifier": "Item",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": false,
-"tags": ["actor"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 64.0,
-"y": 64.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 63.0,
-"width": 20.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [3.0, 4.0],
 "__identifier": "Item",
@@ -21177,7 +20687,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Button-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_ibi0s")]
 position = Vector2(184, 40)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#FF0000",
 "doc": null,
 "exportToToc": false,
@@ -21268,81 +20778,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["8d4360c0-c640-11ed-8430-abb21cbec6c0"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#FF0000",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "Array<EntityRef>",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": false,
-"allowedRefTags": [],
-"allowedRefs": 0.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 12.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "targets",
-"isArray": true,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_EntityRef",
-"uid": 106.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.08,
-"height": 10.0,
-"hollow": false,
-"identifier": "Button",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": true,
-"tags": ["environment"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 272.0,
-"y": 32.0
-},
-"tileRenderMode": 4.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 105.0,
-"width": 10.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [11.0, 2.0],
 "__identifier": "Button",
@@ -21383,7 +20818,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Door-3" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_1mpkt")]
 position = Vector2(128, 64)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#B86F50",
 "doc": null,
 "exportToToc": false,
@@ -21466,81 +20901,6 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 69.0,
 "realEditorValues": []
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#B86F50",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "lockedWith",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 69.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.27,
-"height": 16.0,
-"hollow": false,
-"identifier": "Door",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": true,
-"resizableY": true,
-"showName": true,
-"tags": ["environment"],
-"tileId": null,
-"tileOpacity": 0.62,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 256.0,
-"y": 272.0
-},
-"tileRenderMode": 4.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 62.0,
-"width": 16.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [8.0, 4.0],
 "__identifier": "Door",

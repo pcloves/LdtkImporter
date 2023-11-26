@@ -3,7 +3,6 @@
 [ext_resource type="TileSet" uid="uid://b0e1is5tec6ul" path="res://samples/AutoLayers_6_OptionalRules/Tileset/Cavernas_by_Adam_Saltsman.tres" id="1_me2us"]
 
 [node name="LDTK_Green_hills" type="Node2D"]
-position = Vector2(-1, -1)
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {
 "__bgColor": "#000000",

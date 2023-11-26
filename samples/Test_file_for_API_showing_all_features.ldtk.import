@@ -16,7 +16,7 @@ dest_files=["res://.godot/imported/Test_file_for_API_showing_all_features.ldtk-9
 
 General/prefix="LDTK"
 World/WorldScenes="res://samples/Test_file_for_API_showing_all_features/Test_file_for_API_showing_all_features.tscn"
-Tileset/add_tileset_definition_to_meta=false
+Tileset/add_tileset_definition_to_meta=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Resources/Inca_front_by_Kronbits_extended="res://samples/Test_file_for_API_showing_all_features/Tileset/Inca_front_by_Kronbits_extended.tres"
 Tileset/Resources/Internal_Icons="res://samples/Test_file_for_API_showing_all_features/Tileset/Internal_Icons.tres"
@@ -30,7 +30,7 @@ Entity/Scenes/RectRegion="res://samples/Test_file_for_API_showing_all_features/E
 Level/add_level_instance_to_meta=true
 Level/add_layer_instance_to_meta=true
 Level/add_layer_definition_to_meta=true
-Level/import_IntGrid=false
+Level/import_IntGrid=true
 Level/Scenes/Autolayer="res://samples/Test_file_for_API_showing_all_features/Level/Autolayer.tscn"
 Level/Scenes/Background_image="res://samples/Test_file_for_API_showing_all_features/Level/Background_image.tscn"
 Level/Scenes/Everything="res://samples/Test_file_for_API_showing_all_features/Level/Everything.tscn"

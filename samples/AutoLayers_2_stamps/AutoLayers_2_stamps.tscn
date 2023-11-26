@@ -1,11 +1,10 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="PackedScene" uid="uid://ioopqbi2kgcv" path="res://samples/AutoLayers_2_stamps/Level/Stamps.tscn" id="1_8ws7o"]
+[ext_resource type="PackedScene" uid="uid://ioopqbi2kgcv" path="res://samples/AutoLayers_2_stamps/Level/Stamps.tscn" id="1_dgprr"]
 
 [node name="AutoLayers_2_stamps" type="Node2D"]
 
-[node name="LDTK_Stamps" type="Node2D" parent="." instance=ExtResource("1_8ws7o")]
-position = Vector2(-1, -1)
+[node name="LDTK_Stamps" type="Node2D" parent="." instance=ExtResource("1_dgprr")]
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {
 "__bgColor": "#222225",

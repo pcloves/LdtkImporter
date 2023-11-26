@@ -3,7 +3,6 @@
 [ext_resource type="TileSet" uid="uid://d25uyy1rgw68e" path="res://samples/AutoLayers_2_stamps/Tileset/Inca_front_by_Kronbits.tres" id="1_soegx"]
 
 [node name="LDTK_Stamps" type="Node2D"]
-position = Vector2(-1, -1)
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {
 "__bgColor": "#222225",

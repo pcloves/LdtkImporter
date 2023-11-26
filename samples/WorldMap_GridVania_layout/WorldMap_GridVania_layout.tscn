@@ -1,30 +1,30 @@
 [gd_scene load_steps=22 format=3]
 
-[ext_resource type="PackedScene" uid="uid://dn6qi676t30by" path="res://samples/WorldMap_GridVania_layout/Level/Entrance.tscn" id="1_orr8h"]
-[ext_resource type="PackedScene" uid="uid://caradphw5qc1t" path="res://samples/WorldMap_GridVania_layout/Level/Cross_roads.tscn" id="2_4ddjc"]
-[ext_resource type="PackedScene" uid="uid://dvvuo1qtxpfwv" path="res://samples/WorldMap_GridVania_layout/Level/Ossuary.tscn" id="3_bddo2"]
-[ext_resource type="PackedScene" uid="uid://bdqj7ol78ivjs" path="res://samples/WorldMap_GridVania_layout/Level/Water_supply.tscn" id="4_3vhsm"]
-[ext_resource type="PackedScene" uid="uid://7u5g0ci2kjbo" path="res://samples/WorldMap_GridVania_layout/Level/Sewers2.tscn" id="5_10dfu"]
-[ext_resource type="PackedScene" uid="uid://cga58k32uq52r" path="res://samples/WorldMap_GridVania_layout/Level/Sewers_trash.tscn" id="6_6718g"]
-[ext_resource type="PackedScene" uid="uid://bno0on70btd27" path="res://samples/WorldMap_GridVania_layout/Level/Boss_room.tscn" id="7_j2kvj"]
-[ext_resource type="PackedScene" uid="uid://ceka4annlwjs1" path="res://samples/WorldMap_GridVania_layout/Level/Large_water.tscn" id="8_h7d2l"]
-[ext_resource type="PackedScene" uid="uid://b25arni6soalw" path="res://samples/WorldMap_GridVania_layout/Level/Shop.tscn" id="9_q184o"]
-[ext_resource type="PackedScene" uid="uid://bvtwindh4e2ci" path="res://samples/WorldMap_GridVania_layout/Level/Sewers1.tscn" id="10_7uiyi"]
-[ext_resource type="PackedScene" uid="uid://d00x514hbtbsa" path="res://samples/WorldMap_GridVania_layout/Level/The_ponds.tscn" id="11_txwfj"]
-[ext_resource type="PackedScene" uid="uid://8ba67askhkcu" path="res://samples/WorldMap_GridVania_layout/Level/Pit.tscn" id="12_5ktn4"]
-[ext_resource type="PackedScene" uid="uid://bb4wxa7sly166" path="res://samples/WorldMap_GridVania_layout/Level/The_tower.tscn" id="13_odw03"]
-[ext_resource type="PackedScene" uid="uid://dw713xne4nw7i" path="res://samples/WorldMap_GridVania_layout/Level/Garden.tscn" id="14_wa313"]
-[ext_resource type="PackedScene" uid="uid://cicdicdnn68jr" path="res://samples/WorldMap_GridVania_layout/Level/Save.tscn" id="15_w0ym3"]
-[ext_resource type="PackedScene" uid="uid://bvfb5xguun0su" path="res://samples/WorldMap_GridVania_layout/Level/Flooded_rooms.tscn" id="16_08neo"]
-[ext_resource type="PackedScene" uid="uid://ckj8hpu1a6572" path="res://samples/WorldMap_GridVania_layout/Level/Long_hallway.tscn" id="17_wkmna"]
-[ext_resource type="PackedScene" uid="uid://ewuruxir3o6k" path="res://samples/WorldMap_GridVania_layout/Level/Exit.tscn" id="18_m4a85"]
-[ext_resource type="PackedScene" uid="uid://ckyi8cto4tjll" path="res://samples/WorldMap_GridVania_layout/Level/Hidden_cave.tscn" id="19_wi48w"]
-[ext_resource type="PackedScene" uid="uid://cq1k8fga2q7dg" path="res://samples/WorldMap_GridVania_layout/Level/Shop_entrance.tscn" id="20_kylul"]
-[ext_resource type="PackedScene" uid="uid://ctkr1qsya5qby" path="res://samples/WorldMap_GridVania_layout/Level/Shortcut_passage.tscn" id="21_ahhf1"]
+[ext_resource type="PackedScene" uid="uid://dn6qi676t30by" path="res://samples/WorldMap_GridVania_layout/Level/Entrance.tscn" id="1_vub5j"]
+[ext_resource type="PackedScene" uid="uid://caradphw5qc1t" path="res://samples/WorldMap_GridVania_layout/Level/Cross_roads.tscn" id="2_ctjux"]
+[ext_resource type="PackedScene" uid="uid://dvvuo1qtxpfwv" path="res://samples/WorldMap_GridVania_layout/Level/Ossuary.tscn" id="3_bos73"]
+[ext_resource type="PackedScene" uid="uid://bdqj7ol78ivjs" path="res://samples/WorldMap_GridVania_layout/Level/Water_supply.tscn" id="4_0yrnl"]
+[ext_resource type="PackedScene" uid="uid://7u5g0ci2kjbo" path="res://samples/WorldMap_GridVania_layout/Level/Sewers2.tscn" id="5_l21t7"]
+[ext_resource type="PackedScene" uid="uid://cga58k32uq52r" path="res://samples/WorldMap_GridVania_layout/Level/Sewers_trash.tscn" id="6_4bsw2"]
+[ext_resource type="PackedScene" uid="uid://bno0on70btd27" path="res://samples/WorldMap_GridVania_layout/Level/Boss_room.tscn" id="7_ydvgk"]
+[ext_resource type="PackedScene" uid="uid://ceka4annlwjs1" path="res://samples/WorldMap_GridVania_layout/Level/Large_water.tscn" id="8_3obit"]
+[ext_resource type="PackedScene" uid="uid://b25arni6soalw" path="res://samples/WorldMap_GridVania_layout/Level/Shop.tscn" id="9_nr03r"]
+[ext_resource type="PackedScene" uid="uid://bvtwindh4e2ci" path="res://samples/WorldMap_GridVania_layout/Level/Sewers1.tscn" id="10_v08l4"]
+[ext_resource type="PackedScene" uid="uid://d00x514hbtbsa" path="res://samples/WorldMap_GridVania_layout/Level/The_ponds.tscn" id="11_7w16b"]
+[ext_resource type="PackedScene" uid="uid://8ba67askhkcu" path="res://samples/WorldMap_GridVania_layout/Level/Pit.tscn" id="12_nuis7"]
+[ext_resource type="PackedScene" uid="uid://bb4wxa7sly166" path="res://samples/WorldMap_GridVania_layout/Level/The_tower.tscn" id="13_kcfkh"]
+[ext_resource type="PackedScene" uid="uid://dw713xne4nw7i" path="res://samples/WorldMap_GridVania_layout/Level/Garden.tscn" id="14_iilo0"]
+[ext_resource type="PackedScene" uid="uid://cicdicdnn68jr" path="res://samples/WorldMap_GridVania_layout/Level/Save.tscn" id="15_1dy54"]
+[ext_resource type="PackedScene" uid="uid://bvfb5xguun0su" path="res://samples/WorldMap_GridVania_layout/Level/Flooded_rooms.tscn" id="16_l6ch3"]
+[ext_resource type="PackedScene" uid="uid://ckj8hpu1a6572" path="res://samples/WorldMap_GridVania_layout/Level/Long_hallway.tscn" id="17_r2gob"]
+[ext_resource type="PackedScene" uid="uid://ewuruxir3o6k" path="res://samples/WorldMap_GridVania_layout/Level/Exit.tscn" id="18_tbuqa"]
+[ext_resource type="PackedScene" uid="uid://ckyi8cto4tjll" path="res://samples/WorldMap_GridVania_layout/Level/Hidden_cave.tscn" id="19_vq4gt"]
+[ext_resource type="PackedScene" uid="uid://cq1k8fga2q7dg" path="res://samples/WorldMap_GridVania_layout/Level/Shop_entrance.tscn" id="20_mx4jv"]
+[ext_resource type="PackedScene" uid="uid://ctkr1qsya5qby" path="res://samples/WorldMap_GridVania_layout/Level/Shortcut_passage.tscn" id="21_qmhax"]
 
 [node name="WorldMap_GridVania_layout" type="Node2D"]
 
-[node name="LDTK_Entrance" type="Node2D" parent="." instance=ExtResource("1_orr8h")]
+[node name="LDTK_Entrance" type="Node2D" parent="." instance=ExtResource("1_vub5j")]
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
@@ -5342,7 +5342,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 0.0
 }
 
-[node name="LDTK_Cross_roads" type="Node2D" parent="." instance=ExtResource("2_4ddjc")]
+[node name="LDTK_Cross_roads" type="Node2D" parent="." instance=ExtResource("2_ctjux")]
 position = Vector2(0, 256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -13966,7 +13966,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 256.0
 }
 
-[node name="LDTK_Ossuary" type="Node2D" parent="." instance=ExtResource("3_bddo2")]
+[node name="LDTK_Ossuary" type="Node2D" parent="." instance=ExtResource("3_bos73")]
 position = Vector2(-1024, 0)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -26897,7 +26897,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 0.0
 }
 
-[node name="LDTK_Water_supply" type="Node2D" parent="." instance=ExtResource("4_3vhsm")]
+[node name="LDTK_Water_supply" type="Node2D" parent="." instance=ExtResource("4_0yrnl")]
 position = Vector2(-512, 0)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -37734,7 +37734,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 0.0
 }
 
-[node name="LDTK_Sewers2" type="Node2D" parent="." instance=ExtResource("5_10dfu")]
+[node name="LDTK_Sewers2" type="Node2D" parent="." instance=ExtResource("5_l21t7")]
 position = Vector2(256, 1024)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -47903,7 +47903,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 1024.0
 }
 
-[node name="LDTK_Sewers_trash" type="Node2D" parent="." instance=ExtResource("6_6718g")]
+[node name="LDTK_Sewers_trash" type="Node2D" parent="." instance=ExtResource("6_4bsw2")]
 position = Vector2(256, 1536)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -58200,7 +58200,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 1536.0
 }
 
-[node name="LDTK_Boss_room" type="Node2D" parent="." instance=ExtResource("7_j2kvj")]
+[node name="LDTK_Boss_room" type="Node2D" parent="." instance=ExtResource("7_ydvgk")]
 position = Vector2(1536, 512)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -70925,7 +70925,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 512.0
 }
 
-[node name="LDTK_Large_water" type="Node2D" parent="." instance=ExtResource("8_h7d2l")]
+[node name="LDTK_Large_water" type="Node2D" parent="." instance=ExtResource("8_3obit")]
 position = Vector2(1024, -256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -80863,7 +80863,7 @@ metadata/LDTK_levelInstance = {
 "worldY": -256.0
 }
 
-[node name="LDTK_Shop" type="Node2D" parent="." instance=ExtResource("9_q184o")]
+[node name="LDTK_Shop" type="Node2D" parent="." instance=ExtResource("9_nr03r")]
 position = Vector2(256, 0)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -99049,7 +99049,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 0.0
 }
 
-[node name="LDTK_Sewers1" type="Node2D" parent="." instance=ExtResource("10_7uiyi")]
+[node name="LDTK_Sewers1" type="Node2D" parent="." instance=ExtResource("10_v08l4")]
 position = Vector2(512, 512)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -105146,7 +105146,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 512.0
 }
 
-[node name="LDTK_The_ponds" type="Node2D" parent="." instance=ExtResource("11_txwfj")]
+[node name="LDTK_The_ponds" type="Node2D" parent="." instance=ExtResource("11_7w16b")]
 position = Vector2(768, 768)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -112786,7 +112786,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 768.0
 }
 
-[node name="LDTK_Pit" type="Node2D" parent="." instance=ExtResource("12_5ktn4")]
+[node name="LDTK_Pit" type="Node2D" parent="." instance=ExtResource("12_nuis7")]
 position = Vector2(768, 256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -117655,7 +117655,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 256.0
 }
 
-[node name="LDTK_The_tower" type="Node2D" parent="." instance=ExtResource("13_odw03")]
+[node name="LDTK_The_tower" type="Node2D" parent="." instance=ExtResource("13_kcfkh")]
 position = Vector2(1536, -256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -125534,7 +125534,7 @@ metadata/LDTK_levelInstance = {
 "worldY": -256.0
 }
 
-[node name="LDTK_Garden" type="Node2D" parent="." instance=ExtResource("14_wa313")]
+[node name="LDTK_Garden" type="Node2D" parent="." instance=ExtResource("14_iilo0")]
 position = Vector2(512, -256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -135420,7 +135420,7 @@ metadata/LDTK_levelInstance = {
 "worldY": -256.0
 }
 
-[node name="LDTK_Save" type="Node2D" parent="." instance=ExtResource("15_w0ym3")]
+[node name="LDTK_Save" type="Node2D" parent="." instance=ExtResource("15_1dy54")]
 position = Vector2(1024, 256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -139965,7 +139965,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 256.0
 }
 
-[node name="LDTK_Flooded_rooms" type="Node2D" parent="." instance=ExtResource("16_08neo")]
+[node name="LDTK_Flooded_rooms" type="Node2D" parent="." instance=ExtResource("16_l6ch3")]
 position = Vector2(1024, 1024)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -150908,7 +150908,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 1024.0
 }
 
-[node name="LDTK_Long_hallway" type="Node2D" parent="." instance=ExtResource("17_wkmna")]
+[node name="LDTK_Long_hallway" type="Node2D" parent="." instance=ExtResource("17_r2gob")]
 position = Vector2(1536, 256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -166325,7 +166325,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 256.0
 }
 
-[node name="LDTK_Exit" type="Node2D" parent="." instance=ExtResource("18_m4a85")]
+[node name="LDTK_Exit" type="Node2D" parent="." instance=ExtResource("18_tbuqa")]
 position = Vector2(2816, 0)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -171103,7 +171103,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 0.0
 }
 
-[node name="LDTK_Hidden_cave" type="Node2D" parent="." instance=ExtResource("19_wi48w")]
+[node name="LDTK_Hidden_cave" type="Node2D" parent="." instance=ExtResource("19_vq4gt")]
 position = Vector2(1280, 256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -175683,7 +175683,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 256.0
 }
 
-[node name="LDTK_Shop_entrance" type="Node2D" parent="." instance=ExtResource("20_kylul")]
+[node name="LDTK_Shop_entrance" type="Node2D" parent="." instance=ExtResource("20_mx4jv")]
 position = Vector2(512, 256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
@@ -178701,7 +178701,7 @@ metadata/LDTK_levelInstance = {
 "worldY": 256.0
 }
 
-[node name="LDTK_Shortcut_passage" type="Node2D" parent="." instance=ExtResource("21_ahhf1")]
+[node name="LDTK_Shortcut_passage" type="Node2D" parent="." instance=ExtResource("21_qmhax")]
 position = Vector2(512, 768)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",

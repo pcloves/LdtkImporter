@@ -12,7 +12,6 @@ visibility_layer = 0
 z_as_relative = false
 texture_filter = 1
 texture_repeat = 1
-position = Vector2(-1, -1)
 scale = Vector2(1e-05, 1e-05)
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {

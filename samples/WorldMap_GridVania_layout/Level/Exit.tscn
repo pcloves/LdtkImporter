@@ -10596,48 +10596,6 @@ metadata/LDTK_layerInstance = {
 
 [node name="LDTK_Exit-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_g2jew")]
 position = Vector2(16, 128)
-metadata/LDTK_entities = {
-"color": "#126CCB",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.25,
-"height": 16.0,
-"hollow": true,
-"identifier": "Exit",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 1.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": true,
-"resizableY": true,
-"showName": true,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 0.51,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 48.0,
-"y": 240.0
-},
-"tileRenderMode": 5.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 94.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#126CCB",
 "doc": null,
@@ -10679,6 +10637,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 94.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [1.0, 8.0],
 "__identifier": "Exit",
@@ -10704,48 +10663,6 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Ladder-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_ngi5u")]
 position = Vector2(432, 208)
-metadata/LDTK_entities = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "Ladder",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": true,
-"showName": false,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 400.0,
-"y": 32.0
-},
-"tileRenderMode": 5.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 134.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -10787,6 +10704,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 134.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [27.0, 13.0],
 "__identifier": "Ladder",

@@ -21383,7 +21383,7 @@ metadata/LDTK_layerInstance = {
 
 [node name="LDTK_Item-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_2yqs4")]
 position = Vector2(344, 320)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#FFEC8A",
 "doc": null,
 "exportToToc": false,
@@ -21563,152 +21563,6 @@ metadata/LDTK_fieldInstances = [{
 "params": [10.0]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#FFEC8A",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.ItemType",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 2.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 4.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "type",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(74)",
-"uid": 76.0,
-"useForSmartColor": false
-}, {
-"__type": "Int",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 4.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": " GOLD",
-"identifier": "price",
-"isArray": false,
-"max": null,
-"min": 0.0,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Int",
-"uid": 93.0,
-"useForSmartColor": false
-}, {
-"__type": "Int",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": {
-"id": "V_Int",
-"params": [1.0]
-},
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 4.0,
-"editorShowInWorld": true,
-"editorTextPrefix": "x",
-"editorTextSuffix": null,
-"identifier": "count",
-"isArray": false,
-"max": null,
-"min": 1.0,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Int",
-"uid": 139.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.15,
-"height": 24.0,
-"hollow": false,
-"identifier": "Item",
-"keepAspectRatio": false,
-"limitBehavior": 0.0,
-"limitScope": 1.0,
-"lineOpacity": 0.61,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 1.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": false,
-"tags": ["loot"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 144.0,
-"y": 16.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 72.0,
-"width": 24.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [21.0, 19.0],
 "__identifier": "Item",
@@ -21767,7 +21621,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Teleport-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_jhyr1")]
 position = Vector2(472, 256)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#EC50FF",
 "doc": null,
 "exportToToc": false,
@@ -21858,81 +21712,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["abd6a7b0-66b0-11ec-a595-ffcc1299ef8f"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#EC50FF",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "EntityRef",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 12.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "destination",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": true,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_EntityRef",
-"uid": 131.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.08,
-"height": 24.0,
-"hollow": false,
-"identifier": "Teleport",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 1.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": true,
-"tags": ["actor"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 224.0,
-"y": 176.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 130.0,
-"width": 24.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [29.0, 15.0],
 "__identifier": "Teleport",
@@ -21973,48 +21752,6 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Ladder-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_vok4r")]
 position = Vector2(432, 256)
-metadata/LDTK_entities = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "Ladder",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": true,
-"showName": false,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 400.0,
-"y": 32.0
-},
-"tileRenderMode": 5.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 134.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -22056,6 +21793,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 134.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [27.0, 16.0],
 "__identifier": "Ladder",
@@ -22081,48 +21819,6 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Ladder-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_vok4r")]
 position = Vector2(144, 192)
-metadata/LDTK_entities = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "Ladder",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": true,
-"showName": false,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 400.0,
-"y": 32.0
-},
-"tileRenderMode": 5.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 134.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -22164,6 +21860,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 134.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [9.0, 12.0],
 "__identifier": "Ladder",
@@ -22189,48 +21886,6 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Ladder-2" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_vok4r")]
 position = Vector2(80, 416)
-metadata/LDTK_entities = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "Ladder",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": true,
-"showName": false,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 400.0,
-"y": 32.0
-},
-"tileRenderMode": 5.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 134.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -22272,6 +21927,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 134.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [5.0, 26.0],
 "__identifier": "Ladder",
@@ -22297,48 +21953,6 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Ladder-3" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_vok4r")]
 position = Vector2(448, 0)
-metadata/LDTK_entities = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "Ladder",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": true,
-"showName": false,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 400.0,
-"y": 32.0
-},
-"tileRenderMode": 5.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 134.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -22380,6 +21994,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 134.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [28.0, 0.0],
 "__identifier": "Ladder",
@@ -22405,48 +22020,6 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Ladder-4" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_vok4r")]
 position = Vector2(416, 64)
-metadata/LDTK_entities = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "Ladder",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": true,
-"showName": false,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 400.0,
-"y": 32.0
-},
-"tileRenderMode": 5.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 134.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -22488,6 +22061,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 134.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [26.0, 4.0],
 "__identifier": "Ladder",
@@ -22513,48 +22087,6 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Ladder-5" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_vok4r")]
 position = Vector2(256, 224)
-metadata/LDTK_entities = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "Ladder",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": true,
-"showName": false,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 400.0,
-"y": 32.0
-},
-"tileRenderMode": 5.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 134.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -22596,6 +22128,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 134.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [16.0, 14.0],
 "__identifier": "Ladder",

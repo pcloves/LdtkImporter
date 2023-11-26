@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://7ippv6eagspi" path="res://samples/Typical_TopDown_example/Entity/SecretWall.tscn" id="4_58ql3"]
 [ext_resource type="PackedScene" uid="uid://dd4av8ydlvpp2" path="res://samples/Typical_TopDown_example/Entity/Button.tscn" id="5_a7hwk"]
 
-[sub_resource type="Image" id="Image_ohh6q"]
+[sub_resource type="Image" id="Image_uaxav"]
 data = {
 "data": PackedByteArray(228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114),
 "format": "RGB8",
@@ -15,11 +15,11 @@ data = {
 "width": 16
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_q2svl"]
-image = SubResource("Image_ohh6q")
+[sub_resource type="ImageTexture" id="ImageTexture_fm3r8"]
+image = SubResource("Image_uaxav")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_is6yl"]
-texture = SubResource("ImageTexture_q2svl")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3s60u"]
+texture = SubResource("ImageTexture_fm3r8")
 0:0/0 = 0
 0:0/0/custom_data_0 = {
 "color": "#E4A672",
@@ -35,10 +35,10 @@ texture = SubResource("ImageTexture_q2svl")
 "value": 1.0
 }
 
-[sub_resource type="TileSet" id="TileSet_bhxla"]
+[sub_resource type="TileSet" id="TileSet_1k802"]
 custom_data_layer_0/name = "LDTK_Collisions"
 custom_data_layer_0/type = 27
-sources/110 = SubResource("TileSetAtlasSource_is6yl")
+sources/110 = SubResource("TileSetAtlasSource_3s60u")
 
 [node name="LDTK_World_Level_1" type="Node2D"]
 metadata/LDTK_fieldInstances = []
@@ -10694,7 +10694,7 @@ metadata/LDTK_layerInstance = {
 }
 
 [node name="LDTK_IntGrid" type="TileMap" parent="LDTK_Collisions"]
-tile_set = SubResource("TileSet_bhxla")
+tile_set = SubResource("TileSet_1k802")
 format = 2
 layer_1/name = "LDTK_Collisions"
 layer_1/tile_data = PackedInt32Array(65540, 110, 0, 65541, 110, 0, 65542, 110, 0, 65543, 110, 0, 65544, 110, 0, 131074, 110, 0, 131075, 110, 0, 131076, 110, 0, 131080, 110, 0, 131081, 110, 0, 131082, 110, 0, 131083, 110, 0, 131084, 110, 0, 131085, 110, 0, 131086, 110, 0, 131087, 110, 0, 196610, 110, 0, 196618, 110, 0, 196619, 110, 0, 196620, 110, 0, 196621, 110, 0, 196622, 110, 0, 196623, 110, 0, 262146, 110, 0, 262149, 110, 0, 262150, 110, 0, 262151, 110, 0, 262154, 110, 0, 262155, 110, 0, 262156, 110, 0, 262157, 110, 0, 262158, 110, 0, 262159, 110, 0, 327682, 110, 0, 327690, 110, 0, 327691, 110, 0, 327692, 110, 0, 327693, 110, 0, 327694, 110, 0, 327695, 110, 0, 393218, 110, 0, 393229, 110, 0, 393230, 110, 0, 393231, 110, 0, 458754, 110, 0, 458757, 110, 0, 458758, 110, 0, 458759, 110, 0, 458762, 110, 0, 458765, 110, 0, 458766, 110, 0, 458767, 110, 0, 524290, 110, 0, 524298, 110, 0, 524301, 110, 0, 524302, 110, 0, 524303, 110, 0, 589826, 110, 0, 589834, 110, 0, 655362, 110, 0, 655365, 110, 0, 655366, 110, 0, 655367, 110, 0, 655370, 110, 0, 720898, 110, 0, 720906, 110, 0, 720907, 110, 0, 720908, 110, 0, 720909, 110, 0, 786434, 110, 0, 786435, 110, 0, 786436, 110, 0, 786437, 110, 0, 786438, 110, 0, 786439, 110, 0, 786441, 110, 0, 786442, 110, 0, 786445, 110, 0, 786446, 110, 0, 786447, 110, 0, 851974, 110, 0, 851981, 110, 0, 917510, 110, 0, 917511, 110, 0, 917512, 110, 0, 917513, 110, 0, 917514, 110, 0, 917515, 110, 0, 917516, 110, 0, 917517, 110, 0)
@@ -12382,7 +12382,7 @@ metadata/LDTK_layerInstance = {
 
 [node name="LDTK_Door-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_38vhw")]
 position = Vector2(160, 96)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#B86F50",
 "doc": null,
 "exportToToc": false,
@@ -12465,81 +12465,6 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 69.0,
 "realEditorValues": []
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#B86F50",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "lockedWith",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 69.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.27,
-"height": 16.0,
-"hollow": false,
-"identifier": "Door",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": true,
-"resizableY": true,
-"showName": true,
-"tags": ["environment"],
-"tileId": null,
-"tileOpacity": 0.62,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 256.0,
-"y": 272.0
-},
-"tileRenderMode": 4.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 62.0,
-"width": 16.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [10.0, 6.0],
 "__identifier": "Door",
@@ -12572,7 +12497,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Item-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7k7ef")]
 position = Vector2(88, 88)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#FF0044",
 "doc": null,
 "exportToToc": false,
@@ -12664,81 +12589,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["Wood"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#FF0044",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 2.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "type",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 146.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.0,
-"height": 20.0,
-"hollow": false,
-"identifier": "Item",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": false,
-"tags": ["actor"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 64.0,
-"y": 64.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 63.0,
-"width": 20.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [5.0, 5.0],
 "__identifier": "Item",
@@ -12780,7 +12630,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Item-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7k7ef")]
 position = Vector2(136, 104)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#FF0044",
 "doc": null,
 "exportToToc": false,
@@ -12872,81 +12722,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["Wood"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#FF0044",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 2.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "type",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 146.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.0,
-"height": 20.0,
-"hollow": false,
-"identifier": "Item",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": false,
-"tags": ["actor"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 64.0,
-"y": 64.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 63.0,
-"width": 20.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [8.0, 6.0],
 "__identifier": "Item",
@@ -12988,7 +12763,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Item-2" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7k7ef")]
 position = Vector2(72, 136)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#FF0044",
 "doc": null,
 "exportToToc": false,
@@ -13080,81 +12855,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["Wood"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#FF0044",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 2.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "type",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 146.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.0,
-"height": 20.0,
-"hollow": false,
-"identifier": "Item",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": false,
-"tags": ["actor"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 64.0,
-"y": 64.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 63.0,
-"width": 20.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [4.0, 8.0],
 "__identifier": "Item",
@@ -13196,7 +12896,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Item-3" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7k7ef")]
 position = Vector2(200, 200)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#FF0044",
 "doc": null,
 "exportToToc": false,
@@ -13288,81 +12988,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["Gold"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#FF0044",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 2.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "type",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 146.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.0,
-"height": 20.0,
-"hollow": false,
-"identifier": "Item",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": false,
-"tags": ["actor"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 64.0,
-"y": 64.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 63.0,
-"width": 20.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [12.0, 12.0],
 "__identifier": "Item",
@@ -13404,48 +13029,6 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_SecretWall-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_58ql3")]
 position = Vector2(128, 192)
-metadata/LDTK_entities = {
-"color": "#B55088",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.33,
-"height": 16.0,
-"hollow": false,
-"identifier": "SecretWall",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 1.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": true,
-"tags": ["environment"],
-"tileId": null,
-"tileOpacity": 0.73,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 320.0,
-"y": 256.0
-},
-"tileRenderMode": 4.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 148.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#B55088",
 "doc": null,
@@ -13487,6 +13070,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 148.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [8.0, 12.0],
 "__identifier": "SecretWall",
@@ -13512,7 +13096,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Button-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_a7hwk")]
 position = Vector2(88, 168)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#FF0000",
 "doc": null,
 "exportToToc": false,
@@ -13603,81 +13187,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["778bba10-c640-11ed-8430-45e05816c898"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#FF0000",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "Array<EntityRef>",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": false,
-"allowedRefTags": [],
-"allowedRefs": 0.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 12.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "targets",
-"isArray": true,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_EntityRef",
-"uid": 106.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.08,
-"height": 10.0,
-"hollow": false,
-"identifier": "Button",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": true,
-"tags": ["environment"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 272.0,
-"y": 32.0
-},
-"tileRenderMode": 4.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 105.0,
-"width": 10.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [5.0, 10.0],
 "__identifier": "Button",
@@ -13718,7 +13227,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Item-4" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7k7ef")]
 position = Vector2(104, 40)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#FF0044",
 "doc": null,
 "exportToToc": false,
@@ -13810,81 +13319,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["KeyB"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#FF0044",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.Item",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 2.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "type",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(66)",
-"uid": 146.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.0,
-"height": 20.0,
-"hollow": false,
-"identifier": "Item",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": false,
-"tags": ["actor"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 104.0,
-"w": 16.0,
-"x": 64.0,
-"y": 64.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 104.0,
-"uiTileRect": null,
-"uid": 63.0,
-"width": 20.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [6.0, 2.0],
 "__identifier": "Item",

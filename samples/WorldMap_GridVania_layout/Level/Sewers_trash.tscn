@@ -21644,7 +21644,7 @@ metadata/LDTK_layerInstance = {
 
 [node name="LDTK_Item-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_ehhm8")]
 position = Vector2(88, 288)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#FFEC8A",
 "doc": null,
 "exportToToc": false,
@@ -21821,152 +21821,6 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 139.0,
 "realEditorValues": []
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#FFEC8A",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.ItemType",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 2.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 4.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "type",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(74)",
-"uid": 76.0,
-"useForSmartColor": false
-}, {
-"__type": "Int",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 4.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": " GOLD",
-"identifier": "price",
-"isArray": false,
-"max": null,
-"min": 0.0,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Int",
-"uid": 93.0,
-"useForSmartColor": false
-}, {
-"__type": "Int",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": {
-"id": "V_Int",
-"params": [1.0]
-},
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 4.0,
-"editorShowInWorld": true,
-"editorTextPrefix": "x",
-"editorTextSuffix": null,
-"identifier": "count",
-"isArray": false,
-"max": null,
-"min": 1.0,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Int",
-"uid": 139.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.15,
-"height": 24.0,
-"hollow": false,
-"identifier": "Item",
-"keepAspectRatio": false,
-"limitBehavior": 0.0,
-"limitScope": 1.0,
-"lineOpacity": 0.61,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 1.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": false,
-"tags": ["loot"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 144.0,
-"y": 16.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 72.0,
-"width": 24.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [5.0, 17.0],
 "__identifier": "Item",
@@ -22022,48 +21876,6 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Ladder-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7rt6t")]
 position = Vector2(352, 176)
-metadata/LDTK_entities = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "Ladder",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": true,
-"showName": false,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 400.0,
-"y": 32.0
-},
-"tileRenderMode": 5.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 134.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -22105,6 +21917,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 134.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [22.0, 11.0],
 "__identifier": "Ladder",
@@ -22130,48 +21943,6 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Ladder-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7rt6t")]
 position = Vector2(112, 288)
-metadata/LDTK_entities = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "Ladder",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": true,
-"showName": false,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 400.0,
-"y": 32.0
-},
-"tileRenderMode": 5.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 134.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -22213,6 +21984,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 134.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [7.0, 18.0],
 "__identifier": "Ladder",
@@ -22238,48 +22010,6 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Ladder-2" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7rt6t")]
 position = Vector2(80, 0)
-metadata/LDTK_entities = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "Ladder",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": true,
-"showName": false,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 400.0,
-"y": 32.0
-},
-"tileRenderMode": 5.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 134.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -22321,6 +22051,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 134.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [5.0, 0.0],
 "__identifier": "Ladder",
@@ -22346,48 +22077,6 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Ladder-3" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7rt6t")]
 position = Vector2(16, 176)
-metadata/LDTK_entities = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "Ladder",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": true,
-"showName": false,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 400.0,
-"y": 32.0
-},
-"tileRenderMode": 5.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 134.0,
-"width": 16.0
-}
-metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -22429,6 +22118,7 @@ metadata/LDTK_entityDefinition = {
 "uid": 134.0,
 "width": 16.0
 }
+metadata/LDTK_fieldInstances = []
 metadata/LDTK_entityInstance = {
 "__grid": [1.0, 11.0],
 "__identifier": "Ladder",

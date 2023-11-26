@@ -36651,7 +36651,7 @@ metadata/LDTK_layerInstance = {
 
 [node name="LDTK_Teleport-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_mwtjf")]
 position = Vector2(296, 528)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#EC50FF",
 "doc": null,
 "exportToToc": false,
@@ -36742,81 +36742,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["1a247570-66b0-11ec-b893-3368fa8363b5"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#EC50FF",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "EntityRef",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 12.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "destination",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": true,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_EntityRef",
-"uid": 131.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.08,
-"height": 24.0,
-"hollow": false,
-"identifier": "Teleport",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 1.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": true,
-"tags": ["actor"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 224.0,
-"y": 176.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 130.0,
-"width": 24.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [18.0, 32.0],
 "__identifier": "Teleport",
@@ -36857,7 +36782,7 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Teleport-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_mwtjf")]
 position = Vector2(456, 176)
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#EC50FF",
 "doc": null,
 "exportToToc": false,
@@ -36948,81 +36873,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["b9c16e00-66b0-11ec-a595-f73311b85ab0"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#EC50FF",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "EntityRef",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 12.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "destination",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": true,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_EntityRef",
-"uid": 131.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.08,
-"height": 24.0,
-"hollow": false,
-"identifier": "Teleport",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 1.0,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": true,
-"tags": ["actor"],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 133.0,
-"w": 16.0,
-"x": 224.0,
-"y": 176.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 133.0,
-"uiTileRect": null,
-"uid": 130.0,
-"width": 24.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [28.0, 10.0],
 "__identifier": "Teleport",
