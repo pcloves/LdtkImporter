@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dvs4lakc0tujf"]
 
 [node name="LDTK_Door" type="Node2D"]
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#B86F50",
 "doc": null,
 "exportToToc": false,

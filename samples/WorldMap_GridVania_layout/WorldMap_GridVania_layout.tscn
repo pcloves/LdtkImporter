@@ -1,31 +1,42 @@
 [gd_scene load_steps=22 format=3]
 
-[ext_resource type="PackedScene" uid="uid://dn6qi676t30by" path="res://samples/WorldMap_GridVania_layout/Level/Entrance.tscn" id="1_ghlyo"]
-[ext_resource type="PackedScene" uid="uid://caradphw5qc1t" path="res://samples/WorldMap_GridVania_layout/Level/Cross_roads.tscn" id="2_32ygy"]
-[ext_resource type="PackedScene" uid="uid://dvvuo1qtxpfwv" path="res://samples/WorldMap_GridVania_layout/Level/Ossuary.tscn" id="3_u8k2a"]
-[ext_resource type="PackedScene" uid="uid://bdqj7ol78ivjs" path="res://samples/WorldMap_GridVania_layout/Level/Water_supply.tscn" id="4_opbh1"]
-[ext_resource type="PackedScene" uid="uid://7u5g0ci2kjbo" path="res://samples/WorldMap_GridVania_layout/Level/Sewers2.tscn" id="5_q7fuf"]
-[ext_resource type="PackedScene" uid="uid://cga58k32uq52r" path="res://samples/WorldMap_GridVania_layout/Level/Sewers_trash.tscn" id="6_g43qj"]
-[ext_resource type="PackedScene" uid="uid://bno0on70btd27" path="res://samples/WorldMap_GridVania_layout/Level/Boss_room.tscn" id="7_hb6cj"]
-[ext_resource type="PackedScene" uid="uid://ceka4annlwjs1" path="res://samples/WorldMap_GridVania_layout/Level/Large_water.tscn" id="8_2umb8"]
-[ext_resource type="PackedScene" uid="uid://b25arni6soalw" path="res://samples/WorldMap_GridVania_layout/Level/Shop.tscn" id="9_xfxun"]
-[ext_resource type="PackedScene" uid="uid://bvtwindh4e2ci" path="res://samples/WorldMap_GridVania_layout/Level/Sewers1.tscn" id="10_w6tps"]
-[ext_resource type="PackedScene" uid="uid://d00x514hbtbsa" path="res://samples/WorldMap_GridVania_layout/Level/The_ponds.tscn" id="11_45ciq"]
-[ext_resource type="PackedScene" uid="uid://8ba67askhkcu" path="res://samples/WorldMap_GridVania_layout/Level/Pit.tscn" id="12_wn5pb"]
-[ext_resource type="PackedScene" uid="uid://bb4wxa7sly166" path="res://samples/WorldMap_GridVania_layout/Level/The_tower.tscn" id="13_2awu8"]
-[ext_resource type="PackedScene" uid="uid://dw713xne4nw7i" path="res://samples/WorldMap_GridVania_layout/Level/Garden.tscn" id="14_ntt2c"]
-[ext_resource type="PackedScene" uid="uid://cicdicdnn68jr" path="res://samples/WorldMap_GridVania_layout/Level/Save.tscn" id="15_th3nw"]
-[ext_resource type="PackedScene" uid="uid://bvfb5xguun0su" path="res://samples/WorldMap_GridVania_layout/Level/Flooded_rooms.tscn" id="16_xn6ja"]
-[ext_resource type="PackedScene" uid="uid://ckj8hpu1a6572" path="res://samples/WorldMap_GridVania_layout/Level/Long_hallway.tscn" id="17_1i3e6"]
-[ext_resource type="PackedScene" uid="uid://ewuruxir3o6k" path="res://samples/WorldMap_GridVania_layout/Level/Exit.tscn" id="18_j8mvd"]
-[ext_resource type="PackedScene" uid="uid://ckyi8cto4tjll" path="res://samples/WorldMap_GridVania_layout/Level/Hidden_cave.tscn" id="19_kngh5"]
-[ext_resource type="PackedScene" uid="uid://cq1k8fga2q7dg" path="res://samples/WorldMap_GridVania_layout/Level/Shop_entrance.tscn" id="20_yp5bp"]
-[ext_resource type="PackedScene" uid="uid://ctkr1qsya5qby" path="res://samples/WorldMap_GridVania_layout/Level/Shortcut_passage.tscn" id="21_1mi4k"]
+[ext_resource type="PackedScene" uid="uid://dn6qi676t30by" path="res://samples/WorldMap_GridVania_layout/Level/Entrance.tscn" id="1_orr8h"]
+[ext_resource type="PackedScene" uid="uid://caradphw5qc1t" path="res://samples/WorldMap_GridVania_layout/Level/Cross_roads.tscn" id="2_4ddjc"]
+[ext_resource type="PackedScene" uid="uid://dvvuo1qtxpfwv" path="res://samples/WorldMap_GridVania_layout/Level/Ossuary.tscn" id="3_bddo2"]
+[ext_resource type="PackedScene" uid="uid://bdqj7ol78ivjs" path="res://samples/WorldMap_GridVania_layout/Level/Water_supply.tscn" id="4_3vhsm"]
+[ext_resource type="PackedScene" uid="uid://7u5g0ci2kjbo" path="res://samples/WorldMap_GridVania_layout/Level/Sewers2.tscn" id="5_10dfu"]
+[ext_resource type="PackedScene" uid="uid://cga58k32uq52r" path="res://samples/WorldMap_GridVania_layout/Level/Sewers_trash.tscn" id="6_6718g"]
+[ext_resource type="PackedScene" uid="uid://bno0on70btd27" path="res://samples/WorldMap_GridVania_layout/Level/Boss_room.tscn" id="7_j2kvj"]
+[ext_resource type="PackedScene" uid="uid://ceka4annlwjs1" path="res://samples/WorldMap_GridVania_layout/Level/Large_water.tscn" id="8_h7d2l"]
+[ext_resource type="PackedScene" uid="uid://b25arni6soalw" path="res://samples/WorldMap_GridVania_layout/Level/Shop.tscn" id="9_q184o"]
+[ext_resource type="PackedScene" uid="uid://bvtwindh4e2ci" path="res://samples/WorldMap_GridVania_layout/Level/Sewers1.tscn" id="10_7uiyi"]
+[ext_resource type="PackedScene" uid="uid://d00x514hbtbsa" path="res://samples/WorldMap_GridVania_layout/Level/The_ponds.tscn" id="11_txwfj"]
+[ext_resource type="PackedScene" uid="uid://8ba67askhkcu" path="res://samples/WorldMap_GridVania_layout/Level/Pit.tscn" id="12_5ktn4"]
+[ext_resource type="PackedScene" uid="uid://bb4wxa7sly166" path="res://samples/WorldMap_GridVania_layout/Level/The_tower.tscn" id="13_odw03"]
+[ext_resource type="PackedScene" uid="uid://dw713xne4nw7i" path="res://samples/WorldMap_GridVania_layout/Level/Garden.tscn" id="14_wa313"]
+[ext_resource type="PackedScene" uid="uid://cicdicdnn68jr" path="res://samples/WorldMap_GridVania_layout/Level/Save.tscn" id="15_w0ym3"]
+[ext_resource type="PackedScene" uid="uid://bvfb5xguun0su" path="res://samples/WorldMap_GridVania_layout/Level/Flooded_rooms.tscn" id="16_08neo"]
+[ext_resource type="PackedScene" uid="uid://ckj8hpu1a6572" path="res://samples/WorldMap_GridVania_layout/Level/Long_hallway.tscn" id="17_wkmna"]
+[ext_resource type="PackedScene" uid="uid://ewuruxir3o6k" path="res://samples/WorldMap_GridVania_layout/Level/Exit.tscn" id="18_m4a85"]
+[ext_resource type="PackedScene" uid="uid://ckyi8cto4tjll" path="res://samples/WorldMap_GridVania_layout/Level/Hidden_cave.tscn" id="19_wi48w"]
+[ext_resource type="PackedScene" uid="uid://cq1k8fga2q7dg" path="res://samples/WorldMap_GridVania_layout/Level/Shop_entrance.tscn" id="20_kylul"]
+[ext_resource type="PackedScene" uid="uid://ctkr1qsya5qby" path="res://samples/WorldMap_GridVania_layout/Level/Shortcut_passage.tscn" id="21_ahhf1"]
 
 [node name="WorldMap_GridVania_layout" type="Node2D"]
 
-[node name="LDTK_Entrance" type="Node2D" parent="." instance=ExtResource("1_ghlyo")]
-metadata/LDTK_level = {
+[node name="LDTK_Entrance" type="Node2D" parent="." instance=ExtResource("1_orr8h")]
+metadata/LDTK_fieldInstances = [{
+"__identifier": "roomType",
+"__tile": null,
+"__type": "LocalEnum.RoomType",
+"__value": "Entrance",
+"defUid": 99.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["Entrance"]
+}]
+}]
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -5330,21 +5341,18 @@ metadata/LDTK_level = {
 "worldX": 0.0,
 "worldY": 0.0
 }
+
+[node name="LDTK_Cross_roads" type="Node2D" parent="." instance=ExtResource("2_4ddjc")]
+position = Vector2(0, 256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
 "__type": "LocalEnum.RoomType",
-"__value": "Entrance",
+"__value": null,
 "defUid": 99.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["Entrance"]
+"realEditorValues": []
 }]
-}]
-
-[node name="LDTK_Cross_roads" type="Node2D" parent="." instance=ExtResource("2_32ygy")]
-position = Vector2(0, 256)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -13957,6 +13965,9 @@ metadata/LDTK_level = {
 "worldX": 0.0,
 "worldY": 256.0
 }
+
+[node name="LDTK_Ossuary" type="Node2D" parent="." instance=ExtResource("3_bddo2")]
+position = Vector2(-1024, 0)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
@@ -13965,10 +13976,7 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 99.0,
 "realEditorValues": []
 }]
-
-[node name="LDTK_Ossuary" type="Node2D" parent="." instance=ExtResource("3_u8k2a")]
-position = Vector2(-1024, 0)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -26888,6 +26896,9 @@ metadata/LDTK_level = {
 "worldX": -1024.0,
 "worldY": 0.0
 }
+
+[node name="LDTK_Water_supply" type="Node2D" parent="." instance=ExtResource("4_3vhsm")]
+position = Vector2(-512, 0)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
@@ -26896,10 +26907,7 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 99.0,
 "realEditorValues": []
 }]
-
-[node name="LDTK_Water_supply" type="Node2D" parent="." instance=ExtResource("4_opbh1")]
-position = Vector2(-512, 0)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -37725,6 +37733,9 @@ metadata/LDTK_level = {
 "worldX": -512.0,
 "worldY": 0.0
 }
+
+[node name="LDTK_Sewers2" type="Node2D" parent="." instance=ExtResource("5_10dfu")]
+position = Vector2(256, 1024)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
@@ -37733,10 +37744,7 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 99.0,
 "realEditorValues": []
 }]
-
-[node name="LDTK_Sewers2" type="Node2D" parent="." instance=ExtResource("5_q7fuf")]
-position = Vector2(256, 1024)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -47894,6 +47902,9 @@ metadata/LDTK_level = {
 "worldX": 256.0,
 "worldY": 1024.0
 }
+
+[node name="LDTK_Sewers_trash" type="Node2D" parent="." instance=ExtResource("6_6718g")]
+position = Vector2(256, 1536)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
@@ -47902,10 +47913,7 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 99.0,
 "realEditorValues": []
 }]
-
-[node name="LDTK_Sewers_trash" type="Node2D" parent="." instance=ExtResource("6_g43qj")]
-position = Vector2(256, 1536)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -58191,18 +58199,21 @@ metadata/LDTK_level = {
 "worldX": 256.0,
 "worldY": 1536.0
 }
+
+[node name="LDTK_Boss_room" type="Node2D" parent="." instance=ExtResource("7_j2kvj")]
+position = Vector2(1536, 512)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
 "__type": "LocalEnum.RoomType",
-"__value": null,
+"__value": "Boss",
 "defUid": 99.0,
-"realEditorValues": []
+"realEditorValues": [{
+"id": "V_String",
+"params": ["Boss"]
 }]
-
-[node name="LDTK_Boss_room" type="Node2D" parent="." instance=ExtResource("7_hb6cj")]
-position = Vector2(1536, 512)
-metadata/LDTK_level = {
+}]
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -70913,21 +70924,18 @@ metadata/LDTK_level = {
 "worldX": 1536.0,
 "worldY": 512.0
 }
+
+[node name="LDTK_Large_water" type="Node2D" parent="." instance=ExtResource("8_h7d2l")]
+position = Vector2(1024, -256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
 "__type": "LocalEnum.RoomType",
-"__value": "Boss",
+"__value": null,
 "defUid": 99.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["Boss"]
+"realEditorValues": []
 }]
-}]
-
-[node name="LDTK_Large_water" type="Node2D" parent="." instance=ExtResource("8_2umb8")]
-position = Vector2(1024, -256)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -80854,18 +80862,21 @@ metadata/LDTK_level = {
 "worldX": 1024.0,
 "worldY": -256.0
 }
+
+[node name="LDTK_Shop" type="Node2D" parent="." instance=ExtResource("9_q184o")]
+position = Vector2(256, 0)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
 "__type": "LocalEnum.RoomType",
-"__value": null,
+"__value": "Shop",
 "defUid": 99.0,
-"realEditorValues": []
+"realEditorValues": [{
+"id": "V_String",
+"params": ["Shop"]
 }]
-
-[node name="LDTK_Shop" type="Node2D" parent="." instance=ExtResource("9_xfxun")]
-position = Vector2(256, 0)
-metadata/LDTK_level = {
+}]
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -99037,21 +99048,18 @@ metadata/LDTK_level = {
 "worldX": 256.0,
 "worldY": 0.0
 }
+
+[node name="LDTK_Sewers1" type="Node2D" parent="." instance=ExtResource("10_7uiyi")]
+position = Vector2(512, 512)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
 "__type": "LocalEnum.RoomType",
-"__value": "Shop",
+"__value": null,
 "defUid": 99.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["Shop"]
+"realEditorValues": []
 }]
-}]
-
-[node name="LDTK_Sewers1" type="Node2D" parent="." instance=ExtResource("10_w6tps")]
-position = Vector2(512, 512)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -105137,6 +105145,9 @@ metadata/LDTK_level = {
 "worldX": 512.0,
 "worldY": 512.0
 }
+
+[node name="LDTK_The_ponds" type="Node2D" parent="." instance=ExtResource("11_txwfj")]
+position = Vector2(768, 768)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
@@ -105145,10 +105156,7 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 99.0,
 "realEditorValues": []
 }]
-
-[node name="LDTK_The_ponds" type="Node2D" parent="." instance=ExtResource("11_45ciq")]
-position = Vector2(768, 768)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -112777,6 +112785,9 @@ metadata/LDTK_level = {
 "worldX": 768.0,
 "worldY": 768.0
 }
+
+[node name="LDTK_Pit" type="Node2D" parent="." instance=ExtResource("12_5ktn4")]
+position = Vector2(768, 256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
@@ -112785,10 +112796,7 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 99.0,
 "realEditorValues": []
 }]
-
-[node name="LDTK_Pit" type="Node2D" parent="." instance=ExtResource("12_wn5pb")]
-position = Vector2(768, 256)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -117646,6 +117654,9 @@ metadata/LDTK_level = {
 "worldX": 768.0,
 "worldY": 256.0
 }
+
+[node name="LDTK_The_tower" type="Node2D" parent="." instance=ExtResource("13_odw03")]
+position = Vector2(1536, -256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
@@ -117654,10 +117665,7 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 99.0,
 "realEditorValues": []
 }]
-
-[node name="LDTK_The_tower" type="Node2D" parent="." instance=ExtResource("13_2awu8")]
-position = Vector2(1536, -256)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -125525,6 +125533,9 @@ metadata/LDTK_level = {
 "worldX": 1536.0,
 "worldY": -256.0
 }
+
+[node name="LDTK_Garden" type="Node2D" parent="." instance=ExtResource("14_wa313")]
+position = Vector2(512, -256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
@@ -125533,10 +125544,7 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 99.0,
 "realEditorValues": []
 }]
-
-[node name="LDTK_Garden" type="Node2D" parent="." instance=ExtResource("14_ntt2c")]
-position = Vector2(512, -256)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -135411,18 +135419,21 @@ metadata/LDTK_level = {
 "worldX": 512.0,
 "worldY": -256.0
 }
+
+[node name="LDTK_Save" type="Node2D" parent="." instance=ExtResource("15_w0ym3")]
+position = Vector2(1024, 256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
 "__type": "LocalEnum.RoomType",
-"__value": null,
+"__value": "Save",
 "defUid": 99.0,
-"realEditorValues": []
+"realEditorValues": [{
+"id": "V_String",
+"params": ["Save"]
 }]
-
-[node name="LDTK_Save" type="Node2D" parent="." instance=ExtResource("15_th3nw")]
-position = Vector2(1024, 256)
-metadata/LDTK_level = {
+}]
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -139953,21 +139964,18 @@ metadata/LDTK_level = {
 "worldX": 1024.0,
 "worldY": 256.0
 }
+
+[node name="LDTK_Flooded_rooms" type="Node2D" parent="." instance=ExtResource("16_08neo")]
+position = Vector2(1024, 1024)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
 "__type": "LocalEnum.RoomType",
-"__value": "Save",
+"__value": null,
 "defUid": 99.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["Save"]
+"realEditorValues": []
 }]
-}]
-
-[node name="LDTK_Flooded_rooms" type="Node2D" parent="." instance=ExtResource("16_xn6ja")]
-position = Vector2(1024, 1024)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -150899,6 +150907,9 @@ metadata/LDTK_level = {
 "worldX": 1024.0,
 "worldY": 1024.0
 }
+
+[node name="LDTK_Long_hallway" type="Node2D" parent="." instance=ExtResource("17_wkmna")]
+position = Vector2(1536, 256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
@@ -150907,10 +150918,7 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 99.0,
 "realEditorValues": []
 }]
-
-[node name="LDTK_Long_hallway" type="Node2D" parent="." instance=ExtResource("17_1i3e6")]
-position = Vector2(1536, 256)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -166316,18 +166324,21 @@ metadata/LDTK_level = {
 "worldX": 1536.0,
 "worldY": 256.0
 }
+
+[node name="LDTK_Exit" type="Node2D" parent="." instance=ExtResource("18_m4a85")]
+position = Vector2(2816, 0)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
 "__type": "LocalEnum.RoomType",
-"__value": null,
+"__value": "Exit",
 "defUid": 99.0,
-"realEditorValues": []
+"realEditorValues": [{
+"id": "V_String",
+"params": ["Exit"]
 }]
-
-[node name="LDTK_Exit" type="Node2D" parent="." instance=ExtResource("18_j8mvd")]
-position = Vector2(2816, 0)
-metadata/LDTK_level = {
+}]
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -171091,21 +171102,18 @@ metadata/LDTK_level = {
 "worldX": 2816.0,
 "worldY": 0.0
 }
+
+[node name="LDTK_Hidden_cave" type="Node2D" parent="." instance=ExtResource("19_wi48w")]
+position = Vector2(1280, 256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
 "__type": "LocalEnum.RoomType",
-"__value": "Exit",
+"__value": null,
 "defUid": 99.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["Exit"]
+"realEditorValues": []
 }]
-}]
-
-[node name="LDTK_Hidden_cave" type="Node2D" parent="." instance=ExtResource("19_kngh5")]
-position = Vector2(1280, 256)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -175674,6 +175682,9 @@ metadata/LDTK_level = {
 "worldX": 1280.0,
 "worldY": 256.0
 }
+
+[node name="LDTK_Shop_entrance" type="Node2D" parent="." instance=ExtResource("20_kylul")]
+position = Vector2(512, 256)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
@@ -175682,10 +175693,7 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 99.0,
 "realEditorValues": []
 }]
-
-[node name="LDTK_Shop_entrance" type="Node2D" parent="." instance=ExtResource("20_yp5bp")]
-position = Vector2(512, 256)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -178692,6 +178700,9 @@ metadata/LDTK_level = {
 "worldX": 512.0,
 "worldY": 256.0
 }
+
+[node name="LDTK_Shortcut_passage" type="Node2D" parent="." instance=ExtResource("21_ahhf1")]
+position = Vector2(512, 768)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "roomType",
 "__tile": null,
@@ -178700,10 +178711,7 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 99.0,
 "realEditorValues": []
 }]
-
-[node name="LDTK_Shortcut_passage" type="Node2D" parent="." instance=ExtResource("21_1mi4k")]
-position = Vector2(512, 768)
-metadata/LDTK_level = {
+metadata/LDTK_levelInstance = {
 "__bgColor": "#37494E",
 "__bgPos": null,
 "__neighbours": [{
@@ -196502,11 +196510,3 @@ metadata/LDTK_level = {
 "worldX": 512.0,
 "worldY": 768.0
 }
-metadata/LDTK_fieldInstances = [{
-"__identifier": "roomType",
-"__tile": null,
-"__type": "LocalEnum.RoomType",
-"__value": null,
-"defUid": 99.0,
-"realEditorValues": []
-}]

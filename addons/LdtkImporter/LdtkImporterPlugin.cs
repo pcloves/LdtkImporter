@@ -16,24 +16,28 @@ namespace LdtkImporter;
 public partial class LdtkImporterPlugin : EditorImportPlugin
 {
     public const string OptionGeneral = "General";
-    public const string OptionGeneralPrefix2Remove = $"{OptionGeneral}/prefix_remove";
-    public const string OptionGeneralPrefix2Add = $"{OptionGeneral}/prefix_add";
+    public const string OptionGeneralPrefix = $"{OptionGeneral}/prefix";
 
     public const string OptionWorld = "World";
-    public const string OptionWorldWorldMapping = $"{OptionWorld}/WorldMapping";
+    public const string OptionWorldWorldScenes = $"{OptionWorld}/WorldScenes";
 
     public const string OptionTileset = "Tileset";
-    public const string OptionTilesetAddMeta = $"{OptionTileset}/add_metadata";
-    public const string OptionTilesetCreate = $"{OptionTileset}/create_if_not_exists";
-    public const string OptionTilesetMapping = $"{OptionTileset}/Mapping";
+    public const string OptionTilesetAddMeta = $"{OptionTileset}/add_tileset_definition_to_meta";
+    public const string OptionTilesetResources = $"{OptionTileset}/Resources";
     public const string OptionTilesetImportTileCustomData = $"{OptionTileset}/import_LDTK_tile_custom_data";
 
     public const string OptionLevel = "Level";
-    public const string OptionLevelMapping = $"{OptionLevel}/Mapping";
+    public const string OptionLevelScenes = $"{OptionLevel}/Scenes";
     public const string OptionLevelImportIntGrid = $"{OptionLevel}/import_IntGrid";
+    public const string OptionLevelAddLevelInstanceToMeta = $"{OptionLevel}/add_level_instance_to_meta";
+    public const string OptionLevelAddLayerDefinitionToMeta = $"{OptionLevel}/add_layer_definition_to_meta";
+    public const string OptionLevelAddLayerInstanceToMeta = $"{OptionLevel}/add_layer_instance_to_meta";
 
     public const string OptionEntity = "Entity";
-    public const string OptionEntityMapping = $"{OptionEntity}/Mapping";
+    public const string OptionEntityScenes = $"{OptionEntity}/Scenes";
+    public const string OptionEntityAddDefinition2Meta = $"{OptionEntity}/add_entity_definition_to_meta";
+    public const string OptionEntityAddInstance2Meta = $"{OptionEntity}/add_entity_instance_to_meta";
+
 
     public const string SaveExtension = "tscn";
 
@@ -74,15 +78,9 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
         {
             new()
             {
-                { "name", OptionGeneralPrefix2Remove },
+                { "name", OptionGeneralPrefix },
                 { "default_value", "LDTK" },
-                { "hint_string", "when importing, all scene node and meta key with this prefix will be remove." }
-            },
-            new()
-            {
-                { "name", OptionGeneralPrefix2Add },
-                { "default_value", "LDTK" },
-                { "hint_string", "the importing scene node name and meta name will be prefixed." }
+                { "hint_string", "the prefix of all imported node name and meta." }
             },
         };
     }
@@ -93,7 +91,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
         {
             new()
             {
-                { "name", OptionWorldWorldMapping },
+                { "name", OptionWorldWorldScenes },
                 {
                     "default_value",
                     $"{path.GetBaseDir().PathJoin(_ldtkFileName).PathJoin(_ldtkFileName)}.{_GetSaveExtension()}"
@@ -111,14 +109,8 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
         {
             new()
             {
-                { "name", OptionTilesetCreate },
-                { "default_value", true },
-                { "hint_string", "If true, will create tileset automatically if not exist." }
-            },
-            new()
-            {
                 { "name", OptionTilesetAddMeta },
-                { "default_value", true },
+                { "default_value", false },
                 { "hint_string", "If true, will add the original LDtk data as metadata with key:ldtk." }
             },
             new()
@@ -136,7 +128,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
             .OrderBy(definition => definition.Identifier)
             .Select(definition => new Dictionary
                 {
-                    { "name", $"{OptionTilesetMapping}/{definition.Identifier}" },
+                    { "name", $"{OptionTilesetResources}/{definition.Identifier}" },
                     { "default_value", $"{tilesetBaseDir.PathJoin(definition.Identifier)}.tres" },
                     { "property_hint", (int)PropertyHint.File },
                     { "hint_string", "*.tres;Tileset Resource" }
@@ -155,14 +147,35 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
         {
             new()
             {
-                { "name", $"{OptionLevel}/level_add_metadata" },
+                { "name", OptionLevelAddLevelInstanceToMeta },
                 { "default_value", true },
-                { "hint_string", "If true, will add the original LDtk data as metadata." }
+                {
+                    "hint_string",
+                    "If true, will add the original LDtk level data to level node's meta with key:${Prefix}_level"
+                }
+            },
+            new()
+            {
+                { "name", OptionLevelAddLayerInstanceToMeta },
+                { "default_value", true },
+                {
+                    "hint_string",
+                    "If true, will add the original LDtk layer instance to layer node's meta with key:${Prefix}_layerInstance"
+                }
+            },
+            new()
+            {
+                { "name", OptionLevelAddLayerDefinitionToMeta },
+                { "default_value", true },
+                {
+                    "hint_string",
+                    "If true, will add the original LDtk layer definition to layer node's meta with key:${Prefix}_layerDefinition"
+                }
             },
             new()
             {
                 { "name", OptionLevelImportIntGrid },
-                { "default_value", false },
+                { "default_value", true },
                 { "hint_string", "If true, will import IntGrid as a child TileMap node." }
             },
         };
@@ -171,7 +184,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
             .OrderBy(definition => definition.Identifier)
             .Select(definition => new Dictionary()
                 {
-                    { "name", $"{OptionLevelMapping}/{definition.Identifier}" },
+                    { "name", $"{OptionLevelScenes}/{definition.Identifier}" },
                     { "default_value", $"{levelBaseDir.PathJoin(definition.Identifier)}.tscn" },
                     { "property_hint", (int)PropertyHint.File },
                     { "hint_string", "*.tscn;Godot Scene" }
@@ -190,9 +203,21 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
         {
             new()
             {
-                { "name", $"{OptionEntity}/entity_add_metadata" },
+                { "name", OptionEntityAddDefinition2Meta },
                 { "default_value", true },
-                { "hint_string", "If true, will add the original LDtk data as metadata." }
+                {
+                    @"hint_string",
+                    "If true, will add the original LDtk entity definition to meta with key:${Prefix}_entityDefinition"
+                }
+            },
+            new()
+            {
+                { "name", OptionEntityAddInstance2Meta },
+                { "default_value", true },
+                {
+                    @"hint_string",
+                    "If true, will add the original LDtk entity instance to meta with key:${Prefix}_entityInstance"
+                }
             },
         };
 
@@ -200,7 +225,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
             .OrderBy(definition => definition.Identifier)
             .Select(definition => new Dictionary
                 {
-                    { "name", $"{OptionEntityMapping}/{definition.Identifier}" },
+                    { "name", $"{OptionEntityScenes}/{definition.Identifier}" },
                     { "default_value", $"{entityBaseDir.PathJoin(definition.Identifier)}.tscn" },
                     { "property_hint", (int)PropertyHint.File },
                     { "hint_string", "*.tscn;Godot Scene" }
@@ -217,7 +242,8 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
     {
         lock (_importLock)
         {
-            GD.Print($"Import begin, LDTK file path:{sourceFile}, object:{_importLock.GetHashCode()}  thread:{Environment.CurrentManagedThreadId}, godot main id:{OS.GetMainThreadId()}");
+            GD.Print(
+                $"Import begin, LDTK file path:{sourceFile}, object:{_importLock.GetHashCode()}  thread:{Environment.CurrentManagedThreadId}, godot main id:{OS.GetMainThreadId()}");
 
             var error = _ldtkJson.PreImport(_ldtkJson, savePath, options, genFiles);
             if (error != Error.Ok)
@@ -240,7 +266,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
                 return error;
             }
 
-            var worldScenePath = options.GetValueOrDefault<string>(OptionWorldWorldMapping);
+            var worldScenePath = options.GetValueOrDefault<string>(OptionWorldWorldScenes);
             DirAccess.CopyAbsolute($"{savePath}.{SaveExtension}", worldScenePath);
 
             genFiles.Add(worldScenePath);

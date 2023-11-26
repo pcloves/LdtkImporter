@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cld870ncydf8l"]
 
 [node name="LDTK_Player" type="Node2D"]
-metadata/LDTK_entities = {
+metadata/LDTK_entityDefinition = {
 "color": "#63C74D",
 "doc": null,
 "exportToToc": false,

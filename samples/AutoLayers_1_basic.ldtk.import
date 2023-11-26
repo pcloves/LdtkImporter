@@ -14,14 +14,15 @@ dest_files=["res://.godot/imported/AutoLayers_1_basic.ldtk-79d56c8f3c200fa6a6f8c
 
 [params]
 
-General/prefix_remove="LDTK"
-General/prefix_add="LDTK"
-World/WorldMapping="res://samples/AutoLayers_1_basic/AutoLayers_1_basic.tscn"
-Tileset/create_if_not_exists=true
-Tileset/add_metadata=true
+General/prefix="LDTK"
+World/WorldScenes="res://samples/AutoLayers_1_basic/AutoLayers_1_basic.tscn"
+Tileset/add_tileset_definition_to_meta=true
 Tileset/import_LDTK_tile_custom_data=true
-Tileset/Mapping/Cavernas_by_Adam_Saltsman="res://samples/AutoLayers_1_basic/Tileset/Cavernas_by_Adam_Saltsman.tres"
-Entity/entity_add_metadata=true
-Level/level_add_metadata=true
+Tileset/Resources/Cavernas_by_Adam_Saltsman="res://samples/AutoLayers_1_basic/Tileset/Cavernas_by_Adam_Saltsman.tres"
+Entity/add_entity_definition_to_meta=true
+Entity/add_entity_instance_to_meta=true
+Level/add_level_instance_to_meta=true
+Level/add_layer_instance_to_meta=true
+Level/add_layer_definition_to_meta=true
 Level/import_IntGrid=false
-Level/Mapping/AutoLayer="res://samples/AutoLayers_1_basic/Level/AutoLayer.tscn"
+Level/Scenes/AutoLayer="res://samples/AutoLayers_1_basic/Level/AutoLayer.tscn"

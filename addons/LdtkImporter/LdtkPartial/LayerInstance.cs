@@ -36,17 +36,15 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
             return Error.Failed;
         }
 
-        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
 
         Root = func.Invoke();
-        Root.Name = $"{prefix2Add}_{Identifier}";
+        Root.Name = $"{prefix}_{Identifier}";
         Root.Position = new Vector2(PxTotalOffsetX, PxTotalOffsetY);
         Root.Visible = Visible;
         Root.Modulate = new Color(1, 1, 1, (float)Opacity);
-        Root.SetMeta($"{prefix2Add}_instance", Json.ParseString(JsonString));
-
+        
         var tileMap = Root as TileMap;
-
         var tilesetDefinition = ldtkJson.Defs.Tilesets.FirstOrDefault(definition => definition.Uid == TilesetDefUid);
         if (tileMap != null)
         {
@@ -58,10 +56,26 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
         return Error.Ok;
     }
-
-
+    
     public Error Import(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
+        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
+        var addLayerDefinition2Meta =
+            options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionLevelAddLayerDefinitionToMeta);
+        var addLayerInstance2Meta =
+            options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionLevelAddLayerInstanceToMeta);
+        var layerDefinition = ldtkJson.Defs.Layers.FirstOrDefault(definition => definition.Uid == LayerDefUid);
+        
+        if (addLayerDefinition2Meta)
+        {
+            Root.SetMeta($"{prefix}_layerDefinition", Json.ParseString(JsonSerializer.Serialize(layerDefinition)));
+        }
+
+        if (addLayerInstance2Meta)
+        {
+            Root.SetMeta($"{prefix}_layerInstance", Json.ParseString(JsonString));
+        }
+        
         Error error;
         switch (Type)
         {
@@ -103,22 +117,35 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
     private Error ImportEntity(LdtkJson ldtkJson, Dictionary options)
     {
-        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
+        var addDefinition2Meta = options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionEntityAddDefinition2Meta);
+        var addInstance2Meta = options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionEntityAddInstance2Meta);
 
         var entityCountMap = new System.Collections.Generic.Dictionary<string, int>();
         foreach (var entityInstance in EntityInstances)
         {
-            var entityScenePath = ldtkJson.Defs
+            var entityDefinition = ldtkJson.Defs
                 .Entities
-                .FirstOrDefault(definition => definition.Uid == entityInstance.DefUid)!
-                .EntityScenePath;
+                .FirstOrDefault(definition => definition.Uid == entityInstance.DefUid)!;
+            var entityScenePath = entityDefinition.EntityScenePath;
 
             var node2D = ResourceLoader.Load<PackedScene>(entityScenePath).Instantiate<Node2D>();
 
             node2D.Position = new Vector2(entityInstance.Px[0], entityInstance.Px[1]);
             node2D.Name = $"{node2D.Name}-{entityCountMap.GetValueOrDefault(entityInstance.Identifier).ToString()}";
-            node2D.SetMeta($"{prefix2Add}_fields",
+            node2D.SetMeta($"{prefix}_fieldInstances",
                 Json.ParseString(JsonSerializer.Serialize(entityInstance.FieldInstances)));
+
+            if (addDefinition2Meta)
+            {
+                node2D.SetMeta($"{prefix}_entityDefinition",
+                    Json.ParseString(entityDefinition.JsonString));
+            }
+
+            if (addInstance2Meta)
+            {
+                node2D.SetMeta($"{prefix}_entityInstance", Json.ParseString(JsonSerializer.Serialize(entityInstance)));
+            }
 
             Root.AddChild(node2D);
 
@@ -132,11 +159,11 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
     private Error ImportTile(LdtkJson ldtkJson, Dictionary options)
     {
         var tileMap = (TileMap)Root;
-        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
         var layerDefinition = ldtkJson.Defs.Layers.FirstOrDefault(definition => definition.Uid == LayerDefUid);
         var tilesetDefinition = ldtkJson.Defs.Tilesets.FirstOrDefault(definition => definition.Uid == TilesetDefUid);
 
-        var layerNamePrefix = $"{prefix2Add}_{layerDefinition!.Identifier}";
+        var layerNamePrefix = $"{prefix}_{layerDefinition!.Identifier}";
         for (var i = 0; i < MaxTileStackCount; i++)
         {
             tileMap.EnsureLayerExist($"{layerNamePrefix}_{i}");
@@ -153,12 +180,13 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
                          (int)(tilesetDefinition?.TileGridSize ?? GridSize);
             var atlasCoords = tileInstance.T.AtlasCoords(source);
             var alternativeId = (int)tileInstance.AlternativeIdFlags;
-            
+
             tileMap.SetCell(tileInstance.Layer, coords, (int)sourceId, atlasCoords, alternativeId);
             var cellTileData = tileMap.GetCellTileData(tileInstance.Layer, coords, alternativeId != 0);
             if (cellTileData == null)
             {
-                GD.PrintErr($"   GetCellTileData failed, layer:{tileInstance.Layer}, coords:{coords}, atlasCoords:{atlasCoords}, alternativeId:{alternativeId}/({tileInstance.AlternativeIdFlags})");
+                GD.PrintErr(
+                    $"   GetCellTileData failed, layer:{tileInstance.Layer}, coords:{coords}, atlasCoords:{atlasCoords}, alternativeId:{alternativeId}/({tileInstance.AlternativeIdFlags})");
                 continue;
             }
 
@@ -177,9 +205,9 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
             return Error.Ok;
         }
 
-        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
         var tileMap = new TileMap();
-        tileMap.Name = $"{prefix2Add}_{Type}";
+        tileMap.Name = $"{prefix}_{Type}";
 
         Root.AddChild(tileMap);
 
@@ -189,7 +217,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
         var tileSet = new TileSet();
         tileSet.TileSize = new Vector2I(gridSize, gridSize);
-        tileSet.AddCustomDataLayerIfNotExist($"{prefix2Add}_{layerDefinition.Identifier}", Variant.Type.Dictionary);
+        tileSet.AddCustomDataLayerIfNotExist($"{prefix}_{layerDefinition.Identifier}", Variant.Type.Dictionary);
 
         var image = Image.Create(gridSize * intGridValues.Length, gridSize, false, Image.Format.Rgb8);
         for (var index = 0; index < intGridValues.Length; index++)
@@ -219,7 +247,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
             tileData.SetCustomDataByLayerId(0, Json.ParseString(JsonSerializer.Serialize(instance)));
         }
 
-        var layer = tileMap.EnsureLayerExist($"{prefix2Add}_{layerDefinition!.Identifier}");
+        var layer = tileMap.EnsureLayerExist($"{prefix}_{layerDefinition!.Identifier}");
         tileMap.TileSet = tileSet;
         tileMap.SetLayerModulate(layer, new Color(1, 1, 1, (float)Opacity));
         tileMap.SetLayerEnabled(layer, Visible);

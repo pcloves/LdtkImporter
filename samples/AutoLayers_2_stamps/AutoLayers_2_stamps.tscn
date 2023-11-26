@@ -1,12 +1,13 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="PackedScene" uid="uid://ioopqbi2kgcv" path="res://samples/AutoLayers_2_stamps/Level/Stamps.tscn" id="1_4ei4t"]
+[ext_resource type="PackedScene" uid="uid://ioopqbi2kgcv" path="res://samples/AutoLayers_2_stamps/Level/Stamps.tscn" id="1_8ws7o"]
 
 [node name="AutoLayers_2_stamps" type="Node2D"]
 
-[node name="LDTK_Stamps" type="Node2D" parent="." instance=ExtResource("1_4ei4t")]
+[node name="LDTK_Stamps" type="Node2D" parent="." instance=ExtResource("1_8ws7o")]
 position = Vector2(-1, -1)
-metadata/LDTK_level = {
+metadata/LDTK_fieldInstances = []
+metadata/LDTK_levelInstance = {
 "__bgColor": "#222225",
 "__bgPos": null,
 "__neighbours": [],
@@ -880,4 +881,3 @@ metadata/LDTK_level = {
 "worldX": -1.0,
 "worldY": -1.0
 }
-metadata/LDTK_fieldInstances = []

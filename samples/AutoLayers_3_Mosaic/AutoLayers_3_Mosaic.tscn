@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="PackedScene" uid="uid://d6lhy6kvrs15" path="res://samples/AutoLayers_3_Mosaic/Level/Mosaic_demo.tscn" id="1_c4yq5"]
+[ext_resource type="PackedScene" uid="uid://d6lhy6kvrs15" path="res://samples/AutoLayers_3_Mosaic/Level/Mosaic_demo.tscn" id="1_k2arl"]
 
 [node name="AutoLayers_3_Mosaic" type="Node2D"]
 
-[node name="LDTK_Mosaic_demo" type="Node2D" parent="." instance=ExtResource("1_c4yq5")]
+[node name="LDTK_Mosaic_demo" type="Node2D" parent="." instance=ExtResource("1_k2arl")]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)
@@ -15,7 +15,8 @@ texture_filter = 1
 texture_repeat = 1
 position = Vector2(-1, -1)
 scale = Vector2(1e-05, 1e-05)
-metadata/LDTK_level = {
+metadata/LDTK_fieldInstances = []
+metadata/LDTK_levelInstance = {
 "__bgColor": "#222225",
 "__bgPos": null,
 "__neighbours": [],
@@ -6388,4 +6389,3 @@ metadata/LDTK_level = {
 "worldX": -1.0,
 "worldY": -1.0
 }
-metadata/LDTK_fieldInstances = []

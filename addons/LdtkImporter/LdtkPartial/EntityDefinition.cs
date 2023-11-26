@@ -19,10 +19,9 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
     {
         GD.Print($"  {Identifier}");
 
-        var key = $"{LdtkImporterPlugin.OptionEntityMapping}/{Identifier}";
+        var key = $"{LdtkImporterPlugin.OptionEntityScenes}/{Identifier}";
         var scenePath = options.GetValueOrDefault<string>(key);
-        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
-        var prefix2Remove = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Remove);
+        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
 
         if (string.IsNullOrWhiteSpace(scenePath))
         {
@@ -35,7 +34,7 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
             GD.Print($"   entity scene:{scenePath} is not exist, create it!");
             Root = new Node2D()
             {
-                Name = $"{prefix2Add}_{Identifier}",
+                Name = $"{prefix}_{Identifier}",
             };
 
             var packedScene = new PackedScene();
@@ -53,8 +52,8 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
             return Error.Failed;
         }
 
-        Root.RemoveChildByNamePrefix(prefix2Remove);
-        Root.RemoveMetaPrefix(prefix2Remove);
+        Root.RemoveChildByNamePrefix(prefix);
+        Root.RemoveMetaByPrefix(prefix);
 
         EntityScenePath = scenePath;
         GD.Print($"   load entity scene success:{scenePath}");
@@ -66,12 +65,15 @@ public partial class EntityDefinition : IImporter, IJsonOnDeserialized
     {
         GD.Print($"  {Identifier}:{EntityScenePath}");
 
-        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
+        var addDefinition2Meta = options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionEntityAddDefinition2Meta);
+        var definitionMeta = Json.ParseString(JsonString);
 
-        var meta = Json.ParseString(JsonString);
-
-        Root.SetMeta($"{prefix2Add}_entities", meta);
-
+        if (addDefinition2Meta)
+        {
+            Root.SetMeta($"{prefix}_entityDefinition", definitionMeta);
+        }
+        
         return Error.Ok;
     }
 

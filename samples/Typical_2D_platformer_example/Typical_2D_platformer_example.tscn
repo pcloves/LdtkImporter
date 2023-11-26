@@ -1,13 +1,14 @@
 [gd_scene load_steps=4 format=3]
 
-[ext_resource type="PackedScene" uid="uid://47xja7m1i7gm" path="res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn" id="1_40uiq"]
-[ext_resource type="PackedScene" uid="uid://svlgmnrc7ria" path="res://samples/Typical_2D_platformer_example/Level/Top.tscn" id="2_bwedg"]
-[ext_resource type="PackedScene" uid="uid://jm2ia733d3ls" path="res://samples/Typical_2D_platformer_example/Level/Bottom.tscn" id="3_lsp81"]
+[ext_resource type="PackedScene" uid="uid://47xja7m1i7gm" path="res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn" id="1_8ep51"]
+[ext_resource type="PackedScene" uid="uid://svlgmnrc7ria" path="res://samples/Typical_2D_platformer_example/Level/Top.tscn" id="2_2e6wm"]
+[ext_resource type="PackedScene" uid="uid://jm2ia733d3ls" path="res://samples/Typical_2D_platformer_example/Level/Bottom.tscn" id="3_mvuw5"]
 
 [node name="Typical_2D_platformer_example" type="Node2D"]
 
-[node name="LDTK_Your_typical_2D_platformer" type="Node2D" parent="." instance=ExtResource("1_40uiq")]
-metadata/LDTK_level = {
+[node name="LDTK_Your_typical_2D_platformer" type="Node2D" parent="." instance=ExtResource("1_8ep51")]
+metadata/LDTK_fieldInstances = []
+metadata/LDTK_levelInstance = {
 "__bgColor": "#50506A",
 "__bgPos": null,
 "__neighbours": [{
@@ -10051,11 +10052,11 @@ metadata/LDTK_level = {
 "worldX": 0.0,
 "worldY": 0.0
 }
-metadata/LDTK_fieldInstances = []
 
-[node name="LDTK_Top" type="Node2D" parent="." instance=ExtResource("2_bwedg")]
+[node name="LDTK_Top" type="Node2D" parent="." instance=ExtResource("2_2e6wm")]
 position = Vector2(352, -352)
-metadata/LDTK_level = {
+metadata/LDTK_fieldInstances = []
+metadata/LDTK_levelInstance = {
 "__bgColor": "#50506A",
 "__bgPos": null,
 "__neighbours": [{
@@ -17993,11 +17994,11 @@ metadata/LDTK_level = {
 "worldX": 352.0,
 "worldY": -352.0
 }
-metadata/LDTK_fieldInstances = []
 
-[node name="LDTK_Bottom" type="Node2D" parent="." instance=ExtResource("3_lsp81")]
+[node name="LDTK_Bottom" type="Node2D" parent="." instance=ExtResource("3_mvuw5")]
 position = Vector2(80, 336)
-metadata/LDTK_level = {
+metadata/LDTK_fieldInstances = []
+metadata/LDTK_levelInstance = {
 "__bgColor": "#50506A",
 "__bgPos": null,
 "__neighbours": [{
@@ -22004,4 +22005,3 @@ metadata/LDTK_level = {
 "worldX": 80.0,
 "worldY": 336.0
 }
-metadata/LDTK_fieldInstances = []

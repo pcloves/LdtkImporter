@@ -1,9 +1,11 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Text.Json.Serialization;
 using Godot;
 using Godot.Collections;
 
 namespace LdtkImporter;
 
+[SuppressMessage("ReSharper", "UnusedParameter.Local")]
 public partial class LdtkJson : IImporter
 {
     [JsonIgnore] public static LdtkJson Project;
@@ -52,18 +54,17 @@ public partial class LdtkJson : IImporter
 
     private Error CheckOptionValid(Dictionary options)
     {
-        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
-        var prefix2Remove = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
 
-        if (!prefix2Add.IsValidPrefix())
+        if (!prefix.IsValidPrefix())
         {
-            GD.Print($"invalid prefix:{prefix2Add}, must be empty or valid godot identifier.");
+            GD.Print($"invalid prefix:{prefix}, must be empty or valid godot identifier.");
             return Error.Failed;
         }
 
-        if (!prefix2Remove.IsValidPrefix())
+        if (!prefix.IsValidPrefix())
         {
-            GD.Print($"invalid prefix:{prefix2Remove}, must be empty or valid godot identifier.");
+            GD.Print($"invalid prefix:{prefix}, must be empty or valid godot identifier.");
             return Error.Failed;
         }
 
@@ -125,7 +126,7 @@ public partial class LdtkJson : IImporter
     private Error SaveLdkJson(string savePath, Dictionary options, Array<string> genFiles)
     {
         Node2D root;
-        var worldScenePath = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionWorldWorldMapping);
+        var worldScenePath = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionWorldWorldScenes);
         if (!ResourceLoader.Exists(worldScenePath))
         {
             GD.Print($" world scene:{worldScenePath} is not exist, create it!");
@@ -139,8 +140,8 @@ public partial class LdtkJson : IImporter
             root = ResourceLoader.Load<PackedScene>(worldScenePath).Instantiate<Node2D>();
         }
 
-        var prefix2Remove = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Remove);
-        root.RemoveChildByNamePrefix(prefix2Remove);
+        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
+        root.RemoveChildByNamePrefix(prefix);
 
         foreach (var level in Levels)
         {

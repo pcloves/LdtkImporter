@@ -20,7 +20,7 @@ public partial class Level : IImporter, IJsonOnDeserialized
     {
         GD.Print($"  {Identifier}");
 
-        var key = $"{LdtkImporterPlugin.OptionLevelMapping}/{Identifier}";
+        var key = $"{LdtkImporterPlugin.OptionLevelScenes}/{Identifier}";
         var scenePath = options.GetValueOrDefault<string>(key);
 
         if (string.IsNullOrWhiteSpace(scenePath))
@@ -29,14 +29,14 @@ public partial class Level : IImporter, IJsonOnDeserialized
             return Error.FileNotFound;
         }
 
-        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
+        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
 
         if (!ResourceLoader.Exists(scenePath))
         {
             GD.Print($"   level scene:{scenePath} is not exist, create it!");
             Root = new Node2D()
             {
-                Name = $"{prefix2Add}_{Identifier}",
+                Name = $"{prefix}_{Identifier}",
             };
         }
         else
@@ -53,9 +53,9 @@ public partial class Level : IImporter, IJsonOnDeserialized
         ScenePath = scenePath;
         GD.Print($"   load level scene success:{scenePath}");
 
-        var prefix2Remove = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Remove);
-        Root.RemoveMetaPrefix(prefix2Remove);
-        Root.RemoveChildByNamePrefix(prefix2Remove);
+        Root.RemoveMetaByPrefix(prefix);
+        Root.RemoveChildByNamePrefix(prefix);
+        Root.Position = new Vector2(WorldX, WorldY);
 
         GD.Print("   PreImport Layer");
         foreach (var layerInstance in LayerInstances)
@@ -71,16 +71,17 @@ public partial class Level : IImporter, IJsonOnDeserialized
     {
         GD.Print($"  {Identifier}:{ScenePath}");
 
-        var level = Json.ParseString(JsonString);
+        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
+        var addLevelInstance2Meta = options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionLevelAddLevelInstanceToMeta);
         var fieldInstance = Json.ParseString(JsonSerializer.Serialize(FieldInstances));
-
-        var prefix2Add = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix2Add);
-
-        Root.SetMeta($"{prefix2Add}_level", level);
-        Root.SetMeta($"{prefix2Add}_fieldInstances", fieldInstance);
-
-        Root.Position = new Vector2(WorldX, WorldY);
-
+        
+        Root.SetMeta($"{prefix}_fieldInstances", fieldInstance);
+        
+        if (addLevelInstance2Meta)
+        {
+            Root.SetMeta($"{prefix}_levelInstance", Json.ParseString(JsonSerializer.Serialize(this)));
+        }
+        
         foreach (var layerInstance in LayerInstances)
         {
             GD.Print($"   Import Layer:{layerInstance.Identifier}:{layerInstance.Type}");

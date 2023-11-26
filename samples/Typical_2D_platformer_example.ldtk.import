@@ -7,26 +7,29 @@ path="res://.godot/imported/Typical_2D_platformer_example.ldtk-ba66d4db0bc7c4572
 
 [deps]
 
+files=["res://samples/Typical_2D_platformer_example/Tileset/SunnyLand_by_Ansimuz.tres", "res://samples/Typical_2D_platformer_example/Entity/Player.tscn", "res://samples/Typical_2D_platformer_example/Entity/Chest.tscn", "res://samples/Typical_2D_platformer_example/Entity/Mob.tscn", "res://samples/Typical_2D_platformer_example/Entity/Door.tscn", "res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn", "res://samples/Typical_2D_platformer_example/Level/Top.tscn", "res://samples/Typical_2D_platformer_example/Level/Bottom.tscn", "res://samples/Typical_2D_platformer_example/Typical_2D_platformer_example.tscn"]
+
 source_file="res://samples/Typical_2D_platformer_example.ldtk"
-dest_files=["res://.godot/imported/Typical_2D_platformer_example.ldtk-ba66d4db0bc7c45720f0c894823b10c6.tscn"]
+dest_files=["res://.godot/imported/Typical_2D_platformer_example.ldtk-ba66d4db0bc7c45720f0c894823b10c6.tscn", "res://samples/Typical_2D_platformer_example/Tileset/SunnyLand_by_Ansimuz.tres", "res://samples/Typical_2D_platformer_example/Entity/Player.tscn", "res://samples/Typical_2D_platformer_example/Entity/Chest.tscn", "res://samples/Typical_2D_platformer_example/Entity/Mob.tscn", "res://samples/Typical_2D_platformer_example/Entity/Door.tscn", "res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn", "res://samples/Typical_2D_platformer_example/Level/Top.tscn", "res://samples/Typical_2D_platformer_example/Level/Bottom.tscn", "res://samples/Typical_2D_platformer_example/Typical_2D_platformer_example.tscn"]
 
 [params]
 
-General/prefix_remove="LDTK"
-General/prefix_add="LDTK"
-World/WorldMapping="res://samples/Typical_2D_platformer_example/Typical_2D_platformer_example.tscn"
-Tileset/create_if_not_exists=true
-Tileset/add_metadata=true
+General/prefix="LDTK"
+World/WorldScenes="res://samples/Typical_2D_platformer_example/Typical_2D_platformer_example.tscn"
+Tileset/add_tileset_definition_to_meta=false
 Tileset/import_LDTK_tile_custom_data=true
-Tileset/Mapping/Internal_Icons="res://samples/Typical_2D_platformer_example/Tileset/Internal_Icons.tres"
-Tileset/Mapping/SunnyLand_by_Ansimuz="res://samples/Typical_2D_platformer_example/Tileset/SunnyLand_by_Ansimuz.tres"
-Entity/entity_add_metadata=true
-Entity/Mapping/Chest="res://samples/Typical_2D_platformer_example/Entity/Chest.tscn"
-Entity/Mapping/Door="res://samples/Typical_2D_platformer_example/Entity/Door.tscn"
-Entity/Mapping/Mob="res://samples/Typical_2D_platformer_example/Entity/Mob.tscn"
-Entity/Mapping/Player="res://samples/Typical_2D_platformer_example/Entity/Player.tscn"
-Level/level_add_metadata=true
+Tileset/Resources/Internal_Icons="res://samples/Typical_2D_platformer_example/Tileset/Internal_Icons.tres"
+Tileset/Resources/SunnyLand_by_Ansimuz="res://samples/Typical_2D_platformer_example/Tileset/SunnyLand_by_Ansimuz.tres"
+Entity/add_entity_definition_to_meta=true
+Entity/add_entity_instance_to_meta=true
+Entity/Scenes/Chest="res://samples/Typical_2D_platformer_example/Entity/Chest.tscn"
+Entity/Scenes/Door="res://samples/Typical_2D_platformer_example/Entity/Door.tscn"
+Entity/Scenes/Mob="res://samples/Typical_2D_platformer_example/Entity/Mob.tscn"
+Entity/Scenes/Player="res://samples/Typical_2D_platformer_example/Entity/Player.tscn"
+Level/add_level_instance_to_meta=true
+Level/add_layer_instance_to_meta=true
+Level/add_layer_definition_to_meta=true
 Level/import_IntGrid=false
-Level/Mapping/Bottom="res://samples/Typical_2D_platformer_example/Level/Bottom.tscn"
-Level/Mapping/Top="res://samples/Typical_2D_platformer_example/Level/Top.tscn"
-Level/Mapping/Your_typical_2D_platformer="res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn"
+Level/Scenes/Bottom="res://samples/Typical_2D_platformer_example/Level/Bottom.tscn"
+Level/Scenes/Top="res://samples/Typical_2D_platformer_example/Level/Top.tscn"
+Level/Scenes/Your_typical_2D_platformer="res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn"

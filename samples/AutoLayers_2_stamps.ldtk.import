@@ -14,14 +14,15 @@ dest_files=["res://.godot/imported/AutoLayers_2_stamps.ldtk-d91ea11e818c2cbabcae
 
 [params]
 
-General/prefix_remove="LDTK"
-General/prefix_add="LDTK"
-World/WorldMapping="res://samples/AutoLayers_2_stamps/AutoLayers_2_stamps.tscn"
-Tileset/create_if_not_exists=true
-Tileset/add_metadata=true
+General/prefix="LDTK"
+World/WorldScenes="res://samples/AutoLayers_2_stamps/AutoLayers_2_stamps.tscn"
+Tileset/add_tileset_definition_to_meta=false
 Tileset/import_LDTK_tile_custom_data=true
-Tileset/Mapping/Inca_front_by_Kronbits="res://samples/AutoLayers_2_stamps/Tileset/Inca_front_by_Kronbits.tres"
-Entity/entity_add_metadata=true
-Level/level_add_metadata=true
+Tileset/Resources/Inca_front_by_Kronbits="res://samples/AutoLayers_2_stamps/Tileset/Inca_front_by_Kronbits.tres"
+Entity/add_entity_definition_to_meta=true
+Entity/add_entity_instance_to_meta=true
+Level/add_level_instance_to_meta=true
+Level/add_layer_instance_to_meta=true
+Level/add_layer_definition_to_meta=true
 Level/import_IntGrid=false
-Level/Mapping/Stamps="res://samples/AutoLayers_2_stamps/Level/Stamps.tscn"
+Level/Scenes/Stamps="res://samples/AutoLayers_2_stamps/Level/Stamps.tscn"

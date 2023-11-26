@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cnnopb28hilc"]
+[gd_scene load_steps=10 format=3 uid="uid://cnnopb28hilc"]
 
 [ext_resource type="TileSet" uid="uid://b6jc820slsd5t" path="res://samples/Typical_TopDown_example/Tileset/TopDown_by_deepnight.tres" id="1_i1yic"]
 [ext_resource type="PackedScene" uid="uid://dvs4lakc0tujf" path="res://samples/Typical_TopDown_example/Entity/Door.tscn" id="2_38vhw"]
@@ -6,8 +6,43 @@
 [ext_resource type="PackedScene" uid="uid://7ippv6eagspi" path="res://samples/Typical_TopDown_example/Entity/SecretWall.tscn" id="4_58ql3"]
 [ext_resource type="PackedScene" uid="uid://dd4av8ydlvpp2" path="res://samples/Typical_TopDown_example/Entity/Button.tscn" id="5_a7hwk"]
 
+[sub_resource type="Image" id="Image_ohh6q"]
+data = {
+"data": PackedByteArray(228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114, 228, 166, 114),
+"format": "RGB8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_q2svl"]
+image = SubResource("Image_ohh6q")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_is6yl"]
+texture = SubResource("ImageTexture_q2svl")
+0:0/0 = 0
+0:0/0/custom_data_0 = {
+"color": "#E4A672",
+"groupUid": 0.0,
+"identifier": "walls",
+"tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 208.0,
+"y": 960.0
+},
+"value": 1.0
+}
+
+[sub_resource type="TileSet" id="TileSet_bhxla"]
+custom_data_layer_0/name = "LDTK_Collisions"
+custom_data_layer_0/type = 27
+sources/110 = SubResource("TileSetAtlasSource_is6yl")
+
 [node name="LDTK_World_Level_1" type="Node2D"]
-metadata/LDTK_level = {
+metadata/LDTK_fieldInstances = []
+metadata/LDTK_levelInstance = {
 "__bgColor": "#404255",
 "__bgPos": null,
 "__neighbours": [{
@@ -5763,14 +5798,85 @@ metadata/LDTK_level = {
 "worldX": 0.0,
 "worldY": 0.0
 }
-metadata/LDTK_fieldInstances = []
 
 [node name="LDTK_Default_floor" type="TileMap" parent="."]
 tile_set = ExtResource("1_i1yic")
 format = 2
 layer_0/name = "LDTK_Default_floor_0"
 layer_0/tile_data = PackedInt32Array(0, 131073, 4, 1, 131073, 4, 2, 1, 4, 3, 262145, 4, 4, 1, 4, 5, 458753, 4, 6, 65537, 4, 7, 1, 4, 8, 65537, 4, 9, 327681, 4, 10, 65537, 4, 11, 65537, 4, 12, 327681, 4, 13, 262145, 4, 14, 327681, 4, 15, 196609, 4, 65536, 1, 4, 65537, 393217, 4, 65538, 458753, 4, 65539, 262145, 4, 65545, 131073, 4, 65546, 65537, 4, 65547, 458753, 4, 65548, 458753, 4, 65549, 327681, 4, 65550, 131073, 4, 65551, 458753, 4, 131072, 262145, 4, 131073, 262145, 4, 131077, 131073, 4, 131078, 196609, 4, 131079, 1, 4, 196608, 262145, 4, 196609, 196609, 4, 196611, 262145, 4, 196612, 196609, 4, 196613, 458753, 4, 196614, 458753, 4, 196615, 393217, 4, 196616, 393217, 4, 196617, 262145, 4, 262144, 65537, 4, 262145, 65537, 4, 262147, 196609, 4, 262148, 262145, 4, 262152, 327681, 4, 262153, 196609, 4, 327680, 196609, 4, 327681, 327681, 4, 327683, 1, 4, 327684, 458753, 4, 327685, 1, 4, 327686, 458753, 4, 327687, 262145, 4, 327688, 393217, 4, 327689, 262145, 4, 393216, 327681, 4, 393217, 196609, 4, 393219, 262145, 4, 393220, 393217, 4, 393221, 262145, 4, 393222, 131073, 4, 393223, 262145, 4, 393224, 327681, 4, 393225, 65537, 4, 393226, 131073, 4, 393227, 393217, 4, 393228, 327681, 4, 458752, 262145, 4, 458753, 196609, 4, 458755, 458753, 4, 458756, 262145, 4, 458760, 262145, 4, 458761, 458753, 4, 458763, 458753, 4, 458764, 65537, 4, 524288, 131073, 4, 524289, 327681, 4, 524291, 65537, 4, 524292, 327681, 4, 524293, 393217, 4, 524294, 196609, 4, 524295, 327681, 4, 524296, 458753, 4, 524297, 393217, 4, 524299, 262145, 4, 524300, 458753, 4, 589824, 196609, 4, 589825, 393217, 4, 589827, 393217, 4, 589828, 65537, 4, 589829, 1, 4, 589830, 458753, 4, 589831, 262145, 4, 589832, 393217, 4, 589833, 1, 4, 589835, 65537, 4, 589836, 327681, 4, 589837, 458753, 4, 589838, 131073, 4, 589839, 65537, 4, 655360, 262145, 4, 655361, 458753, 4, 655363, 131073, 4, 655364, 458753, 4, 655368, 458753, 4, 655369, 262145, 4, 655371, 196609, 4, 655372, 327681, 4, 655373, 131073, 4, 655374, 458753, 4, 655375, 196609, 4, 720896, 1, 4, 720897, 327681, 4, 720899, 262145, 4, 720900, 327681, 4, 720901, 393217, 4, 720902, 262145, 4, 720903, 327681, 4, 720904, 131073, 4, 720905, 393217, 4, 720910, 393217, 4, 720911, 458753, 4, 786432, 65537, 4, 786433, 65537, 4, 786440, 1, 4, 786443, 393217, 4, 786444, 196609, 4, 851968, 1, 4, 851969, 458753, 4, 851970, 393217, 4, 851971, 327681, 4, 851972, 393217, 4, 851973, 131073, 4, 851975, 196609, 4, 851976, 458753, 4, 851977, 65537, 4, 851978, 1, 4, 851979, 196609, 4, 851980, 327681, 4, 851982, 131073, 4, 851983, 458753, 4, 917504, 262145, 4, 917505, 196609, 4, 917506, 196609, 4, 917507, 393217, 4, 917508, 1, 4, 917509, 393217, 4, 917518, 131073, 4, 917519, 65537, 4, 983040, 327681, 4, 983041, 393217, 4, 983042, 458753, 4, 983043, 327681, 4, 983044, 393217, 4, 983045, 262145, 4, 983046, 196609, 4, 983047, 131073, 4, 983048, 131073, 4, 983049, 65537, 4, 983050, 65537, 4, 983051, 393217, 4, 983052, 393217, 4, 983053, 262145, 4, 983054, 65537, 4, 983055, 131073, 4)
-metadata/LDTK_instance = {
+metadata/LDTK_layerDefinition = {
+"__type": "AutoLayer",
+"autoRuleGroups": [{
+"active": true,
+"collapsed": null,
+"color": null,
+"icon": null,
+"isOptional": false,
+"name": "Stone floors",
+"rules": [{
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": true,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": false,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [-1e+06],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 9.48697e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 1.0,
+"tileIds": [44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 130.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}],
+"uid": 129.0,
+"usesWizard": false
+}],
+"autoSourceLayerDefUid": 110.0,
+"autoTilesetDefUid": null,
+"canSelectWhenInactive": true,
+"displayOpacity": 1.0,
+"doc": "Default rendering of floors, based on Collisions.",
+"excludedTags": [],
+"gridSize": 16.0,
+"guideGridHei": 0.0,
+"guideGridWid": 0.0,
+"hideFieldsWhenInactive": false,
+"hideInList": false,
+"identifier": "Default_floor",
+"inactiveOpacity": 1.0,
+"intGridValues": [],
+"intGridValuesGroups": [],
+"parallaxFactorX": 0.0,
+"parallaxFactorY": 0.0,
+"parallaxScaling": true,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"renderInWorldView": true,
+"requiredTags": [],
+"tilePivotX": 0.0,
+"tilePivotY": 0.0,
+"tilesetDefUid": 1.0,
+"type": 0.0,
+"uiColor": "#3A4466",
+"uid": 128.0
+}
+metadata/LDTK_layerInstance = {
 "__cHei": 16.0,
 "__cWid": 16.0,
 "__gridSize": 16.0,
@@ -6964,7 +7070,39 @@ tile_set = ExtResource("1_i1yic")
 format = 2
 layer_0/name = "LDTK_Custom_floor_0"
 layer_0/tile_data = PackedInt32Array(0, 327681, 3, 1, 327681, 3, 2, 327681, 3, 3, 65537, 3, 4, 1, 3, 5, 262145, 3, 6, 65537, 3, 7, 327681, 3, 8, 196609, 3, 9, 131073, 3, 10, 131073, 3, 11, 196609, 3, 12, 196609, 3, 13, 131073, 3, 14, 131073, 3, 15, 131073, 3, 65536, 1, 3, 65537, 65537, 3, 65538, 327681, 3, 65539, 1, 3, 65545, 1, 3, 65546, 1, 3, 65547, 131073, 3, 65548, 327681, 3, 65549, 131073, 3, 65550, 131073, 3, 65551, 131073, 3, 131072, 65537, 3, 131073, 1, 3, 131074, 196609, 3, 196608, 262145, 3, 196609, 196609, 3, 196610, 196609, 3, 262144, 1, 3, 262145, 131073, 3, 262146, 327681, 3, 327680, 1, 3, 327681, 262145, 3, 327682, 196609, 3, 393216, 131073, 3, 393217, 1, 3, 393218, 65537, 3, 458752, 327681, 3, 458753, 1, 3, 458754, 65537, 3, 524288, 262145, 3, 524289, 65537, 3, 524290, 131073, 3, 589824, 131073, 3, 589825, 65537, 3, 589826, 327681, 3, 655360, 262145, 3, 655361, 262145, 3, 655362, 196609, 3, 720896, 1, 3, 720897, 262145, 3, 720898, 1, 3, 786432, 327681, 3, 786433, 262145, 3, 786434, 65537, 3, 851968, 1, 3, 851969, 131073, 3, 851970, 1, 3, 851971, 131073, 3, 851972, 131073, 3, 851973, 131073, 3, 851975, 393217, 5, 851976, 393217, 5, 851977, 458753, 5, 851978, 327681, 5, 851979, 393217, 5, 851982, 131073, 3, 851983, 131073, 3, 917504, 131073, 3, 917505, 131073, 3, 917506, 196609, 3, 917507, 131073, 3, 917508, 131073, 3, 917509, 131073, 3, 917511, 262145, 5, 917512, 262145, 5, 917513, 327681, 5, 917514, 262145, 5, 917515, 262145, 5, 917518, 131073, 3, 917519, 131073, 3, 983040, 262145, 3, 983041, 131073, 3, 983042, 327681, 3, 983043, 131073, 3, 983044, 131073, 3, 983045, 131073, 3, 983046, 131073, 3, 983047, 131073, 3, 983048, 131073, 3, 983049, 131073, 3, 983050, 131073, 3, 983051, 131073, 3, 983052, 131073, 3, 983053, 131073, 3, 983054, 131073, 3, 983055, 131073, 3)
-metadata/LDTK_instance = {
+metadata/LDTK_layerDefinition = {
+"__type": "Tiles",
+"autoRuleGroups": [],
+"autoSourceLayerDefUid": null,
+"autoTilesetDefUid": null,
+"canSelectWhenInactive": true,
+"displayOpacity": 1.0,
+"doc": "Custom tiles painted on the floor",
+"excludedTags": [],
+"gridSize": 16.0,
+"guideGridHei": 0.0,
+"guideGridWid": 0.0,
+"hideFieldsWhenInactive": false,
+"hideInList": false,
+"identifier": "Custom_floor",
+"inactiveOpacity": 1.0,
+"intGridValues": [],
+"intGridValuesGroups": [],
+"parallaxFactorX": 0.0,
+"parallaxFactorY": 0.0,
+"parallaxScaling": true,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"renderInWorldView": true,
+"requiredTags": [],
+"tilePivotX": 0.0,
+"tilePivotY": 0.0,
+"tilesetDefUid": 1.0,
+"type": 3.0,
+"uiColor": "#B55088",
+"uid": 150.0
+}
+metadata/LDTK_layerInstance = {
 "__cHei": 16.0,
 "__cWid": 16.0,
 "__gridSize": 16.0,
@@ -7714,7 +7852,455 @@ layer_1/name = "LDTK_Collisions_1"
 layer_1/tile_data = PackedInt32Array(786440, 65537, 65542, 131077, 1, 6, 131079, 1, 6, 196611, 1, 6, 196617, 1, 6, 393228, 1, 6, 786443, 1, 6, 786444, 1, 6, 851973, 1, 6, 851982, 1, 6, 196612, 131073, 131078, 196616, 131073, 196614, 393225, 131073, 131078, 393227, 131073, 196614, 720904, 131073, 131078, 65545, 458753, 6, 262147, 458753, 6, 262152, 393217, 6, 327683, 393217, 6, 393219, 393217, 6, 458755, 327681, 6, 458760, 458753, 6, 458763, 327681, 6, 524291, 458753, 6, 524299, 327681, 6, 589827, 393217, 6, 589835, 327681, 6, 655363, 458753, 6, 655368, 458753, 6, 655371, 393217, 6, 720899, 458753, 6, 720910, 393217, 6, 851975, 393217, 6, 917518, 458753, 6, 131076, 458753, 65536, 131080, 458753, 0, 262149, 458753, 0, 262151, 458753, 65536, 327690, 458753, 0, 458757, 458753, 0, 458759, 458753, 65536, 524301, 458753, 0, 655365, 458753, 0, 655367, 458753, 65536, 786434, 458753, 0, 786439, 458753, 65536, 786441, 458753, 0, 786442, 458753, 65536, 917510, 458753, 0, 917517, 458753, 65536, 65541, 262145, 6, 131075, 262145, 6, 720907, 262145, 6, 786446, 262145, 6)
 layer_2/name = "LDTK_Collisions_2"
 layer_2/tile_data = PackedInt32Array(720904, 131073, 196614, 131077, 458753, 6, 196611, 458753, 6, 786440, 327681, 6, 786443, 458753, 6, 851982, 327681, 6, 786439, 262145, 6)
-metadata/LDTK_instance = {
+metadata/LDTK_layerDefinition = {
+"__type": "IntGrid",
+"autoRuleGroups": [{
+"active": true,
+"collapsed": null,
+"color": null,
+"icon": {
+"h": 16.0,
+"tilesetUid": 1.0,
+"w": 16.0,
+"x": 64.0,
+"y": 96.0
+},
+"isOptional": false,
+"name": "Corners inner shadows",
+"rules": [{
+"active": true,
+"alpha": 0.7,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": false,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, -1.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 3.21093e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [70.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 141.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}],
+"uid": 140.0,
+"usesWizard": false
+}, {
+"active": true,
+"collapsed": null,
+"color": "#E43B44",
+"icon": {
+"h": 16.0,
+"tilesetUid": 1.0,
+"w": 16.0,
+"x": 64.0,
+"y": 0.0
+},
+"isOptional": false,
+"name": "Front faces",
+"rules": [{
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": true,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, 0.0, 0.0, -1.0, 1.0, 0.0, 0.0, -1.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 9.34471e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [7.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 157.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}, {
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": true,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": false,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -1.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 3.86737e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [5.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 114.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}],
+"uid": 113.0,
+"usesWizard": false
+}, {
+"active": true,
+"collapsed": null,
+"color": null,
+"icon": {
+"h": 16.0,
+"tilesetUid": 1.0,
+"w": 16.0,
+"x": 80.0,
+"y": 96.0
+},
+"isOptional": false,
+"name": "Wall drop shadows",
+"rules": [{
+"active": true,
+"alpha": 0.75,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": false,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, 0.0, 0.0, 1.0, -1.0, 0.0, 0.0, 0.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 852107.0,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [71.0, 72.0, 73.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 152.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}, {
+"active": true,
+"alpha": 0.3,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": true,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, 0.0, 0.0, 1.0, -1.0, 0.0, 0.0, 0.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 2.73541e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [71.0, 72.0, 73.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": -5.0,
+"tileYOffset": 0.0,
+"uid": 159.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}],
+"uid": 151.0,
+"usesWizard": false
+}, {
+"active": true,
+"collapsed": null,
+"color": "#3A4466",
+"icon": {
+"h": 16.0,
+"tilesetUid": 1.0,
+"w": 16.0,
+"x": 128.0,
+"y": 16.0
+},
+"isOptional": false,
+"name": "Black walls",
+"rules": [{
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": true,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": false,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 1.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 236712.0,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [20.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 166.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}, {
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": true,
+"chance": 0.78,
+"checker": 1.0,
+"flipX": false,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, 1e+06, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0],
+"perlinActive": true,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 8.91613e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [14.0, 25.0, 15.0, 26.0, 16.0, 27.0, 17.0, 28.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 167.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}, {
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": true,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": false,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [1.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 5.32495e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 1.0,
+"tileIds": [19.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 168.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}],
+"uid": 165.0,
+"usesWizard": false
+}, {
+"active": true,
+"collapsed": null,
+"color": null,
+"icon": null,
+"isOptional": false,
+"name": "Bottom wall outlines",
+"rules": [{
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": true,
+"flipY": true,
+"outOfBoundsValue": null,
+"pattern": [0.0, -1.0, 1.0, 0.0, -1.0, -1.0, 0.0, 0.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 3.21312e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [68.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 154.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}, {
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": false,
+"flipY": true,
+"outOfBoundsValue": null,
+"pattern": [0.0, 1.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 7.91733e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [66.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 155.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}, {
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": true,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, 0.0, 0.0, 0.0, -1.0, 1.0, 0.0, 0.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 4.18525e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [67.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 156.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}],
+"uid": 153.0,
+"usesWizard": false
+}],
+"autoSourceLayerDefUid": null,
+"autoTilesetDefUid": null,
+"canSelectWhenInactive": true,
+"displayOpacity": 1.0,
+"doc": "Actual wall collisions are painted in this layer, and rules take care of rendering front walls faces and drop-shadows.",
+"excludedTags": [],
+"gridSize": 16.0,
+"guideGridHei": 0.0,
+"guideGridWid": 0.0,
+"hideFieldsWhenInactive": false,
+"hideInList": false,
+"identifier": "Collisions",
+"inactiveOpacity": 1.0,
+"intGridValues": [{
+"color": "#E4A672",
+"groupUid": 0.0,
+"identifier": "walls",
+"tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 208.0,
+"y": 960.0
+},
+"value": 1.0
+}],
+"intGridValuesGroups": [],
+"parallaxFactorX": 0.0,
+"parallaxFactorY": 0.0,
+"parallaxScaling": true,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"renderInWorldView": true,
+"requiredTags": [],
+"tilePivotX": 0.0,
+"tilePivotY": 0.0,
+"tilesetDefUid": 1.0,
+"type": 2.0,
+"uiColor": "#D77643",
+"uid": 110.0
+}
+metadata/LDTK_layerInstance = {
 "__cHei": 16.0,
 "__cWid": 16.0,
 "__gridSize": 16.0,
@@ -10107,6 +10693,12 @@ metadata/LDTK_instance = {
 "visible": true
 }
 
+[node name="LDTK_IntGrid" type="TileMap" parent="LDTK_Collisions"]
+tile_set = SubResource("TileSet_bhxla")
+format = 2
+layer_1/name = "LDTK_Collisions"
+layer_1/tile_data = PackedInt32Array(65540, 110, 0, 65541, 110, 0, 65542, 110, 0, 65543, 110, 0, 65544, 110, 0, 131074, 110, 0, 131075, 110, 0, 131076, 110, 0, 131080, 110, 0, 131081, 110, 0, 131082, 110, 0, 131083, 110, 0, 131084, 110, 0, 131085, 110, 0, 131086, 110, 0, 131087, 110, 0, 196610, 110, 0, 196618, 110, 0, 196619, 110, 0, 196620, 110, 0, 196621, 110, 0, 196622, 110, 0, 196623, 110, 0, 262146, 110, 0, 262149, 110, 0, 262150, 110, 0, 262151, 110, 0, 262154, 110, 0, 262155, 110, 0, 262156, 110, 0, 262157, 110, 0, 262158, 110, 0, 262159, 110, 0, 327682, 110, 0, 327690, 110, 0, 327691, 110, 0, 327692, 110, 0, 327693, 110, 0, 327694, 110, 0, 327695, 110, 0, 393218, 110, 0, 393229, 110, 0, 393230, 110, 0, 393231, 110, 0, 458754, 110, 0, 458757, 110, 0, 458758, 110, 0, 458759, 110, 0, 458762, 110, 0, 458765, 110, 0, 458766, 110, 0, 458767, 110, 0, 524290, 110, 0, 524298, 110, 0, 524301, 110, 0, 524302, 110, 0, 524303, 110, 0, 589826, 110, 0, 589834, 110, 0, 655362, 110, 0, 655365, 110, 0, 655366, 110, 0, 655367, 110, 0, 655370, 110, 0, 720898, 110, 0, 720906, 110, 0, 720907, 110, 0, 720908, 110, 0, 720909, 110, 0, 786434, 110, 0, 786435, 110, 0, 786436, 110, 0, 786437, 110, 0, 786438, 110, 0, 786439, 110, 0, 786441, 110, 0, 786442, 110, 0, 786445, 110, 0, 786446, 110, 0, 786447, 110, 0, 851974, 110, 0, 851981, 110, 0, 917510, 110, 0, 917511, 110, 0, 917512, 110, 0, 917513, 110, 0, 917514, 110, 0, 917515, 110, 0, 917516, 110, 0, 917517, 110, 0)
+
 [node name="LDTK_Wall_tops" type="TileMap" parent="."]
 position = Vector2(0, -16)
 tile_set = ExtResource("1_i1yic")
@@ -10117,7 +10709,229 @@ layer_1/name = "LDTK_Wall_tops_1"
 layer_1/tile_data = PackedInt32Array(131076, 131073, 65537, 131080, 131073, 1, 196610, 1, 65537, 262146, 131073, 65537, 327682, 131073, 65537, 327690, 65537, 1, 393218, 1, 65537, 458754, 1, 65537, 524290, 65537, 65537, 524298, 131073, 65537, 524301, 131073, 1, 589826, 65537, 65537, 589834, 131073, 65537, 655362, 65537, 65537, 655370, 131073, 65537, 720898, 1, 65537, 786434, 131073, 1, 786442, 131073, 65537, 851974, 65537, 65537, 851981, 131073, 65537, 917510, 131073, 1, 917517, 1, 65537, 65541, 65537, 0, 65542, 65537, 0, 65543, 65537, 0, 131075, 65537, 0, 131081, 65537, 0, 262149, 65537, 0, 262150, 65537, 0, 262151, 65537, 0, 458757, 65537, 0, 458758, 65537, 0, 458759, 65537, 0, 655365, 65537, 0, 655366, 65537, 0, 655367, 65537, 0, 720907, 65537, 0, 720908, 65537, 0, 786435, 65537, 0, 786436, 65537, 0, 786437, 65537, 0, 786439, 65537, 0, 786441, 65537, 0, 786446, 65537, 0, 786447, 65537, 0, 917511, 65537, 0, 917512, 65537, 0, 917513, 65537, 0, 917514, 65537, 0, 917515, 65537, 0, 917516, 65537, 0, 65540, 1, 0, 65544, 1, 65536, 131074, 1, 0, 458762, 1, 0, 720909, 1, 65536, 131082, 131073, 2, 720906, 131073, 65538, 786438, 131073, 2, 786445, 131073, 65538)
 layer_2/name = "LDTK_Wall_tops_2"
 layer_2/tile_data = PackedInt32Array(262149, 1, 0, 262151, 1, 65536, 458757, 1, 0, 458759, 1, 65536, 458762, 1, 65536, 655365, 1, 0, 655367, 1, 65536, 786439, 1, 65536, 786441, 1, 0, 65540, 131073, 65538, 65544, 131073, 2, 131074, 131073, 65538, 720909, 131073, 2, 786438, 131073, 65538, 131076, 131073, 0, 131080, 131073, 65536, 720906, 131073, 65536, 786434, 131073, 65536, 786442, 131073, 0, 786445, 131073, 65536, 917510, 131073, 65536, 917517, 131073, 0)
-metadata/LDTK_instance = {
+metadata/LDTK_layerDefinition = {
+"__type": "AutoLayer",
+"autoRuleGroups": [{
+"active": true,
+"collapsed": null,
+"color": "#E43B44",
+"icon": null,
+"isOptional": false,
+"name": "Wall top edges",
+"rules": [{
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": true,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [-1e+06, 1e+06, 0.0, 1e+06, 1e+06, 0.0, 0.0, 0.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 8.06922e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [2.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 132.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}, {
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": true,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, 0.0, 0.0, 1.0, 1.0, 0.0, -1.0, 1.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 4.71353e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [24.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 131.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}, {
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": true,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, -1.0, 0.0, -1.0, 1.0, 0.0, 0.0, 0.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 7.55582e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [0.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 117.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}, {
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": false,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, -1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 2.39866e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [1.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 122.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}, {
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": true,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, 1.0, 0.0, -1.0, 1.0, 0.0, 0.0, 0.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 8.97235e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [11.0, 12.0, 13.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 121.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}, {
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": false,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": false,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -1.0, 0.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 5.17814e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [23.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 127.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}],
+"uid": 116.0,
+"usesWizard": false
+}],
+"autoSourceLayerDefUid": 110.0,
+"autoTilesetDefUid": null,
+"canSelectWhenInactive": true,
+"displayOpacity": 1.0,
+"doc": "This layer contains all visuals for the top faces of the walls",
+"excludedTags": [],
+"gridSize": 16.0,
+"guideGridHei": 0.0,
+"guideGridWid": 0.0,
+"hideFieldsWhenInactive": false,
+"hideInList": false,
+"identifier": "Wall_tops",
+"inactiveOpacity": 1.0,
+"intGridValues": [],
+"intGridValuesGroups": [],
+"parallaxFactorX": 0.0,
+"parallaxFactorY": 0.0,
+"parallaxScaling": true,
+"pxOffsetX": 0.0,
+"pxOffsetY": -16.0,
+"renderInWorldView": false,
+"requiredTags": [],
+"tilePivotX": 0.0,
+"tilePivotY": 0.0,
+"tilesetDefUid": 1.0,
+"type": 0.0,
+"uiColor": "#D77643",
+"uid": 115.0
+}
+metadata/LDTK_layerInstance = {
 "__cHei": 16.0,
 "__cWid": 16.0,
 "__gridSize": 16.0,
@@ -11237,7 +12051,39 @@ metadata/LDTK_instance = {
 }
 
 [node name="LDTK_Entities" type="Node2D" parent="."]
-metadata/LDTK_instance = {
+metadata/LDTK_layerDefinition = {
+"__type": "Entities",
+"autoRuleGroups": [],
+"autoSourceLayerDefUid": null,
+"autoTilesetDefUid": null,
+"canSelectWhenInactive": true,
+"displayOpacity": 1.0,
+"doc": null,
+"excludedTags": [],
+"gridSize": 16.0,
+"guideGridHei": 0.0,
+"guideGridWid": 0.0,
+"hideFieldsWhenInactive": false,
+"hideInList": false,
+"identifier": "Entities",
+"inactiveOpacity": 1.0,
+"intGridValues": [],
+"intGridValuesGroups": [],
+"parallaxFactorX": 0.0,
+"parallaxFactorY": 0.0,
+"parallaxScaling": true,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"renderInWorldView": true,
+"requiredTags": [],
+"tilePivotX": 0.0,
+"tilePivotY": 0.0,
+"tilesetDefUid": null,
+"type": 1.0,
+"uiColor": "#0099DB",
+"uid": 54.0
+}
+metadata/LDTK_layerInstance = {
 "__cHei": 16.0,
 "__cWid": 16.0,
 "__gridSize": 16.0,
@@ -11611,7 +12457,7 @@ metadata/LDTK_entities = {
 "uid": 62.0,
 "width": 16.0
 }
-metadata/LDTK_fields = [{
+metadata/LDTK_fieldInstances = [{
 "__identifier": "lockedWith",
 "__tile": null,
 "__type": "LocalEnum.Item",
@@ -11619,6 +12465,110 @@ metadata/LDTK_fields = [{
 "defUid": 69.0,
 "realEditorValues": []
 }]
+metadata/LDTK_entityDefinition = {
+"color": "#B86F50",
+"doc": null,
+"exportToToc": false,
+"fieldDefs": [{
+"__type": "LocalEnum.Item",
+"acceptFileTypes": null,
+"allowOutOfLevelRef": true,
+"allowedRefTags": [],
+"allowedRefs": 1.0,
+"allowedRefsEntityUid": null,
+"arrayMaxLength": null,
+"arrayMinLength": null,
+"autoChainRef": false,
+"canBeNull": true,
+"defaultOverride": null,
+"doc": null,
+"editorAlwaysShow": false,
+"editorCutLongValues": true,
+"editorDisplayColor": null,
+"editorDisplayMode": 14.0,
+"editorDisplayPos": 2.0,
+"editorDisplayScale": 1.0,
+"editorLinkStyle": 1.0,
+"editorShowInWorld": true,
+"editorTextPrefix": null,
+"editorTextSuffix": null,
+"identifier": "lockedWith",
+"isArray": false,
+"max": null,
+"min": null,
+"regex": null,
+"symmetricalRef": false,
+"textLanguageMode": null,
+"tilesetUid": null,
+"type": "F_Enum(66)",
+"uid": 69.0,
+"useForSmartColor": false
+}],
+"fillOpacity": 0.27,
+"height": 16.0,
+"hollow": false,
+"identifier": "Door",
+"keepAspectRatio": false,
+"limitBehavior": 1.0,
+"limitScope": 1.0,
+"lineOpacity": 0.0,
+"maxCount": 0.0,
+"maxHeight": null,
+"maxWidth": null,
+"minHeight": null,
+"minWidth": null,
+"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
+"pivotX": 0.0,
+"pivotY": 0.0,
+"renderMode": 3.0,
+"resizableX": true,
+"resizableY": true,
+"showName": true,
+"tags": ["environment"],
+"tileId": null,
+"tileOpacity": 0.62,
+"tileRect": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 256.0,
+"y": 272.0
+},
+"tileRenderMode": 4.0,
+"tilesetId": 104.0,
+"uiTileRect": null,
+"uid": 62.0,
+"width": 16.0
+}
+metadata/LDTK_entityInstance = {
+"__grid": [10.0, 6.0],
+"__identifier": "Door",
+"__pivot": [0.0, 0.0],
+"__smartColor": "#B86F50",
+"__tags": ["environment"],
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 256.0,
+"y": 272.0
+},
+"__worldX": 160.0,
+"__worldY": 96.0,
+"defUid": 62.0,
+"fieldInstances": [{
+"__identifier": "lockedWith",
+"__tile": null,
+"__type": "LocalEnum.Item",
+"__value": null,
+"defUid": 69.0,
+"realEditorValues": []
+}],
+"height": 16.0,
+"iid": "9b204460-c640-11ed-8430-dbaaf87f9ec4",
+"px": [160.0, 96.0],
+"width": 16.0
+}
 
 [node name="LDTK_Item-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7k7ef")]
 position = Vector2(88, 88)
@@ -11697,7 +12647,7 @@ metadata/LDTK_entities = {
 "uid": 63.0,
 "width": 20.0
 }
-metadata/LDTK_fields = [{
+metadata/LDTK_fieldInstances = [{
 "__identifier": "type",
 "__tile": {
 "h": 16.0,
@@ -11714,6 +12664,119 @@ metadata/LDTK_fields = [{
 "params": ["Wood"]
 }]
 }]
+metadata/LDTK_entityDefinition = {
+"color": "#FF0044",
+"doc": null,
+"exportToToc": false,
+"fieldDefs": [{
+"__type": "LocalEnum.Item",
+"acceptFileTypes": null,
+"allowOutOfLevelRef": true,
+"allowedRefTags": [],
+"allowedRefs": 1.0,
+"allowedRefsEntityUid": null,
+"arrayMaxLength": null,
+"arrayMinLength": null,
+"autoChainRef": true,
+"canBeNull": false,
+"defaultOverride": null,
+"doc": null,
+"editorAlwaysShow": false,
+"editorCutLongValues": true,
+"editorDisplayColor": null,
+"editorDisplayMode": 2.0,
+"editorDisplayPos": 0.0,
+"editorDisplayScale": 1.0,
+"editorLinkStyle": 3.0,
+"editorShowInWorld": true,
+"editorTextPrefix": null,
+"editorTextSuffix": null,
+"identifier": "type",
+"isArray": false,
+"max": null,
+"min": null,
+"regex": null,
+"symmetricalRef": false,
+"textLanguageMode": null,
+"tilesetUid": null,
+"type": "F_Enum(66)",
+"uid": 146.0,
+"useForSmartColor": false
+}],
+"fillOpacity": 0.0,
+"height": 20.0,
+"hollow": false,
+"identifier": "Item",
+"keepAspectRatio": false,
+"limitBehavior": 1.0,
+"limitScope": 1.0,
+"lineOpacity": 0.0,
+"maxCount": 0.0,
+"maxHeight": null,
+"maxWidth": null,
+"minHeight": null,
+"minWidth": null,
+"nineSliceBorders": [],
+"pivotX": 0.5,
+"pivotY": 0.5,
+"renderMode": 3.0,
+"resizableX": false,
+"resizableY": false,
+"showName": false,
+"tags": ["actor"],
+"tileId": null,
+"tileOpacity": 1.0,
+"tileRect": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 64.0,
+"y": 64.0
+},
+"tileRenderMode": 1.0,
+"tilesetId": 104.0,
+"uiTileRect": null,
+"uid": 63.0,
+"width": 20.0
+}
+metadata/LDTK_entityInstance = {
+"__grid": [5.0, 5.0],
+"__identifier": "Item",
+"__pivot": [0.5, 0.5],
+"__smartColor": "#FF0044",
+"__tags": ["actor"],
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 192.0,
+"y": 944.0
+},
+"__worldX": 88.0,
+"__worldY": 88.0,
+"defUid": 63.0,
+"fieldInstances": [{
+"__identifier": "type",
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 192.0,
+"y": 944.0
+},
+"__type": "LocalEnum.Item",
+"__value": "Wood",
+"defUid": 146.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["Wood"]
+}]
+}],
+"height": 20.0,
+"iid": "d60070f0-c640-11ed-8430-1fbe3e7e0e50",
+"px": [88.0, 88.0],
+"width": 20.0
+}
 
 [node name="LDTK_Item-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7k7ef")]
 position = Vector2(136, 104)
@@ -11792,7 +12855,7 @@ metadata/LDTK_entities = {
 "uid": 63.0,
 "width": 20.0
 }
-metadata/LDTK_fields = [{
+metadata/LDTK_fieldInstances = [{
 "__identifier": "type",
 "__tile": {
 "h": 16.0,
@@ -11809,6 +12872,119 @@ metadata/LDTK_fields = [{
 "params": ["Wood"]
 }]
 }]
+metadata/LDTK_entityDefinition = {
+"color": "#FF0044",
+"doc": null,
+"exportToToc": false,
+"fieldDefs": [{
+"__type": "LocalEnum.Item",
+"acceptFileTypes": null,
+"allowOutOfLevelRef": true,
+"allowedRefTags": [],
+"allowedRefs": 1.0,
+"allowedRefsEntityUid": null,
+"arrayMaxLength": null,
+"arrayMinLength": null,
+"autoChainRef": true,
+"canBeNull": false,
+"defaultOverride": null,
+"doc": null,
+"editorAlwaysShow": false,
+"editorCutLongValues": true,
+"editorDisplayColor": null,
+"editorDisplayMode": 2.0,
+"editorDisplayPos": 0.0,
+"editorDisplayScale": 1.0,
+"editorLinkStyle": 3.0,
+"editorShowInWorld": true,
+"editorTextPrefix": null,
+"editorTextSuffix": null,
+"identifier": "type",
+"isArray": false,
+"max": null,
+"min": null,
+"regex": null,
+"symmetricalRef": false,
+"textLanguageMode": null,
+"tilesetUid": null,
+"type": "F_Enum(66)",
+"uid": 146.0,
+"useForSmartColor": false
+}],
+"fillOpacity": 0.0,
+"height": 20.0,
+"hollow": false,
+"identifier": "Item",
+"keepAspectRatio": false,
+"limitBehavior": 1.0,
+"limitScope": 1.0,
+"lineOpacity": 0.0,
+"maxCount": 0.0,
+"maxHeight": null,
+"maxWidth": null,
+"minHeight": null,
+"minWidth": null,
+"nineSliceBorders": [],
+"pivotX": 0.5,
+"pivotY": 0.5,
+"renderMode": 3.0,
+"resizableX": false,
+"resizableY": false,
+"showName": false,
+"tags": ["actor"],
+"tileId": null,
+"tileOpacity": 1.0,
+"tileRect": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 64.0,
+"y": 64.0
+},
+"tileRenderMode": 1.0,
+"tilesetId": 104.0,
+"uiTileRect": null,
+"uid": 63.0,
+"width": 20.0
+}
+metadata/LDTK_entityInstance = {
+"__grid": [8.0, 6.0],
+"__identifier": "Item",
+"__pivot": [0.5, 0.5],
+"__smartColor": "#FF0044",
+"__tags": ["actor"],
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 192.0,
+"y": 944.0
+},
+"__worldX": 136.0,
+"__worldY": 104.0,
+"defUid": 63.0,
+"fieldInstances": [{
+"__identifier": "type",
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 192.0,
+"y": 944.0
+},
+"__type": "LocalEnum.Item",
+"__value": "Wood",
+"defUid": 146.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["Wood"]
+}]
+}],
+"height": 20.0,
+"iid": "d83181c0-c640-11ed-8430-8ff8bb36b114",
+"px": [136.0, 104.0],
+"width": 20.0
+}
 
 [node name="LDTK_Item-2" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7k7ef")]
 position = Vector2(72, 136)
@@ -11887,7 +13063,7 @@ metadata/LDTK_entities = {
 "uid": 63.0,
 "width": 20.0
 }
-metadata/LDTK_fields = [{
+metadata/LDTK_fieldInstances = [{
 "__identifier": "type",
 "__tile": {
 "h": 16.0,
@@ -11904,6 +13080,119 @@ metadata/LDTK_fields = [{
 "params": ["Wood"]
 }]
 }]
+metadata/LDTK_entityDefinition = {
+"color": "#FF0044",
+"doc": null,
+"exportToToc": false,
+"fieldDefs": [{
+"__type": "LocalEnum.Item",
+"acceptFileTypes": null,
+"allowOutOfLevelRef": true,
+"allowedRefTags": [],
+"allowedRefs": 1.0,
+"allowedRefsEntityUid": null,
+"arrayMaxLength": null,
+"arrayMinLength": null,
+"autoChainRef": true,
+"canBeNull": false,
+"defaultOverride": null,
+"doc": null,
+"editorAlwaysShow": false,
+"editorCutLongValues": true,
+"editorDisplayColor": null,
+"editorDisplayMode": 2.0,
+"editorDisplayPos": 0.0,
+"editorDisplayScale": 1.0,
+"editorLinkStyle": 3.0,
+"editorShowInWorld": true,
+"editorTextPrefix": null,
+"editorTextSuffix": null,
+"identifier": "type",
+"isArray": false,
+"max": null,
+"min": null,
+"regex": null,
+"symmetricalRef": false,
+"textLanguageMode": null,
+"tilesetUid": null,
+"type": "F_Enum(66)",
+"uid": 146.0,
+"useForSmartColor": false
+}],
+"fillOpacity": 0.0,
+"height": 20.0,
+"hollow": false,
+"identifier": "Item",
+"keepAspectRatio": false,
+"limitBehavior": 1.0,
+"limitScope": 1.0,
+"lineOpacity": 0.0,
+"maxCount": 0.0,
+"maxHeight": null,
+"maxWidth": null,
+"minHeight": null,
+"minWidth": null,
+"nineSliceBorders": [],
+"pivotX": 0.5,
+"pivotY": 0.5,
+"renderMode": 3.0,
+"resizableX": false,
+"resizableY": false,
+"showName": false,
+"tags": ["actor"],
+"tileId": null,
+"tileOpacity": 1.0,
+"tileRect": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 64.0,
+"y": 64.0
+},
+"tileRenderMode": 1.0,
+"tilesetId": 104.0,
+"uiTileRect": null,
+"uid": 63.0,
+"width": 20.0
+}
+metadata/LDTK_entityInstance = {
+"__grid": [4.0, 8.0],
+"__identifier": "Item",
+"__pivot": [0.5, 0.5],
+"__smartColor": "#FF0044",
+"__tags": ["actor"],
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 192.0,
+"y": 944.0
+},
+"__worldX": 72.0,
+"__worldY": 136.0,
+"defUid": 63.0,
+"fieldInstances": [{
+"__identifier": "type",
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 192.0,
+"y": 944.0
+},
+"__type": "LocalEnum.Item",
+"__value": "Wood",
+"defUid": 146.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["Wood"]
+}]
+}],
+"height": 20.0,
+"iid": "da07c860-c640-11ed-8430-4d5c0daa8a2b",
+"px": [72.0, 136.0],
+"width": 20.0
+}
 
 [node name="LDTK_Item-3" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7k7ef")]
 position = Vector2(200, 200)
@@ -11982,7 +13271,7 @@ metadata/LDTK_entities = {
 "uid": 63.0,
 "width": 20.0
 }
-metadata/LDTK_fields = [{
+metadata/LDTK_fieldInstances = [{
 "__identifier": "type",
 "__tile": {
 "h": 16.0,
@@ -11999,6 +13288,119 @@ metadata/LDTK_fields = [{
 "params": ["Gold"]
 }]
 }]
+metadata/LDTK_entityDefinition = {
+"color": "#FF0044",
+"doc": null,
+"exportToToc": false,
+"fieldDefs": [{
+"__type": "LocalEnum.Item",
+"acceptFileTypes": null,
+"allowOutOfLevelRef": true,
+"allowedRefTags": [],
+"allowedRefs": 1.0,
+"allowedRefsEntityUid": null,
+"arrayMaxLength": null,
+"arrayMinLength": null,
+"autoChainRef": true,
+"canBeNull": false,
+"defaultOverride": null,
+"doc": null,
+"editorAlwaysShow": false,
+"editorCutLongValues": true,
+"editorDisplayColor": null,
+"editorDisplayMode": 2.0,
+"editorDisplayPos": 0.0,
+"editorDisplayScale": 1.0,
+"editorLinkStyle": 3.0,
+"editorShowInWorld": true,
+"editorTextPrefix": null,
+"editorTextSuffix": null,
+"identifier": "type",
+"isArray": false,
+"max": null,
+"min": null,
+"regex": null,
+"symmetricalRef": false,
+"textLanguageMode": null,
+"tilesetUid": null,
+"type": "F_Enum(66)",
+"uid": 146.0,
+"useForSmartColor": false
+}],
+"fillOpacity": 0.0,
+"height": 20.0,
+"hollow": false,
+"identifier": "Item",
+"keepAspectRatio": false,
+"limitBehavior": 1.0,
+"limitScope": 1.0,
+"lineOpacity": 0.0,
+"maxCount": 0.0,
+"maxHeight": null,
+"maxWidth": null,
+"minHeight": null,
+"minWidth": null,
+"nineSliceBorders": [],
+"pivotX": 0.5,
+"pivotY": 0.5,
+"renderMode": 3.0,
+"resizableX": false,
+"resizableY": false,
+"showName": false,
+"tags": ["actor"],
+"tileId": null,
+"tileOpacity": 1.0,
+"tileRect": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 64.0,
+"y": 64.0
+},
+"tileRenderMode": 1.0,
+"tilesetId": 104.0,
+"uiTileRect": null,
+"uid": 63.0,
+"width": 20.0
+}
+metadata/LDTK_entityInstance = {
+"__grid": [12.0, 12.0],
+"__identifier": "Item",
+"__pivot": [0.5, 0.5],
+"__smartColor": "#FF0044",
+"__tags": ["actor"],
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 0.0,
+"y": 416.0
+},
+"__worldX": 200.0,
+"__worldY": 200.0,
+"defUid": 63.0,
+"fieldInstances": [{
+"__identifier": "type",
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 0.0,
+"y": 416.0
+},
+"__type": "LocalEnum.Item",
+"__value": "Gold",
+"defUid": 146.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["Gold"]
+}]
+}],
+"height": 20.0,
+"iid": "5cbf6010-c640-11ed-8430-bdf779e74a2c",
+"px": [200.0, 200.0],
+"width": 20.0
+}
 
 [node name="LDTK_SecretWall-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_58ql3")]
 position = Vector2(128, 192)
@@ -12043,7 +13445,70 @@ metadata/LDTK_entities = {
 "uid": 148.0,
 "width": 16.0
 }
-metadata/LDTK_fields = []
+metadata/LDTK_fieldInstances = []
+metadata/LDTK_entityDefinition = {
+"color": "#B55088",
+"doc": null,
+"exportToToc": false,
+"fieldDefs": [],
+"fillOpacity": 0.33,
+"height": 16.0,
+"hollow": false,
+"identifier": "SecretWall",
+"keepAspectRatio": false,
+"limitBehavior": 1.0,
+"limitScope": 1.0,
+"lineOpacity": 1.0,
+"maxCount": 0.0,
+"maxHeight": null,
+"maxWidth": null,
+"minHeight": null,
+"minWidth": null,
+"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
+"pivotX": 0.0,
+"pivotY": 0.0,
+"renderMode": 3.0,
+"resizableX": false,
+"resizableY": false,
+"showName": true,
+"tags": ["environment"],
+"tileId": null,
+"tileOpacity": 0.73,
+"tileRect": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 320.0,
+"y": 256.0
+},
+"tileRenderMode": 4.0,
+"tilesetId": 104.0,
+"uiTileRect": null,
+"uid": 148.0,
+"width": 16.0
+}
+metadata/LDTK_entityInstance = {
+"__grid": [8.0, 12.0],
+"__identifier": "SecretWall",
+"__pivot": [0.0, 0.0],
+"__smartColor": "#B55088",
+"__tags": ["environment"],
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 320.0,
+"y": 256.0
+},
+"__worldX": 128.0,
+"__worldY": 192.0,
+"defUid": 148.0,
+"fieldInstances": [],
+"height": 16.0,
+"iid": "778bba10-c640-11ed-8430-45e05816c898",
+"px": [128.0, 192.0],
+"width": 16.0
+}
 
 [node name="LDTK_Button-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_a7hwk")]
 position = Vector2(88, 168)
@@ -12122,7 +13587,7 @@ metadata/LDTK_entities = {
 "uid": 105.0,
 "width": 10.0
 }
-metadata/LDTK_fields = [{
+metadata/LDTK_fieldInstances = [{
 "__identifier": "targets",
 "__tile": null,
 "__type": "Array<EntityRef>",
@@ -12138,6 +13603,118 @@ metadata/LDTK_fields = [{
 "params": ["778bba10-c640-11ed-8430-45e05816c898"]
 }]
 }]
+metadata/LDTK_entityDefinition = {
+"color": "#FF0000",
+"doc": null,
+"exportToToc": false,
+"fieldDefs": [{
+"__type": "Array<EntityRef>",
+"acceptFileTypes": null,
+"allowOutOfLevelRef": false,
+"allowedRefTags": [],
+"allowedRefs": 0.0,
+"allowedRefsEntityUid": null,
+"arrayMaxLength": null,
+"arrayMinLength": null,
+"autoChainRef": true,
+"canBeNull": false,
+"defaultOverride": null,
+"doc": null,
+"editorAlwaysShow": false,
+"editorCutLongValues": true,
+"editorDisplayColor": null,
+"editorDisplayMode": 12.0,
+"editorDisplayPos": 0.0,
+"editorDisplayScale": 1.0,
+"editorLinkStyle": 1.0,
+"editorShowInWorld": true,
+"editorTextPrefix": null,
+"editorTextSuffix": null,
+"identifier": "targets",
+"isArray": true,
+"max": null,
+"min": null,
+"regex": null,
+"symmetricalRef": false,
+"textLanguageMode": null,
+"tilesetUid": null,
+"type": "F_EntityRef",
+"uid": 106.0,
+"useForSmartColor": false
+}],
+"fillOpacity": 0.08,
+"height": 10.0,
+"hollow": false,
+"identifier": "Button",
+"keepAspectRatio": false,
+"limitBehavior": 1.0,
+"limitScope": 1.0,
+"lineOpacity": 0.0,
+"maxCount": 0.0,
+"maxHeight": null,
+"maxWidth": null,
+"minHeight": null,
+"minWidth": null,
+"nineSliceBorders": [4.0, 4.0, 4.0, 4.0],
+"pivotX": 0.5,
+"pivotY": 0.5,
+"renderMode": 3.0,
+"resizableX": false,
+"resizableY": false,
+"showName": true,
+"tags": ["environment"],
+"tileId": null,
+"tileOpacity": 1.0,
+"tileRect": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 272.0,
+"y": 32.0
+},
+"tileRenderMode": 4.0,
+"tilesetId": 104.0,
+"uiTileRect": null,
+"uid": 105.0,
+"width": 10.0
+}
+metadata/LDTK_entityInstance = {
+"__grid": [5.0, 10.0],
+"__identifier": "Button",
+"__pivot": [0.5, 0.5],
+"__smartColor": "#FF0000",
+"__tags": ["environment"],
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 272.0,
+"y": 32.0
+},
+"__worldX": 88.0,
+"__worldY": 168.0,
+"defUid": 105.0,
+"fieldInstances": [{
+"__identifier": "targets",
+"__tile": null,
+"__type": "Array<EntityRef>",
+"__value": [{
+"entityIid": "778bba10-c640-11ed-8430-45e05816c898",
+"layerIid": "5b1771e1-c640-11ed-8430-c567ed490639",
+"levelIid": "5b1771e0-c640-11ed-8430-9b64f8cc95ad",
+"worldIid": "c9ef2d10-c640-11ed-ad34-f553e1d803f9"
+}],
+"defUid": 106.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["778bba10-c640-11ed-8430-45e05816c898"]
+}]
+}],
+"height": 10.0,
+"iid": "8da3dad0-c640-11ed-8430-b5ffeb3fb035",
+"px": [88.0, 168.0],
+"width": 10.0
+}
 
 [node name="LDTK_Item-4" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_7k7ef")]
 position = Vector2(104, 40)
@@ -12216,7 +13793,7 @@ metadata/LDTK_entities = {
 "uid": 63.0,
 "width": 20.0
 }
-metadata/LDTK_fields = [{
+metadata/LDTK_fieldInstances = [{
 "__identifier": "type",
 "__tile": {
 "h": 16.0,
@@ -12233,3 +13810,116 @@ metadata/LDTK_fields = [{
 "params": ["KeyB"]
 }]
 }]
+metadata/LDTK_entityDefinition = {
+"color": "#FF0044",
+"doc": null,
+"exportToToc": false,
+"fieldDefs": [{
+"__type": "LocalEnum.Item",
+"acceptFileTypes": null,
+"allowOutOfLevelRef": true,
+"allowedRefTags": [],
+"allowedRefs": 1.0,
+"allowedRefsEntityUid": null,
+"arrayMaxLength": null,
+"arrayMinLength": null,
+"autoChainRef": true,
+"canBeNull": false,
+"defaultOverride": null,
+"doc": null,
+"editorAlwaysShow": false,
+"editorCutLongValues": true,
+"editorDisplayColor": null,
+"editorDisplayMode": 2.0,
+"editorDisplayPos": 0.0,
+"editorDisplayScale": 1.0,
+"editorLinkStyle": 3.0,
+"editorShowInWorld": true,
+"editorTextPrefix": null,
+"editorTextSuffix": null,
+"identifier": "type",
+"isArray": false,
+"max": null,
+"min": null,
+"regex": null,
+"symmetricalRef": false,
+"textLanguageMode": null,
+"tilesetUid": null,
+"type": "F_Enum(66)",
+"uid": 146.0,
+"useForSmartColor": false
+}],
+"fillOpacity": 0.0,
+"height": 20.0,
+"hollow": false,
+"identifier": "Item",
+"keepAspectRatio": false,
+"limitBehavior": 1.0,
+"limitScope": 1.0,
+"lineOpacity": 0.0,
+"maxCount": 0.0,
+"maxHeight": null,
+"maxWidth": null,
+"minHeight": null,
+"minWidth": null,
+"nineSliceBorders": [],
+"pivotX": 0.5,
+"pivotY": 0.5,
+"renderMode": 3.0,
+"resizableX": false,
+"resizableY": false,
+"showName": false,
+"tags": ["actor"],
+"tileId": null,
+"tileOpacity": 1.0,
+"tileRect": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 64.0,
+"y": 64.0
+},
+"tileRenderMode": 1.0,
+"tilesetId": 104.0,
+"uiTileRect": null,
+"uid": 63.0,
+"width": 20.0
+}
+metadata/LDTK_entityInstance = {
+"__grid": [6.0, 2.0],
+"__identifier": "Item",
+"__pivot": [0.5, 0.5],
+"__smartColor": "#FF0044",
+"__tags": ["actor"],
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 288.0,
+"y": 112.0
+},
+"__worldX": 104.0,
+"__worldY": 40.0,
+"defUid": 63.0,
+"fieldInstances": [{
+"__identifier": "type",
+"__tile": {
+"h": 16.0,
+"tilesetUid": 104.0,
+"w": 16.0,
+"x": 288.0,
+"y": 112.0
+},
+"__type": "LocalEnum.Item",
+"__value": "KeyB",
+"defUid": 146.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["KeyB"]
+}]
+}],
+"height": 20.0,
+"iid": "32ec4110-c640-11ed-8430-09dce52db41d",
+"px": [104.0, 40.0],
+"width": 20.0
+}

@@ -142,7 +142,7 @@ texture = ExtResource("1_q82x8")
 custom_data_layer_0/name = "LDTK_TopDown_by_deepnight"
 custom_data_layer_0/type = 27
 sources/1 = SubResource("TileSetAtlasSource_ssxff")
-metadata/LDTK_tilesets = {
+metadata/LDTK_tilesetDefinition = {
 "__cHei": 11.0,
 "__cWid": 11.0,
 "cachedPixelData": {

@@ -14,15 +14,16 @@ dest_files=["res://.godot/imported/AutoLayers_3_Mosaic.ldtk-45ef5d26b130b62ae639
 
 [params]
 
-General/prefix_remove="LDTK"
-General/prefix_add="LDTK"
-World/WorldMapping="res://samples/AutoLayers_3_Mosaic/AutoLayers_3_Mosaic.tscn"
-Tileset/create_if_not_exists=true
-Tileset/add_metadata=true
+General/prefix="LDTK"
+World/WorldScenes="res://samples/AutoLayers_3_Mosaic/AutoLayers_3_Mosaic.tscn"
+Tileset/add_tileset_definition_to_meta=false
 Tileset/import_LDTK_tile_custom_data=true
-Tileset/Mapping/Inca_back2_by_Kronbits="res://samples/AutoLayers_3_Mosaic/Tileset/Inca_back2_by_Kronbits.tres"
-Tileset/Mapping/Inca_extended_front_by_Kronbits="res://samples/AutoLayers_3_Mosaic/Tileset/Inca_extended_front_by_Kronbits.tres"
-Entity/entity_add_metadata=true
-Level/level_add_metadata=true
+Tileset/Resources/Inca_back2_by_Kronbits="res://samples/AutoLayers_3_Mosaic/Tileset/Inca_back2_by_Kronbits.tres"
+Tileset/Resources/Inca_extended_front_by_Kronbits="res://samples/AutoLayers_3_Mosaic/Tileset/Inca_extended_front_by_Kronbits.tres"
+Entity/add_entity_definition_to_meta=true
+Entity/add_entity_instance_to_meta=true
+Level/add_level_instance_to_meta=true
+Level/add_layer_instance_to_meta=true
+Level/add_layer_definition_to_meta=true
 Level/import_IntGrid=false
-Level/Mapping/Mosaic_demo="res://samples/AutoLayers_3_Mosaic/Level/Mosaic_demo.tscn"
+Level/Scenes/Mosaic_demo="res://samples/AutoLayers_3_Mosaic/Level/Mosaic_demo.tscn"

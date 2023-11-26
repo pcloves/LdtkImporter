@@ -1,12 +1,13 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="PackedScene" uid="uid://dstd5jyvnnxkl" path="res://samples/AutoLayers_4_Assistant/Level/Mosaic_demo.tscn" id="1_vn723"]
+[ext_resource type="PackedScene" uid="uid://dstd5jyvnnxkl" path="res://samples/AutoLayers_4_Assistant/Level/Mosaic_demo.tscn" id="1_170ad"]
 
 [node name="AutoLayers_4_Assistant" type="Node2D"]
 
-[node name="LDTK_Mosaic_demo" type="Node2D" parent="." instance=ExtResource("1_vn723")]
+[node name="LDTK_Mosaic_demo" type="Node2D" parent="." instance=ExtResource("1_170ad")]
 position = Vector2(-1, -1)
-metadata/LDTK_level = {
+metadata/LDTK_fieldInstances = []
+metadata/LDTK_levelInstance = {
 "__bgColor": "#222225",
 "__bgPos": null,
 "__neighbours": [],
@@ -1797,4 +1798,3 @@ metadata/LDTK_level = {
 "worldX": -1.0,
 "worldY": -1.0
 }
-metadata/LDTK_fieldInstances = []

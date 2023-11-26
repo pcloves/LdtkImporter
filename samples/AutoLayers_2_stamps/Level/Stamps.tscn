@@ -4,7 +4,8 @@
 
 [node name="LDTK_Stamps" type="Node2D"]
 position = Vector2(-1, -1)
-metadata/LDTK_level = {
+metadata/LDTK_fieldInstances = []
+metadata/LDTK_levelInstance = {
 "__bgColor": "#222225",
 "__bgPos": null,
 "__neighbours": [],
@@ -878,7 +879,6 @@ metadata/LDTK_level = {
 "worldX": -1.0,
 "worldY": -1.0
 }
-metadata/LDTK_fieldInstances = []
 
 [node name="LDTK_IntGrid" type="TileMap" parent="."]
 tile_set = ExtResource("1_soegx")
@@ -887,7 +887,131 @@ layer_0/name = "LDTK_IntGrid_0"
 layer_0/tile_data = PackedInt32Array(131079, 131073, 7, 131081, 131073, 7, 131083, 131073, 7, 131085, 131073, 7, 196615, 131073, 7, 196616, 131073, 7, 196617, 131073, 7, 196618, 131073, 7, 196619, 131073, 7, 196620, 131073, 7, 196621, 131073, 7, 393219, 131073, 7, 393221, 131073, 7, 393223, 131073, 7, 393225, 131073, 7, 393227, 131073, 7, 393228, 131073, 7, 458754, 131073, 7, 458755, 131073, 7, 458756, 131073, 7, 458757, 131073, 7, 458758, 131073, 7, 458759, 131073, 7, 458761, 131073, 7, 458762, 131073, 7, 458763, 131073, 7, 458764, 131073, 7, 524291, 131073, 7, 524293, 131073, 7, 524297, 131073, 7, 524299, 131073, 7, 524300, 131073, 7, 589826, 131073, 7, 589827, 131073, 7, 589828, 131073, 7, 589829, 131073, 7, 589830, 131073, 7, 589831, 131073, 7, 589833, 131073, 7, 589834, 131073, 7, 589835, 131073, 7, 589836, 131073, 7, 655362, 131073, 7, 655363, 131073, 7, 655365, 131073, 7, 655367, 131073, 7, 720900, 131073, 7, 720901, 131073, 7, 720902, 131073, 7, 720903, 131073, 7, 720906, 131073, 7, 720907, 131073, 7, 720908, 131073, 7, 720909, 131073, 7, 720910, 131073, 7, 786436, 131073, 7, 786437, 131073, 7, 786438, 131073, 7, 786439, 131073, 7, 786443, 131073, 7, 786445, 131073, 7, 786446, 131073, 7, 851979, 131073, 7, 851980, 131073, 7, 851981, 131073, 7, 851982, 131073, 7, 917515, 131073, 7, 917516, 131073, 7, 917517, 131073, 7, 917518, 131073, 7, 131080, 131073, 2, 131082, 131073, 2, 131084, 131073, 2, 393220, 131073, 2, 393222, 131073, 2, 393226, 131073, 2, 524290, 131073, 2, 524292, 131073, 2, 524298, 131073, 2, 655364, 131073, 2, 655366, 131073, 2, 786444, 131073, 2)
 layer_1/name = "LDTK_IntGrid_1"
 layer_1/tile_data = PackedInt32Array(196616, 131073, 3, 131081, 196609, 2, 196617, 196609, 3, 196618, 131073, 3, 131083, 196609, 2, 196619, 196609, 3, 196620, 131073, 3, 131085, 196609, 2, 196621, 196609, 3, 458756, 131073, 3, 393221, 196609, 2, 458757, 196609, 3, 458758, 131073, 3, 393223, 196609, 2, 458759, 196609, 3, 458762, 131073, 3, 393227, 196609, 2, 458763, 196609, 3, 589826, 131073, 3, 524291, 196609, 2, 589827, 196609, 3, 589828, 131073, 3, 524293, 196609, 2, 589829, 196609, 3, 589834, 131073, 3, 524299, 196609, 2, 589835, 196609, 3, 720900, 131073, 3, 655365, 196609, 2, 720901, 196609, 3, 720902, 131073, 3, 655367, 196609, 2, 720903, 196609, 3, 851980, 131073, 3, 786445, 196609, 2, 851981, 196609, 3)
-metadata/LDTK_instance = {
+metadata/LDTK_layerDefinition = {
+"__type": "IntGrid",
+"autoRuleGroups": [{
+"active": true,
+"collapsed": null,
+"color": null,
+"icon": null,
+"isOptional": false,
+"name": "Stamp",
+"rules": [{
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": true,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": false,
+"flipY": false,
+"outOfBoundsValue": 1.0,
+"pattern": [0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 3.89748e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 3.0,
+"tileIds": [42.0, 62.0, 43.0, 63.0],
+"tileMode": 1.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 13.0,
+"xModulo": 2.0,
+"xOffset": 0.0,
+"yModulo": 2.0,
+"yOffset": 0.0
+}],
+"uid": 12.0,
+"usesWizard": false
+}, {
+"active": true,
+"collapsed": null,
+"color": null,
+"icon": null,
+"isOptional": false,
+"name": "Wall base",
+"rules": [{
+"active": true,
+"alpha": 1.0,
+"breakOnMatch": true,
+"chance": 1.0,
+"checker": 1.0,
+"flipX": false,
+"flipY": false,
+"outOfBoundsValue": null,
+"pattern": [1.0],
+"perlinActive": false,
+"perlinOctaves": 2.0,
+"perlinScale": 0.2,
+"perlinSeed": 7.95916e+06,
+"pivotX": 0.0,
+"pivotY": 0.0,
+"size": 1.0,
+"tileIds": [142.0],
+"tileMode": 0.0,
+"tileRandomXMax": 0.0,
+"tileRandomXMin": 0.0,
+"tileRandomYMax": 0.0,
+"tileRandomYMin": 0.0,
+"tileXOffset": 0.0,
+"tileYOffset": 0.0,
+"uid": 11.0,
+"xModulo": 1.0,
+"xOffset": 0.0,
+"yModulo": 1.0,
+"yOffset": 0.0
+}],
+"uid": 10.0,
+"usesWizard": false
+}],
+"autoSourceLayerDefUid": null,
+"autoTilesetDefUid": null,
+"canSelectWhenInactive": true,
+"displayOpacity": 1.0,
+"doc": null,
+"excludedTags": [],
+"gridSize": 16.0,
+"guideGridHei": 0.0,
+"guideGridWid": 0.0,
+"hideFieldsWhenInactive": true,
+"hideInList": false,
+"identifier": "IntGrid",
+"inactiveOpacity": 1.0,
+"intGridValues": [{
+"color": "#FFFFFF",
+"groupUid": 0.0,
+"identifier": "walls",
+"tile": {
+"h": 16.0,
+"tilesetUid": 1.0,
+"w": 16.0,
+"x": 0.0,
+"y": 112.0
+},
+"value": 1.0
+}],
+"intGridValuesGroups": [],
+"parallaxFactorX": 0.0,
+"parallaxFactorY": 0.0,
+"parallaxScaling": true,
+"pxOffsetX": 0.0,
+"pxOffsetY": 0.0,
+"renderInWorldView": true,
+"requiredTags": [],
+"tilePivotX": 0.0,
+"tilePivotY": 0.0,
+"tilesetDefUid": 1.0,
+"type": 2.0,
+"uiColor": "#D77643",
+"uid": 2.0
+}
+metadata/LDTK_layerInstance = {
 "__cHei": 16.0,
 "__cWid": 17.0,
 "__gridSize": 16.0,
