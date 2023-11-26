@@ -15,6 +15,8 @@ public partial class Level : IImporter, IJsonOnDeserialized
     [JsonIgnore] public Node2D Root { get; set; }
     [JsonIgnore] public string ScenePath { get; set; }
     [JsonIgnore] public string JsonString { get; set; }
+    [JsonIgnore] public int LevelIndex { get; set; }
+
 
     public Error PreImport(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
@@ -55,7 +57,7 @@ public partial class Level : IImporter, IJsonOnDeserialized
 
         Root.RemoveMetaByPrefix(prefix);
         Root.RemoveChildByNamePrefix(prefix);
-        Root.Position = new Vector2(WorldX, WorldY);
+        Root.Position = _getWorldPosition(ldtkJson);
 
         GD.Print("   PreImport Layer");
         foreach (var layerInstance in LayerInstances)
@@ -74,14 +76,14 @@ public partial class Level : IImporter, IJsonOnDeserialized
         var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
         var addLevelInstance2Meta = options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionLevelAddLevelInstanceToMeta);
         var fieldInstance = Json.ParseString(JsonSerializer.Serialize(FieldInstances));
-        
+
         Root.SetMeta($"{prefix}_fieldInstances", fieldInstance);
-        
+
         if (addLevelInstance2Meta)
         {
             Root.SetMeta($"{prefix}_levelInstance", Json.ParseString(JsonSerializer.Serialize(this)));
         }
-        
+
         foreach (var layerInstance in LayerInstances)
         {
             GD.Print($"   Import Layer:{layerInstance.Identifier}:{layerInstance.Type}");
@@ -92,9 +94,60 @@ public partial class Level : IImporter, IJsonOnDeserialized
         return Error.Ok;
     }
 
+    private Vector2 _getWorldPosition(LdtkJson ldtkJson)
+    {
+        var position = Vector2.Zero;
+        switch (ldtkJson.WorldLayout)
+        {
+            case WorldLayout.Free:
+            case WorldLayout.GridVania:
+                position = new Vector2(WorldX, WorldY);
+                break;
+            case WorldLayout.LinearHorizontal:
+                var x = ldtkJson.Levels.Where(level => level.LevelIndex < LevelIndex).Select(level => level.PxWid).Sum();
+                position = new Vector2(x, 0);
+                break;
+            case WorldLayout.LinearVertical:
+                var y = ldtkJson.Levels
+                    .Where(level => level.LevelIndex < LevelIndex)
+                    .Select(level => level.PxHei)
+                    .Sum();
+                position = new Vector2(0, y);
+                break;
+        }
+
+
+        return position;
+    }
+
+    private void _importBackgroundImage(Dictionary options, LdtkJson ldtkJson)
+    {
+        if (!string.IsNullOrEmpty(BgRelPath))
+        {
+            var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
+            var bgNode = new Sprite2D();
+
+            var bgPath = ldtkJson.Path.GetBaseDir().PathJoin(BgRelPath);
+            var texture2D = ResourceLoader.Load<Texture2D>(bgPath);
+
+            bgNode.Name = $"{prefix}_{bgPath.GetBaseName().GetFile().Replace(" ", "-")}";
+            bgNode.Texture = texture2D;
+            bgNode.Centered = false;
+            bgNode.RegionEnabled = true;
+            bgNode.RegionRect = new Rect2((float)BgPos.CropRect[0], (float)BgPos.CropRect[1], (float)BgPos.CropRect[2], (float)BgPos.CropRect[3]);
+            bgNode.Scale = new Vector2((float)BgPos.Scale[0], (float)BgPos.Scale[1]);
+            bgNode.Offset = new Vector2(BgPos.TopLeftPx[0], BgPos.TopLeftPx[1]);
+
+            Root.AddChild(bgNode);
+            bgNode.Owner = Root;
+        }
+    }
+
     public Error PostImport(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
         GD.Print($"  save level scene:{ScenePath}");
+
+        _importBackgroundImage(options, ldtkJson);
 
         foreach (var layerInstance in LayerInstances.Reverse())
         {

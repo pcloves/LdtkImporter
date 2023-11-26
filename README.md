@@ -108,3 +108,6 @@ Layer`即可
   - [ ] Entity视觉显示支持（`Sprite2D`）
   - [ ] `Entity`导入后处理脚本支持
   - [ ] Enum支持
+
+# 🐞 已知BUG
+- [ ] 每次重新导入后，需要重新`Reload Current Project`或重新打开Godot后，导入的`.tscn`才会生效

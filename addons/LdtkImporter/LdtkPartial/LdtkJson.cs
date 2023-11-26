@@ -42,12 +42,14 @@ public partial class LdtkJson : IImporter
         }
 
         GD.Print(" PreImport Level");
+
+        for (var i = 0; i < Levels.Length; i++) Levels[i].LevelIndex = i;
+
         foreach (var level in Levels)
         {
             error = level.PreImport(ldtkJson, savePath, options, genFiles);
             if (error != Error.Ok) return error;
         }
-
 
         return Error.Ok;
     }
@@ -157,5 +159,4 @@ public partial class LdtkJson : IImporter
 
         return Error.Ok;
     }
-
 }
