@@ -95,7 +95,7 @@ Layer`即可
 # 💣 TODO
 
 - [ ] 运行时
-  - [ ] 支持运行动态修改`IntGrid`，并根据`[LDTK Auto-layer rule definition](https://ldtk.io/json/#ldtk-AutoRuleDef)`实施更新并渲染受影响的`IntGrid`和`AutoLayer`
+  - [ ] 支持运行动态修改`IntGrid`，并根据 [LDTK Auto-layer rule definition](https://ldtk.io/json/#ldtk-AutoRuleDef) 实施更新并渲染受影响的`IntGrid`和`AutoLayer`
 - [ ] World
   - [ ] 导入后处理脚本支持
   - [ ] LDTK [Multi-worlds](https://github.com/deepnight/ldtk/issues/231) 支持
