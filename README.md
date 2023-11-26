@@ -2,7 +2,7 @@
 
 Godot 4 C# [LDtk](https://ldtk.io/) 导入插件
 
-![](https://img.shields.io/badge/Godot-4.2%2B-%20?logo=godotengine&color=%23478CBF) ![](https://img.shields.io/badge/LDtk%201.4.1-%20?color=%23FFCC00)
+![](https://img.shields.io/badge/Godot%20.NET-4.2%2B-%20?logo=godotengine&color=%23478CBF) ![](https://img.shields.io/badge/LDtk%201.4.1-%20?color=%23FFCC00)
 
 > ⚠️ 目前该插件仍处于开发阶段，许多特性还处于调整中，请勿将本插件应用于生产环境！在使用本插件前，请确保已经对项目文件进行备份！
 
