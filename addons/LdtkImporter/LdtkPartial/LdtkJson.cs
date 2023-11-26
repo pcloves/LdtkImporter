@@ -1,11 +1,10 @@
-using System.Linq;
 using System.Text.Json.Serialization;
 using Godot;
 using Godot.Collections;
 
 namespace LdtkImporter;
 
-public partial class LdtkJson : IImporter, IJsonOnDeserialized
+public partial class LdtkJson : IImporter
 {
     [JsonIgnore] public static LdtkJson Project;
     [JsonIgnore] public string Path { get; set; }
@@ -158,15 +157,4 @@ public partial class LdtkJson : IImporter, IJsonOnDeserialized
         return Error.Ok;
     }
 
-    public void OnDeserialized()
-    {
-        var layerInstances = Levels
-            .Select(level => level)
-            .SelectMany(level => level.LayerInstances);
-        
-        foreach (var instance in layerInstances)
-        {
-            instance.Def = Defs.Layers.FirstOrDefault(definition => definition.Uid == instance.LayerDefUid, null);
-        }
-    }
 }

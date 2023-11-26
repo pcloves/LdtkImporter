@@ -7,10 +7,8 @@ path="res://.godot/imported/Typical_2D_platformer_example.ldtk-ba66d4db0bc7c4572
 
 [deps]
 
-files=["res://samples/Typical_2D_platformer_example/Tileset/SunnyLand_by_Ansimuz.tres", "res://samples/Typical_2D_platformer_example/Entity/Player.tscn", "res://samples/Typical_2D_platformer_example/Entity/Chest.tscn", "res://samples/Typical_2D_platformer_example/Entity/Mob.tscn", "res://samples/Typical_2D_platformer_example/Entity/Door.tscn", "res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn", "res://samples/Typical_2D_platformer_example/Level/Top.tscn", "res://samples/Typical_2D_platformer_example/Level/Bottom.tscn", "res://samples/Typical_2D_platformer_example/Typical_2D_platformer_example.tscn"]
-
 source_file="res://samples/Typical_2D_platformer_example.ldtk"
-dest_files=["res://.godot/imported/Typical_2D_platformer_example.ldtk-ba66d4db0bc7c45720f0c894823b10c6.tscn", "res://samples/Typical_2D_platformer_example/Tileset/SunnyLand_by_Ansimuz.tres", "res://samples/Typical_2D_platformer_example/Entity/Player.tscn", "res://samples/Typical_2D_platformer_example/Entity/Chest.tscn", "res://samples/Typical_2D_platformer_example/Entity/Mob.tscn", "res://samples/Typical_2D_platformer_example/Entity/Door.tscn", "res://samples/Typical_2D_platformer_example/Level/Your_typical_2D_platformer.tscn", "res://samples/Typical_2D_platformer_example/Level/Top.tscn", "res://samples/Typical_2D_platformer_example/Level/Bottom.tscn", "res://samples/Typical_2D_platformer_example/Typical_2D_platformer_example.tscn"]
+dest_files=["res://.godot/imported/Typical_2D_platformer_example.ldtk-ba66d4db0bc7c45720f0c894823b10c6.tscn"]
 
 [params]
 

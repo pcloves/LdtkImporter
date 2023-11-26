@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text.Json;
@@ -187,16 +186,6 @@ public partial class TilesetDefinition : IImporter, IJsonOnDeserialized
         DirAccess.MakeDirRecursiveAbsolute(tileSetPath.GetBaseDir());
 
         ResourceSaver.Save(tileSet, tileSetPath);
-    }
-
-    public long GetTileCx(long tileId)
-    {
-        return tileId - CWid * Convert.ToInt64(tileId / CWid);
-    }
-
-    public long GetTileCy(long tileId)
-    {
-        return Convert.ToInt64(tileId / CWid);
     }
 
     private Error UpdateTile(LdtkJson ldtkJson, TileSetAtlasSource source)

@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="PackedScene" uid="uid://73rlnkrupfrw" path="res://samples/AutoLayers_1_basic/Level/AutoLayer.tscn" id="1_0tbde"]
+[ext_resource type="PackedScene" uid="uid://73rlnkrupfrw" path="res://samples/AutoLayers_1_basic/Level/AutoLayer.tscn" id="1_jey6t"]
 
 [node name="AutoLayers_1_basic" type="Node2D"]
 
-[node name="LDTK_AutoLayer" type="Node2D" parent="." instance=ExtResource("1_0tbde")]
+[node name="LDTK_AutoLayer" type="Node2D" parent="." instance=ExtResource("1_jey6t")]
 position = Vector2(-1, -1)
 metadata/LDTK_level = {
 "__bgColor": "#1E2027",
