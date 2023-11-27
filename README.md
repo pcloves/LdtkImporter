@@ -99,9 +99,9 @@ Layer`即可
 - [ ] World
   - [ ] 导入后处理脚本支持
   - [ ] LDTK [Multi-worlds](https://github.com/deepnight/ldtk/issues/231) 支持
-  - [ ] LDTK 默认`Level`背景色支持
+  - [x] LDTK 默认`Level`背景色支持
 - [ ] Level
-  - [ ] 支持`Level`背景色和背景图的导入
+  - [x] 支持`Level`背景色和背景图的导入
   - [ ] LDTK Level fields
   - [ ] `Level` 导入后处理脚本支持
 - [ ] Entity
@@ -111,4 +111,4 @@ Layer`即可
 
 # 🐞 已知BUG
 - [ ] 每次重新导入后，需要重新`Reload Current Project`或重新打开Godot后，导入的`.tscn`才会生效
-- [ ] 目前导入后，没有为Level设置背景色
+- [x] 目前导入后，没有为Level设置背景色
