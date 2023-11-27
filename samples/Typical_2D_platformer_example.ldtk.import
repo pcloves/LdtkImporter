@@ -2,7 +2,7 @@
 
 importer="Ldtk Importer"
 type="Node2D"
-uid="uid://dcye7ct2ddmmf"
+uid="uid://8jiajn1wpysu"
 path="res://.godot/imported/Typical_2D_platformer_example.ldtk-ba66d4db0bc7c45720f0c894823b10c6.tscn"
 
 [deps]
@@ -16,7 +16,7 @@ dest_files=["res://.godot/imported/Typical_2D_platformer_example.ldtk-ba66d4db0b
 
 General/prefix="LDTK"
 World/WorldScenes="res://samples/Typical_2D_platformer_example/Typical_2D_platformer_example.tscn"
-Tileset/add_tileset_definition_to_meta=false
+Tileset/add_tileset_definition_to_meta=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Resources/Internal_Icons="res://samples/Typical_2D_platformer_example/Tileset/Internal_Icons.tres"
 Tileset/Resources/SunnyLand_by_Ansimuz="res://samples/Typical_2D_platformer_example/Tileset/SunnyLand_by_Ansimuz.tres"

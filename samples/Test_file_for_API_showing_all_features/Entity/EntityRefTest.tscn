@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://l7om8qoses12"]
+[gd_scene format=3 uid="uid://c68wxb7tb6km0"]
 
 [node name="LDTK_EntityRefTest" type="Node2D"]
 metadata/LDTK_entityDefinition = {

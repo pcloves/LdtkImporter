@@ -2,7 +2,7 @@
 
 importer="Ldtk Importer"
 type="Node2D"
-uid="uid://dgbd5avhb5xqw"
+uid="uid://bv7nucg7mgbct"
 path="res://.godot/imported/Typical_TopDown_example.ldtk-50c3a6134533be2c98f4d14c1d3b0908.tscn"
 
 [deps]
@@ -30,7 +30,7 @@ Entity/Scenes/SecretWall="res://samples/Typical_TopDown_example/Entity/SecretWal
 Level/add_level_instance_to_meta=true
 Level/add_layer_instance_to_meta=true
 Level/add_layer_definition_to_meta=true
-Level/import_IntGrid=true
+Level/import_IntGrid=false
 Level/Scenes/World_Level_0="res://samples/Typical_TopDown_example/Level/World_Level_0.tscn"
 Level/Scenes/World_Level_1="res://samples/Typical_TopDown_example/Level/World_Level_1.tscn"
 Level/Scenes/World_Level_2="res://samples/Typical_TopDown_example/Level/World_Level_2.tscn"

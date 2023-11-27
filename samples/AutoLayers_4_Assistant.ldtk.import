@@ -2,7 +2,7 @@
 
 importer="Ldtk Importer"
 type="Node2D"
-uid="uid://dsubb5tul6sre"
+uid="uid://yor187t3rrv6"
 path="res://.godot/imported/AutoLayers_4_Assistant.ldtk-a9598736b5c928bbe8967845d22aab6b.tscn"
 
 [deps]
@@ -16,7 +16,7 @@ dest_files=["res://.godot/imported/AutoLayers_4_Assistant.ldtk-a9598736b5c928bbe
 
 General/prefix="LDTK"
 World/WorldScenes="res://samples/AutoLayers_4_Assistant/AutoLayers_4_Assistant.tscn"
-Tileset/add_tileset_definition_to_meta=false
+Tileset/add_tileset_definition_to_meta=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Resources/Inca_extended_front_by_Kronbits="res://samples/AutoLayers_4_Assistant/Tileset/Inca_extended_front_by_Kronbits.tres"
 Entity/add_entity_definition_to_meta=true

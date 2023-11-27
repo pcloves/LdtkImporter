@@ -1,10 +1,10 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://b7elg3k3b3x11"]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://25bnhatuitrg"]
 
-[ext_resource type="Texture2D" uid="uid://c0s24ddbgnm30" path="res://samples/atlas/Cavernas_by_Adam_Saltsman.png" id="1_bewrh"]
+[ext_resource type="Texture2D" uid="uid://c0s24ddbgnm30" path="res://samples/atlas/Cavernas_by_Adam_Saltsman.png" id="1_w4hmg"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qm00"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_obtu3"]
 resource_name = "LDTK_Cavernas_by_Adam_Saltsman"
-texture = ExtResource("1_bewrh")
+texture = ExtResource("1_w4hmg")
 texture_region_size = Vector2i(8, 8)
 4:5/0 = 0
 1:0/0 = 0
@@ -37,7 +37,7 @@ texture_region_size = Vector2i(8, 8)
 tile_size = Vector2i(8, 8)
 custom_data_layer_0/name = "LDTK_Cavernas_by_Adam_Saltsman"
 custom_data_layer_0/type = 27
-sources/9 = SubResource("TileSetAtlasSource_6qm00")
+sources/9 = SubResource("TileSetAtlasSource_obtu3")
 metadata/LDTK_tilesetDefinition = {
 "__cHei": 32.0,
 "__cWid": 12.0,

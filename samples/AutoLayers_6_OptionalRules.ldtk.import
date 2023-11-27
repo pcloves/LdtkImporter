@@ -2,7 +2,7 @@
 
 importer="Ldtk Importer"
 type="Node2D"
-uid="uid://w5pbk0qk2jqu"
+uid="uid://doia4svivgns4"
 path="res://.godot/imported/AutoLayers_6_OptionalRules.ldtk-7fb25802018ce47d3f3dfcc0cea92761.tscn"
 
 [deps]
@@ -16,7 +16,7 @@ dest_files=["res://.godot/imported/AutoLayers_6_OptionalRules.ldtk-7fb25802018ce
 
 General/prefix="LDTK"
 World/WorldScenes="res://samples/AutoLayers_6_OptionalRules/AutoLayers_6_OptionalRules.tscn"
-Tileset/add_tileset_definition_to_meta=false
+Tileset/add_tileset_definition_to_meta=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Resources/Cavernas_by_Adam_Saltsman="res://samples/AutoLayers_6_OptionalRules/Tileset/Cavernas_by_Adam_Saltsman.tres"
 Entity/add_entity_definition_to_meta=true

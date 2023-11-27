@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="PackedScene" uid="uid://73rlnkrupfrw" path="res://samples/AutoLayers_1_basic/Level/AutoLayer.tscn" id="1_gsd72"]
+[ext_resource type="PackedScene" uid="uid://bwyyb3fc00o8c" path="res://samples/AutoLayers_1_basic/Level/AutoLayer.tscn" id="1_xvfms"]
 
 [node name="AutoLayers_1_basic" type="Node2D"]
 
-[node name="LDTK_AutoLayer" type="Node2D" parent="." instance=ExtResource("1_gsd72")]
+[node name="LDTK_AutoLayer" type="Node2D" parent="." instance=ExtResource("1_xvfms")]
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {
 "__bgColor": "#1E2027",

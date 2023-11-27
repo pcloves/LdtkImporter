@@ -110,7 +110,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
             new()
             {
                 { "name", OptionTilesetAddMeta },
-                { "default_value", false },
+                { "default_value", true },
                 { "hint_string", "If true, will add the original LDtk data as metadata with key:ldtk." }
             },
             new()
@@ -175,7 +175,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
             new()
             {
                 { "name", OptionLevelImportIntGrid },
-                { "default_value", true },
+                { "default_value", false },
                 { "hint_string", "If true, will import IntGrid as a child TileMap node." }
             },
         };

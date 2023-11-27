@@ -1,106 +1,48 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://dtlnv8kvms6ly"]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://l27syjafdd43"]
 
-[ext_resource type="Texture2D" uid="uid://c0s24ddbgnm30" path="res://samples/atlas/Cavernas_by_Adam_Saltsman.png" id="1_iwllp"]
+[ext_resource type="Texture2D" uid="uid://c0s24ddbgnm30" path="res://samples/atlas/Cavernas_by_Adam_Saltsman.png" id="1_2t5wc"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3ko2b"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xhj8p"]
 resource_name = "LDTK_Cavernas_by_Adam_Saltsman"
-texture = ExtResource("1_iwllp")
+texture = ExtResource("1_2t5wc")
 texture_region_size = Vector2i(8, 8)
 0:0/0 = 0
-6:0/0 = 0
-1:2/0 = 0
-1:3/0 = 0
-1:1/0 = 0
-0:2/next_alternative_id = 2
-0:2/0 = 0
-0:2/1 = 1
-0:2/1/flip_h = true
-0:3/next_alternative_id = 2
-0:3/0 = 0
-0:3/1 = 1
-0:3/1/flip_h = true
-1:4/0 = 0
-0:1/next_alternative_id = 2
-0:1/0 = 0
-0:1/1 = 1
-0:1/1/flip_h = true
-2:2/next_alternative_id = 2
-2:2/0 = 0
-2:2/1 = 1
-2:2/1/flip_h = true
-4:12/0 = 0
-3:12/0 = 0
-7:10/0 = 0
-6:10/0 = 0
-8:4/0 = 0
-11:4/0 = 0
-9:4/0 = 0
-2:3/0 = 0
-10:4/0 = 0
-0:23/next_alternative_id = 2
-0:23/0 = 0
-0:23/1 = 1
-0:23/1/flip_h = true
 0:24/next_alternative_id = 2
 0:24/0 = 0
 0:24/1 = 1
 0:24/1/flip_h = true
-0:21/next_alternative_id = 2
-0:21/0 = 0
-0:21/1 = 1
-0:21/1/flip_h = true
-5:10/0 = 0
-0:22/next_alternative_id = 2
-0:22/0 = 0
-0:22/1 = 1
-0:22/1/flip_h = true
-9:8/0 = 0
-6:2/next_alternative_id = 2
-6:2/0 = 0
-6:2/1 = 1
-6:2/1/flip_h = true
-6:6/0 = 0
-6:5/0 = 0
-11:2/0 = 0
-9:3/0 = 0
-10:3/0 = 0
-10:2/0 = 0
-8:3/0 = 0
+4:5/0 = 0
+4:9/0 = 0
+4:1/0 = 0
+1:4/0 = 0
 9:2/0 = 0
-11:3/0 = 0
 5:5/0 = 0
-5:5/32768 = 32768
-5:5/32768/texture_origin = Vector2i(0, -4)
 5:5/128 = 128
 5:5/128/texture_origin = Vector2i(0, -4)
-5:6/0 = 0
-5:6/32768 = 32768
-5:6/32768/texture_origin = Vector2i(0, -4)
-5:6/128 = 128
-5:6/128/texture_origin = Vector2i(0, -4)
-4:5/0 = 0
-4:8/0 = 0
-4:10/0 = 0
-4:9/0 = 0
+1:8/0 = 0
+6:5/0 = 0
+10:2/0 = 0
+3:12/0 = 0
+11:2/0 = 0
 3:8/next_alternative_id = 2
 3:8/0 = 0
 3:8/1 = 1
 3:8/1/flip_h = true
-4:1/0 = 0
-3:1/next_alternative_id = 2
-3:1/0 = 0
-3:1/1 = 1
-3:1/1/flip_h = true
+0:3/next_alternative_id = 2
+0:3/0 = 0
+0:3/1 = 1
+0:3/1/flip_h = true
+4:12/0 = 0
+0:23/next_alternative_id = 2
+0:23/0 = 0
+0:23/1 = 1
+0:23/1/flip_h = true
+4:8/0 = 0
+1:3/0 = 0
+6:0/0 = 0
+2:3/0 = 0
 2:11/0 = 0
-3:10/0 = 0
-1:8/0 = 0
-0:9/0 = 0
-1:9/0 = 0
-2:9/0 = 0
-2:10/0 = 0
-1:10/0 = 0
-0:10/0 = 0
-11:7/0 = 0
+10:9/0 = 0
 11:9/next_alternative_id = 4
 11:9/0 = 0
 11:9/1 = 1
@@ -110,104 +52,17 @@ texture_region_size = Vector2i(8, 8)
 11:9/3 = 3
 11:9/3/flip_h = true
 11:9/3/flip_v = true
-10:9/0 = 0
-10:8/next_alternative_id = 2
-10:8/0 = 0
-10:8/1 = 1
-10:8/1/flip_h = true
-2:18/0 = 0
-2:18/128 = 128
-2:18/128/texture_origin = Vector2i(-5, 4)
-2:18/32 = 32
-2:18/32/texture_origin = Vector2i(-3, 1)
-2:18/512 = 512
-2:18/512/texture_origin = Vector2i(-6, 5)
-2:18/64 = 64
-2:18/64/texture_origin = Vector2i(-4, 0)
-2:18/263168 = 263168
-2:18/263168/texture_origin = Vector2i(-7, -6)
-2:18/65552 = 65552
-2:18/65552/texture_origin = Vector2i(-2, -5)
-2:18/65536 = 65536
-2:18/65536/texture_origin = Vector2i(0, -5)
-2:18/16388 = 16388
-2:18/16 = 16
-2:18/16/texture_origin = Vector2i(-5, 4)
-2:18/4 = 4
-2:18/4/texture_origin = Vector2i(-3, 1)
-2:18/8 = 8
-2:18/8/texture_origin = Vector2i(-4, 0)
-2:18/288 = 288
-2:18/288/texture_origin = Vector2i(-7, -6)
-2:18/80 = 80
-2:18/80/texture_origin = Vector2i(-5, -3)
-2:18/260 = 260
-2:18/260/texture_origin = Vector2i(-2, -5)
-2:18/256 = 256
-2:18/256/texture_origin = Vector2i(0, -5)
-1:18/0 = 0
-1:18/16 = 16
-1:18/16/texture_origin = Vector2i(-2, 5)
-1:18/128 = 128
-1:18/128/texture_origin = Vector2i(-5, 0)
-1:18/524352 = 524352
-1:18/524352/texture_origin = Vector2i(-4, -7)
-1:18/524304 = 524304
-1:18/524304/texture_origin = Vector2i(-2, -7)
-1:18/2048 = 2048
-1:18/2048/texture_origin = Vector2i(0, -1)
-1:18/64 = 64
-1:18/64/texture_origin = Vector2i(-4, 0)
-1:18/16388 = 16388
-1:18/65568 = 65568
-1:18/65568/texture_origin = Vector2i(-3, -5)
-1:18/32784 = 32784
-1:18/32784/texture_origin = Vector2i(-2, -4)
-1:18/4 = 4
-1:18/4/texture_origin = Vector2i(-2, 5)
-1:18/520 = 520
-1:18/520/texture_origin = Vector2i(-4, -7)
-1:18/516 = 516
-1:18/516/texture_origin = Vector2i(-2, -7)
-1:18/8 = 8
-1:18/8/texture_origin = Vector2i(-4, 0)
-1:18/80 = 80
-1:18/80/texture_origin = Vector2i(-5, -2)
-1:18/260 = 260
-1:18/260/texture_origin = Vector2i(-3, -5)
-1:18/132 = 132
-1:18/132/texture_origin = Vector2i(-2, -4)
+0:2/next_alternative_id = 2
+0:2/0 = 0
+0:2/1 = 1
+0:2/1/flip_h = true
+8:4/0 = 0
+0:22/next_alternative_id = 2
+0:22/0 = 0
+0:22/1 = 1
+0:22/1/flip_h = true
+0:10/0 = 0
 0:18/0 = 0
-0:18/16388 = 16388
-0:18/2176 = 2176
-0:18/2176/texture_origin = Vector2i(-5, -1)
-0:18/262176 = 262176
-0:18/262176/texture_origin = Vector2i(-3, -6)
-0:18/32832 = 32832
-0:18/32832/texture_origin = Vector2i(-4, -4)
-0:18/524352 = 524352
-0:18/524352/texture_origin = Vector2i(-4, -7)
-0:18/16416 = 16416
-0:18/2048 = 2048
-0:18/2048/texture_origin = Vector2i(0, -1)
-0:18/16896 = 16896
-0:18/33792 = 33792
-0:18/33792/texture_origin = Vector2i(-7, -4)
-0:18/262144 = 262144
-0:18/262144/texture_origin = Vector2i(0, -6)
-0:18/8224 = 8224
-0:18/2080 = 2080
-0:18/2080/texture_origin = Vector2i(-3, -1)
-0:18/66048 = 66048
-0:18/66048/texture_origin = Vector2i(-6, -5)
-0:18/65536 = 65536
-0:18/65536/texture_origin = Vector2i(0, -5)
-0:18/65600 = 65600
-0:18/65600/texture_origin = Vector2i(-4, -5)
-0:18/262148 = 262148
-0:18/262148/texture_origin = Vector2i(-1, -6)
-0:18/512 = 512
-0:18/512/texture_origin = Vector2i(-6, 0)
 0:18/64 = 64
 0:18/64/texture_origin = Vector2i(-1, -3)
 0:18/16 = 16
@@ -232,22 +87,184 @@ texture_region_size = Vector2i(8, 8)
 0:18/272/texture_origin = Vector2i(-6, -5)
 0:18/264 = 264
 0:18/264/texture_origin = Vector2i(-4, -5)
+1:2/0 = 0
+9:4/0 = 0
+9:8/0 = 0
+1:10/0 = 0
+1:18/0 = 0
+1:18/4 = 4
+1:18/4/texture_origin = Vector2i(-2, 5)
+1:18/16 = 16
+1:18/16/texture_origin = Vector2i(-5, 0)
+1:18/520 = 520
+1:18/520/texture_origin = Vector2i(-4, -7)
+1:18/516 = 516
+1:18/516/texture_origin = Vector2i(-2, -7)
+1:18/8 = 8
+1:18/8/texture_origin = Vector2i(-4, 0)
+1:18/64 = 64
+1:18/64/texture_origin = Vector2i(0, -3)
+1:18/80 = 80
+1:18/80/texture_origin = Vector2i(-5, -2)
+1:18/260 = 260
+1:18/260/texture_origin = Vector2i(-3, -5)
+1:18/132 = 132
+1:18/132/texture_origin = Vector2i(-2, -4)
+2:2/next_alternative_id = 2
+2:2/0 = 0
+2:2/1 = 1
+2:2/1/flip_h = true
+10:4/0 = 0
+2:10/0 = 0
+10:8/next_alternative_id = 2
+10:8/0 = 0
+10:8/1 = 1
+10:8/1/flip_h = true
+2:18/0 = 0
+2:18/16 = 16
+2:18/16/texture_origin = Vector2i(-5, 4)
+2:18/4 = 4
+2:18/4/texture_origin = Vector2i(-3, 1)
+2:18/8 = 8
+2:18/8/texture_origin = Vector2i(-4, 0)
+2:18/288 = 288
+2:18/288/texture_origin = Vector2i(-7, -6)
+2:18/80 = 80
+2:18/80/texture_origin = Vector2i(-5, -3)
+2:18/260 = 260
+2:18/260/texture_origin = Vector2i(-2, -5)
+2:18/256 = 256
+2:18/256/texture_origin = Vector2i(0, -5)
+2:18/64 = 64
+2:18/64/texture_origin = Vector2i(0, -3)
+11:4/0 = 0
+3:10/0 = 0
 3:18/0 = 0
-3:18/2112 = 2112
-3:18/2112/texture_origin = Vector2i(-4, -1)
-3:18/64 = 64
-3:18/64/texture_origin = Vector2i(-4, 0)
-3:18/32800 = 32800
-3:18/32800/texture_origin = Vector2i(-3, -4)
-3:18/2048 = 2048
-3:18/2048/texture_origin = Vector2i(0, -1)
 3:18/8 = 8
 3:18/8/texture_origin = Vector2i(-4, -1)
 3:18/132 = 132
 3:18/132/texture_origin = Vector2i(-3, -4)
+0:1/next_alternative_id = 2
+0:1/0 = 0
+0:1/1 = 1
+0:1/1/flip_h = true
+0:21/next_alternative_id = 2
+0:21/0 = 0
+0:21/1 = 1
+0:21/1/flip_h = true
+8:3/0 = 0
+4:10/0 = 0
+0:9/0 = 0
+1:1/0 = 0
+5:10/0 = 0
+9:3/0 = 0
+5:6/0 = 0
+5:6/128 = 128
+5:6/128/texture_origin = Vector2i(0, -4)
+1:9/0 = 0
+6:10/0 = 0
+6:2/next_alternative_id = 2
+6:2/0 = 0
+6:2/1 = 1
+6:2/1/flip_h = true
+6:6/0 = 0
+10:3/0 = 0
+2:9/0 = 0
+7:10/0 = 0
+11:3/0 = 0
+3:1/next_alternative_id = 2
+3:1/0 = 0
+3:1/1 = 1
+3:1/1/flip_h = true
+11:7/0 = 0
 
 [resource]
 tile_size = Vector2i(8, 8)
 custom_data_layer_0/name = "LDTK_Cavernas_by_Adam_Saltsman"
 custom_data_layer_0/type = 27
-sources/9 = SubResource("TileSetAtlasSource_3ko2b")
+sources/9 = SubResource("TileSetAtlasSource_xhj8p")
+metadata/LDTK_tilesetDefinition = {
+"__cHei": 32.0,
+"__cWid": 12.0,
+"cachedPixelData": {
+"averageColors": "f123f224f224f224f224f224f224f224f333f324f323f434f573f453f343f666f666f334f544f544f334f334f3340000f343f223f233f334f445f555f644f2344336323563464346f343f233f233f334f223f778f223f5337335523553366346f224f666f667f974f654f654f533f5332564256435642454f334f236f445f644f544f634f434f3344235000000000000f235f236f334f644f433f223f764f6660000000000000000f447f233f224f223fa54f224f335f446f75400000000f011f236f34af236f623fe41f555f999f888f644f5443000b011f888f78bf888f679fea8fdccfaaaf556f434f12330003111f66af67bf67bf349fe97f453f343f334f654f54410000000f226f224f338f236f423f224f224f224f623f623f267f267711271237112f333f343f224f224f123f852f852f326f325f112f112f11200000000f224f224f224f777f77700000000f744f459f112000000000000000000000000000000000000f743f338f111000000000000000000000000000000000000f223f223f223000000000000000000000000000000000000f223f223f123000000000000000000000000000000000000f223f223f123f22400000000000000000000000000000000b353f233c353b235f123f2350000000000000000000000005353e343e3535335f235f2350000000000000000000000007353786446440000823552350000000000000000000000004353897448640000823542350000000000000000000000005353897447640000823542350000000000000000000000005353897448640000823542350000000000000000000000000000aa7567540000b2356235000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+"opaqueTiles": "111111111111111111111110111111110000111111110000111111110000111111110000111111110000111111111001111111111100111111111100111111111100111111111111000111111111111001111100111000000000111000000000111000000000111000000000111100000000010011000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+},
+"customData": [],
+"embedAtlas": null,
+"enumTags": [],
+"identifier": "Cavernas_by_Adam_Saltsman",
+"padding": 0.0,
+"pxHei": 256.0,
+"pxWid": 96.0,
+"relPath": "atlas/Cavernas_by_Adam_Saltsman.png",
+"savedSelections": [{
+"ids": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0],
+"mode": "Random"
+}, {
+"ids": [120.0, 121.0, 122.0],
+"mode": "Random"
+}, {
+"ids": [56.0, 57.0, 58.0, 59.0],
+"mode": "Random"
+}, {
+"ids": [32.0, 44.0, 33.0, 45.0, 34.0, 46.0, 35.0, 47.0],
+"mode": "Random"
+}, {
+"ids": [9.0, 10.0],
+"mode": "Random"
+}, {
+"ids": [20.0, 21.0, 22.0],
+"mode": "Random"
+}, {
+"ids": [25.0, 40.0],
+"mode": "Random"
+}, {
+"ids": [168.0, 180.0],
+"mode": "Stamp"
+}, {
+"ids": [169.0, 181.0],
+"mode": "Stamp"
+}, {
+"ids": [170.0, 182.0],
+"mode": "Stamp"
+}, {
+"ids": [156.0, 157.0, 158.0],
+"mode": "Random"
+}, {
+"ids": [140.0, 141.0],
+"mode": "Random"
+}, {
+"ids": [142.0, 143.0],
+"mode": "Random"
+}, {
+"ids": [154.0, 155.0],
+"mode": "Random"
+}, {
+"ids": [152.0, 153.0],
+"mode": "Random"
+}, {
+"ids": [164.0, 165.0],
+"mode": "Random"
+}, {
+"ids": [265.0, 277.0, 289.0],
+"mode": "Random"
+}, {
+"ids": [266.0, 278.0, 290.0],
+"mode": "Random"
+}, {
+"ids": [268.0, 280.0, 292.0],
+"mode": "Random"
+}, {
+"ids": [269.0, 281.0, 293.0],
+"mode": "Random"
+}, {
+"ids": [252.0, 264.0, 276.0, 288.0],
+"mode": "Random"
+}],
+"spacing": 0.0,
+"tags": [],
+"tagsSourceEnumUid": null,
+"tileGridSize": 8.0,
+"uid": 9.0
+}

@@ -2,7 +2,7 @@
 
 importer="Ldtk Importer"
 type="Node2D"
-uid="uid://doosdbnu7xpem"
+uid="uid://bkb64p8lniu4g"
 path="res://.godot/imported/AutoLayers_3_Mosaic.ldtk-45ef5d26b130b62ae6394380e7b98d6c.tscn"
 
 [deps]
@@ -16,7 +16,7 @@ dest_files=["res://.godot/imported/AutoLayers_3_Mosaic.ldtk-45ef5d26b130b62ae639
 
 General/prefix="LDTK"
 World/WorldScenes="res://samples/AutoLayers_3_Mosaic/AutoLayers_3_Mosaic.tscn"
-Tileset/add_tileset_definition_to_meta=false
+Tileset/add_tileset_definition_to_meta=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Resources/Inca_back2_by_Kronbits="res://samples/AutoLayers_3_Mosaic/Tileset/Inca_back2_by_Kronbits.tres"
 Tileset/Resources/Inca_extended_front_by_Kronbits="res://samples/AutoLayers_3_Mosaic/Tileset/Inca_extended_front_by_Kronbits.tres"

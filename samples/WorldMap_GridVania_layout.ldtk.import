@@ -2,7 +2,7 @@
 
 importer="Ldtk Importer"
 type="Node2D"
-uid="uid://fdb76qp0185v"
+uid="uid://b4esbpww8n6u3"
 path="res://.godot/imported/WorldMap_GridVania_layout.ldtk-d53ff1453f44be62ab1402e38bcab349.tscn"
 
 [deps]
@@ -16,7 +16,7 @@ dest_files=["res://.godot/imported/WorldMap_GridVania_layout.ldtk-d53ff1453f44be
 
 General/prefix="LDTK"
 World/WorldScenes="res://samples/WorldMap_GridVania_layout/WorldMap_GridVania_layout.tscn"
-Tileset/add_tileset_definition_to_meta=false
+Tileset/add_tileset_definition_to_meta=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Resources/Internal_Icons="res://samples/WorldMap_GridVania_layout/Tileset/Internal_Icons.tres"
 Tileset/Resources/SunnyLand_by_Ansimuz="res://samples/WorldMap_GridVania_layout/Tileset/SunnyLand_by_Ansimuz.tres"

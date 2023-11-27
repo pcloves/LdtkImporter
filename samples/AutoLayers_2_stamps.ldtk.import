@@ -2,7 +2,7 @@
 
 importer="Ldtk Importer"
 type="Node2D"
-uid="uid://d14famro5wf2l"
+uid="uid://hiyxx7yb0t4m"
 path="res://.godot/imported/AutoLayers_2_stamps.ldtk-d91ea11e818c2cbabcae42015ba65139.tscn"
 
 [deps]
@@ -16,7 +16,7 @@ dest_files=["res://.godot/imported/AutoLayers_2_stamps.ldtk-d91ea11e818c2cbabcae
 
 General/prefix="LDTK"
 World/WorldScenes="res://samples/AutoLayers_2_stamps/AutoLayers_2_stamps.tscn"
-Tileset/add_tileset_definition_to_meta=false
+Tileset/add_tileset_definition_to_meta=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Resources/Inca_front_by_Kronbits="res://samples/AutoLayers_2_stamps/Tileset/Inca_front_by_Kronbits.tres"
 Entity/add_entity_definition_to_meta=true
