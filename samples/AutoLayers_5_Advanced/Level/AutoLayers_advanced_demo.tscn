@@ -7876,6 +7876,11 @@ metadata/LDTK_levelInstance = {
 "worldY": -1.0
 }
 
+[node name="LDTK_BgColor" type="ColorRect" parent="."]
+offset_right = 296.0
+offset_bottom = 304.0
+color = Color(0.105882, 0.12549, 0.215686, 1)
+
 [node name="LDTK_Sky" type="TileMap" parent="."]
 tile_set = ExtResource("1_w1350")
 format = 2

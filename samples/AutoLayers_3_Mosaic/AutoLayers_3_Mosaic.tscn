@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="PackedScene" uid="uid://d6lhy6kvrs15" path="res://samples/AutoLayers_3_Mosaic/Level/Mosaic_demo.tscn" id="1_knwef"]
+[ext_resource type="PackedScene" uid="uid://d6lhy6kvrs15" path="res://samples/AutoLayers_3_Mosaic/Level/Mosaic_demo.tscn" id="1_pp2gh"]
 
 [node name="AutoLayers_3_Mosaic" type="Node2D"]
 
-[node name="LDTK_Mosaic_demo" type="Node2D" parent="." instance=ExtResource("1_knwef")]
+[node name="LDTK_Mosaic_demo" type="Node2D" parent="." instance=ExtResource("1_pp2gh")]
 visible = false
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)

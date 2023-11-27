@@ -9923,6 +9923,11 @@ metadata/LDTK_levelInstance = {
 "worldY": -1.0
 }
 
+[node name="LDTK_BgColor" type="ColorRect" parent="."]
+offset_right = 256.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
 [node name="LDTK_IntGrid" type="TileMap" parent="."]
 tile_set = ExtResource("1_me2us")
 format = 2
