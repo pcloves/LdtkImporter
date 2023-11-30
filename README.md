@@ -111,5 +111,6 @@ Layer`即可
 
 # 🐞 已知BUG
 - [ ] 每次重新导入后，需要重新`Reload Current Project`或重新打开Godot后，导入的`.tscn`才会生效
+- [ ] 官方示例：Typical_TopDown_example.ldtk，导入后，某些Tile会缺失
 - [x] 目前导入后，没有为Level设置背景色
 - [x] 打开某些导入后的场景和Tileset后，会导致Godot闪退（例如：Typical_TopDown_example.ldtk）
