@@ -109,7 +109,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
     {
         var tileInstances = Type == nameof(TypeEnum.Tiles) ? GridTiles : AutoLayerTiles;
         MaxTileStackCount = tileInstances
-            .GroupBy(instance => instance.Px, new LongArrayEqualityComparer())
+            .GroupBy(ToCoords)
             .Select(grouping => grouping.Select((instance, i) => instance.Layer = i).Count())
             .DefaultIfEmpty(1)
             .Max();
@@ -176,8 +176,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         var source = (TileSetAtlasSource)tileMap.TileSet?.GetSource((int)sourceId);
         foreach (var tileInstance in tileInstances)
         {
-            var coords = new Vector2I((int)tileInstance.Px[0], (int)tileInstance.Px[1]) /
-                         (int)(tilesetDefinition?.TileGridSize ?? GridSize);
+            var coords = ToCoords(tileInstance);
             var atlasCoords = tileInstance.T.AtlasCoords(source);
             var alternativeId = (int)tileInstance.AlternativeIdFlags;
 
@@ -264,17 +263,11 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
         return Error.Ok;
     }
-}
-
-public class LongArrayEqualityComparer : IEqualityComparer<long[]>
-{
-    public bool Equals(long[] x, long[] y)
+    
+    private Vector2I ToCoords(TileInstance tileInstance)
     {
-        return y != null && x != null && x.SequenceEqual(y);
-    }
+        var coords = new Vector2I((int)tileInstance.Px[0], (int)tileInstance.Px[1]) / (int)(GridSize);
 
-    public int GetHashCode(long[] obj)
-    {
-        return obj.Select((t, i) => t.GetHashCode() ^ i).Sum();
+        return coords;
     }
 }
