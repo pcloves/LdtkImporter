@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3]
 
-[ext_resource type="PackedScene" uid="uid://dgbfu5v2q7rld" path="res://samples/AutoLayers_6_OptionalRules/Level/Green_hills.tscn" id="1_ngw1h"]
-[ext_resource type="PackedScene" uid="uid://cb7vhw42i0o7d" path="res://samples/AutoLayers_6_OptionalRules/Level/Frozen_caves.tscn" id="2_bxspo"]
-[ext_resource type="PackedScene" uid="uid://dxqoqnk8sly3m" path="res://samples/AutoLayers_6_OptionalRules/Level/Antique_manor.tscn" id="3_jag3c"]
-[ext_resource type="PackedScene" uid="uid://b08p5hc1qvppg" path="res://samples/AutoLayers_6_OptionalRules/Level/Only_base_rules.tscn" id="4_4x4d4"]
+[ext_resource type="PackedScene" uid="uid://dgbfu5v2q7rld" path="res://samples/AutoLayers_6_OptionalRules/Level/Green_hills.tscn" id="1_d0ktn"]
+[ext_resource type="PackedScene" uid="uid://cb7vhw42i0o7d" path="res://samples/AutoLayers_6_OptionalRules/Level/Frozen_caves.tscn" id="2_e2cy5"]
+[ext_resource type="PackedScene" uid="uid://dxqoqnk8sly3m" path="res://samples/AutoLayers_6_OptionalRules/Level/Antique_manor.tscn" id="3_gtiu1"]
+[ext_resource type="PackedScene" uid="uid://b08p5hc1qvppg" path="res://samples/AutoLayers_6_OptionalRules/Level/Only_base_rules.tscn" id="4_trdtt"]
 
 [node name="AutoLayers_6_OptionalRules" type="Node2D"]
 
-[node name="LDTK_Green_hills" type="Node2D" parent="." instance=ExtResource("1_ngw1h")]
+[node name="LDTK_Green_hills" type="Node2D" parent="." instance=ExtResource("1_d0ktn")]
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {
 "__bgColor": "#000000",
@@ -9928,7 +9928,7 @@ metadata/LDTK_levelInstance = {
 "worldY": -1.0
 }
 
-[node name="LDTK_Frozen_caves" type="Node2D" parent="." instance=ExtResource("2_bxspo")]
+[node name="LDTK_Frozen_caves" type="Node2D" parent="." instance=ExtResource("2_e2cy5")]
 position = Vector2(256, 0)
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {
@@ -19906,7 +19906,7 @@ metadata/LDTK_levelInstance = {
 "worldY": -1.0
 }
 
-[node name="LDTK_Antique_manor" type="Node2D" parent="." instance=ExtResource("3_jag3c")]
+[node name="LDTK_Antique_manor" type="Node2D" parent="." instance=ExtResource("3_gtiu1")]
 position = Vector2(512, 0)
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {
@@ -28785,7 +28785,7 @@ metadata/LDTK_levelInstance = {
 "worldY": -1.0
 }
 
-[node name="LDTK_Only_base_rules" type="Node2D" parent="." instance=ExtResource("4_4x4d4")]
+[node name="LDTK_Only_base_rules" type="Node2D" parent="." instance=ExtResource("4_trdtt")]
 position = Vector2(768, 0)
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {

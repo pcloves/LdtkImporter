@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="PackedScene" uid="uid://bqqhuvp5ru0kn" path="res://samples/AutoLayers_4_Assistant/Level/Mosaic_demo.tscn" id="1_0o7ci"]
+[ext_resource type="PackedScene" uid="uid://bqqhuvp5ru0kn" path="res://samples/AutoLayers_4_Assistant/Level/Mosaic_demo.tscn" id="1_8vy3w"]
 
 [node name="AutoLayers_4_Assistant" type="Node2D"]
 
-[node name="LDTK_Mosaic_demo" type="Node2D" parent="." instance=ExtResource("1_0o7ci")]
+[node name="LDTK_Mosaic_demo" type="Node2D" parent="." instance=ExtResource("1_8vy3w")]
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {
 "__bgColor": "#222225",
