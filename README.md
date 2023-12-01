@@ -11,7 +11,7 @@ Godot 4 C# [LDtk](https://ldtk.io/) 导入插件
 1. 使用C#版Godot 4.2+
 2. 将`addons\LdtkImporter`目录放到项目的`addons`目录下
 3. 通过 `Project > Project Settings > Plugins`开启本插件
-4. 此时`.ldtk`文件可以被Godot识别，并且会自动生成`.tscn`场景和`.tres`Tileset资源
+4. 此时`.ldtk`文件可以被Godot识别，并且会自动导入，并生成对应的`.tscn`场景资源和`.tres`Tileset资源
 
 # ✨ 特性
 
@@ -77,14 +77,14 @@ Godot 4 C# [LDtk](https://ldtk.io/) 导入插件
     * Scenes: 根据LDTK中Level的不同，插件自动生成对应的配置
 
 # ❓FAQ
-### 在同TileMap（对应于LDTK的`IntGrid`或`AutoLayer`图层）中，如何支持在同一个位置叠加多个Tile的？
-Godot TileMap支持多个[Layer](https://docs.godotengine.org/en/stable/tutorials/2d/using_tilemaps.html#creating-tilemap-layers)，插件在导入前前提前为每个[LDTK Tile Instance]
-(https://ldtk.io/json/#ldtk-Tile)计算它在TileMap中的Layer图层索引（从0开始），同时算出所有`Tile Instance`的最大索引，进而创建出足够多的TileMap Layer，并在导入时，将每个`LDTK Tile Instance`放入对应的`TileMap 
-Layer`即可
+## LDTK支持在同一个Layer内的同一个位置堆叠多个[tile instance](https://ldtk.io/json/#ldtk-LayerInstanceJson;autoLayerTiles)，当导入到Godot时，是如何处理的？
+Godot TileMap支持创建多个 [Layer](https://docs.godotengine.org/en/stable/tutorials/2d/using_tilemaps.html#creating-tilemap-layers)
+，在导入时，插件会算出当前Layer的最大堆叠数量并在TileMap中提前将这些Layer创建出来，同时还会更新每个 [tile instance](https://ldtk.io/json/#ldtk-Tile) 在TileMap中的Layer图层索引。在真正执行导入时，已经就知道每个LDTK tile 
+instance归属于哪个TileMap Layer。一句话总结：通过Godot TileMap支持多Layer的特性解决堆叠问题。
 
-### 如果使用该插件作为LDTK和Godot的桥梁，那么工作流应该是怎样的？
-这也是本插件作者一直在思考并且还没要找到答案的问题，在LDTK和Godot结合的工作流中，LDTK的主要起到地图编辑器的作用，然而并不能在LDTK中完成所有的地图编辑工作，例如需要为TileSet配置物理碰撞、导航时，又例如由于开发需求对导入后的Entity
-场景进行编辑修改，这都需要在导入后进行二次修改。这导致了一个核心矛盾点的产生：`如何解决重复导入而不影响在Godot中已经进行的修改。`，目前的思路是：
+## 如果使用该插件作为LDTK和Godot的桥梁，那么工作流应该是怎样的？
+本插件作者一直在思考该问题，且还没要找到完美的解决方案。在LDTK和Godot结合的工作流中，LDTK的主要作用地图编辑器，然而并不能在LDTK中完成所有的地图编辑工作，例如需要为TileSet
+配置物理碰撞、导航时，也有可能在导入后对`tscn`场景进行编辑修改。这导致了一个核心矛盾点的产生：`如何解决重复导入而不影响在Godot中所做修改。`，目前有一个初步想法：
 1. 不支持重复导入，每次导入都覆盖原来的资源（Tileset、Scene）
 2. 支持重复导入
    1. 在导入时，假如原资源（Tileset、Scene等）已经存在，在原数据的基础上修改
@@ -102,7 +102,8 @@ Layer`即可
   - [x] LDTK 默认`Level`背景色支持
 - [ ] Level
   - [x] 支持`Level`背景色和背景图的导入
-  - [ ] LDTK Level fields
+  - [x] LDTK Level fields支持，元数据名称为：$"{prefix}_fieldInstances"
+  - [ ] 支持Level配置开关：是否生成独立的Level场景
   - [ ] `Level` 导入后处理脚本支持
 - [ ] Entity
   - [ ] Entity视觉显示支持（`Sprite2D`）
@@ -111,6 +112,8 @@ Layer`即可
 
 # 🐞 已知BUG
 - [ ] 每次重新导入后，需要重新`Reload Current Project`或重新打开Godot后，导入的`.tscn`才会生效
+- [ ] 当`IntGrid`不包含rules时，生成的TileMap节点中没有包含TileSet，并且也没有正确设置tile
+- [ ] 每次重新导出时，导出的`tscn`文件都有变化（主要是Level场景的id发生变化）
 - [x] 官方示例：Typical_TopDown_example.ldtk，导入后，某些Tile会缺失
 - [x] 目前导入后，没有为Level设置背景色
 - [x] 打开某些导入后的场景和Tileset后，会导致Godot闪退（例如：Typical_TopDown_example.ldtk）
