@@ -60,16 +60,19 @@ Godot 4 C# [LDtk](https://ldtk.io/) 导入插件
 * General
     * Prefix: 该前缀表示当执行导入时，生成的 `Node2D`、`TileMap`等节点的名称前缀（例如：`LDTK_World_Level_0`）以及导入的元数据的名称前缀
 * World
+    * Post Processor: 导入后置处理器，可以通过后置处理器对导入后的节点进行自定义处理
     * World Scenes: 表示要生成的世界场景的文件名称
 * Tileset
     * Add Tileset Definition to Meta: 将所有 [LDTK Tileset definition](https://ldtk.io/json/#ldtk-TilesetDefJson)数据作为元数据存储到Godot tileset中，其中元数据的key为：`${Prefix}_tilesetDefinition`，例如：`LDTK_tilesetDefinition`
     * Resources: 根据LDTK中Tilesets的不同，插件自动生成对应的配置
 * Entity
+    * Post Processor: 导入后置处理器，可以通过后置处理器对导入后的节点进行自定义处理
     * Add Entity Definition to Meta: 将[LDTK Entity Definition](https://ldtk.io/json/#ldtk-EntityDefJson)数据作为元数据存储到导入后的Entity Scene以及节点中，其中元数据的key为：`${Prefix}
       _entityDefinition`，例如：`LDTK_entityDefinition`
     * Add Entity Instance to Meta: 将[LDTK Entity Instance](https://ldtk.io/json/#ldtk-EntityInstanceJson)数据作为元数据存储到导入后的Entity节点中，其中元数据的key为：`${Prefix}_entityInstance`，例如：`LDTK_entityInstance`
     * Scenes: 根据LDTK中Entity的数量，插件自动生成对于的配置
 * Level
+    * Post Processor: 导入后置处理器，可以通过后置处理器对导入后的节点进行自定义处理
     * Add Level to Meta: 将[LDTK Level](https://ldtk.io/json/#ldtk-LevelJson)数据作为元数据存储到导入后的Level节点中，其中元数据的key为：`${Prefix}_levelInstance`，例如：`LDTK_levelInstance`
     * Add Layer Instance to Meta: 将[LDTK Layer Instance](https://ldtk.io/json/#ldtk-LayerInstanceJson)数据作为元数据存储到导入后的Layer节点中，其中其中元数据的key为：`${Prefix}_layerInstance`，例如：`LDTK_layerInstance`
     * Add Layer Definition to Meta: 将[LDTK Layer Definition](https://ldtk.io/json/#ldtk-LayerDefJson)数据作为元数据存储到导入后的Layer节点中，其中其中元数据的key为：`${Prefix}_layerDefinition`，例如：`LDTK_layerDefinition`
