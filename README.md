@@ -95,6 +95,23 @@ instance归属于哪个TileMap Layer。一句话总结：通过Godot TileMap支�
 
 目前插件选用的是方案1的思路，如果有更好的思路，欢迎一起探讨！
 
+## 如果需要扩展`导入后置处理器`，要如何操作？
+1. 首先需要实现[AbstractPostProcessor](addons/LdtkImporter/PostProcessor/AbstractPostProcessor.cs)，类似如下所示：
+    ```csharp
+    [Tool] //1. 必不可少
+    [GlobalClass] //2. 必不可少
+    [PostProcessor(ProcessorType.World)] //3. 本后置处理器的类型，可以进行组合，例如：[PostProcessor(ProcessorType.World | ProcessorType.Level)] 
+    public partial class MyWorldPostProcessor : AbstractPostProcessor
+    {
+        public override Node2D PostProcess(LdtkJson ldtkJson, Dictionary options, Node2D baseNode)
+        {
+            //对baseNode进行处理，可以仍然返回baseNode，也可以返回一个全新的Node2D或其子类
+            return baseNode;
+        }
+    }
+    ```
+2. 需要在`FileSystem`中新建一个`MyWorldPostProcessor`类型的资源，并保存扩展名为：`.tres`，该后置处理器会自动添加到`导入选项`中
+
 # 💣 TODO
 
 - [ ] 运行时
@@ -113,7 +130,7 @@ instance归属于哪个TileMap Layer。一句话总结：通过Godot TileMap支�
   - [ ] `Entity`导入后处理脚本支持
   - [ ] Enum支持
 - [ ] 文档
-  - [ ] 增加`后置处理器`扩展说明
+  - [x] 增加`后置处理器`扩展说明
 
 # 🐞 已知BUG
 - [ ] 每次重新导入后，需要重新`Reload Current Project`或重新打开Godot后，导入的`.tscn`才会生效
