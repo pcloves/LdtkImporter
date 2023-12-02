@@ -1,13 +1,13 @@
-[gd_scene load_steps=19 format=3 uid="uid://dhl77i0hrsewc"]
+[gd_scene load_steps=19 format=3 uid="uid://b4rgrsdax55j2"]
 
-[ext_resource type="TileSet" uid="uid://m7tc35djbk2h" path="res://samples/Test_file_for_API_showing_all_features/Tileset/Inca_front_by_Kronbits_extended.tres" id="1_e8opr"]
-[ext_resource type="PackedScene" uid="uid://c4asr4ax61bc2" path="res://samples/Test_file_for_API_showing_all_features/Entity/EntityFieldsTest.tscn" id="2_7ekox"]
-[ext_resource type="PackedScene" uid="uid://deuv8o4vh5xao" path="res://samples/Test_file_for_API_showing_all_features/Entity/RectRegion.tscn" id="3_v4j2d"]
-[ext_resource type="PackedScene" uid="uid://bncr2vrehdeg2" path="res://samples/Test_file_for_API_showing_all_features/Entity/CircleRegion.tscn" id="4_ujh4n"]
-[ext_resource type="PackedScene" uid="uid://c68wxb7tb6km0" path="res://samples/Test_file_for_API_showing_all_features/Entity/EntityRefTest.tscn" id="5_6pdt2"]
-[ext_resource type="PackedScene" uid="uid://8fxe0ymgbbyy" path="res://samples/Test_file_for_API_showing_all_features/Entity/Labels.tscn" id="6_kjf0d"]
+[ext_resource type="TileSet" uid="uid://cad68g4w6x18a" path="res://samples/Test_file_for_API_showing_all_features/Tileset/Inca_front_by_Kronbits_extended.tres" id="1_e8opr"]
+[ext_resource type="PackedScene" uid="uid://b4kjyqppnvbm5" path="res://samples/Test_file_for_API_showing_all_features/Entity/EntityFieldsTest.tscn" id="2_7ekox"]
+[ext_resource type="PackedScene" uid="uid://c5dfvepgsj6wx" path="res://samples/Test_file_for_API_showing_all_features/Entity/RectRegion.tscn" id="3_v4j2d"]
+[ext_resource type="PackedScene" uid="uid://cucxfycc8al41" path="res://samples/Test_file_for_API_showing_all_features/Entity/CircleRegion.tscn" id="4_ujh4n"]
+[ext_resource type="PackedScene" uid="uid://rfosr2aq25ea" path="res://samples/Test_file_for_API_showing_all_features/Entity/EntityRefTest.tscn" id="5_6pdt2"]
+[ext_resource type="PackedScene" uid="uid://b05g0tp7v1rxx" path="res://samples/Test_file_for_API_showing_all_features/Entity/Labels.tscn" id="6_kjf0d"]
 
-[sub_resource type="Image" id="Image_ou2rw"]
+[sub_resource type="Image" id="Image_tqupt"]
 data = {
 "data": PackedByteArray(209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77),
 "format": "RGB8",
@@ -16,11 +16,11 @@ data = {
 "width": 16
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_seto1"]
-image = SubResource("Image_ou2rw")
+[sub_resource type="ImageTexture" id="ImageTexture_3ymnb"]
+image = SubResource("Image_tqupt")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ogg40"]
-texture = SubResource("ImageTexture_seto1")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hswfo"]
+texture = SubResource("ImageTexture_3ymnb")
 0:0/0 = 0
 0:0/0/custom_data_0 = {
 "color": "#D19E4D",
@@ -30,12 +30,12 @@ texture = SubResource("ImageTexture_seto1")
 "value": 1.0
 }
 
-[sub_resource type="TileSet" id="TileSet_mxstn"]
+[sub_resource type="TileSet" id="TileSet_rvbf3"]
 custom_data_layer_0/name = "LDTK_IntGrid_with_rules"
 custom_data_layer_0/type = 27
-sources/3 = SubResource("TileSetAtlasSource_ogg40")
+sources/3 = SubResource("TileSetAtlasSource_hswfo")
 
-[sub_resource type="Image" id="Image_lj38n"]
+[sub_resource type="Image" id="Image_mplh4"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0),
 "format": "RGB8",
@@ -44,11 +44,11 @@ data = {
 "width": 48
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_nleh1"]
-image = SubResource("Image_lj38n")
+[sub_resource type="ImageTexture" id="ImageTexture_ylwpr"]
+image = SubResource("Image_mplh4")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h8wev"]
-texture = SubResource("ImageTexture_nleh1")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ga087"]
+texture = SubResource("ImageTexture_ylwpr")
 0:0/0 = 0
 0:0/0/custom_data_0 = {
 "color": "#000000",
@@ -74,12 +74,12 @@ texture = SubResource("ImageTexture_nleh1")
 "value": 3.0
 }
 
-[sub_resource type="TileSet" id="TileSet_u7dk7"]
+[sub_resource type="TileSet" id="TileSet_2hdbg"]
 custom_data_layer_0/name = "LDTK_IntGrid_without_rules"
 custom_data_layer_0/type = 27
-sources/1 = SubResource("TileSetAtlasSource_h8wev")
+sources/1 = SubResource("TileSetAtlasSource_ga087")
 
-[sub_resource type="Image" id="Image_6rvxh"]
+[sub_resource type="Image" id="Image_jhdwc"]
 data = {
 "data": PackedByteArray(0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122),
 "format": "RGB8",
@@ -88,11 +88,11 @@ data = {
 "width": 8
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_wisy2"]
-image = SubResource("Image_6rvxh")
+[sub_resource type="ImageTexture" id="ImageTexture_ti5fs"]
+image = SubResource("Image_jhdwc")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_22kex"]
-texture = SubResource("ImageTexture_wisy2")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gwmj1"]
+texture = SubResource("ImageTexture_ti5fs")
 texture_region_size = Vector2i(8, 8)
 0:0/0 = 0
 0:0/0/custom_data_0 = {
@@ -103,11 +103,11 @@ texture_region_size = Vector2i(8, 8)
 "value": 1.0
 }
 
-[sub_resource type="TileSet" id="TileSet_1i753"]
+[sub_resource type="TileSet" id="TileSet_gglvt"]
 tile_size = Vector2i(8, 8)
 custom_data_layer_0/name = "LDTK_IntGrid_8px_grid"
 custom_data_layer_0/type = 27
-sources/34 = SubResource("TileSetAtlasSource_22kex")
+sources/34 = SubResource("TileSetAtlasSource_gwmj1")
 
 [node name="LDTK_Everything" type="Node2D"]
 metadata/LDTK_fieldInstances = []
@@ -2544,7 +2544,7 @@ metadata/LDTK_layerInstance = {
 }
 
 [node name="LDTK_IntGrid" type="TileMap" parent="LDTK_IntGrid_with_rules"]
-tile_set = SubResource("TileSet_mxstn")
+tile_set = SubResource("TileSet_rvbf3")
 format = 2
 layer_1/name = "LDTK_IntGrid_with_rules"
 layer_1/tile_data = PackedInt32Array(458763, 3, 0, 458764, 3, 0, 458765, 3, 0, 458766, 3, 0, 458767, 3, 0, 458768, 3, 0, 524299, 3, 0, 524300, 3, 0, 524301, 3, 0, 524302, 3, 0, 524303, 3, 0, 524304, 3, 0, 589835, 3, 0, 589836, 3, 0, 589837, 3, 0, 589838, 3, 0, 589839, 3, 0, 589840, 3, 0, 655371, 3, 0, 655372, 3, 0, 655373, 3, 0, 655374, 3, 0, 655375, 3, 0, 655376, 3, 0, 720907, 3, 0, 720908, 3, 0, 720909, 3, 0, 720910, 3, 0, 720911, 3, 0, 720912, 3, 0, 786443, 3, 0, 786444, 3, 0, 786445, 3, 0, 786446, 3, 0, 786447, 3, 0, 786448, 3, 0)
@@ -2630,7 +2630,7 @@ metadata/LDTK_layerInstance = {
 }
 
 [node name="LDTK_IntGrid" type="TileMap" parent="LDTK_IntGrid_without_rules"]
-tile_set = SubResource("TileSet_u7dk7")
+tile_set = SubResource("TileSet_2hdbg")
 format = 2
 layer_1/name = "LDTK_IntGrid_without_rules"
 layer_1/tile_data = PackedInt32Array(458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 1, 0, 458771, 131073, 0, 458772, 131073, 0, 458773, 131073, 0, 458774, 131073, 0, 458775, 131073, 0, 458776, 131073, 0, 524291, 1, 0, 524292, 65537, 0, 524293, 65537, 0, 524294, 65537, 0, 524295, 65537, 0, 524296, 1, 0, 524307, 131073, 0, 524308, 131073, 0, 524309, 131073, 0, 524310, 131073, 0, 524311, 131073, 0, 524312, 131073, 0, 589827, 1, 0, 589828, 65537, 0, 589829, 65537, 0, 589830, 65537, 0, 589831, 65537, 0, 589832, 1, 0, 589843, 131073, 0, 589844, 131073, 0, 589845, 131073, 0, 589846, 131073, 0, 589847, 131073, 0, 589848, 131073, 0, 655363, 1, 0, 655364, 65537, 0, 655365, 65537, 0, 655366, 65537, 0, 655367, 65537, 0, 655368, 1, 0, 655379, 131073, 0, 655380, 131073, 0, 655381, 131073, 0, 655382, 131073, 0, 655383, 131073, 0, 655384, 131073, 0, 720899, 1, 0, 720900, 65537, 0, 720901, 65537, 0, 720902, 65537, 0, 720903, 65537, 0, 720904, 1, 0, 720915, 131073, 0, 720916, 131073, 0, 720917, 131073, 0, 720918, 131073, 0, 720919, 131073, 0, 720920, 131073, 0, 786435, 1, 0, 786436, 1, 0, 786437, 1, 0, 786438, 1, 0, 786439, 1, 0, 786440, 1, 0, 786451, 131073, 0, 786452, 131073, 0, 786453, 131073, 0, 786454, 131073, 0, 786455, 131073, 0, 786456, 131073, 0)
@@ -3060,7 +3060,7 @@ metadata/LDTK_layerInstance = {
 }
 
 [node name="LDTK_IntGrid" type="TileMap" parent="LDTK_IntGrid_8px_grid"]
-tile_set = SubResource("TileSet_1i753")
+tile_set = SubResource("TileSet_gglvt")
 format = 2
 layer_1/name = "LDTK_IntGrid_8px_grid"
 layer_1/tile_data = PackedInt32Array(917574, 34, 0, 917576, 34, 0, 917578, 34, 0, 917580, 34, 0, 917582, 34, 0, 983111, 34, 0, 983113, 34, 0, 983115, 34, 0, 983117, 34, 0, 983119, 34, 0, 1048646, 34, 0, 1048648, 34, 0, 1048650, 34, 0, 1048652, 34, 0, 1048654, 34, 0, 1114183, 34, 0, 1114185, 34, 0, 1114187, 34, 0, 1114189, 34, 0, 1114191, 34, 0, 1179718, 34, 0, 1179720, 34, 0, 1179722, 34, 0, 1179724, 34, 0, 1179726, 34, 0, 1245255, 34, 0, 1245257, 34, 0, 1245259, 34, 0, 1245261, 34, 0, 1245263, 34, 0, 1310790, 34, 0, 1310792, 34, 0, 1310794, 34, 0, 1310796, 34, 0, 1310798, 34, 0, 1376327, 34, 0, 1376329, 34, 0, 1376331, 34, 0, 1376333, 34, 0, 1376335, 34, 0, 1441862, 34, 0, 1441864, 34, 0, 1441866, 34, 0, 1441868, 34, 0, 1441870, 34, 0, 1507399, 34, 0, 1507401, 34, 0, 1507403, 34, 0, 1507405, 34, 0, 1507407, 34, 0, 1572934, 34, 0, 1572936, 34, 0, 1572938, 34, 0, 1572940, 34, 0, 1572942, 34, 0, 1638471, 34, 0, 1638473, 34, 0, 1638475, 34, 0, 1638477, 34, 0, 1638479, 34, 0)
@@ -3656,6 +3656,183 @@ metadata/LDTK_layerInstance = {
 
 [node name="LDTK_EntityFieldsTest-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_7ekox")]
 position = Vector2(152, 312)
+metadata/LDTK_fieldInstances = [{
+"__identifier": "Integer",
+"__tile": null,
+"__type": "Int",
+"__value": 1.0,
+"defUid": 16.0,
+"realEditorValues": [{
+"id": "V_Int",
+"params": [1.0]
+}]
+}, {
+"__identifier": "Float",
+"__tile": null,
+"__type": "Float",
+"__value": 1.5,
+"defUid": 17.0,
+"realEditorValues": [{
+"id": "V_Float",
+"params": [1.5]
+}]
+}, {
+"__identifier": "Boolean",
+"__tile": null,
+"__type": "Bool",
+"__value": false,
+"defUid": 18.0,
+"realEditorValues": [null]
+}, {
+"__identifier": "String_singleLine",
+"__tile": null,
+"__type": "String",
+"__value": "foo",
+"defUid": 19.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["foo"]
+}]
+}, {
+"__identifier": "String_multiLines",
+"__tile": null,
+"__type": "Multilines",
+"__value": "foo bar",
+"defUid": 20.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["foo bar"]
+}]
+}, {
+"__identifier": "Enum",
+"__tile": null,
+"__type": "LocalEnum.SomeEnum",
+"__value": "A",
+"defUid": 22.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["A"]
+}]
+}, {
+"__identifier": "ExternEnum",
+"__tile": null,
+"__type": "ExternEnum.AnExternEnum",
+"__value": "Value1",
+"defUid": 49.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["Value1"]
+}]
+}, {
+"__identifier": "Color",
+"__tile": null,
+"__type": "Color",
+"__value": "#D181E8",
+"defUid": 23.0,
+"realEditorValues": [{
+"id": "V_Int",
+"params": [1.37303e+07]
+}]
+}, {
+"__identifier": "Point",
+"__tile": null,
+"__type": "Point",
+"__value": {
+"cx": 4.0,
+"cy": 17.0
+},
+"defUid": 24.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["4,17"]
+}]
+}, {
+"__identifier": "FilePath",
+"__tile": null,
+"__type": "FilePath",
+"__value": "README.md",
+"defUid": 35.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["README.md"]
+}]
+}, {
+"__identifier": "Array_Integer",
+"__tile": null,
+"__type": "Array<Int>",
+"__value": [1.0, 2.0, 3.0],
+"defUid": 25.0,
+"realEditorValues": [{
+"id": "V_Int",
+"params": [1.0]
+}, {
+"id": "V_Int",
+"params": [2.0]
+}, {
+"id": "V_Int",
+"params": [3.0]
+}]
+}, {
+"__identifier": "Array_Enum",
+"__tile": null,
+"__type": "Array<LocalEnum.SomeEnum>",
+"__value": ["A", "B", "C"],
+"defUid": 29.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["A"]
+}, {
+"id": "V_String",
+"params": ["B"]
+}, {
+"id": "V_String",
+"params": ["C"]
+}]
+}, {
+"__identifier": "Array_points",
+"__tile": null,
+"__type": "Array<Point>",
+"__value": [{
+"cx": 14.0,
+"cy": 19.0
+}, {
+"cx": 14.0,
+"cy": 17.0
+}, {
+"cx": 18.0,
+"cy": 17.0
+}, {
+"cx": 18.0,
+"cy": 19.0
+}],
+"defUid": 30.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["14,19"]
+}, {
+"id": "V_String",
+"params": ["14,17"]
+}, {
+"id": "V_String",
+"params": ["18,17"]
+}, {
+"id": "V_String",
+"params": ["18,19"]
+}]
+}, {
+"__identifier": "Array_multilines",
+"__tile": null,
+"__type": "Array<Multilines>",
+"__value": ["<foo/> <bar>5</bar>", "<hello>world</hello>"],
+"defUid": 37.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["<foo/> <bar>5</bar>"]
+}, {
+"id": "V_String",
+"params": ["<hello>world</hello>"]
+}]
+}]
 metadata/LDTK_entityDefinition = {
 "color": "#00A5FF",
 "doc": null,
@@ -4170,183 +4347,6 @@ metadata/LDTK_entityDefinition = {
 "uid": 15.0,
 "width": 32.0
 }
-metadata/LDTK_fieldInstances = [{
-"__identifier": "Integer",
-"__tile": null,
-"__type": "Int",
-"__value": 1.0,
-"defUid": 16.0,
-"realEditorValues": [{
-"id": "V_Int",
-"params": [1.0]
-}]
-}, {
-"__identifier": "Float",
-"__tile": null,
-"__type": "Float",
-"__value": 1.5,
-"defUid": 17.0,
-"realEditorValues": [{
-"id": "V_Float",
-"params": [1.5]
-}]
-}, {
-"__identifier": "Boolean",
-"__tile": null,
-"__type": "Bool",
-"__value": false,
-"defUid": 18.0,
-"realEditorValues": [null]
-}, {
-"__identifier": "String_singleLine",
-"__tile": null,
-"__type": "String",
-"__value": "foo",
-"defUid": 19.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["foo"]
-}]
-}, {
-"__identifier": "String_multiLines",
-"__tile": null,
-"__type": "Multilines",
-"__value": "foo bar",
-"defUid": 20.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["foo bar"]
-}]
-}, {
-"__identifier": "Enum",
-"__tile": null,
-"__type": "LocalEnum.SomeEnum",
-"__value": "A",
-"defUid": 22.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["A"]
-}]
-}, {
-"__identifier": "ExternEnum",
-"__tile": null,
-"__type": "ExternEnum.AnExternEnum",
-"__value": "Value1",
-"defUid": 49.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["Value1"]
-}]
-}, {
-"__identifier": "Color",
-"__tile": null,
-"__type": "Color",
-"__value": "#D181E8",
-"defUid": 23.0,
-"realEditorValues": [{
-"id": "V_Int",
-"params": [1.37303e+07]
-}]
-}, {
-"__identifier": "Point",
-"__tile": null,
-"__type": "Point",
-"__value": {
-"cx": 4.0,
-"cy": 17.0
-},
-"defUid": 24.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["4,17"]
-}]
-}, {
-"__identifier": "FilePath",
-"__tile": null,
-"__type": "FilePath",
-"__value": "README.md",
-"defUid": 35.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["README.md"]
-}]
-}, {
-"__identifier": "Array_Integer",
-"__tile": null,
-"__type": "Array<Int>",
-"__value": [1.0, 2.0, 3.0],
-"defUid": 25.0,
-"realEditorValues": [{
-"id": "V_Int",
-"params": [1.0]
-}, {
-"id": "V_Int",
-"params": [2.0]
-}, {
-"id": "V_Int",
-"params": [3.0]
-}]
-}, {
-"__identifier": "Array_Enum",
-"__tile": null,
-"__type": "Array<LocalEnum.SomeEnum>",
-"__value": ["A", "B", "C"],
-"defUid": 29.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["A"]
-}, {
-"id": "V_String",
-"params": ["B"]
-}, {
-"id": "V_String",
-"params": ["C"]
-}]
-}, {
-"__identifier": "Array_points",
-"__tile": null,
-"__type": "Array<Point>",
-"__value": [{
-"cx": 14.0,
-"cy": 19.0
-}, {
-"cx": 14.0,
-"cy": 17.0
-}, {
-"cx": 18.0,
-"cy": 17.0
-}, {
-"cx": 18.0,
-"cy": 19.0
-}],
-"defUid": 30.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["14,19"]
-}, {
-"id": "V_String",
-"params": ["14,17"]
-}, {
-"id": "V_String",
-"params": ["18,17"]
-}, {
-"id": "V_String",
-"params": ["18,19"]
-}]
-}, {
-"__identifier": "Array_multilines",
-"__tile": null,
-"__type": "Array<Multilines>",
-"__value": ["<foo/> <bar>5</bar>", "<hello>world</hello>"],
-"defUid": 37.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["<foo/> <bar>5</bar>"]
-}, {
-"id": "V_String",
-"params": ["<hello>world</hello>"]
-}]
-}]
 metadata/LDTK_entityInstance = {
 "__grid": [9.0, 19.0],
 "__identifier": "EntityFieldsTest",
@@ -4542,6 +4542,27 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_RectRegion-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_v4j2d")]
 position = Vector2(368, 288)
+metadata/LDTK_fieldInstances = [{
+"__identifier": "SomeEnum",
+"__tile": null,
+"__type": "LocalEnum.SomeEnum",
+"__value": "A",
+"defUid": 40.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["A"]
+}]
+}, {
+"__identifier": "Integer",
+"__tile": null,
+"__type": "Int",
+"__value": 1.0,
+"defUid": 41.0,
+"realEditorValues": [{
+"id": "V_Int",
+"params": [1.0]
+}]
+}]
 metadata/LDTK_entityDefinition = {
 "color": "#A094D9",
 "doc": null,
@@ -4645,27 +4666,6 @@ metadata/LDTK_entityDefinition = {
 "uid": 39.0,
 "width": 16.0
 }
-metadata/LDTK_fieldInstances = [{
-"__identifier": "SomeEnum",
-"__tile": null,
-"__type": "LocalEnum.SomeEnum",
-"__value": "A",
-"defUid": 40.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["A"]
-}]
-}, {
-"__identifier": "Integer",
-"__tile": null,
-"__type": "Int",
-"__value": 1.0,
-"defUid": 41.0,
-"realEditorValues": [{
-"id": "V_Int",
-"params": [1.0]
-}]
-}]
 metadata/LDTK_entityInstance = {
 "__grid": [23.0, 18.0],
 "__identifier": "RectRegion",
@@ -4705,6 +4705,27 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_CircleRegion-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_ujh4n")]
 position = Vector2(584, 440)
+metadata/LDTK_fieldInstances = [{
+"__identifier": "SomeEnum",
+"__tile": null,
+"__type": "LocalEnum.SomeEnum",
+"__value": "B",
+"defUid": 43.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["B"]
+}]
+}, {
+"__identifier": "text",
+"__tile": null,
+"__type": "String",
+"__value": "hello",
+"defUid": 44.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["hello"]
+}]
+}]
 metadata/LDTK_entityDefinition = {
 "color": "#95D994",
 "doc": null,
@@ -4808,27 +4829,6 @@ metadata/LDTK_entityDefinition = {
 "uid": 42.0,
 "width": 16.0
 }
-metadata/LDTK_fieldInstances = [{
-"__identifier": "SomeEnum",
-"__tile": null,
-"__type": "LocalEnum.SomeEnum",
-"__value": "B",
-"defUid": 43.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["B"]
-}]
-}, {
-"__identifier": "text",
-"__tile": null,
-"__type": "String",
-"__value": "hello",
-"defUid": 44.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["hello"]
-}]
-}]
 metadata/LDTK_entityInstance = {
 "__grid": [36.0, 27.0],
 "__identifier": "CircleRegion",
@@ -4868,6 +4868,22 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_EntityRefTest-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_6pdt2")]
 position = Vector2(264, 472)
+metadata/LDTK_fieldInstances = [{
+"__identifier": "target",
+"__tile": null,
+"__type": "EntityRef",
+"__value": {
+"entityIid": "d0e23330-66b0-11ec-895f-e701a663b232",
+"layerIid": "a3030e77-66b0-11ec-9cd7-0b0cf743a68c",
+"levelIid": "a3030e70-66b0-11ec-9cd7-3fe74f53b9c3",
+"worldIid": "c9b00130-c640-11ed-ad34-57d0f1a6d3a2"
+},
+"defUid": 47.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["d0e23330-66b0-11ec-895f-e701a663b232"]
+}]
+}]
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -4943,22 +4959,6 @@ metadata/LDTK_entityDefinition = {
 "uid": 46.0,
 "width": 16.0
 }
-metadata/LDTK_fieldInstances = [{
-"__identifier": "target",
-"__tile": null,
-"__type": "EntityRef",
-"__value": {
-"entityIid": "d0e23330-66b0-11ec-895f-e701a663b232",
-"layerIid": "a3030e77-66b0-11ec-9cd7-0b0cf743a68c",
-"levelIid": "a3030e70-66b0-11ec-9cd7-3fe74f53b9c3",
-"worldIid": "c9b00130-c640-11ed-ad34-57d0f1a6d3a2"
-},
-"defUid": 47.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["d0e23330-66b0-11ec-895f-e701a663b232"]
-}]
-}]
 metadata/LDTK_entityInstance = {
 "__grid": [16.0, 29.0],
 "__identifier": "EntityRefTest",
@@ -4999,6 +4999,22 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_EntityRefTest-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_6pdt2")]
 position = Vector2(328, 424)
+metadata/LDTK_fieldInstances = [{
+"__identifier": "target",
+"__tile": null,
+"__type": "EntityRef",
+"__value": {
+"entityIid": "d1f3a330-66b0-11ec-895f-87022e90e72f",
+"layerIid": "a3030e77-66b0-11ec-9cd7-0b0cf743a68c",
+"levelIid": "a3030e70-66b0-11ec-9cd7-3fe74f53b9c3",
+"worldIid": "c9b00130-c640-11ed-ad34-57d0f1a6d3a2"
+},
+"defUid": 47.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["d1f3a330-66b0-11ec-895f-87022e90e72f"]
+}]
+}]
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -5074,22 +5090,6 @@ metadata/LDTK_entityDefinition = {
 "uid": 46.0,
 "width": 16.0
 }
-metadata/LDTK_fieldInstances = [{
-"__identifier": "target",
-"__tile": null,
-"__type": "EntityRef",
-"__value": {
-"entityIid": "d1f3a330-66b0-11ec-895f-87022e90e72f",
-"layerIid": "a3030e77-66b0-11ec-9cd7-0b0cf743a68c",
-"levelIid": "a3030e70-66b0-11ec-9cd7-3fe74f53b9c3",
-"worldIid": "c9b00130-c640-11ed-ad34-57d0f1a6d3a2"
-},
-"defUid": 47.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["d1f3a330-66b0-11ec-895f-87022e90e72f"]
-}]
-}]
 metadata/LDTK_entityInstance = {
 "__grid": [20.0, 26.0],
 "__identifier": "EntityRefTest",
@@ -5130,6 +5130,22 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_EntityRefTest-2" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_6pdt2")]
 position = Vector2(392, 472)
+metadata/LDTK_fieldInstances = [{
+"__identifier": "target",
+"__tile": null,
+"__type": "EntityRef",
+"__value": {
+"entityIid": "d08b1280-66b0-11ec-895f-aff95798ac90",
+"layerIid": "a3030e77-66b0-11ec-9cd7-0b0cf743a68c",
+"levelIid": "a3030e70-66b0-11ec-9cd7-3fe74f53b9c3",
+"worldIid": "c9b00130-c640-11ed-ad34-57d0f1a6d3a2"
+},
+"defUid": 47.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["d08b1280-66b0-11ec-895f-aff95798ac90"]
+}]
+}]
 metadata/LDTK_entityDefinition = {
 "color": "#94D9B3",
 "doc": null,
@@ -5205,22 +5221,6 @@ metadata/LDTK_entityDefinition = {
 "uid": 46.0,
 "width": 16.0
 }
-metadata/LDTK_fieldInstances = [{
-"__identifier": "target",
-"__tile": null,
-"__type": "EntityRef",
-"__value": {
-"entityIid": "d08b1280-66b0-11ec-895f-aff95798ac90",
-"layerIid": "a3030e77-66b0-11ec-9cd7-0b0cf743a68c",
-"levelIid": "a3030e70-66b0-11ec-9cd7-3fe74f53b9c3",
-"worldIid": "c9b00130-c640-11ed-ad34-57d0f1a6d3a2"
-},
-"defUid": 47.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["d08b1280-66b0-11ec-895f-aff95798ac90"]
-}]
-}]
 metadata/LDTK_entityInstance = {
 "__grid": [24.0, 29.0],
 "__identifier": "EntityRefTest",
@@ -5261,6 +5261,24 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Labels-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
 position = Vector2(304, 88)
+metadata/LDTK_fieldInstances = [{
+"__identifier": "text",
+"__tile": null,
+"__type": "Multilines",
+"__value": "PureAutoLayers (based on IntGrid_classic)",
+"defUid": 11.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["PureAutoLayers (based on IntGrid_classic)"]
+}]
+}, {
+"__identifier": "color",
+"__tile": null,
+"__type": "Color",
+"__value": "#7F95AB",
+"defUid": 12.0,
+"realEditorValues": []
+}]
 metadata/LDTK_entityDefinition = {
 "color": "#000000",
 "doc": null,
@@ -5367,24 +5385,6 @@ metadata/LDTK_entityDefinition = {
 "uid": 10.0,
 "width": 32.0
 }
-metadata/LDTK_fieldInstances = [{
-"__identifier": "text",
-"__tile": null,
-"__type": "Multilines",
-"__value": "PureAutoLayers (based on IntGrid_classic)",
-"defUid": 11.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["PureAutoLayers (based on IntGrid_classic)"]
-}]
-}, {
-"__identifier": "color",
-"__tile": null,
-"__type": "Color",
-"__value": "#7F95AB",
-"defUid": 12.0,
-"realEditorValues": []
-}]
 metadata/LDTK_entityInstance = {
 "__grid": [19.0, 5.0],
 "__identifier": "Labels",
@@ -5421,6 +5421,24 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Labels-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
 position = Vector2(432, 88)
+metadata/LDTK_fieldInstances = [{
+"__identifier": "text",
+"__tile": null,
+"__type": "Multilines",
+"__value": "Tiles",
+"defUid": 11.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["Tiles"]
+}]
+}, {
+"__identifier": "color",
+"__tile": null,
+"__type": "Color",
+"__value": "#7F95AB",
+"defUid": 12.0,
+"realEditorValues": []
+}]
 metadata/LDTK_entityDefinition = {
 "color": "#000000",
 "doc": null,
@@ -5527,24 +5545,6 @@ metadata/LDTK_entityDefinition = {
 "uid": 10.0,
 "width": 32.0
 }
-metadata/LDTK_fieldInstances = [{
-"__identifier": "text",
-"__tile": null,
-"__type": "Multilines",
-"__value": "Tiles",
-"defUid": 11.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["Tiles"]
-}]
-}, {
-"__identifier": "color",
-"__tile": null,
-"__type": "Color",
-"__value": "#7F95AB",
-"defUid": 12.0,
-"realEditorValues": []
-}]
 metadata/LDTK_entityInstance = {
 "__grid": [27.0, 5.0],
 "__identifier": "Labels",
@@ -5581,6 +5581,24 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Labels-2" type="Node2D" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
 position = Vector2(560, 88)
+metadata/LDTK_fieldInstances = [{
+"__identifier": "text",
+"__tile": null,
+"__type": "Multilines",
+"__value": "IntGrid with a 8px grid size",
+"defUid": 11.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["IntGrid with a 8px grid size"]
+}]
+}, {
+"__identifier": "color",
+"__tile": null,
+"__type": "Color",
+"__value": "#7F95AB",
+"defUid": 12.0,
+"realEditorValues": []
+}]
 metadata/LDTK_entityDefinition = {
 "color": "#000000",
 "doc": null,
@@ -5687,24 +5705,6 @@ metadata/LDTK_entityDefinition = {
 "uid": 10.0,
 "width": 32.0
 }
-metadata/LDTK_fieldInstances = [{
-"__identifier": "text",
-"__tile": null,
-"__type": "Multilines",
-"__value": "IntGrid with a 8px grid size",
-"defUid": 11.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["IntGrid with a 8px grid size"]
-}]
-}, {
-"__identifier": "color",
-"__tile": null,
-"__type": "Color",
-"__value": "#7F95AB",
-"defUid": 12.0,
-"realEditorValues": []
-}]
 metadata/LDTK_entityInstance = {
 "__grid": [35.0, 5.0],
 "__identifier": "Labels",
@@ -5741,6 +5741,24 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Labels-3" type="Node2D" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
 position = Vector2(176, 88)
+metadata/LDTK_fieldInstances = [{
+"__identifier": "text",
+"__tile": null,
+"__type": "Multilines",
+"__value": "IntGrid (with rules)",
+"defUid": 11.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["IntGrid (with rules)"]
+}]
+}, {
+"__identifier": "color",
+"__tile": null,
+"__type": "Color",
+"__value": "#7F95AB",
+"defUid": 12.0,
+"realEditorValues": []
+}]
 metadata/LDTK_entityDefinition = {
 "color": "#000000",
 "doc": null,
@@ -5847,24 +5865,6 @@ metadata/LDTK_entityDefinition = {
 "uid": 10.0,
 "width": 32.0
 }
-metadata/LDTK_fieldInstances = [{
-"__identifier": "text",
-"__tile": null,
-"__type": "Multilines",
-"__value": "IntGrid (with rules)",
-"defUid": 11.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["IntGrid (with rules)"]
-}]
-}, {
-"__identifier": "color",
-"__tile": null,
-"__type": "Color",
-"__value": "#7F95AB",
-"defUid": 12.0,
-"realEditorValues": []
-}]
 metadata/LDTK_entityInstance = {
 "__grid": [11.0, 5.0],
 "__identifier": "Labels",
@@ -5901,6 +5901,24 @@ metadata/LDTK_entityInstance = {
 
 [node name="LDTK_Labels-4" type="Node2D" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
 position = Vector2(48, 88)
+metadata/LDTK_fieldInstances = [{
+"__identifier": "text",
+"__tile": null,
+"__type": "Multilines",
+"__value": "IntGrid (classic)",
+"defUid": 11.0,
+"realEditorValues": [{
+"id": "V_String",
+"params": ["IntGrid (classic)"]
+}]
+}, {
+"__identifier": "color",
+"__tile": null,
+"__type": "Color",
+"__value": "#7F95AB",
+"defUid": 12.0,
+"realEditorValues": []
+}]
 metadata/LDTK_entityDefinition = {
 "color": "#000000",
 "doc": null,
@@ -6007,24 +6025,6 @@ metadata/LDTK_entityDefinition = {
 "uid": 10.0,
 "width": 32.0
 }
-metadata/LDTK_fieldInstances = [{
-"__identifier": "text",
-"__tile": null,
-"__type": "Multilines",
-"__value": "IntGrid (classic)",
-"defUid": 11.0,
-"realEditorValues": [{
-"id": "V_String",
-"params": ["IntGrid (classic)"]
-}]
-}, {
-"__identifier": "color",
-"__tile": null,
-"__type": "Color",
-"__value": "#7F95AB",
-"defUid": 12.0,
-"realEditorValues": []
-}]
 metadata/LDTK_entityInstance = {
 "__grid": [3.0, 5.0],
 "__identifier": "Labels",

@@ -15,12 +15,15 @@ dest_files=["res://.godot/imported/AutoLayers_2_stamps.ldtk-d91ea11e818c2cbabcae
 [params]
 
 General/prefix="LDTK"
+World/post_processor="res://addons/LdtkImporter/PostProcessor/DefaultWorldPostProcessor.tres"
 World/WorldScenes="res://samples/AutoLayers_2_stamps/AutoLayers_2_stamps.tscn"
 Tileset/add_tileset_definition_to_meta=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Resources/Inca_front_by_Kronbits="res://samples/AutoLayers_2_stamps/Tileset/Inca_front_by_Kronbits.tres"
+Entity/post_processor="res://addons/LdtkImporter/PostProcessor/DefaultEntityPostProcessor.tres"
 Entity/add_entity_definition_to_meta=true
 Entity/add_entity_instance_to_meta=true
+Level/post_processor="res://addons/LdtkImporter/PostProcessor/DefaultLevelPostProcessor.tres"
 Level/add_level_instance_to_meta=true
 Level/add_layer_instance_to_meta=true
 Level/add_layer_definition_to_meta=true

@@ -15,13 +15,16 @@ dest_files=["res://.godot/imported/AutoLayers_3_Mosaic.ldtk-45ef5d26b130b62ae639
 [params]
 
 General/prefix="LDTK"
+World/post_processor="res://addons/LdtkImporter/PostProcessor/DefaultWorldPostProcessor.tres"
 World/WorldScenes="res://samples/AutoLayers_3_Mosaic/AutoLayers_3_Mosaic.tscn"
 Tileset/add_tileset_definition_to_meta=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Resources/Inca_back2_by_Kronbits="res://samples/AutoLayers_3_Mosaic/Tileset/Inca_back2_by_Kronbits.tres"
 Tileset/Resources/Inca_extended_front_by_Kronbits="res://samples/AutoLayers_3_Mosaic/Tileset/Inca_extended_front_by_Kronbits.tres"
+Entity/post_processor="res://addons/LdtkImporter/PostProcessor/DefaultEntityPostProcessor.tres"
 Entity/add_entity_definition_to_meta=true
 Entity/add_entity_instance_to_meta=true
+Level/post_processor="res://addons/LdtkImporter/PostProcessor/DefaultLevelPostProcessor.tres"
 Level/add_level_instance_to_meta=true
 Level/add_layer_instance_to_meta=true
 Level/add_layer_definition_to_meta=true

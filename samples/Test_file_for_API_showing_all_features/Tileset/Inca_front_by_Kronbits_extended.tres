@@ -1,8 +1,8 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://m7tc35djbk2h"]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cad68g4w6x18a"]
 
 [ext_resource type="Texture2D" uid="uid://dobp41glntdun" path="res://samples/atlas/Inca_front_by_Kronbits-extended.png" id="1_klwkj"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gp266"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_laccp"]
 resource_name = "LDTK_Inca_front_by_Kronbits_extended"
 texture = ExtResource("1_klwkj")
 4:7/next_alternative_id = 4
@@ -65,7 +65,7 @@ texture = ExtResource("1_klwkj")
 [resource]
 custom_data_layer_0/name = "LDTK_Inca_front_by_Kronbits_extended"
 custom_data_layer_0/type = 27
-sources/2 = SubResource("TileSetAtlasSource_gp266")
+sources/2 = SubResource("TileSetAtlasSource_laccp")
 metadata/LDTK_tilesetDefinition = {
 "__cHei": 14.0,
 "__cWid": 20.0,

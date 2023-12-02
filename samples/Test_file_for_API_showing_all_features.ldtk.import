@@ -15,11 +15,13 @@ dest_files=["res://.godot/imported/Test_file_for_API_showing_all_features.ldtk-9
 [params]
 
 General/prefix="LDTK"
+World/post_processor="res://addons/LdtkImporter/PostProcessor/DefaultWorldPostProcessor.tres"
 World/WorldScenes="res://samples/Test_file_for_API_showing_all_features/Test_file_for_API_showing_all_features.tscn"
 Tileset/add_tileset_definition_to_meta=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Resources/Inca_front_by_Kronbits_extended="res://samples/Test_file_for_API_showing_all_features/Tileset/Inca_front_by_Kronbits_extended.tres"
 Tileset/Resources/Internal_Icons="res://samples/Test_file_for_API_showing_all_features/Tileset/Internal_Icons.tres"
+Entity/post_processor="res://addons/LdtkImporter/PostProcessor/DefaultEntityPostProcessor.tres"
 Entity/add_entity_definition_to_meta=true
 Entity/add_entity_instance_to_meta=true
 Entity/Scenes/CircleRegion="res://samples/Test_file_for_API_showing_all_features/Entity/CircleRegion.tscn"
@@ -27,6 +29,7 @@ Entity/Scenes/EntityFieldsTest="res://samples/Test_file_for_API_showing_all_feat
 Entity/Scenes/EntityRefTest="res://samples/Test_file_for_API_showing_all_features/Entity/EntityRefTest.tscn"
 Entity/Scenes/Labels="res://samples/Test_file_for_API_showing_all_features/Entity/Labels.tscn"
 Entity/Scenes/RectRegion="res://samples/Test_file_for_API_showing_all_features/Entity/RectRegion.tscn"
+Level/post_processor="res://addons/LdtkImporter/PostProcessor/DefaultLevelPostProcessor.tres"
 Level/add_level_instance_to_meta=true
 Level/add_layer_instance_to_meta=true
 Level/add_layer_definition_to_meta=true
