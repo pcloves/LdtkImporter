@@ -97,18 +97,20 @@ instance归属于哪个TileMap Layer。一句话总结：通过Godot TileMap支�
 - [ ] 运行时
   - [ ] 支持运行动态修改`IntGrid`，并根据 [LDTK Auto-layer rule definition](https://ldtk.io/json/#ldtk-AutoRuleDef) 实时更新并渲染受影响的`IntGrid`和`AutoLayer`
 - [ ] World
-  - [ ] 导入后处理脚本支持
-  - [ ] LDTK [Multi-worlds](https://github.com/deepnight/ldtk/issues/231) 支持
+  - [x] 导入后处理脚本支持
   - [x] LDTK 默认`Level`背景色支持
+  - [ ] LDTK [Multi-worlds](https://github.com/deepnight/ldtk/issues/231) 支持
 - [ ] Level
   - [x] 支持`Level`背景色和背景图的导入
   - [x] LDTK Level fields支持，元数据名称为：$"{prefix}_fieldInstances"
+  - [x] `Level` 导入后处理脚本支持
   - [ ] 支持Level配置开关：是否生成独立的Level场景
-  - [ ] `Level` 导入后处理脚本支持
 - [ ] Entity
   - [ ] Entity视觉显示支持（`Sprite2D`）
   - [ ] `Entity`导入后处理脚本支持
   - [ ] Enum支持
+- [ ] 文档
+  - [ ] 增加`后置处理器`扩展说明
 
 # 🐞 已知BUG
 - [ ] 每次重新导入后，需要重新`Reload Current Project`或重新打开Godot后，导入的`.tscn`才会生效

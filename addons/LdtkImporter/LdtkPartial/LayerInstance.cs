@@ -43,7 +43,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         Root.Position = new Vector2(PxTotalOffsetX, PxTotalOffsetY);
         Root.Visible = Visible;
         Root.Modulate = new Color(1, 1, 1, (float)Opacity);
-        
+
         var tileMap = Root as TileMap;
         var tilesetDefinition = ldtkJson.Defs.Tilesets.FirstOrDefault(definition => definition.Uid == TilesetDefUid);
         if (tileMap != null)
@@ -56,7 +56,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
         return Error.Ok;
     }
-    
+
     public Error Import(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
         var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
@@ -65,7 +65,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         var addLayerInstance2Meta =
             options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionLevelAddLayerInstanceToMeta);
         var layerDefinition = ldtkJson.Defs.Layers.FirstOrDefault(definition => definition.Uid == LayerDefUid);
-        
+
         if (addLayerDefinition2Meta)
         {
             Root.SetMeta($"{prefix}_layerDefinition", Json.ParseString(JsonSerializer.Serialize(layerDefinition)));
@@ -75,7 +75,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         {
             Root.SetMeta($"{prefix}_layerInstance", Json.ParseString(JsonString));
         }
-        
+
         Error error;
         switch (Type)
         {
@@ -120,6 +120,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
         var addDefinition2Meta = options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionEntityAddDefinition2Meta);
         var addInstance2Meta = options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionEntityAddInstance2Meta);
+        var postProcessor = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionEntityPostProcessor);
 
         var entityCountMap = new System.Collections.Generic.Dictionary<string, int>();
         foreach (var entityInstance in EntityInstances)
@@ -145,6 +146,12 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
             if (addInstance2Meta)
             {
                 node2D.SetMeta($"{prefix}_entityInstance", Json.ParseString(JsonSerializer.Serialize(entityInstance)));
+            }
+
+            if (postProcessor.Length != 0)
+            {
+                var processor = ResourceLoader.Load<AbstractPostProcessor>(postProcessor);
+                node2D = processor.PostProcess(ldtkJson, options, node2D);
             }
 
             Root.AddChild(node2D);
@@ -263,7 +270,7 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
 
         return Error.Ok;
     }
-    
+
     private Vector2I ToCoords(TileInstance tileInstance)
     {
         var coords = new Vector2I((int)tileInstance.Px[0], (int)tileInstance.Px[1]) / (int)(GridSize);

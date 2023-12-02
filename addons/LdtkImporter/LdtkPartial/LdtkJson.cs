@@ -122,10 +122,10 @@ public partial class LdtkJson : IImporter
             if (error != Error.Ok) return error;
         }
 
-        return SaveLdkJson(savePath, options, genFiles);
+        return SaveLdkJson(ldtkJson, savePath, options, genFiles);
     }
 
-    private Error SaveLdkJson(string savePath, Dictionary options, Array<string> genFiles)
+    private Error SaveLdkJson(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
         Node2D root;
         var worldScenePath = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionWorldWorldScenes);
@@ -149,6 +149,13 @@ public partial class LdtkJson : IImporter
         {
             root.AddChild(level.Root);
             level.Root.Owner = root;
+        }
+        
+        var postProcessor = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionWorldPostProcessor);
+        if (postProcessor.Length != 0)
+        {
+            var processor = ResourceLoader.Load<AbstractPostProcessor>(postProcessor);
+            root = processor.PostProcess(ldtkJson, options, root);
         }
 
         var packedScene = new PackedScene();

@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="DefaultLevelPostProcessor" load_steps=2 format=3 uid="uid://b5di6ybj5ubt8"]
+
+[ext_resource type="Script" path="res://addons/LdtkImporter/PostProcessor/DefaultLevelPostProcessor.cs" id="1_0u8my"]
+
+[resource]
+script = ExtResource("1_0u8my")

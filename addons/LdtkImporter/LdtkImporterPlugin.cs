@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.IO;
 using System.Linq;
 using Godot;
 using Godot.Collections;
@@ -19,6 +20,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
     public const string OptionGeneralPrefix = $"{OptionGeneral}/prefix";
 
     public const string OptionWorld = "World";
+    public const string OptionWorldPostProcessor = $"{OptionWorld}/post_processor";
     public const string OptionWorldWorldScenes = $"{OptionWorld}/WorldScenes";
 
     public const string OptionTileset = "Tileset";
@@ -27,6 +29,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
     public const string OptionTilesetImportTileCustomData = $"{OptionTileset}/import_LDTK_tile_custom_data";
 
     public const string OptionLevel = "Level";
+    public const string OptionLevelPostProcessor = $"{OptionLevel}/post_processor";
     public const string OptionLevelScenes = $"{OptionLevel}/Scenes";
     public const string OptionLevelImportIntGrid = $"{OptionLevel}/import_IntGrid";
     public const string OptionLevelAddLevelInstanceToMeta = $"{OptionLevel}/add_level_instance_to_meta";
@@ -34,6 +37,7 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
     public const string OptionLevelAddLayerInstanceToMeta = $"{OptionLevel}/add_layer_instance_to_meta";
 
     public const string OptionEntity = "Entity";
+    public const string OptionEntityPostProcessor = $"{OptionEntity}/post_processor";
     public const string OptionEntityScenes = $"{OptionEntity}/Scenes";
     public const string OptionEntityAddDefinition2Meta = $"{OptionEntity}/add_entity_definition_to_meta";
     public const string OptionEntityAddInstance2Meta = $"{OptionEntity}/add_entity_instance_to_meta";
@@ -87,8 +91,24 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
     private IEnumerable<Dictionary> WorldOptions(string path, int presetIndex)
     {
+        var globalizePath = ProjectSettings.GlobalizePath("res://");
+        var worldPostProcessorPath = Directory
+            .GetFiles(globalizePath, "*.tres", SearchOption.AllDirectories)
+            .Select(s => ResourceLoader.Load(ProjectSettings.LocalizePath(s)))
+            .OfType<AbstractPostProcessor>()
+            .Where(processor => processor.Handle(ProcessorType.World))
+            .Select(resource => resource.ResourcePath)
+            .ToList();
+
         return new Array<Dictionary>
         {
+            new()
+            {
+                { "name", OptionWorldPostProcessor },
+                { "default_value", worldPostProcessorPath.FirstOrDefault("") },
+                { "property_hint", (int)PropertyHint.Enum },
+                { "hint_string", string.Join(",", worldPostProcessorPath) },
+            },
             new()
             {
                 { "name", OptionWorldWorldScenes },
@@ -142,9 +162,25 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
     private IEnumerable<Dictionary> LevelOptions(string path, int presetIndex)
     {
+        var globalizePath = ProjectSettings.GlobalizePath("res://");
+        var levelPostProcessorPath = Directory
+            .GetFiles(globalizePath, "*.tres", SearchOption.AllDirectories)
+            .Select(s => ResourceLoader.Load(ProjectSettings.LocalizePath(s)))
+            .OfType<AbstractPostProcessor>()
+            .Where(processor => processor.Handle(ProcessorType.Level))
+            .Select(resource => resource.ResourcePath)
+            .ToList();
+
         var levelBaseDir = path.GetBaseDir().PathJoin($"{_ldtkFileName}/Level");
         var options = new Array<Dictionary>
         {
+            new()
+            {
+                { "name", OptionLevelPostProcessor },
+                { "default_value", levelPostProcessorPath.FirstOrDefault("") },
+                { "property_hint", (int)PropertyHint.Enum },
+                { "hint_string", string.Join(",", levelPostProcessorPath) },
+            },
             new()
             {
                 { "name", OptionLevelAddLevelInstanceToMeta },
@@ -198,9 +234,25 @@ public partial class LdtkImporterPlugin : EditorImportPlugin
 
     private IEnumerable<Dictionary> EntityOptions(string path, int presetIndex)
     {
+        var globalizePath = ProjectSettings.GlobalizePath("res://");
+        var entityPostProcessorPath = Directory
+            .GetFiles(globalizePath, "*.tres", SearchOption.AllDirectories)
+            .Select(s => ResourceLoader.Load(ProjectSettings.LocalizePath(s)))
+            .OfType<AbstractPostProcessor>()
+            .Where(processor => processor.Handle(ProcessorType.Entity))
+            .Select(resource => resource.ResourcePath)
+            .ToList();
+
         var entityBaseDir = path.GetBaseDir().PathJoin($"{_ldtkFileName}/Entity");
         var options = new Array<Dictionary>
         {
+            new()
+            {
+                { "name", OptionEntityPostProcessor },
+                { "default_value", entityPostProcessorPath.FirstOrDefault("") },
+                { "property_hint", (int)PropertyHint.Enum },
+                { "hint_string", string.Join(",", entityPostProcessorPath) },
+            },
             new()
             {
                 { "name", OptionEntityAddDefinition2Meta },

@@ -120,44 +120,17 @@ public partial class Level : IImporter, IJsonOnDeserialized
         return position;
     }
 
-    private void _importBackgroundImage(Dictionary options, LdtkJson ldtkJson)
-    {
-        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
-        var bgColorNode = new ColorRect();
-
-        bgColorNode.Name = $"{prefix}_{nameof(BgColor)}";
-        bgColorNode.Color = Color.FromString(BgColor, Colors.Gray);
-        bgColorNode.Size = new Vector2(PxWid, PxHei);
-
-        Root.AddChild(bgColorNode);
-        bgColorNode.Owner = Root;
-
-        if (!string.IsNullOrEmpty(BgRelPath))
-        {
-            var bgImageNode = new Sprite2D();
-
-            var bgPath = ldtkJson.Path.GetBaseDir().PathJoin(BgRelPath);
-            var texture2D = ResourceLoader.Load<Texture2D>(bgPath);
-
-            bgImageNode.Name = $"{prefix}_{bgPath.GetBaseName().GetFile().Replace(" ", "-")}";
-            bgImageNode.Texture = texture2D;
-            bgImageNode.Centered = false;
-            bgImageNode.RegionEnabled = true;
-            bgImageNode.RegionRect = new Rect2((float)BgPos.CropRect[0], (float)BgPos.CropRect[1], (float)BgPos.CropRect[2], (float)BgPos.CropRect[3]);
-            bgImageNode.Scale = new Vector2((float)BgPos.Scale[0], (float)BgPos.Scale[1]);
-            bgImageNode.Offset = new Vector2(BgPos.TopLeftPx[0], BgPos.TopLeftPx[1]);
-
-            Root.AddChild(bgImageNode);
-            bgImageNode.Owner = Root;
-        }
-    }
-
     public Error PostImport(LdtkJson ldtkJson, string savePath, Dictionary options, Array<string> genFiles)
     {
         GD.Print($"  save level scene:{ScenePath}");
 
-        _importBackgroundImage(options, ldtkJson);
-
+        var postProcessor = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionLevelPostProcessor);
+        if (postProcessor.Length != 0)
+        {
+            var processor = ResourceLoader.Load<AbstractPostProcessor>(postProcessor);
+            Root = processor.PostProcess(ldtkJson, options, Root);
+        }
+        
         foreach (var layerInstance in LayerInstances.Reverse())
         {
             Root.AddChild(layerInstance.Root);
