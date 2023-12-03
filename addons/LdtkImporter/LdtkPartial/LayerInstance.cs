@@ -80,6 +80,8 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
         switch (Type)
         {
             case nameof(TypeEnum.IntGrid):
+                error = ImportIntGrid(ldtkJson, options);
+                break;
             case nameof(TypeEnum.AutoLayer):
             case nameof(TypeEnum.Tiles):
                 error = ImportTile(ldtkJson, options);
@@ -199,24 +201,44 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
             cellTileData.Modulate = new Color(1, 1, 1, (float)tileInstance.A);
         }
 
-        return Type == nameof(TypeEnum.IntGrid) ? ImportIntGrid(ldtkJson, options) : Error.Ok;
+        return Error.Ok;
     }
 
     private Error ImportIntGrid(LdtkJson ldtkJson, Dictionary options)
     {
-        if (!options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionLevelImportIntGrid))
+        var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
+        var layerDefinition = ldtkJson.Defs.Layers.FirstOrDefault(definition => definition.Uid == LayerDefUid);
+        if (TilesetDefUid != null)
         {
-            GD.Print(
-                $"   {LdtkImporterPlugin.OptionLevelImportIntGrid} is false, skip import IntGrid as child TileMap.");
-            return Error.Ok;
+            var error = ImportTile(ldtkJson, options);
+            if (error != Error.Ok) return error;
+
+            if (!options.GetValueOrDefault<bool>(LdtkImporterPlugin.OptionLevelImportIntGrid))
+            {
+                GD.Print(
+                    $"   {LdtkImporterPlugin.OptionLevelImportIntGrid} is false, skip import IntGrid as child TileMap.");
+                return Error.Ok;
+            }
+
+            var tileMap = new TileMap();
+            tileMap.Name = $"{prefix}_{Type}";
+
+            UpdateTileMap(ldtkJson, options, tileMap);
+
+            Root.AddChild(tileMap);
+        }
+        else
+        {
+            var tileMap = (TileMap)Root;
+            UpdateTileMap(ldtkJson, options, tileMap);
         }
 
+        return Error.Ok;
+    }
+
+    private void UpdateTileMap(LdtkJson ldtkJson, Dictionary options, TileMap tileMap)
+    {
         var prefix = options.GetValueOrDefault<string>(LdtkImporterPlugin.OptionGeneralPrefix);
-        var tileMap = new TileMap();
-        tileMap.Name = $"{prefix}_{Type}";
-
-        Root.AddChild(tileMap);
-
         var layerDefinition = ldtkJson.Defs.Layers.FirstOrDefault(definition => definition.Uid == LayerDefUid);
         var gridSize = (int)layerDefinition!.GridSize;
         var intGridValues = layerDefinition.IntGridValues;
@@ -267,8 +289,6 @@ public partial class LayerInstance : IImporter, IJsonOnDeserialized
             var atlasCoords = (IntGridCsv[index] - 1).AtlasCoords(source);
             tileMap.SetCell(layer, coords, (int)layerDefinition.Uid, atlasCoords);
         }
-
-        return Error.Ok;
     }
 
     private Vector2I ToCoords(TileInstance tileInstance)

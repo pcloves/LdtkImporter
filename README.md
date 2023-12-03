@@ -134,8 +134,8 @@ instance归属于哪个TileMap Layer。一句话总结：通过Godot TileMap支�
 
 # 🐞 已知BUG
 - [ ] 每次重新导入后，需要重新`Reload Current Project`或重新打开Godot后，导入的`.tscn`才会生效
-- [ ] 当`IntGrid`不包含rules时，生成的TileMap节点中没有包含TileSet，并且也没有正确设置tile
 - [ ] 每次重新导出时，导出的`tscn`文件都有变化（主要是Level场景的id发生变化）
+- [x] 当`IntGrid`不包含rules时，生成的TileMap节点中没有包含TileSet，并且也没有正确设置tile
 - [x] 官方示例：Typical_TopDown_example.ldtk，导入后，某些Tile会缺失
 - [x] 目前导入后，没有为Level设置背景色
 - [x] 打开某些导入后的场景和Tileset后，会导致Godot闪退（例如：Typical_TopDown_example.ldtk）
