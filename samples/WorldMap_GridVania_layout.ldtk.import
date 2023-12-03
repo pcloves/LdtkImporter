@@ -15,11 +15,13 @@ dest_files=["res://.godot/imported/WorldMap_GridVania_layout.ldtk-d53ff1453f44be
 [params]
 
 General/prefix="LDTK"
+World/post_processor="res://addons/LdtkImporter/PostProcessor/DefaultWorldPostProcessor.tres"
 World/WorldScenes="res://samples/WorldMap_GridVania_layout/WorldMap_GridVania_layout.tscn"
 Tileset/add_tileset_definition_to_meta=true
 Tileset/import_LDTK_tile_custom_data=true
 Tileset/Resources/Internal_Icons="res://samples/WorldMap_GridVania_layout/Tileset/Internal_Icons.tres"
 Tileset/Resources/SunnyLand_by_Ansimuz="res://samples/WorldMap_GridVania_layout/Tileset/SunnyLand_by_Ansimuz.tres"
+Entity/post_processor="res://addons/LdtkImporter/PostProcessor/DefaultEntityPostProcessor.tres"
 Entity/add_entity_definition_to_meta=true
 Entity/add_entity_instance_to_meta=true
 Entity/Scenes/Exit="res://samples/WorldMap_GridVania_layout/Entity/Exit.tscn"
@@ -29,6 +31,7 @@ Entity/Scenes/Ladder="res://samples/WorldMap_GridVania_layout/Entity/Ladder.tscn
 Entity/Scenes/Player="res://samples/WorldMap_GridVania_layout/Entity/Player.tscn"
 Entity/Scenes/SecretArea="res://samples/WorldMap_GridVania_layout/Entity/SecretArea.tscn"
 Entity/Scenes/Teleport="res://samples/WorldMap_GridVania_layout/Entity/Teleport.tscn"
+Level/post_processor="res://addons/LdtkImporter/PostProcessor/DefaultLevelPostProcessor.tres"
 Level/add_level_instance_to_meta=true
 Level/add_layer_instance_to_meta=true
 Level/add_layer_definition_to_meta=true

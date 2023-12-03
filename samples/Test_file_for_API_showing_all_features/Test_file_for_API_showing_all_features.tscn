@@ -1,8 +1,13 @@
-[gd_scene format=3]
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" uid="uid://b4rgrsdax55j2" path="res://samples/Test_file_for_API_showing_all_features/Level/Everything.tscn" id="1_bii6j"]
+[ext_resource type="PackedScene" uid="uid://ds8vlslfv43e6" path="res://samples/Test_file_for_API_showing_all_features/Level/Autolayer.tscn" id="2_gpv8o"]
+[ext_resource type="PackedScene" uid="uid://ch0iv113l8ivg" path="res://samples/Test_file_for_API_showing_all_features/Level/Tiles_and_intgrid.tscn" id="3_w8g3q"]
+[ext_resource type="PackedScene" uid="uid://df1jct8glcwu6" path="res://samples/Test_file_for_API_showing_all_features/Level/Background_image.tscn" id="4_6kbng"]
 
 [node name="Test_file_for_API_showing_all_features" type="Node2D"]
 
-[node name="LDTK_Everything" type="Node2D" parent="."]
+[node name="LDTK_Everything" type="Node2D" parent="." instance=ExtResource("1_bii6j")]
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {
 "__bgColor": "#6E6F8B",
@@ -1547,7 +1552,7 @@ metadata/LDTK_levelInstance = {
 "worldY": -1.0
 }
 
-[node name="LDTK_Autolayer" type="Node2D" parent="."]
+[node name="LDTK_Autolayer" type="Node2D" parent="." instance=ExtResource("2_gpv8o")]
 position = Vector2(0, 568)
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {
@@ -3186,7 +3191,7 @@ metadata/LDTK_levelInstance = {
 "worldY": -1.0
 }
 
-[node name="LDTK_Tiles_and_intgrid" type="Node2D" parent="."]
+[node name="LDTK_Tiles_and_intgrid" type="Node2D" parent="." instance=ExtResource("3_w8g3q")]
 position = Vector2(0, 824)
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {
@@ -3839,7 +3844,7 @@ metadata/LDTK_levelInstance = {
 "worldY": -1.0
 }
 
-[node name="LDTK_Background_image" type="Node2D" parent="."]
+[node name="LDTK_Background_image" type="Node2D" parent="." instance=ExtResource("4_6kbng")]
 position = Vector2(0, 984)
 metadata/LDTK_fieldInstances = []
 metadata/LDTK_levelInstance = {

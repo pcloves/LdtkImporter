@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://b4rgrsdax55j2"]
+[gd_scene load_steps=15 format=3 uid="uid://b4rgrsdax55j2"]
 
 [ext_resource type="TileSet" uid="uid://cad68g4w6x18a" path="res://samples/Test_file_for_API_showing_all_features/Tileset/Inca_front_by_Kronbits_extended.tres" id="1_e8opr"]
 [ext_resource type="PackedScene" uid="uid://b4kjyqppnvbm5" path="res://samples/Test_file_for_API_showing_all_features/Entity/EntityFieldsTest.tscn" id="2_7ekox"]
@@ -7,35 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://rfosr2aq25ea" path="res://samples/Test_file_for_API_showing_all_features/Entity/EntityRefTest.tscn" id="5_6pdt2"]
 [ext_resource type="PackedScene" uid="uid://b05g0tp7v1rxx" path="res://samples/Test_file_for_API_showing_all_features/Entity/Labels.tscn" id="6_kjf0d"]
 
-[sub_resource type="Image" id="Image_tqupt"]
-data = {
-"data": PackedByteArray(209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77, 209, 158, 77),
-"format": "RGB8",
-"height": 16,
-"mipmaps": false,
-"width": 16
-}
-
-[sub_resource type="ImageTexture" id="ImageTexture_3ymnb"]
-image = SubResource("Image_tqupt")
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hswfo"]
-texture = SubResource("ImageTexture_3ymnb")
-0:0/0 = 0
-0:0/0/custom_data_0 = {
-"color": "#D19E4D",
-"groupUid": 0.0,
-"identifier": "walls",
-"tile": null,
-"value": 1.0
-}
-
-[sub_resource type="TileSet" id="TileSet_rvbf3"]
-custom_data_layer_0/name = "LDTK_IntGrid_with_rules"
-custom_data_layer_0/type = 27
-sources/3 = SubResource("TileSetAtlasSource_hswfo")
-
-[sub_resource type="Image" id="Image_mplh4"]
+[sub_resource type="Image" id="Image_xsdcm"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 0, 176, 255, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0, 255, 0, 0),
 "format": "RGB8",
@@ -44,11 +16,11 @@ data = {
 "width": 48
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_ylwpr"]
-image = SubResource("Image_mplh4")
+[sub_resource type="ImageTexture" id="ImageTexture_adhks"]
+image = SubResource("Image_xsdcm")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ga087"]
-texture = SubResource("ImageTexture_ylwpr")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gsnct"]
+texture = SubResource("ImageTexture_adhks")
 0:0/0 = 0
 0:0/0/custom_data_0 = {
 "color": "#000000",
@@ -74,12 +46,12 @@ texture = SubResource("ImageTexture_ylwpr")
 "value": 3.0
 }
 
-[sub_resource type="TileSet" id="TileSet_2hdbg"]
+[sub_resource type="TileSet" id="TileSet_3eqrl"]
 custom_data_layer_0/name = "LDTK_IntGrid_without_rules"
 custom_data_layer_0/type = 27
-sources/1 = SubResource("TileSetAtlasSource_ga087")
+sources/1 = SubResource("TileSetAtlasSource_gsnct")
 
-[sub_resource type="Image" id="Image_jhdwc"]
+[sub_resource type="Image" id="Image_h8jhl"]
 data = {
 "data": PackedByteArray(0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122, 0, 255, 122),
 "format": "RGB8",
@@ -88,11 +60,11 @@ data = {
 "width": 8
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_ti5fs"]
-image = SubResource("Image_jhdwc")
+[sub_resource type="ImageTexture" id="ImageTexture_saoma"]
+image = SubResource("Image_h8jhl")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gwmj1"]
-texture = SubResource("ImageTexture_ti5fs")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14ssy"]
+texture = SubResource("ImageTexture_saoma")
 texture_region_size = Vector2i(8, 8)
 0:0/0 = 0
 0:0/0/custom_data_0 = {
@@ -103,11 +75,11 @@ texture_region_size = Vector2i(8, 8)
 "value": 1.0
 }
 
-[sub_resource type="TileSet" id="TileSet_gglvt"]
+[sub_resource type="TileSet" id="TileSet_ldwxc"]
 tile_size = Vector2i(8, 8)
 custom_data_layer_0/name = "LDTK_IntGrid_8px_grid"
 custom_data_layer_0/type = 27
-sources/34 = SubResource("TileSetAtlasSource_gwmj1")
+sources/34 = SubResource("TileSetAtlasSource_14ssy")
 
 [node name="LDTK_Everything" type="Node2D"]
 metadata/LDTK_fieldInstances = []
@@ -2543,15 +2515,11 @@ metadata/LDTK_layerInstance = {
 "visible": true
 }
 
-[node name="LDTK_IntGrid" type="TileMap" parent="LDTK_IntGrid_with_rules"]
-tile_set = SubResource("TileSet_rvbf3")
-format = 2
-layer_1/name = "LDTK_IntGrid_with_rules"
-layer_1/tile_data = PackedInt32Array(458763, 3, 0, 458764, 3, 0, 458765, 3, 0, 458766, 3, 0, 458767, 3, 0, 458768, 3, 0, 524299, 3, 0, 524300, 3, 0, 524301, 3, 0, 524302, 3, 0, 524303, 3, 0, 524304, 3, 0, 589835, 3, 0, 589836, 3, 0, 589837, 3, 0, 589838, 3, 0, 589839, 3, 0, 589840, 3, 0, 655371, 3, 0, 655372, 3, 0, 655373, 3, 0, 655374, 3, 0, 655375, 3, 0, 655376, 3, 0, 720907, 3, 0, 720908, 3, 0, 720909, 3, 0, 720910, 3, 0, 720911, 3, 0, 720912, 3, 0, 786443, 3, 0, 786444, 3, 0, 786445, 3, 0, 786446, 3, 0, 786447, 3, 0, 786448, 3, 0)
-
 [node name="LDTK_IntGrid_without_rules" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_3eqrl")
 format = 2
-layer_0/name = "LDTK_IntGrid_without_rules_0"
+layer_0/name = "LDTK_IntGrid_without_rules"
+layer_0/tile_data = PackedInt32Array(458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 1, 0, 458771, 131073, 0, 458772, 131073, 0, 458773, 131073, 0, 458774, 131073, 0, 458775, 131073, 0, 458776, 131073, 0, 524291, 1, 0, 524292, 65537, 0, 524293, 65537, 0, 524294, 65537, 0, 524295, 65537, 0, 524296, 1, 0, 524307, 131073, 0, 524308, 131073, 0, 524309, 131073, 0, 524310, 131073, 0, 524311, 131073, 0, 524312, 131073, 0, 589827, 1, 0, 589828, 65537, 0, 589829, 65537, 0, 589830, 65537, 0, 589831, 65537, 0, 589832, 1, 0, 589843, 131073, 0, 589844, 131073, 0, 589845, 131073, 0, 589846, 131073, 0, 589847, 131073, 0, 589848, 131073, 0, 655363, 1, 0, 655364, 65537, 0, 655365, 65537, 0, 655366, 65537, 0, 655367, 65537, 0, 655368, 1, 0, 655379, 131073, 0, 655380, 131073, 0, 655381, 131073, 0, 655382, 131073, 0, 655383, 131073, 0, 655384, 131073, 0, 720899, 1, 0, 720900, 65537, 0, 720901, 65537, 0, 720902, 65537, 0, 720903, 65537, 0, 720904, 1, 0, 720915, 131073, 0, 720916, 131073, 0, 720917, 131073, 0, 720918, 131073, 0, 720919, 131073, 0, 720920, 131073, 0, 786435, 1, 0, 786436, 1, 0, 786437, 1, 0, 786438, 1, 0, 786439, 1, 0, 786440, 1, 0, 786451, 131073, 0, 786452, 131073, 0, 786453, 131073, 0, 786454, 131073, 0, 786455, 131073, 0, 786456, 131073, 0)
 metadata/LDTK_layerDefinition = {
 "__type": "IntGrid",
 "autoRuleGroups": [],
@@ -2628,12 +2596,6 @@ metadata/LDTK_layerInstance = {
 "seed": 2.89292e+06,
 "visible": true
 }
-
-[node name="LDTK_IntGrid" type="TileMap" parent="LDTK_IntGrid_without_rules"]
-tile_set = SubResource("TileSet_2hdbg")
-format = 2
-layer_1/name = "LDTK_IntGrid_without_rules"
-layer_1/tile_data = PackedInt32Array(458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 1, 0, 458771, 131073, 0, 458772, 131073, 0, 458773, 131073, 0, 458774, 131073, 0, 458775, 131073, 0, 458776, 131073, 0, 524291, 1, 0, 524292, 65537, 0, 524293, 65537, 0, 524294, 65537, 0, 524295, 65537, 0, 524296, 1, 0, 524307, 131073, 0, 524308, 131073, 0, 524309, 131073, 0, 524310, 131073, 0, 524311, 131073, 0, 524312, 131073, 0, 589827, 1, 0, 589828, 65537, 0, 589829, 65537, 0, 589830, 65537, 0, 589831, 65537, 0, 589832, 1, 0, 589843, 131073, 0, 589844, 131073, 0, 589845, 131073, 0, 589846, 131073, 0, 589847, 131073, 0, 589848, 131073, 0, 655363, 1, 0, 655364, 65537, 0, 655365, 65537, 0, 655366, 65537, 0, 655367, 65537, 0, 655368, 1, 0, 655379, 131073, 0, 655380, 131073, 0, 655381, 131073, 0, 655382, 131073, 0, 655383, 131073, 0, 655384, 131073, 0, 720899, 1, 0, 720900, 65537, 0, 720901, 65537, 0, 720902, 65537, 0, 720903, 65537, 0, 720904, 1, 0, 720915, 131073, 0, 720916, 131073, 0, 720917, 131073, 0, 720918, 131073, 0, 720919, 131073, 0, 720920, 131073, 0, 786435, 1, 0, 786436, 1, 0, 786437, 1, 0, 786438, 1, 0, 786439, 1, 0, 786440, 1, 0, 786451, 131073, 0, 786452, 131073, 0, 786453, 131073, 0, 786454, 131073, 0, 786455, 131073, 0, 786456, 131073, 0)
 
 [node name="LDTK_PureAutoLayer" type="TileMap" parent="."]
 tile_set = ExtResource("1_e8opr")
@@ -2992,8 +2954,10 @@ metadata/LDTK_layerInstance = {
 }
 
 [node name="LDTK_IntGrid_8px_grid" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_ldwxc")
 format = 2
-layer_0/name = "LDTK_IntGrid_8px_grid_0"
+layer_0/name = "LDTK_IntGrid_8px_grid"
+layer_0/tile_data = PackedInt32Array(917574, 34, 0, 917576, 34, 0, 917578, 34, 0, 917580, 34, 0, 917582, 34, 0, 983111, 34, 0, 983113, 34, 0, 983115, 34, 0, 983117, 34, 0, 983119, 34, 0, 1048646, 34, 0, 1048648, 34, 0, 1048650, 34, 0, 1048652, 34, 0, 1048654, 34, 0, 1114183, 34, 0, 1114185, 34, 0, 1114187, 34, 0, 1114189, 34, 0, 1114191, 34, 0, 1179718, 34, 0, 1179720, 34, 0, 1179722, 34, 0, 1179724, 34, 0, 1179726, 34, 0, 1245255, 34, 0, 1245257, 34, 0, 1245259, 34, 0, 1245261, 34, 0, 1245263, 34, 0, 1310790, 34, 0, 1310792, 34, 0, 1310794, 34, 0, 1310796, 34, 0, 1310798, 34, 0, 1376327, 34, 0, 1376329, 34, 0, 1376331, 34, 0, 1376333, 34, 0, 1376335, 34, 0, 1441862, 34, 0, 1441864, 34, 0, 1441866, 34, 0, 1441868, 34, 0, 1441870, 34, 0, 1507399, 34, 0, 1507401, 34, 0, 1507403, 34, 0, 1507405, 34, 0, 1507407, 34, 0, 1572934, 34, 0, 1572936, 34, 0, 1572938, 34, 0, 1572940, 34, 0, 1572942, 34, 0, 1638471, 34, 0, 1638473, 34, 0, 1638475, 34, 0, 1638477, 34, 0, 1638479, 34, 0)
 metadata/LDTK_layerDefinition = {
 "__type": "IntGrid",
 "autoRuleGroups": [],
@@ -3058,12 +3022,6 @@ metadata/LDTK_layerInstance = {
 "seed": 7.67628e+06,
 "visible": true
 }
-
-[node name="LDTK_IntGrid" type="TileMap" parent="LDTK_IntGrid_8px_grid"]
-tile_set = SubResource("TileSet_gglvt")
-format = 2
-layer_1/name = "LDTK_IntGrid_8px_grid"
-layer_1/tile_data = PackedInt32Array(917574, 34, 0, 917576, 34, 0, 917578, 34, 0, 917580, 34, 0, 917582, 34, 0, 983111, 34, 0, 983113, 34, 0, 983115, 34, 0, 983117, 34, 0, 983119, 34, 0, 1048646, 34, 0, 1048648, 34, 0, 1048650, 34, 0, 1048652, 34, 0, 1048654, 34, 0, 1114183, 34, 0, 1114185, 34, 0, 1114187, 34, 0, 1114189, 34, 0, 1114191, 34, 0, 1179718, 34, 0, 1179720, 34, 0, 1179722, 34, 0, 1179724, 34, 0, 1179726, 34, 0, 1245255, 34, 0, 1245257, 34, 0, 1245259, 34, 0, 1245261, 34, 0, 1245263, 34, 0, 1310790, 34, 0, 1310792, 34, 0, 1310794, 34, 0, 1310796, 34, 0, 1310798, 34, 0, 1376327, 34, 0, 1376329, 34, 0, 1376331, 34, 0, 1376333, 34, 0, 1376335, 34, 0, 1441862, 34, 0, 1441864, 34, 0, 1441866, 34, 0, 1441868, 34, 0, 1441870, 34, 0, 1507399, 34, 0, 1507401, 34, 0, 1507403, 34, 0, 1507405, 34, 0, 1507407, 34, 0, 1572934, 34, 0, 1572936, 34, 0, 1572938, 34, 0, 1572940, 34, 0, 1572942, 34, 0, 1638471, 34, 0, 1638473, 34, 0, 1638475, 34, 0, 1638477, 34, 0, 1638479, 34, 0)
 
 [node name="LDTK_Entities" type="Node2D" parent="."]
 metadata/LDTK_layerDefinition = {
@@ -3654,7 +3612,7 @@ metadata/LDTK_layerInstance = {
 "visible": true
 }
 
-[node name="LDTK_EntityFieldsTest-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("2_7ekox")]
+[node name="LDTK_EntityFieldsTest-0" parent="LDTK_Entities" instance=ExtResource("2_7ekox")]
 position = Vector2(152, 312)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "Integer",
@@ -3833,520 +3791,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["<hello>world</hello>"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#00A5FF",
-"doc": null,
-"exportToToc": true,
-"fieldDefs": [{
-"__type": "Int",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "Integer",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Int",
-"uid": 16.0,
-"useForSmartColor": false
-}, {
-"__type": "Float",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "Float",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Float",
-"uid": 17.0,
-"useForSmartColor": false
-}, {
-"__type": "Bool",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "Boolean",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Bool",
-"uid": 18.0,
-"useForSmartColor": false
-}, {
-"__type": "String",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "String_singleLine",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_String",
-"uid": 19.0,
-"useForSmartColor": false
-}, {
-"__type": "Multilines",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "String_multiLines",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Text",
-"uid": 20.0,
-"useForSmartColor": false
-}, {
-"__type": "LocalEnum.SomeEnum",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "Enum",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(21)",
-"uid": 22.0,
-"useForSmartColor": false
-}, {
-"__type": "ExternEnum.AnExternEnum",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "ExternEnum",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(48)",
-"uid": 49.0,
-"useForSmartColor": false
-}, {
-"__type": "Color",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": {
-"id": "V_Int",
-"params": [0.0]
-},
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "Color",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Color",
-"uid": 23.0,
-"useForSmartColor": false
-}, {
-"__type": "Point",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 8.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "Point",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Point",
-"uid": 24.0,
-"useForSmartColor": false
-}, {
-"__type": "FilePath",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "FilePath",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Path",
-"uid": 35.0,
-"useForSmartColor": false
-}, {
-"__type": "Array<Int>",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "Array_Integer",
-"isArray": true,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Int",
-"uid": 25.0,
-"useForSmartColor": false
-}, {
-"__type": "Array<LocalEnum.SomeEnum>",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "Array_Enum",
-"isArray": true,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(21)",
-"uid": 29.0,
-"useForSmartColor": false
-}, {
-"__type": "Array<Point>",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 6.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 2.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "Array_points",
-"isArray": true,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Point",
-"uid": 30.0,
-"useForSmartColor": false
-}, {
-"__type": "Array<Multilines>",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "Array_multilines",
-"isArray": true,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": 9.0,
-"tilesetUid": null,
-"type": "F_Text",
-"uid": 37.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 1.0,
-"height": 32.0,
-"hollow": false,
-"identifier": "EntityFieldsTest",
-"keepAspectRatio": false,
-"limitBehavior": 0.0,
-"limitScope": 1.0,
-"lineOpacity": 1.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 1.0,
-"resizableX": false,
-"resizableY": false,
-"showName": true,
-"tags": [],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": null,
-"tileRenderMode": 6.0,
-"tilesetId": null,
-"uiTileRect": null,
-"uid": 15.0,
-"width": 32.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [9.0, 19.0],
 "__identifier": "EntityFieldsTest",
@@ -4540,7 +3984,7 @@ metadata/LDTK_entityInstance = {
 "width": 32.0
 }
 
-[node name="LDTK_RectRegion-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("3_v4j2d")]
+[node name="LDTK_RectRegion-0" parent="LDTK_Entities" instance=ExtResource("3_v4j2d")]
 position = Vector2(368, 288)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "SomeEnum",
@@ -4563,109 +4007,6 @@ metadata/LDTK_fieldInstances = [{
 "params": [1.0]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#A094D9",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.SomeEnum",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "SomeEnum",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(21)",
-"uid": 40.0,
-"useForSmartColor": false
-}, {
-"__type": "Int",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": true,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "Integer",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Int",
-"uid": 41.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.4,
-"height": 16.0,
-"hollow": true,
-"identifier": "RectRegion",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 1.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.0,
-"renderMode": 2.0,
-"resizableX": true,
-"resizableY": true,
-"showName": true,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 0.25,
-"tileRect": null,
-"tileRenderMode": 6.0,
-"tilesetId": null,
-"uiTileRect": null,
-"uid": 39.0,
-"width": 16.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [23.0, 18.0],
 "__identifier": "RectRegion",
@@ -4703,7 +4044,7 @@ metadata/LDTK_entityInstance = {
 "width": 128.0
 }
 
-[node name="LDTK_CircleRegion-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("4_ujh4n")]
+[node name="LDTK_CircleRegion-0" parent="LDTK_Entities" instance=ExtResource("4_ujh4n")]
 position = Vector2(584, 440)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "SomeEnum",
@@ -4726,109 +4067,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["hello"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#95D994",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "LocalEnum.SomeEnum",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "SomeEnum",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Enum(21)",
-"uid": 43.0,
-"useForSmartColor": false
-}, {
-"__type": "String",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 5.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "text",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_String",
-"uid": 44.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.3,
-"height": 16.0,
-"hollow": true,
-"identifier": "CircleRegion",
-"keepAspectRatio": true,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 1.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 1.0,
-"resizableX": true,
-"resizableY": true,
-"showName": true,
-"tags": ["region"],
-"tileId": null,
-"tileOpacity": 0.25,
-"tileRect": null,
-"tileRenderMode": 6.0,
-"tilesetId": null,
-"uiTileRect": null,
-"uid": 42.0,
-"width": 16.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [36.0, 27.0],
 "__identifier": "CircleRegion",
@@ -4866,7 +4104,7 @@ metadata/LDTK_entityInstance = {
 "width": 112.0
 }
 
-[node name="LDTK_EntityRefTest-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_6pdt2")]
+[node name="LDTK_EntityRefTest-0" parent="LDTK_Entities" instance=ExtResource("5_6pdt2")]
 position = Vector2(264, 472)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "target",
@@ -4884,81 +4122,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["d0e23330-66b0-11ec-895f-e701a663b232"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "EntityRef",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 13.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "target",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_EntityRef",
-"uid": 47.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "EntityRefTest",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": true,
-"tags": [],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 45.0,
-"w": 16.0,
-"x": 224.0,
-"y": 16.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 45.0,
-"uiTileRect": null,
-"uid": 46.0,
-"width": 16.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [16.0, 29.0],
 "__identifier": "EntityRefTest",
@@ -4997,7 +4160,7 @@ metadata/LDTK_entityInstance = {
 "width": 16.0
 }
 
-[node name="LDTK_EntityRefTest-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_6pdt2")]
+[node name="LDTK_EntityRefTest-1" parent="LDTK_Entities" instance=ExtResource("5_6pdt2")]
 position = Vector2(328, 424)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "target",
@@ -5015,81 +4178,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["d1f3a330-66b0-11ec-895f-87022e90e72f"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "EntityRef",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 13.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "target",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_EntityRef",
-"uid": 47.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "EntityRefTest",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": true,
-"tags": [],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 45.0,
-"w": 16.0,
-"x": 224.0,
-"y": 16.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 45.0,
-"uiTileRect": null,
-"uid": 46.0,
-"width": 16.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [20.0, 26.0],
 "__identifier": "EntityRefTest",
@@ -5128,7 +4216,7 @@ metadata/LDTK_entityInstance = {
 "width": 16.0
 }
 
-[node name="LDTK_EntityRefTest-2" type="Node2D" parent="LDTK_Entities" instance=ExtResource("5_6pdt2")]
+[node name="LDTK_EntityRefTest-2" parent="LDTK_Entities" instance=ExtResource("5_6pdt2")]
 position = Vector2(392, 472)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "target",
@@ -5146,81 +4234,6 @@ metadata/LDTK_fieldInstances = [{
 "params": ["d08b1280-66b0-11ec-895f-aff95798ac90"]
 }]
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#94D9B3",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "EntityRef",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": true,
-"canBeNull": true,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 13.0,
-"editorDisplayPos": 0.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 1.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "target",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_EntityRef",
-"uid": 47.0,
-"useForSmartColor": false
-}],
-"fillOpacity": 0.08,
-"height": 16.0,
-"hollow": false,
-"identifier": "EntityRefTest",
-"keepAspectRatio": false,
-"limitBehavior": 1.0,
-"limitScope": 1.0,
-"lineOpacity": 0.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.5,
-"pivotY": 0.5,
-"renderMode": 3.0,
-"resizableX": false,
-"resizableY": false,
-"showName": true,
-"tags": [],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": {
-"h": 16.0,
-"tilesetUid": 45.0,
-"w": 16.0,
-"x": 224.0,
-"y": 16.0
-},
-"tileRenderMode": 1.0,
-"tilesetId": 45.0,
-"uiTileRect": null,
-"uid": 46.0,
-"width": 16.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [24.0, 29.0],
 "__identifier": "EntityRefTest",
@@ -5259,7 +4272,7 @@ metadata/LDTK_entityInstance = {
 "width": 16.0
 }
 
-[node name="LDTK_Labels-0" type="Node2D" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
+[node name="LDTK_Labels-0" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
 position = Vector2(304, 88)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "text",
@@ -5279,112 +4292,6 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 12.0,
 "realEditorValues": []
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#000000",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "Multilines",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "text",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Text",
-"uid": 11.0,
-"useForSmartColor": false
-}, {
-"__type": "Color",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": {
-"id": "V_Int",
-"params": [8.36139e+06]
-},
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 3.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "color",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Color",
-"uid": 12.0,
-"useForSmartColor": true
-}],
-"fillOpacity": 1.0,
-"height": 16.0,
-"hollow": false,
-"identifier": "Labels",
-"keepAspectRatio": false,
-"limitBehavior": 0.0,
-"limitScope": 1.0,
-"lineOpacity": 1.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.5,
-"renderMode": 2.0,
-"resizableX": true,
-"resizableY": false,
-"showName": false,
-"tags": [],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": null,
-"tileRenderMode": 1.0,
-"tilesetId": null,
-"uiTileRect": null,
-"uid": 10.0,
-"width": 32.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [19.0, 5.0],
 "__identifier": "Labels",
@@ -5419,7 +4326,7 @@ metadata/LDTK_entityInstance = {
 "width": 96.0
 }
 
-[node name="LDTK_Labels-1" type="Node2D" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
+[node name="LDTK_Labels-1" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
 position = Vector2(432, 88)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "text",
@@ -5439,112 +4346,6 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 12.0,
 "realEditorValues": []
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#000000",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "Multilines",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "text",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Text",
-"uid": 11.0,
-"useForSmartColor": false
-}, {
-"__type": "Color",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": {
-"id": "V_Int",
-"params": [8.36139e+06]
-},
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 3.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "color",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Color",
-"uid": 12.0,
-"useForSmartColor": true
-}],
-"fillOpacity": 1.0,
-"height": 16.0,
-"hollow": false,
-"identifier": "Labels",
-"keepAspectRatio": false,
-"limitBehavior": 0.0,
-"limitScope": 1.0,
-"lineOpacity": 1.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.5,
-"renderMode": 2.0,
-"resizableX": true,
-"resizableY": false,
-"showName": false,
-"tags": [],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": null,
-"tileRenderMode": 1.0,
-"tilesetId": null,
-"uiTileRect": null,
-"uid": 10.0,
-"width": 32.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [27.0, 5.0],
 "__identifier": "Labels",
@@ -5579,7 +4380,7 @@ metadata/LDTK_entityInstance = {
 "width": 96.0
 }
 
-[node name="LDTK_Labels-2" type="Node2D" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
+[node name="LDTK_Labels-2" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
 position = Vector2(560, 88)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "text",
@@ -5599,112 +4400,6 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 12.0,
 "realEditorValues": []
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#000000",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "Multilines",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "text",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Text",
-"uid": 11.0,
-"useForSmartColor": false
-}, {
-"__type": "Color",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": {
-"id": "V_Int",
-"params": [8.36139e+06]
-},
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 3.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "color",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Color",
-"uid": 12.0,
-"useForSmartColor": true
-}],
-"fillOpacity": 1.0,
-"height": 16.0,
-"hollow": false,
-"identifier": "Labels",
-"keepAspectRatio": false,
-"limitBehavior": 0.0,
-"limitScope": 1.0,
-"lineOpacity": 1.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.5,
-"renderMode": 2.0,
-"resizableX": true,
-"resizableY": false,
-"showName": false,
-"tags": [],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": null,
-"tileRenderMode": 1.0,
-"tilesetId": null,
-"uiTileRect": null,
-"uid": 10.0,
-"width": 32.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [35.0, 5.0],
 "__identifier": "Labels",
@@ -5739,7 +4434,7 @@ metadata/LDTK_entityInstance = {
 "width": 80.0
 }
 
-[node name="LDTK_Labels-3" type="Node2D" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
+[node name="LDTK_Labels-3" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
 position = Vector2(176, 88)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "text",
@@ -5759,112 +4454,6 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 12.0,
 "realEditorValues": []
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#000000",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "Multilines",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "text",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Text",
-"uid": 11.0,
-"useForSmartColor": false
-}, {
-"__type": "Color",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": {
-"id": "V_Int",
-"params": [8.36139e+06]
-},
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 3.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "color",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Color",
-"uid": 12.0,
-"useForSmartColor": true
-}],
-"fillOpacity": 1.0,
-"height": 16.0,
-"hollow": false,
-"identifier": "Labels",
-"keepAspectRatio": false,
-"limitBehavior": 0.0,
-"limitScope": 1.0,
-"lineOpacity": 1.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.5,
-"renderMode": 2.0,
-"resizableX": true,
-"resizableY": false,
-"showName": false,
-"tags": [],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": null,
-"tileRenderMode": 1.0,
-"tilesetId": null,
-"uiTileRect": null,
-"uid": 10.0,
-"width": 32.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [11.0, 5.0],
 "__identifier": "Labels",
@@ -5899,7 +4488,7 @@ metadata/LDTK_entityInstance = {
 "width": 96.0
 }
 
-[node name="LDTK_Labels-4" type="Node2D" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
+[node name="LDTK_Labels-4" parent="LDTK_Entities" instance=ExtResource("6_kjf0d")]
 position = Vector2(48, 88)
 metadata/LDTK_fieldInstances = [{
 "__identifier": "text",
@@ -5919,112 +4508,6 @@ metadata/LDTK_fieldInstances = [{
 "defUid": 12.0,
 "realEditorValues": []
 }]
-metadata/LDTK_entityDefinition = {
-"color": "#000000",
-"doc": null,
-"exportToToc": false,
-"fieldDefs": [{
-"__type": "Multilines",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": null,
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 14.0,
-"editorDisplayPos": 2.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "text",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Text",
-"uid": 11.0,
-"useForSmartColor": false
-}, {
-"__type": "Color",
-"acceptFileTypes": null,
-"allowOutOfLevelRef": true,
-"allowedRefTags": [],
-"allowedRefs": 1.0,
-"allowedRefsEntityUid": null,
-"arrayMaxLength": null,
-"arrayMinLength": null,
-"autoChainRef": false,
-"canBeNull": false,
-"defaultOverride": {
-"id": "V_Int",
-"params": [8.36139e+06]
-},
-"doc": null,
-"editorAlwaysShow": false,
-"editorCutLongValues": true,
-"editorDisplayColor": null,
-"editorDisplayMode": 3.0,
-"editorDisplayPos": 1.0,
-"editorDisplayScale": 1.0,
-"editorLinkStyle": 3.0,
-"editorShowInWorld": true,
-"editorTextPrefix": null,
-"editorTextSuffix": null,
-"identifier": "color",
-"isArray": false,
-"max": null,
-"min": null,
-"regex": null,
-"symmetricalRef": false,
-"textLanguageMode": null,
-"tilesetUid": null,
-"type": "F_Color",
-"uid": 12.0,
-"useForSmartColor": true
-}],
-"fillOpacity": 1.0,
-"height": 16.0,
-"hollow": false,
-"identifier": "Labels",
-"keepAspectRatio": false,
-"limitBehavior": 0.0,
-"limitScope": 1.0,
-"lineOpacity": 1.0,
-"maxCount": 0.0,
-"maxHeight": null,
-"maxWidth": null,
-"minHeight": null,
-"minWidth": null,
-"nineSliceBorders": [],
-"pivotX": 0.0,
-"pivotY": 0.5,
-"renderMode": 2.0,
-"resizableX": true,
-"resizableY": false,
-"showName": false,
-"tags": [],
-"tileId": null,
-"tileOpacity": 1.0,
-"tileRect": null,
-"tileRenderMode": 1.0,
-"tilesetId": null,
-"uiTileRect": null,
-"uid": 10.0,
-"width": 32.0
-}
 metadata/LDTK_entityInstance = {
 "__grid": [3.0, 5.0],
 "__identifier": "Labels",
